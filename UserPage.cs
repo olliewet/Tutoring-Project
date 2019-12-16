@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tutoring_Project
 {
-    public partial class HomePage : Form
+    public partial class UserPage : Form
     {
-        public HomePage()
+        public UserPage()
         {
             InitializeComponent();
         }
@@ -38,15 +38,21 @@ namespace Tutoring_Project
 
         private void User1_Click(object sender, EventArgs e)
         {
-            //Button for navigating to Monthly page
-            this.Hide();
-            //Hides the form
+           
+            this.Hide();       
             Topics T = new Topics();
-            //Creates a new instance of the student loan form 
-            T.ShowDialog();
-            //Shows the form of the newly created student loan form
+            T.ShowDialog();          
             this.Close();
-            //closes current form
+            
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
+            this.Close();
         }
     }
 }

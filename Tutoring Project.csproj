@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomePage.cs">
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomePage.Designer.cs">
-      <DependentUpon>HomePage.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPage.Designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,8 +67,11 @@
       <DependentUpon>Topics.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="HomePage.resx">
-      <DependentUpon>HomePage.cs</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPage.resx">
+      <DependentUpon>UserPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +110,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user_female_olive_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C-Sharp-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C-Sharp-011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C-Sharp-012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_26px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
