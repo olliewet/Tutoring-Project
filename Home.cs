@@ -30,8 +30,8 @@ namespace Tutoring_Project
         private void Button1_Click(object sender, EventArgs e)
         {
             
-            this.Hide();          
-            UserPage UP = new UserPage();            
+            this.Hide();                     
+            Userpage UP = new Userpage();
             UP.ShowDialog();          
             this.Close();
             
@@ -45,6 +45,19 @@ namespace Tutoring_Project
         private void Home_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            const string message = "Are you sure you want to exit?";
+            const string caption = "";
+
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -10,19 +10,52 @@ using System.Windows.Forms;
 
 namespace Tutoring_Project
 {
-    public partial class UserPage : Form
+    public partial class Userpage : Form
     {
-        public UserPage()
+        public Userpage()
         {
             InitializeComponent();
         }
 
-        private void HomePage_Load(object sender, EventArgs e)
+        private void User1_btn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Topics T = new Topics();
+            T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+            T.ShowDialog();
+           
+            
+            this.Close();
         }
 
-        private void exit_Click(object sender, EventArgs e)
+        private void User2_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topics T = new Topics();
+            T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+            T.ShowDialog();
+            this.Close();
+        }
+
+        private void User3_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topics T = new Topics();
+            T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+            T.ShowDialog();
+            this.Close();
+        }
+
+        private void User4_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topics T = new Topics();
+            T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+            T.ShowDialog();
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
         {
             const string message = "Are you sure you want to exit?";
             const string caption = "";
@@ -33,22 +66,10 @@ namespace Tutoring_Project
             {
                 Application.Exit();
             }
-           
         }
 
-        private void User1_Click(object sender, EventArgs e)
+        private void Home_btn_Click(object sender, EventArgs e)
         {
-           
-            this.Hide();       
-            Topics T = new Topics();
-            T.ShowDialog();          
-            this.Close();
-            
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-
             this.Hide();
             Home home = new Home();
             home.ShowDialog();

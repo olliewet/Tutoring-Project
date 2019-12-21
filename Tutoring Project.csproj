@@ -52,12 +52,6 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserPage.Designer.cs">
-      <DependentUpon>UserPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Topics.cs">
@@ -67,11 +61,14 @@
       <DependentUpon>Topics.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="Userpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userpage.Designer.cs">
+      <DependentUpon>Userpage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserPage.resx">
-      <DependentUpon>UserPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="Topics.resx">
       <DependentUpon>Topics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userpage.resx">
+      <DependentUpon>Userpage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -125,6 +125,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_50px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

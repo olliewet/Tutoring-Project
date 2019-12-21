@@ -71,7 +71,7 @@
             this.lrg_tb.BackColor = System.Drawing.SystemColors.Control;
             this.lrg_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lrg_tb.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lrg_tb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lrg_tb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lrg_tb.ForeColor = System.Drawing.Color.Black;
             this.lrg_tb.Location = new System.Drawing.Point(3, 32);
             this.lrg_tb.Name = "lrg_tb";
@@ -178,6 +178,7 @@
             this.exit.TabIndex = 5;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // Home
             // 
