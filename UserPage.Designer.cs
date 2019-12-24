@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exit = new System.Windows.Forms.Button();
             this.home_btn = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
             this.user1_btn = new System.Windows.Forms.Button();
             this.user2_btn = new System.Windows.Forms.Button();
             this.user3_btn = new System.Windows.Forms.Button();
             this.user4_btn = new System.Windows.Forms.Button();
+            this.select_lb = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,22 +48,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(802, 49);
             this.panel1.TabIndex = 0;
-            // 
-            // exit
-            // 
-            this.exit.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
-            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(686, -20);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(116, 88);
-            this.exit.TabIndex = 6;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = false;
-            this.exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // home_btn
             // 
@@ -79,6 +64,22 @@
             this.home_btn.Text = "Home";
             this.home_btn.UseVisualStyleBackColor = false;
             this.home_btn.Click += new System.EventHandler(this.Home_btn_Click);
+            // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.ForeColor = System.Drawing.Color.White;
+            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
+            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exit.Location = new System.Drawing.Point(686, -20);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(116, 88);
+            this.exit.TabIndex = 6;
+            this.exit.Text = "Exit";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // user1_btn
             // 
@@ -132,12 +133,24 @@
             this.user4_btn.UseVisualStyleBackColor = false;
             this.user4_btn.Click += new System.EventHandler(this.User4_btn_Click);
             // 
+            // select_lb
+            // 
+            this.select_lb.AutoSize = true;
+            this.select_lb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.select_lb.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.select_lb.Location = new System.Drawing.Point(272, 161);
+            this.select_lb.Name = "select_lb";
+            this.select_lb.Size = new System.Drawing.Size(242, 25);
+            this.select_lb.TabIndex = 5;
+            this.select_lb.Text = "Please Select a User below!";
+            // 
             // Userpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.select_lb);
             this.Controls.Add(this.user4_btn);
             this.Controls.Add(this.user3_btn);
             this.Controls.Add(this.user2_btn);
@@ -146,8 +159,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Userpage";
             this.Text = "Userpage";
+            this.Load += new System.EventHandler(this.Userpage_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -160,5 +175,6 @@
         private System.Windows.Forms.Button user2_btn;
         private System.Windows.Forms.Button user3_btn;
         private System.Windows.Forms.Button user4_btn;
+        private System.Windows.Forms.Label select_lb;
     }
 }

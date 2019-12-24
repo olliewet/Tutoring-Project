@@ -3,18 +3,26 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tutoring_Project.Properties;
 
 namespace Tutoring_Project
 {
     public partial class Topics : Form
     {
+        List<User> _user1 = null;
         public Topics()
         {
             InitializeComponent();
+            _user1 = new List<User>();
+            _user1 = File.ReadAllLines("User1.csv")
+                                        .Skip(1)
+                                        .Select(v => User.FromCSV(v))
+                                        .ToList();
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -71,10 +79,56 @@ namespace Tutoring_Project
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void user_btn_Click(object sender, EventArgs e)
         {
+            List<User> user1 = new List<User> ();
+            //If statement to check if the forms picture box contains a certain image 
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                this.Hide();
+                UserProfile UserProfile1 = new UserProfile();
+                UserProfile1.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                UserProfile1.pictureBox1.Tag = "user1";
 
+                for (int i = 0; i < _user1.Count; i++)
+                {
+                    user1.Add(_user1.ElementAt(i));
+                }
+                UserProfile1.userList = user1;
+                
+                UserProfile1.ShowDialog();
+
+                this.Close();
+            }      
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                this.Hide();
+                UserProfile UserProfile2 = new UserProfile();
+                UserProfile2.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                UserProfile2.pictureBox1.Tag = "user2";
+                UserProfile2.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                this.Hide();
+                UserProfile UserProfile3 = new UserProfile();
+                UserProfile3.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                UserProfile3.pictureBox1.Tag = "user3";
+                UserProfile3.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                this.Hide();
+                UserProfile UserProfile4 = new UserProfile();
+                UserProfile4.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                UserProfile4.pictureBox1.Tag = "user4";
+                UserProfile4.ShowDialog();
+                this.Close();
+            }
         }
+
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {

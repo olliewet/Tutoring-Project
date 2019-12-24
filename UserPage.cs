@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Tutoring_Project
 {
     public partial class Userpage : Form
@@ -16,12 +17,13 @@ namespace Tutoring_Project
         {
             InitializeComponent();
         }
-
+        
         private void User1_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Topics T = new Topics();
+            Topics T = new Topics();            
             T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+            T.pictureBox1.Tag = "user1";
             T.ShowDialog();
            
             
@@ -33,6 +35,7 @@ namespace Tutoring_Project
             this.Hide();
             Topics T = new Topics();
             T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+            T.pictureBox1.Tag = "user2";
             T.ShowDialog();
             this.Close();
         }
@@ -42,6 +45,7 @@ namespace Tutoring_Project
             this.Hide();
             Topics T = new Topics();
             T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+            T.pictureBox1.Tag = "user3";
             T.ShowDialog();
             this.Close();
         }
@@ -51,6 +55,7 @@ namespace Tutoring_Project
             this.Hide();
             Topics T = new Topics();
             T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+            T.pictureBox1.Tag = "user4";
             T.ShowDialog();
             this.Close();
         }
@@ -74,6 +79,11 @@ namespace Tutoring_Project
             Home home = new Home();
             home.ShowDialog();
             this.Close();
+        }
+
+        private void Userpage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

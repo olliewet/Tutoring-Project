@@ -10,3 +10,4 @@ C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tuto
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.Topics.resources
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.Home.resources
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.UserPage.resources
+C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.UserProfile.resources

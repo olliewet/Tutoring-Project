@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>This application contains three main topics, however the topics are split into different sections. Completing questions will potentiality reward the user with badges and experience which will contribute towards the users overall level. These badges will be displayed on the users profile. </value>
-  </data>
 </root>

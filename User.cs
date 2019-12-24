@@ -8,11 +8,12 @@ namespace Tutoring_Project
 {
     public class User
     {
+        
         string experience;
         string level;
         string question; 
 
-    public static User LoadCSV(string csvLine)
+    public static User FromCSV(string csvLine)
         {
             string[] data = csvLine.Split(',');
             User user1 = new User();
