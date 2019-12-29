@@ -36,6 +36,7 @@ namespace Tutoring_Project
             Topics T = new Topics();
             T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
             T.pictureBox1.Tag = "user2";
+            
             T.ShowDialog();
             this.Close();
         }

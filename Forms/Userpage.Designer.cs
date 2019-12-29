@@ -36,6 +36,10 @@
             this.user3_btn = new System.Windows.Forms.Button();
             this.user4_btn = new System.Windows.Forms.Button();
             this.select_lb = new System.Windows.Forms.Label();
+            this.name_lb = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,11 +142,55 @@
             this.select_lb.AutoSize = true;
             this.select_lb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.select_lb.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.select_lb.Location = new System.Drawing.Point(272, 161);
+            this.select_lb.Location = new System.Drawing.Point(276, 148);
             this.select_lb.Name = "select_lb";
             this.select_lb.Size = new System.Drawing.Size(242, 25);
             this.select_lb.TabIndex = 5;
             this.select_lb.Text = "Please Select a User below!";
+            // 
+            // name_lb
+            // 
+            this.name_lb.AutoSize = true;
+            this.name_lb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.name_lb.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.name_lb.Location = new System.Drawing.Point(248, 258);
+            this.name_lb.Name = "name_lb";
+            this.name_lb.Size = new System.Drawing.Size(63, 25);
+            this.name_lb.TabIndex = 7;
+            this.name_lb.Text = "User 1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label1.Location = new System.Drawing.Point(326, 258);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "User 2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label2.Location = new System.Drawing.Point(407, 258);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 25);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "User 3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label3.Location = new System.Drawing.Point(488, 258);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 25);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "User 4";
             // 
             // Userpage
             // 
@@ -150,6 +198,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.name_lb);
             this.Controls.Add(this.select_lb);
             this.Controls.Add(this.user4_btn);
             this.Controls.Add(this.user3_btn);
@@ -176,5 +228,9 @@
         private System.Windows.Forms.Button user3_btn;
         private System.Windows.Forms.Button user4_btn;
         private System.Windows.Forms.Label select_lb;
+        public System.Windows.Forms.Label name_lb;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
     }
 }

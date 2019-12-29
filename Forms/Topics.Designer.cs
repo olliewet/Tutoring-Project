@@ -149,6 +149,7 @@
             this.sdp_btn.TabIndex = 2;
             this.sdp_btn.Text = "Simple Data Processing";
             this.sdp_btn.UseVisualStyleBackColor = true;
+            this.sdp_btn.Click += new System.EventHandler(this.Sdp_btn_Click);
             // 
             // cp_btn
             // 
@@ -225,6 +226,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
             // Topics
             // 

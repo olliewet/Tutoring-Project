@@ -12,33 +12,13 @@ namespace Tutoring_Project
 {
     public partial class UserProfile : Form
     {
-        private List<User> _userList;
-
-        public List<User> userList
-        {
-            get
-            {
-                return _userList;
-            }
-            set
-            {
-                _userList = value;
-                for (int i = 0; i < value.Count; i++)
-                {
-                    user_lb.Items.Add(value.ElementAt(i));
-
-                }               
-            }
-        }
-
+        
     public UserProfile()
         {
             InitializeComponent();
         }
 
-        
-
-
+       
 
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -61,6 +41,14 @@ namespace Tutoring_Project
         private void User_lb_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Topics_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Userpage T = new Userpage();
+            T.ShowDialog();
+            this.Close();
         }
     }
 }
