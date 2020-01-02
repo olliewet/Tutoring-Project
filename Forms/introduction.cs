@@ -50,7 +50,17 @@ namespace Tutoring_Project
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(2);
+            if (radioButton3.Checked)
+            {
+                tabControl1.SelectTab(2);
+                // Basic Implement of showing the users "level" however needs to be different so it can be stored into a text file 
+                level.Text = "1";
+
+            }
+            else
+            {
+                MessageBox.Show(" Answer is incorrect");
+            }
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -60,7 +70,15 @@ namespace Tutoring_Project
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(4);
+            if (radioButton7.Checked)
+            {
+                tabControl1.SelectTab(4);
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+            
         }
 
         private void Button5_Click(object sender, EventArgs e)
@@ -86,6 +104,11 @@ namespace Tutoring_Project
         private void Button6_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(3);
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
