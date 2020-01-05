@@ -59,5 +59,13 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            References Ref = new References();
+            Ref.ShowDialog();
+            this.Close();
+        }
     }
 }

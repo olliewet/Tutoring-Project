@@ -46,43 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Home.cs">
+    <Compile Include="Main Forms\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Home.Designer.cs">
+    <Compile Include="Main Forms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\introduction.cs">
+    <Compile Include="Question Forms\introduction.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\introduction.Designer.cs">
+    <Compile Include="Question Forms\introduction.Designer.cs">
       <DependentUpon>introduction.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\Topics.cs">
+    <Compile Include="Main Forms\Topics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Topics.Designer.cs">
+    <Compile Include="Main Forms\Topics.Designer.cs">
       <DependentUpon>Topics.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
-    <Compile Include="Forms\Userpage.cs">
+    <Compile Include="Main Forms\References.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Userpage.Designer.cs">
+    <Compile Include="Main Forms\References.Designer.cs">
+      <DependentUpon>References.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="Main Forms\Userpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Userpage.Designer.cs">
       <DependentUpon>Userpage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UserProfile.cs">
+    <Compile Include="Main Forms\UserProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UserProfile.Designer.cs">
+    <Compile Include="Main Forms\UserProfile.Designer.cs">
       <DependentUpon>UserProfile.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\Home.resx">
+    <EmbeddedResource Include="Main Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\introduction.resx">
+    <EmbeddedResource Include="Main Forms\References.resx">
+      <DependentUpon>References.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question Forms\introduction.resx">
       <DependentUpon>introduction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -95,13 +104,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\Topics.resx">
+    <EmbeddedResource Include="Main Forms\Topics.resx">
       <DependentUpon>Topics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Userpage.resx">
+    <EmbeddedResource Include="Main Forms\Userpage.resx">
       <DependentUpon>Userpage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserProfile.resx">
+    <EmbeddedResource Include="Main Forms\UserProfile.resx">
       <DependentUpon>UserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -166,7 +175,10 @@
     <None Include="Resources\binary_file_80px.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="level.txt" />
+    <Content Include="levelfile.txt" />
+    <None Include="Resources\school_director_filled_50px.png" />
+    <None Include="Resources\manager_30px.png" />
+    <None Include="Resources\book_26px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

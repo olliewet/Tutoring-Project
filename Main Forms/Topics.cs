@@ -74,15 +74,33 @@ namespace Tutoring_Project
             //If statement to check if the forms picture box contains a certain image 
             if ((string)this.pictureBox1.Tag == "user1")
             {
-
                 this.Hide();
                 introduction T = new introduction();
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 T.pictureBox1.Tag = "user1";
                 
-                T.ShowDialog();
+                string currentlevel;
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
 
-                //Add Code to Open up The form for this button and load the data for this user 
+                // Depending on what users level is, depends on what form is selected
+                if (x == 0)
+                {    
+                    //sort out what level is what tab 
+                    T.tabControl1.SelectTab(0);
+                    T.ShowDialog();
+                } 
+                else if ( x == 1)
+                {
+                    T.tabControl1.SelectTab(2);
+                    T.ShowDialog();
+                }
+
+                else
+                {
+                    MessageBox.Show("");
+                }
+                
                 this.Close();
             }
             else if ((string)this.pictureBox1.Tag == "user2")
@@ -157,7 +175,7 @@ namespace Tutoring_Project
                 UserProfile1.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 UserProfile1.pictureBox1.Tag = "user1";
                 UserProfile1.name_lb.Text =  "user1";
-                UserProfile1.level.Text = File.ReadAllText("user1level.txt");
+                UserProfile1.level.Text = File.ReadAllText("levelfile.txt");
 
                 UserProfile1.ShowDialog();
 
@@ -234,6 +252,26 @@ namespace Tutoring_Project
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            
+            string currentlevel; 
+            currentlevel = File.ReadAllText("levelfile.txt");
+            int x = Int32.Parse(currentlevel);
+            if (x >= 50)
+            {
+                //Open Form  
+            } else
+            {
+                MessageBox.Show("Please Reach Level 50 warrior");
+            }
+        }
+
+        private void PictureBox5_Click(object sender, EventArgs e)
         {
 
         }

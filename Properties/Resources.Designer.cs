@@ -83,6 +83,16 @@ namespace Tutoring_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap book_26px {
+            get {
+                object obj = ResourceManager.GetObject("book_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap C_Sharp_01 {
             get {
                 object obj = ResourceManager.GetObject("C-Sharp-01", resourceCulture);
@@ -166,6 +176,26 @@ namespace Tutoring_Project.Properties {
         internal static System.Drawing.Bitmap idea_32px {
             get {
                 object obj = ResourceManager.GetObject("idea_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap manager_30px {
+            get {
+                object obj = ResourceManager.GetObject("manager_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap school_director_filled_50px {
+            get {
+                object obj = ResourceManager.GetObject("school_director_filled_50px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

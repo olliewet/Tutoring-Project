@@ -30,25 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Topics));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.user_btn = new System.Windows.Forms.Button();
-            this.home_btn = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
             this.Intro_btn = new System.Windows.Forms.Button();
             this.sdp_btn = new System.Windows.Forms.Button();
             this.cp_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.home_btn = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,21 +67,12 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(83, 45);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
             // user_btn
             // 
             this.user_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.user_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
             this.user_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.user_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.user_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.user_btn.ForeColor = System.Drawing.Color.White;
             this.user_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.user_btn.Location = new System.Drawing.Point(92, 6);
@@ -88,40 +82,6 @@
             this.user_btn.Text = "User Profile";
             this.user_btn.UseVisualStyleBackColor = false;
             this.user_btn.Click += new System.EventHandler(this.user_btn_Click);
-            // 
-            // home_btn
-            // 
-            this.home_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.home_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.home_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.home_btn.ForeColor = System.Drawing.Color.White;
-            this.home_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
-            this.home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.home_btn.Location = new System.Drawing.Point(593, -18);
-            this.home_btn.Name = "home_btn";
-            this.home_btn.Size = new System.Drawing.Size(116, 91);
-            this.home_btn.TabIndex = 7;
-            this.home_btn.Text = "Home";
-            this.home_btn.UseVisualStyleBackColor = false;
-            this.home_btn.Click += new System.EventHandler(this.Home_btn_Click);
-            // 
-            // exit
-            // 
-            this.exit.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exit.ForeColor = System.Drawing.SystemColors.Window;
-            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
-            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(701, -18);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(116, 91);
-            this.exit.TabIndex = 5;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = false;
-            this.exit.Click += new System.EventHandler(this.Exit_Click_1);
             // 
             // Intro_btn
             // 
@@ -169,9 +129,9 @@
             // 
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.richTextBox1);
-            this.panel2.Location = new System.Drawing.Point(12, 245);
+            this.panel2.Location = new System.Drawing.Point(12, 249);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(776, 193);
+            this.panel2.Size = new System.Drawing.Size(776, 189);
             this.panel2.TabIndex = 4;
             // 
             // label1
@@ -196,6 +156,17 @@
             this.richTextBox1.Size = new System.Drawing.Size(767, 160);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Tutoring_Project.Properties.Resources.school_director_filled_50px;
+            this.pictureBox5.Location = new System.Drawing.Point(543, 109);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.PictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -228,12 +199,71 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 45);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
+            // home_btn
+            // 
+            this.home_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.home_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.home_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.home_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.home_btn.ForeColor = System.Drawing.Color.White;
+            this.home_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
+            this.home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.home_btn.Location = new System.Drawing.Point(580, -18);
+            this.home_btn.Name = "home_btn";
+            this.home_btn.Size = new System.Drawing.Size(129, 91);
+            this.home_btn.TabIndex = 7;
+            this.home_btn.Text = "Home";
+            this.home_btn.UseVisualStyleBackColor = false;
+            this.home_btn.Click += new System.EventHandler(this.Home_btn_Click);
+            // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exit.ForeColor = System.Drawing.SystemColors.Window;
+            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
+            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exit.Location = new System.Drawing.Point(701, -18);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(116, 91);
+            this.exit.TabIndex = 5;
+            this.exit.Text = "Exit";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.Exit_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button1.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.button1.Location = new System.Drawing.Point(532, 178);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 38);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "End Game";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // Topics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -247,12 +277,13 @@
             this.Text = "Topics";
             this.Load += new System.EventHandler(this.Topics_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -273,5 +304,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button button1;
     }
 }

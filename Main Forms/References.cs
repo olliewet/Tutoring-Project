@@ -10,15 +10,12 @@ using System.Windows.Forms;
 
 namespace Tutoring_Project
 {
-    public partial class UserProfile : Form
+    public partial class References : Form
     {
-        
-    public UserProfile()
+        public References()
         {
             InitializeComponent();
         }
-
-       
 
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -33,22 +30,32 @@ namespace Tutoring_Project
             }
         }
 
-        private void UserProfile_Load(object sender, EventArgs e)
+        private void Con_btn1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void User_lb_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void Topics_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Userpage T = new Userpage();
-            T.ShowDialog();
+            Userpage UP = new Userpage();
+            UP.ShowDialog();
             this.Close();
+        }
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Con_btn1_Click_1(object sender, EventArgs e)
+        {           
+            tabControl1.SelectTab(1);
         }
     }
 }

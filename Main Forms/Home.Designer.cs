@@ -38,8 +38,9 @@
             this.sml_tb = new System.Windows.Forms.RichTextBox();
             this.Tp_lb = new System.Windows.Forms.Label();
             this.ByName_lb = new System.Windows.Forms.Label();
-            this.logo = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.AboutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -153,14 +154,23 @@
             this.ByName_lb.TabIndex = 4;
             this.ByName_lb.Text = "By Oliver Richard Dry";
             // 
-            // logo
+            // button1
             // 
-            this.logo.Image = global::Tutoring_Project.Properties.Resources.C_Sharp_012;
-            this.logo.Location = new System.Drawing.Point(52, 23);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(104, 95);
-            this.logo.TabIndex = 2;
-            this.logo.TabStop = false;
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.button1.Image = global::Tutoring_Project.Properties.Resources.book_26px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(609, -7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 58);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "References";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // exit
             // 
@@ -172,13 +182,22 @@
             this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
             this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(736, -7);
+            this.exit.Location = new System.Drawing.Point(760, -7);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(116, 58);
+            this.exit.Size = new System.Drawing.Size(105, 58);
             this.exit.TabIndex = 5;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // logo
+            // 
+            this.logo.Image = global::Tutoring_Project.Properties.Resources.C_Sharp_012;
+            this.logo.Location = new System.Drawing.Point(52, 23);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(104, 95);
+            this.logo.TabIndex = 2;
+            this.logo.TabStop = false;
             // 
             // Home
             // 
@@ -186,6 +205,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(844, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.ByName_lb);
             this.Controls.Add(this.Tp_lb);
@@ -194,7 +214,7 @@
             this.Controls.Add(this.AboutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
-            this.Text = "Home";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Home_Load);
             this.AboutPanel.ResumeLayout(false);
             this.AboutPanel.PerformLayout();
@@ -219,5 +239,6 @@
         private System.Windows.Forms.Label Tp_lb;
         private System.Windows.Forms.Label ByName_lb;
         private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Button button1;
     }
 }

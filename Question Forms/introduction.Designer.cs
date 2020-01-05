@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(introduction));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.level = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.topics_btn = new System.Windows.Forms.Button();
@@ -61,23 +63,34 @@
             this.prevquestion2_btn = new System.Windows.Forms.Button();
             this.conquestion2_btn = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.level);
             this.panel1.Controls.Add(this.panel2);
@@ -87,6 +100,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(806, 56);
             this.panel1.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(129, 53);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(817, 18);
+            this.panel3.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 53);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // level
             // 
@@ -144,10 +172,12 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Location = new System.Drawing.Point(-10, 78);
+            this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Location = new System.Drawing.Point(-10, 58);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(821, 376);
+            this.tabControl1.Size = new System.Drawing.Size(821, 396);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -158,17 +188,18 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(813, 350);
+            this.tabPage1.Size = new System.Drawing.Size(813, 370);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label1.Location = new System.Drawing.Point(18, 20);
+            this.label1.Location = new System.Drawing.Point(6, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 25);
             this.label1.TabIndex = 3;
@@ -189,7 +220,7 @@
             // con_btn1
             // 
             this.con_btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.con_btn1.Location = new System.Drawing.Point(683, 313);
+            this.con_btn1.Location = new System.Drawing.Point(703, 312);
             this.con_btn1.Name = "con_btn1";
             this.con_btn1.Size = new System.Drawing.Size(75, 23);
             this.con_btn1.TabIndex = 1;
@@ -209,7 +240,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(813, 350);
+            this.tabPage2.Size = new System.Drawing.Size(813, 370);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -269,6 +300,7 @@
             // 
             // back_btn2
             // 
+            this.back_btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back_btn2.Location = new System.Drawing.Point(18, 315);
             this.back_btn2.Name = "back_btn2";
             this.back_btn2.Size = new System.Drawing.Size(75, 23);
@@ -279,6 +311,7 @@
             // 
             // con_btn2
             // 
+            this.con_btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.con_btn2.Location = new System.Drawing.Point(719, 315);
             this.con_btn2.Name = "con_btn2";
             this.con_btn2.Size = new System.Drawing.Size(75, 23);
@@ -296,7 +329,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(813, 350);
+            this.tabPage3.Size = new System.Drawing.Size(813, 370);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -320,12 +353,13 @@
             this.richTextBox2.Location = new System.Drawing.Point(18, 57);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(767, 160);
+            this.richTextBox2.Size = new System.Drawing.Size(776, 149);
             this.richTextBox2.TabIndex = 3;
             this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
             // prevobj_btn
             // 
+            this.prevobj_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prevobj_btn.Location = new System.Drawing.Point(18, 315);
             this.prevobj_btn.Name = "prevobj_btn";
             this.prevobj_btn.Size = new System.Drawing.Size(75, 23);
@@ -336,6 +370,7 @@
             // 
             // conobj_btn
             // 
+            this.conobj_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.conobj_btn.Location = new System.Drawing.Point(719, 315);
             this.conobj_btn.Name = "conobj_btn";
             this.conobj_btn.Size = new System.Drawing.Size(75, 23);
@@ -356,10 +391,11 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(813, 350);
+            this.tabPage4.Size = new System.Drawing.Size(813, 370);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.TabPage4_Click);
             // 
             // radioButton5
             // 
@@ -410,7 +446,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(88, 82);
+            this.label3.Location = new System.Drawing.Point(88, 87);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(276, 13);
             this.label3.TabIndex = 12;
@@ -438,19 +474,44 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.label5);
+            this.tabPage5.Controls.Add(this.richTextBox3);
             this.tabPage5.Controls.Add(this.button6);
             this.tabPage5.Controls.Add(this.button5);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(813, 350);
+            this.tabPage5.Size = new System.Drawing.Size(813, 370);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label5.Location = new System.Drawing.Point(6, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(234, 25);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Introduction To Compilers";
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox3.Location = new System.Drawing.Point(10, 47);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.Size = new System.Drawing.Size(784, 282);
+            this.richTextBox3.TabIndex = 4;
+            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
+            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(18, 315);
+            this.button6.Location = new System.Drawing.Point(18, 335);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 2;
@@ -460,7 +521,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(719, 315);
+            this.button5.Location = new System.Drawing.Point(719, 335);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 1;
@@ -468,20 +529,110 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
-            // panel3
+            // tabPage6
             // 
-            this.panel3.Location = new System.Drawing.Point(-6, 59);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(817, 47);
-            this.panel3.TabIndex = 4;
+            this.tabPage6.Controls.Add(this.button2);
+            this.tabPage6.Controls.Add(this.button1);
+            this.tabPage6.Controls.Add(this.radioButton9);
+            this.tabPage6.Controls.Add(this.radioButton10);
+            this.tabPage6.Controls.Add(this.radioButton11);
+            this.tabPage6.Controls.Add(this.radioButton12);
+            this.tabPage6.Controls.Add(this.label6);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(813, 370);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "tabPage6";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // button2
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 53);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.button2.Location = new System.Drawing.Point(52, 335);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Previous";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(693, 335);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Continue";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(52, 199);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(336, 17);
+            this.radioButton9.TabIndex = 16;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Checks for errors and attempts to fix them to get the code running ";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.RadioButton9_CheckedChanged);
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(52, 176);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(235, 17);
+            this.radioButton10.TabIndex = 15;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "To compress the code into a smaller file size ";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.RadioButton10_CheckedChanged);
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Location = new System.Drawing.Point(52, 153);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(92, 17);
+            this.radioButton11.TabIndex = 14;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.Text = "To Run Code ";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.RadioButton11_CheckedChanged);
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Location = new System.Drawing.Point(52, 130);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(465, 17);
+            this.radioButton12.TabIndex = 13;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.Text = "Converts Code into low level instructions which can be read and understood by the" +
+    " hardware ";
+            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButton12.CheckedChanged += new System.EventHandler(this.RadioButton12_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(49, 99);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(245, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "What is the reason for a compiler in programming? ";
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(813, 370);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // introduction
             // 
@@ -489,7 +640,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -497,6 +647,7 @@
             this.Text = "introduction";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -507,7 +658,9 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -517,7 +670,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button topics_btn;
         private System.Windows.Forms.Button exit;
-        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button con_btn1;
         private System.Windows.Forms.TabPage tabPage3;
@@ -550,5 +702,17 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label level;
         public System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage tabPage7;
+        public System.Windows.Forms.TabControl tabControl1;
     }
 }

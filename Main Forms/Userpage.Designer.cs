@@ -58,12 +58,13 @@
             this.home_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.home_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
             this.home_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.home_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.home_btn.ForeColor = System.Drawing.Color.White;
             this.home_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
             this.home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.home_btn.Location = new System.Drawing.Point(0, -14);
             this.home_btn.Name = "home_btn";
-            this.home_btn.Size = new System.Drawing.Size(116, 82);
+            this.home_btn.Size = new System.Drawing.Size(120, 82);
             this.home_btn.TabIndex = 8;
             this.home_btn.Text = "Home";
             this.home_btn.UseVisualStyleBackColor = false;
@@ -74,6 +75,7 @@
             this.exit.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.exit.ForeColor = System.Drawing.Color.White;
             this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
             this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
