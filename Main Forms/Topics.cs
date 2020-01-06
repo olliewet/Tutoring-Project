@@ -14,15 +14,13 @@ namespace Tutoring_Project
 {
     public partial class Topics : Form
     {
-        List<User> _user1 = null;
+        
+        string currentlevel;
+
         public Topics()
         {
             InitializeComponent();
-            _user1 = new List<User>();
-            _user1 = File.ReadAllLines("User1.csv")
-                                        .Skip(1)
-                                        .Select(v => User.FromCSV(v))
-                                        .ToList();
+            
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -48,6 +46,11 @@ namespace Tutoring_Project
 
         }
 
+        /// <summary>
+        /// Exit Button that exists the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Exit_Click_1(object sender, EventArgs e)
         {
             const string message = "Are you sure you want to exit?";
@@ -61,6 +64,11 @@ namespace Tutoring_Project
             }
         }
 
+        /// <summary>
+        /// Home Button that brings user to the home page 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Home_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -71,22 +79,27 @@ namespace Tutoring_Project
 
         private void Intro_btn_Click(object sender, EventArgs e)
         {
-            //If statement to check if the forms picture box contains a certain image 
+            //Statement used to check what user is logged in
             if ((string)this.pictureBox1.Tag == "user1")
             {
+                //Hides Current Form 
                 this.Hide();
+
+                //Creates new instance of introduction form 
                 introduction T = new introduction();
+
+                //The picture box of current instance is set to image of user 
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 T.pictureBox1.Tag = "user1";
                 
-                string currentlevel;
+                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
 
-                // Depending on what users level is, depends on what form is selected
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 if (x == 0)
-                {    
-                    //sort out what level is what tab 
+                {                       
                     T.tabControl1.SelectTab(0);
                     T.ShowDialog();
                 } 
@@ -95,42 +108,157 @@ namespace Tutoring_Project
                     T.tabControl1.SelectTab(2);
                     T.ShowDialog();
                 }
-
+                else if (x == 2)
+                {
+                    T.tabControl1.SelectTab(4);
+                    T.ShowDialog();
+                }
+                else if (x == 3)
+                {
+                    T.tabControl1.SelectTab(6);
+                    T.ShowDialog();
+                }
                 else
                 {
-                    MessageBox.Show("");
+                    MessageBox.Show("Completed this section");
                 }
                 
                 this.Close();
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
+                //Hides Current Form 
                 this.Hide();
+
+                //Creates new instance of introduction form 
                 introduction T = new introduction();
+
+                //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 T.pictureBox1.Tag = "user2";
-                T.ShowDialog();
-                //Add Code to Open up The form for this button and load the data for this user 
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user2level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                if (x == 0)
+                {                   
+                    T.tabControl1.SelectTab(0);
+                    T.ShowDialog();
+                }
+                else if (x == 1)
+                {
+                    T.tabControl1.SelectTab(2);
+                    T.ShowDialog();
+                }
+                else if (x == 2)
+                {
+                    T.tabControl1.SelectTab(4);
+                    T.ShowDialog();
+                }
+                else if (x == 3)
+                {
+                    T.tabControl1.SelectTab(6);
+                    T.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Completed this section");
+                }
                 this.Close();
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
             {
+                //Hides Current Form 
                 this.Hide();
+
+                //Creates new instance of introduction form 
                 introduction T = new introduction();
+
+                //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
                 T.pictureBox1.Tag = "user3";
-                T.ShowDialog();
-                //Add Code to Open up The form for this button and load the data for this user 
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user3level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                if (x == 0)
+                {                   
+                    T.tabControl1.SelectTab(0);
+                    T.ShowDialog();
+                }
+                else if (x == 1)
+                {
+                    T.tabControl1.SelectTab(2);
+                    T.ShowDialog();
+                }
+                else if (x == 2)
+                {
+                    T.tabControl1.SelectTab(4);
+                    T.ShowDialog();
+                }
+                else if (x == 3)
+                {
+                    T.tabControl1.SelectTab(6);
+                    T.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Completed this section");
+                }
                 this.Close();
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
+                //Hides Current Form 
                 this.Hide();
+
+                //Creates new instance of introduction form 
                 introduction T = new introduction();
+
+                //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 T.pictureBox1.Tag = "user4";
-                T.ShowDialog();
-                //Add Code to Open up The form for this button and load the data for this user 
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user4level.txt");
+                int x = Int32.Parse(currentlevel);
+
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                if (x == 0)
+                {                   
+                    T.tabControl1.SelectTab(0);
+                    T.ShowDialog();
+                }
+                else if (x == 1)
+                {
+                    T.tabControl1.SelectTab(2);
+                    T.ShowDialog();
+                }
+                else if (x == 2)
+                {
+                    T.tabControl1.SelectTab(4);
+                    T.ShowDialog();
+                }
+                else if (x == 3)
+                {
+                    T.tabControl1.SelectTab(6);
+                    T.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Completed this section");
+                }
                 this.Close();
             }
         }
@@ -164,10 +292,13 @@ namespace Tutoring_Project
             }
         }
 
+        /// <summary>
+        /// Button to open the users profile, four if statements to see which user is logged in
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void user_btn_Click(object sender, EventArgs e)
-        {
-            
-            //If statement to check if the forms picture box contains a certain image 
+        {                      
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 this.Hide();
@@ -215,7 +346,6 @@ namespace Tutoring_Project
                 this.Close();
             }
         }
-
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {

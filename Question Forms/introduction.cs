@@ -54,7 +54,7 @@ namespace Tutoring_Project
             
             if (radioButton3.Checked)
             {
-                tabControl1.SelectTab(3);
+                tabControl1.SelectTab(2);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
                     string text = File.ReadAllText("levelfile.txt");

@@ -13,3 +13,4 @@ C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tuto
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.UserProfile.resources
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.introduction.resources
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.References.resources
+C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.Leaderboard.resources

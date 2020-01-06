@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main Forms\Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main Forms\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Main Forms\UserProfile.Designer.cs">
       <DependentUpon>UserProfile.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Main Forms\Leaderboard.resx">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +185,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\leaderboard_50px.png" />
+    <None Include="Resources\leaderboard_80px.png" />
     <None Include="Resources\school_director_filled_50px.png" />
     <None Include="Resources\manager_30px.png" />
     <None Include="Resources\book_26px.png" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,6 +66,18 @@ namespace Tutoring_Project
             this.Hide();
             References Ref = new References();
             Ref.ShowDialog();
+            this.Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Leaderboard led = new Leaderboard();             
+            led.user1.Text = File.ReadAllText("levelfile.txt");
+            led.user2.Text = File.ReadAllText("user2level.txt");
+            led.user3.Text = File.ReadAllText("user3level.txt");
+            led.user4.Text = File.ReadAllText("user4level.txt");
+            led.ShowDialog();
             this.Close();
         }
     }
