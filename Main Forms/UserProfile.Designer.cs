@@ -35,19 +35,17 @@
             this.badge_lb = new System.Windows.Forms.Label();
             this.Level_lb = new System.Windows.Forms.Label();
             this.level = new System.Windows.Forms.Label();
-            this.badge5_box = new System.Windows.Forms.PictureBox();
-            this.badge4_box = new System.Windows.Forms.PictureBox();
-            this.badge3_box = new System.Windows.Forms.PictureBox();
-            this.badge2_box = new System.Windows.Forms.PictureBox();
-            this.badge_box = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.badge5_box)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badge4_box)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badge3_box)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badge2_box)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badge_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -139,46 +137,6 @@
             this.level.Text = "0";
             this.level.Click += new System.EventHandler(this.Level_Click);
             // 
-            // badge5_box
-            // 
-            this.badge5_box.Location = new System.Drawing.Point(316, 320);
-            this.badge5_box.Name = "badge5_box";
-            this.badge5_box.Size = new System.Drawing.Size(70, 62);
-            this.badge5_box.TabIndex = 12;
-            this.badge5_box.TabStop = false;
-            // 
-            // badge4_box
-            // 
-            this.badge4_box.Location = new System.Drawing.Point(240, 320);
-            this.badge4_box.Name = "badge4_box";
-            this.badge4_box.Size = new System.Drawing.Size(70, 62);
-            this.badge4_box.TabIndex = 11;
-            this.badge4_box.TabStop = false;
-            // 
-            // badge3_box
-            // 
-            this.badge3_box.Location = new System.Drawing.Point(164, 320);
-            this.badge3_box.Name = "badge3_box";
-            this.badge3_box.Size = new System.Drawing.Size(70, 62);
-            this.badge3_box.TabIndex = 10;
-            this.badge3_box.TabStop = false;
-            // 
-            // badge2_box
-            // 
-            this.badge2_box.Location = new System.Drawing.Point(88, 320);
-            this.badge2_box.Name = "badge2_box";
-            this.badge2_box.Size = new System.Drawing.Size(70, 62);
-            this.badge2_box.TabIndex = 9;
-            this.badge2_box.TabStop = false;
-            // 
-            // badge_box
-            // 
-            this.badge_box.Location = new System.Drawing.Point(12, 320);
-            this.badge_box.Name = "badge_box";
-            this.badge_box.Size = new System.Drawing.Size(70, 62);
-            this.badge_box.TabIndex = 8;
-            this.badge_box.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 61);
@@ -187,19 +145,50 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(17, 320);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(98, 88);
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(121, 320);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(98, 88);
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(225, 320);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(98, 88);
+            this.pictureBox4.TabIndex = 17;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(329, 320);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(98, 88);
+            this.pictureBox5.TabIndex = 18;
+            this.pictureBox5.TabStop = false;
+            // 
             // UserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.level);
             this.Controls.Add(this.Level_lb);
-            this.Controls.Add(this.badge5_box);
-            this.Controls.Add(this.badge4_box);
-            this.Controls.Add(this.badge3_box);
-            this.Controls.Add(this.badge2_box);
-            this.Controls.Add(this.badge_box);
             this.Controls.Add(this.badge_lb);
             this.Controls.Add(this.name_lb);
             this.Controls.Add(this.pictureBox1);
@@ -209,12 +198,11 @@
             this.Text = "UserProfile";
             this.Load += new System.EventHandler(this.UserProfile_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.badge5_box)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badge4_box)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badge3_box)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badge2_box)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badge_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,14 +214,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Label badge_lb;
-        private System.Windows.Forms.PictureBox badge_box;
-        private System.Windows.Forms.PictureBox badge2_box;
-        private System.Windows.Forms.PictureBox badge3_box;
-        private System.Windows.Forms.PictureBox badge4_box;
-        private System.Windows.Forms.PictureBox badge5_box;
         private System.Windows.Forms.Label Level_lb;
         public System.Windows.Forms.Label name_lb;
         private System.Windows.Forms.Button topics_btn;
         public System.Windows.Forms.Label level;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.PictureBox pictureBox5;
     }
 }

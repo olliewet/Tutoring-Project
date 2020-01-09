@@ -302,12 +302,19 @@ namespace Tutoring_Project
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 this.Hide();
+                currentlevel = File.ReadAllText("levelfile.txt");
                 UserProfile UserProfile1 = new UserProfile();
                 UserProfile1.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 UserProfile1.pictureBox1.Tag = "user1";
                 UserProfile1.name_lb.Text =  "user1";
-                UserProfile1.level.Text = File.ReadAllText("levelfile.txt");
+                UserProfile1.level.Text = currentlevel;
+                
+                int x = Int32.Parse(currentlevel);
 
+                if (x == 3)
+                {
+                    UserProfile1.pictureBox2.Image = Properties.Resources.user_male_white_red_brown;
+                }
                 UserProfile1.ShowDialog();
 
                 this.Close();
