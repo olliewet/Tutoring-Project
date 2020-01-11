@@ -10,12 +10,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tutoring_Project.Properties;
 
+
 namespace Tutoring_Project
 {
     public partial class Topics : Form
     {
         
         string currentlevel;
+        introduction T = new introduction();
+        Question_Forms.simpledata S = new Question_Forms.simpledata();
 
         public Topics()
         {
@@ -34,6 +37,17 @@ namespace Tutoring_Project
             {
                 Application.Exit();
             }
+        }
+
+        private void ChangeTab(int tab)
+        {
+            T.tabControl1.SelectTab(tab);
+            T.ShowDialog();
+        }
+        private void ChangeTabSimple(int tab)
+        {
+            S.tabControl1.SelectTab(tab);
+            S.ShowDialog();
         }
 
         private void Topics_Load(object sender, EventArgs e)
@@ -85,8 +99,7 @@ namespace Tutoring_Project
                 //Hides Current Form 
                 this.Hide();
 
-                //Creates new instance of introduction form 
-                introduction T = new introduction();
+               
 
                 //The picture box of current instance is set to image of user 
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
@@ -98,31 +111,25 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                if (x == 0)
-                {                       
-                    T.tabControl1.SelectTab(0);
-                    T.ShowDialog();
-                } 
-                else if ( x == 1)
+                switch (x)
                 {
-                    T.tabControl1.SelectTab(2);
-                    T.ShowDialog();
+                    case 0:
+                        ChangeTab(0);
+                        break;
+                    case 1:
+                        ChangeTab(2);
+                        break;
+                    case 2:
+                        ChangeTab(4);
+                        break;
+                    case 3:
+                        ChangeTab(6);
+                        break;
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
                 }
-                else if (x == 2)
-                {
-                    T.tabControl1.SelectTab(4);
-                    T.ShowDialog();
-                }
-                else if (x == 3)
-                {
-                    T.tabControl1.SelectTab(6);
-                    T.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Completed this section");
-                }
-                
+
                 this.Close();
             }
             //Statement used to check what user is logged in
@@ -131,8 +138,7 @@ namespace Tutoring_Project
                 //Hides Current Form 
                 this.Hide();
 
-                //Creates new instance of introduction form 
-                introduction T = new introduction();
+                
 
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
@@ -144,29 +150,23 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                if (x == 0)
-                {                   
-                    T.tabControl1.SelectTab(0);
-                    T.ShowDialog();
-                }
-                else if (x == 1)
+                switch (x)
                 {
-                    T.tabControl1.SelectTab(2);
-                    T.ShowDialog();
-                }
-                else if (x == 2)
-                {
-                    T.tabControl1.SelectTab(4);
-                    T.ShowDialog();
-                }
-                else if (x == 3)
-                {
-                    T.tabControl1.SelectTab(6);
-                    T.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Completed this section");
+                    case 0:
+                        ChangeTab(0);
+                        break;
+                    case 1:
+                        ChangeTab(2);
+                        break;
+                    case 2:
+                        ChangeTab(4);
+                        break;
+                    case 3:
+                        ChangeTab(6);
+                        break;
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
                 }
                 this.Close();
             }
@@ -176,8 +176,7 @@ namespace Tutoring_Project
                 //Hides Current Form 
                 this.Hide();
 
-                //Creates new instance of introduction form 
-                introduction T = new introduction();
+                
 
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
@@ -189,29 +188,23 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                if (x == 0)
-                {                   
-                    T.tabControl1.SelectTab(0);
-                    T.ShowDialog();
-                }
-                else if (x == 1)
+                switch (x)
                 {
-                    T.tabControl1.SelectTab(2);
-                    T.ShowDialog();
-                }
-                else if (x == 2)
-                {
-                    T.tabControl1.SelectTab(4);
-                    T.ShowDialog();
-                }
-                else if (x == 3)
-                {
-                    T.tabControl1.SelectTab(6);
-                    T.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Completed this section");
+                    case 0:
+                        ChangeTab(0);
+                        break;
+                    case 1:
+                        ChangeTab(2);
+                        break;
+                    case 2:
+                        ChangeTab(4);
+                        break;
+                    case 3:
+                        ChangeTab(6);
+                        break;
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
                 }
                 this.Close();
             }
@@ -221,8 +214,8 @@ namespace Tutoring_Project
                 //Hides Current Form 
                 this.Hide();
 
-                //Creates new instance of introduction form 
-                introduction T = new introduction();
+                
+                
 
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
@@ -235,29 +228,23 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                if (x == 0)
-                {                   
-                    T.tabControl1.SelectTab(0);
-                    T.ShowDialog();
-                }
-                else if (x == 1)
+                switch (x)
                 {
-                    T.tabControl1.SelectTab(2);
-                    T.ShowDialog();
-                }
-                else if (x == 2)
-                {
-                    T.tabControl1.SelectTab(4);
-                    T.ShowDialog();
-                }
-                else if (x == 3)
-                {
-                    T.tabControl1.SelectTab(6);
-                    T.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Completed this section");
+                    case 0:
+                        ChangeTab(0);
+                        break;
+                    case 1:
+                        ChangeTab(2);
+                        break;
+                    case 2:
+                        ChangeTab(4);
+                        break;
+                    case 3:
+                        ChangeTab(6);
+                        break;
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
                 }
                 this.Close();
             }
@@ -292,6 +279,7 @@ namespace Tutoring_Project
             }
         }
 
+        #region User Page Button 
         /// <summary>
         /// Button to open the users profile, four if statements to see which user is logged in
         /// </summary>
@@ -313,7 +301,7 @@ namespace Tutoring_Project
 
                 if (x == 3)
                 {
-                    UserProfile1.pictureBox2.Image = Properties.Resources.user_male_white_red_brown;
+                     UserProfile1.pictureBox2.Image = Properties.Resources.medal;                  
                 }
                 UserProfile1.ShowDialog();
 
@@ -354,6 +342,8 @@ namespace Tutoring_Project
             }
         }
 
+        #endregion
+
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             
@@ -361,29 +351,162 @@ namespace Tutoring_Project
 
         private void Sdp_btn_Click(object sender, EventArgs e)
         {
-            //If statement to check if the forms picture box contains a certain image 
             if ((string)this.pictureBox1.Tag == "user1")
             {
+                //Hides Current Form 
                 this.Hide();
-                //Add Code to Open up The form for this button and load the data for this user 
+
+                //Creates new instance of introduction form 
+                
+                
+
+                //The picture box of current instance is set to image of user 
+                S.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                S.pictureBox1.Tag = "user1";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 3:
+                        ChangeTabSimple(0);
+                        break;
+                    case 4:
+                        ChangeTabSimple(2);
+                        break;
+                    case 5:
+                        ChangeTabSimple(4);
+                        break;
+                    case 6:
+                        ChangeTabSimple(6);
+                        break;
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
+                }
+
                 this.Close();
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
+                //Hides Current Form 
                 this.Hide();
-                //Add Code to Open up The form for this button and load the data for this user 
+
+                //Creates new instance of introduction form 
+               
+
+                //The picture box of current instance is set to image of current user 
+                S.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                S.pictureBox1.Tag = "user2";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user2level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 3:
+                        ChangeTabSimple(0);
+                        break;
+                    case 4:
+                        ChangeTabSimple(2);
+                        break;
+                    case 5:
+                        ChangeTabSimple(4);
+                        break;
+                    case 6:
+                        ChangeTabSimple(6);
+                        break;
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
+                }
                 this.Close();
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
             {
+                //Hides Current Form 
                 this.Hide();
-                //Add Code to Open up The form for this button and load the data for this user 
+
+                //Creates new instance of introduction form 
+                
+
+                //The picture box of current instance is set to image of current user 
+                S.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                S.pictureBox1.Tag = "user3";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user3level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 3:
+                        ChangeTabSimple(0);
+                        break;
+                    case 4:
+                        ChangeTabSimple(2);
+                        break;
+                    case 5:
+                        ChangeTabSimple(4);
+                        break;
+                    case 6:
+                        ChangeTabSimple(6);
+                        break;
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
+                }
                 this.Close();
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
+                //Hides Current Form 
                 this.Hide();
-                //Add Code to Open up The form for this button and load the data for this user 
+
+                //Creates new instance of introduction form 
+                
+
+                //The picture box of current instance is set to image of current user 
+                S.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                S.pictureBox1.Tag = "user4";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user4level.txt");
+                int x = Int32.Parse(currentlevel);
+
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 3:
+                        ChangeTabSimple(0);
+                        break;
+                    case 4:
+                        ChangeTabSimple(2);
+                        break;
+                    case 5:
+                        ChangeTabSimple(4);
+                        break;
+                    case 6:
+                        ChangeTabSimple(6);
+                        break;
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
+                }
                 this.Close();
             }
         }

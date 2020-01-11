@@ -78,6 +78,12 @@
     <Compile Include="Main Forms\References.Designer.cs">
       <DependentUpon>References.cs</DependentUpon>
     </Compile>
+    <Compile Include="Question Forms\simpledata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question Forms\simpledata.Designer.cs">
+      <DependentUpon>simpledata.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="Main Forms\Userpage.cs">
       <SubType>Form</SubType>
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main Forms\UserProfile.resx">
       <DependentUpon>UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question Forms\simpledata.resx">
+      <DependentUpon>simpledata.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -185,6 +194,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\code example.png" />
+    <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />
     <None Include="Resources\school_director_filled_50px.png" />
