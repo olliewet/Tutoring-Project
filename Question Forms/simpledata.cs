@@ -42,5 +42,15 @@ namespace Tutoring_Project.Question_Forms
         {
             tabControl1.SelectTab(1);
         }
+
+        private void Back_btn2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
     }
 }

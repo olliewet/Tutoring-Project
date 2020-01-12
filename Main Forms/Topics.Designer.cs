@@ -56,7 +56,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.user_btn);
             this.panel1.Controls.Add(this.home_btn);
@@ -78,11 +78,12 @@
             // 
             // user_btn
             // 
-            this.user_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.user_btn.BackColor = System.Drawing.Color.White;
             this.user_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.user_btn.FlatAppearance.BorderSize = 0;
             this.user_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.user_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.user_btn.ForeColor = System.Drawing.Color.White;
+            this.user_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.user_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.user_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.user_btn.Location = new System.Drawing.Point(92, 6);
             this.user_btn.Name = "user_btn";
@@ -94,16 +95,17 @@
             // 
             // home_btn
             // 
-            this.home_btn.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.home_btn.BackColor = System.Drawing.Color.White;
             this.home_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.home_btn.FlatAppearance.BorderSize = 0;
             this.home_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.home_btn.ForeColor = System.Drawing.Color.White;
+            this.home_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.home_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.home_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
             this.home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.home_btn.Location = new System.Drawing.Point(580, -18);
+            this.home_btn.Location = new System.Drawing.Point(566, 6);
             this.home_btn.Name = "home_btn";
-            this.home_btn.Size = new System.Drawing.Size(129, 91);
+            this.home_btn.Size = new System.Drawing.Size(129, 51);
             this.home_btn.TabIndex = 7;
             this.home_btn.Text = "Home";
             this.home_btn.UseVisualStyleBackColor = false;
@@ -111,16 +113,17 @@
             // 
             // exit
             // 
-            this.exit.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.BackColor = System.Drawing.Color.White;
             this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatAppearance.BorderSize = 0;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exit.ForeColor = System.Drawing.SystemColors.Window;
+            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
             this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(701, -18);
+            this.exit.Location = new System.Drawing.Point(701, 6);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(116, 91);
+            this.exit.Size = new System.Drawing.Size(116, 51);
             this.exit.TabIndex = 5;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;

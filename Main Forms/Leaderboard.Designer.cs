@@ -58,9 +58,9 @@
             this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
             this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(719, 1);
+            this.exit.Location = new System.Drawing.Point(701, 1);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(114, 40);
+            this.exit.Size = new System.Drawing.Size(132, 40);
             this.exit.TabIndex = 7;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
@@ -72,13 +72,13 @@
             this.topics_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
             this.topics_btn.FlatAppearance.BorderSize = 0;
             this.topics_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.topics_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.topics_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
             this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.topics_btn.Location = new System.Drawing.Point(3, 3);
             this.topics_btn.Name = "topics_btn";
-            this.topics_btn.Size = new System.Drawing.Size(135, 38);
+            this.topics_btn.Size = new System.Drawing.Size(154, 38);
             this.topics_btn.TabIndex = 17;
             this.topics_btn.Text = "User Page";
             this.topics_btn.UseVisualStyleBackColor = false;

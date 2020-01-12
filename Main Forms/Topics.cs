@@ -19,6 +19,7 @@ namespace Tutoring_Project
         string currentlevel;
         introduction T = new introduction();
         Question_Forms.simpledata S = new Question_Forms.simpledata();
+        Topics New = new Topics();
 
         public Topics()
         {
@@ -242,8 +243,12 @@ namespace Tutoring_Project
                     case 3:
                         ChangeTab(6);
                         break;
-                    default:
+                    case 4:
                         MessageBox.Show("Completed this section");
+                        // Closes Application Fix
+                        break;
+                    default:
+                        
                         break;
                 }
                 this.Close();
@@ -372,16 +377,16 @@ namespace Tutoring_Project
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
                 {
-                    case 3:
+                    case 4:
                         ChangeTabSimple(0);
                         break;
-                    case 4:
+                    case 5:
                         ChangeTabSimple(2);
                         break;
-                    case 5:
+                    case 6:
                         ChangeTabSimple(4);
                         break;
-                    case 6:
+                    case 7:
                         ChangeTabSimple(6);
                         break;
                     default:
@@ -412,16 +417,16 @@ namespace Tutoring_Project
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
                 {
-                    case 3:
+                    case 4:
                         ChangeTabSimple(0);
                         break;
-                    case 4:
+                    case 5:
                         ChangeTabSimple(2);
                         break;
-                    case 5:
+                    case 6:
                         ChangeTabSimple(4);
                         break;
-                    case 6:
+                    case 7:
                         ChangeTabSimple(6);
                         break;
                     default:
@@ -451,16 +456,16 @@ namespace Tutoring_Project
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
                 {
-                    case 3:
+                    case 4:
                         ChangeTabSimple(0);
                         break;
-                    case 4:
+                    case 5:
                         ChangeTabSimple(2);
                         break;
-                    case 5:
+                    case 6:
                         ChangeTabSimple(4);
                         break;
-                    case 6:
+                    case 7:
                         ChangeTabSimple(6);
                         break;
                     default:
@@ -491,16 +496,16 @@ namespace Tutoring_Project
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
                 {
-                    case 3:
+                    case 4:
                         ChangeTabSimple(0);
                         break;
-                    case 4:
+                    case 5:
                         ChangeTabSimple(2);
                         break;
-                    case 5:
+                    case 6:
                         ChangeTabSimple(4);
                         break;
-                    case 6:
+                    case 7:
                         ChangeTabSimple(6);
                         break;
                     default:

@@ -194,6 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\Using System.png" />
     <None Include="Resources\code example.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
