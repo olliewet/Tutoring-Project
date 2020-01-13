@@ -52,7 +52,7 @@ namespace Tutoring_Project
         private void Button1_Click(object sender, EventArgs e)
         {
             
-            if (radioButton3.Checked)
+            if (btn_3.Checked)
             {
                 tabControl1.SelectTab(2);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -244,6 +244,7 @@ namespace Tutoring_Project
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
+            // Causing an issue 
             Topics T = new Topics();
             if ((string)this.pictureBox1.Tag == "user1")
             {
@@ -251,6 +252,12 @@ namespace Tutoring_Project
                 text = text.Replace("3", "4");
 
                 File.WriteAllText("levelfile.txt", text);
+
+                this.Hide();
+                
+                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                T.pictureBox1.Tag = "user1";
+               
             }
             else if ((string)this.pictureBox1.Tag == "user2")
             {
@@ -273,7 +280,6 @@ namespace Tutoring_Project
 
                 File.WriteAllText("user4level.txt", text);
             }
-
             T.ShowDialog();
         }
     }

@@ -40,10 +40,12 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.con_btn1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,7 +98,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(345, 68);
+            this.label1.Location = new System.Drawing.Point(352, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 24);
             this.label1.TabIndex = 2;
@@ -174,14 +176,22 @@
             this.tabControl1.Size = new System.Drawing.Size(821, 368);
             this.tabControl1.TabIndex = 4;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(-18, 80);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(861, 51);
+            this.panel2.TabIndex = 5;
+            // 
             // References
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "References";
@@ -190,8 +200,9 @@
             this.tabPage5.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -208,5 +219,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button con_btn1;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

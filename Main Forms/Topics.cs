@@ -19,7 +19,7 @@ namespace Tutoring_Project
         string currentlevel;
         introduction T = new introduction();
         Question_Forms.simpledata S = new Question_Forms.simpledata();
-        Topics New = new Topics();
+        
 
         public Topics()
         {
@@ -44,6 +44,7 @@ namespace Tutoring_Project
         {
             T.tabControl1.SelectTab(tab);
             T.ShowDialog();
+            this.Close();
         }
         private void ChangeTabSimple(int tab)
         {
@@ -99,9 +100,7 @@ namespace Tutoring_Project
             {
                 //Hides Current Form 
                 this.Hide();
-
-               
-
+             
                 //The picture box of current instance is set to image of user 
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 T.pictureBox1.Tag = "user1";
@@ -112,35 +111,37 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 0:
-                        ChangeTab(0);
-                        break;
-                    case 1:
-                        ChangeTab(2);
-                        break;
-                    case 2:
-                        ChangeTab(4);
-                        break;
-                    case 3:
-                        ChangeTab(6);
-                        break;
-                    default:
-                        MessageBox.Show("Completed this section");
-                        break;
-                }
-
+               
+                    switch (x)
+                    {
+                        case 0:
+                            ChangeTab(0);
+                            break;
+                        case 1:
+                            ChangeTab(2);
+                            break;
+                        case 2:
+                            ChangeTab(4);
+                            break;
+                        case 3:
+                            ChangeTab(6);
+                            break;
+                        default:
+                            MessageBox.Show("Completed this section");
+                            break;
+                    }
                 this.Close();
+
+
+
+
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
                 //Hides Current Form 
                 this.Hide();
-
-                
-
+              
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 T.pictureBox1.Tag = "user2";
@@ -177,8 +178,6 @@ namespace Tutoring_Project
                 //Hides Current Form 
                 this.Hide();
 
-                
-
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
                 T.pictureBox1.Tag = "user3";
@@ -214,9 +213,6 @@ namespace Tutoring_Project
             {
                 //Hides Current Form 
                 this.Hide();
-
-                
-                
 
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;

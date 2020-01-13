@@ -117,10 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox4.Text" xml:space="preserve">
-    <value>Well done on completing the first section of the tutoring program, this section was designed to be easy and to give you an insight into the programming language C#. Simple data is now unlocked, this topic is a lot harder and has different types of questions, not just the standard multiple-choice questions shown in the tutorial. During the tutorial you may have realised, you unlocked a badge! to see this badge they are located on the user profile. </value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="intro_tb.Text" xml:space="preserve">
     <value>We are going to learn a language called C# (pronounced C sharp). If you ever make the mistake of calling the language C hash you will show your ignorance straight away! C# is a very flexible and powerful programming language with an interesting history. It was developed by Microsoft Corporation for a variety of reasons, some technical, some political and others marketing. C# bears a strong resemblance to the C++ and Java programming languages, having borrowed (or improved) features provided by these languages. The origins of both Java and C++ can be traced back to a language called C, which is a highly dangerous and entertaining language which was invented in the early 1970s. C is famous as the language the UNIX operating system was written in, and was specially designed for this.</value>
   </data>
   <data name="richTextBox2.Text" xml:space="preserve">
@@ -131,5 +128,8 @@
 A compiler is a very large program which knows how to decide if your program is legal. The first thing it does is check for errors in the way that you have used the language itself. Only if no errors are found by the compiler will it produce any output. The compiler will also flag up warnings which occur when it notices that you have done something which is not technically illegal, but may indicate that you have made a mistake somewhere. An example of a warning situation is where you create something but don't use it for anything. The compiler would tell you about this, in case you had forgotten to add a bit of your program.
 Microsoft has made a tool called Visual Studio, which is a great place to write programs. It comprises the compiler, along with an integrated editor, and debugger. It is provided in a number of versions with different feature sets. There is a free version, called Visual Studio Express edition, which is a great place to get started. Another free resource is the Microsoft .NET Framework. This provides a bunch of command line tools, i.e. things that you type to the command prompt, which can be used to compile and run C# programs.
 </value>
+  </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>Well done on completing the first section of the tutoring program, this section was designed to be easy and to give you an insight into the programming language C#. Simple data is now unlocked, this topic is a lot harder and has different types of questions, not just the standard multiple-choice questions shown in the tutorial. During the tutorial you may have realised, you unlocked a badge! to see this badge they are located on the user profile. </value>
   </data>
 </root>

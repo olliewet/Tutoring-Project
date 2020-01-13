@@ -86,5 +86,10 @@ namespace Tutoring_Project
         {
 
         }
+
+        private void Name_lb_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

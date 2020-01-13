@@ -31,19 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(introduction));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.level = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.topics_btn = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.intro_lb = new System.Windows.Forms.Label();
+            this.intro_tb = new System.Windows.Forms.RichTextBox();
             this.con_btn1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btn_4 = new System.Windows.Forms.RadioButton();
+            this.btn_3 = new System.Windows.Forms.RadioButton();
+            this.btn_2 = new System.Windows.Forms.RadioButton();
+            this.btn_1 = new System.Windows.Forms.RadioButton();
+            this.question1_lb = new System.Windows.Forms.Label();
             this.back_btn2 = new System.Windows.Forms.Button();
             this.con_btn2 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -73,13 +76,11 @@
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.topics_btn = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -88,7 +89,6 @@
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -113,6 +113,14 @@
             this.panel3.Size = new System.Drawing.Size(817, 18);
             this.panel3.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 47);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // level
             // 
             this.level.AutoSize = true;
@@ -127,6 +135,42 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(799, 23);
             this.panel2.TabIndex = 4;
+            // 
+            // topics_btn
+            // 
+            this.topics_btn.BackColor = System.Drawing.Color.White;
+            this.topics_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.topics_btn.FlatAppearance.BorderSize = 0;
+            this.topics_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.topics_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
+            this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.topics_btn.Location = new System.Drawing.Point(525, 1);
+            this.topics_btn.Name = "topics_btn";
+            this.topics_btn.Size = new System.Drawing.Size(156, 54);
+            this.topics_btn.TabIndex = 15;
+            this.topics_btn.Text = "User Page";
+            this.topics_btn.UseVisualStyleBackColor = false;
+            this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
+            // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.White;
+            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
+            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exit.Location = new System.Drawing.Point(687, 0);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(116, 53);
+            this.exit.TabIndex = 6;
+            this.exit.Text = "Exit";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // tabControl1
             // 
@@ -145,8 +189,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.richTextBox1);
+            this.tabPage1.Controls.Add(this.intro_lb);
+            this.tabPage1.Controls.Add(this.intro_tb);
             this.tabPage1.Controls.Add(this.con_btn1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -157,28 +201,28 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
             // 
-            // label1
+            // intro_lb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label1.Location = new System.Drawing.Point(6, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Introduction To C#";
+            this.intro_lb.AutoSize = true;
+            this.intro_lb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.intro_lb.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.intro_lb.Location = new System.Drawing.Point(6, 20);
+            this.intro_lb.Name = "intro_lb";
+            this.intro_lb.Size = new System.Drawing.Size(171, 25);
+            this.intro_lb.TabIndex = 3;
+            this.intro_lb.Text = "Introduction To C#";
             // 
-            // richTextBox1
+            // intro_tb
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(11, 48);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(767, 160);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.intro_tb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.intro_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.intro_tb.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.intro_tb.Location = new System.Drawing.Point(11, 48);
+            this.intro_tb.Name = "intro_tb";
+            this.intro_tb.ReadOnly = true;
+            this.intro_tb.Size = new System.Drawing.Size(783, 160);
+            this.intro_tb.TabIndex = 2;
+            this.intro_tb.Text = resources.GetString("intro_tb.Text");
             // 
             // con_btn1
             // 
@@ -193,11 +237,11 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.radioButton4);
-            this.tabPage2.Controls.Add(this.radioButton3);
-            this.tabPage2.Controls.Add(this.radioButton2);
-            this.tabPage2.Controls.Add(this.radioButton1);
-            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.btn_4);
+            this.tabPage2.Controls.Add(this.btn_3);
+            this.tabPage2.Controls.Add(this.btn_2);
+            this.tabPage2.Controls.Add(this.btn_1);
+            this.tabPage2.Controls.Add(this.question1_lb);
             this.tabPage2.Controls.Add(this.back_btn2);
             this.tabPage2.Controls.Add(this.con_btn2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -208,58 +252,58 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // btn_4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(62, 155);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(51, 17);
-            this.radioButton4.TabIndex = 11;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "JAVA";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.btn_4.AutoSize = true;
+            this.btn_4.Location = new System.Drawing.Point(62, 155);
+            this.btn_4.Name = "btn_4";
+            this.btn_4.Size = new System.Drawing.Size(51, 17);
+            this.btn_4.TabIndex = 11;
+            this.btn_4.TabStop = true;
+            this.btn_4.Text = "JAVA";
+            this.btn_4.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // btn_3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(62, 132);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(39, 17);
-            this.radioButton3.TabIndex = 10;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "C#";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.btn_3.AutoSize = true;
+            this.btn_3.Location = new System.Drawing.Point(62, 132);
+            this.btn_3.Name = "btn_3";
+            this.btn_3.Size = new System.Drawing.Size(39, 17);
+            this.btn_3.TabIndex = 10;
+            this.btn_3.TabStop = true;
+            this.btn_3.Text = "C#";
+            this.btn_3.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // btn_2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(62, 109);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(32, 17);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "C";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.btn_2.AutoSize = true;
+            this.btn_2.Location = new System.Drawing.Point(62, 109);
+            this.btn_2.Name = "btn_2";
+            this.btn_2.Size = new System.Drawing.Size(32, 17);
+            this.btn_2.TabIndex = 9;
+            this.btn_2.TabStop = true;
+            this.btn_2.Text = "C";
+            this.btn_2.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // btn_1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(62, 92);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(44, 17);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "C++";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.btn_1.AutoSize = true;
+            this.btn_1.Location = new System.Drawing.Point(62, 92);
+            this.btn_1.Name = "btn_1";
+            this.btn_1.Size = new System.Drawing.Size(44, 17);
+            this.btn_1.TabIndex = 8;
+            this.btn_1.TabStop = true;
+            this.btn_1.Text = "C++";
+            this.btn_1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // question1_lb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "What Language is this course going to cover ";
+            this.question1_lb.AutoSize = true;
+            this.question1_lb.Location = new System.Drawing.Point(59, 56);
+            this.question1_lb.Name = "question1_lb";
+            this.question1_lb.Size = new System.Drawing.Size(222, 13);
+            this.question1_lb.TabIndex = 3;
+            this.question1_lb.Text = "What Language is this course going to cover ";
             // 
             // back_btn2
             // 
@@ -606,60 +650,16 @@
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // button3
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 47);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
-            // topics_btn
-            // 
-            this.topics_btn.BackColor = System.Drawing.Color.White;
-            this.topics_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.topics_btn.FlatAppearance.BorderSize = 0;
-            this.topics_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.topics_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
-            this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.topics_btn.Location = new System.Drawing.Point(525, 1);
-            this.topics_btn.Name = "topics_btn";
-            this.topics_btn.Size = new System.Drawing.Size(156, 54);
-            this.topics_btn.TabIndex = 15;
-            this.topics_btn.Text = "User Page";
-            this.topics_btn.UseVisualStyleBackColor = false;
-            this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
-            // 
-            // exit
-            // 
-            this.exit.BackColor = System.Drawing.Color.White;
-            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.FlatAppearance.BorderSize = 0;
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
-            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(687, 0);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(116, 53);
-            this.exit.TabIndex = 6;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = false;
-            this.exit.Click += new System.EventHandler(this.Exit_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label7.Location = new System.Drawing.Point(18, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(318, 25);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Tutorial For The C# Tutoring System";
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(23, 228);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 23);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Finish Section!";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click_1);
             // 
             // richTextBox4
             // 
@@ -673,16 +673,16 @@
             this.richTextBox4.TabIndex = 5;
             this.richTextBox4.Text = resources.GetString("richTextBox4.Text");
             // 
-            // button3
+            // label7
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(23, 228);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Finish Section!";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click_1);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label7.Location = new System.Drawing.Point(18, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(318, 25);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Tutorial For The C# Tutoring System";
             // 
             // introduction
             // 
@@ -697,6 +697,7 @@
             this.Text = "introduction";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -712,7 +713,6 @@
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -735,14 +735,14 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox intro_tb;
+        private System.Windows.Forms.Label intro_lb;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton btn_4;
+        private System.Windows.Forms.RadioButton btn_3;
+        private System.Windows.Forms.RadioButton btn_2;
+        private System.Windows.Forms.RadioButton btn_1;
+        private System.Windows.Forms.Label question1_lb;
         private System.Windows.Forms.Button back_btn2;
         private System.Windows.Forms.Button con_btn2;
         private System.Windows.Forms.RichTextBox richTextBox2;

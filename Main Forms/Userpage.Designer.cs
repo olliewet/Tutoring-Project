@@ -161,6 +161,7 @@
             this.name_lb.Size = new System.Drawing.Size(63, 25);
             this.name_lb.TabIndex = 7;
             this.name_lb.Text = "User 1";
+            this.name_lb.Click += new System.EventHandler(this.Name_lb_Click);
             // 
             // label1
             // 
