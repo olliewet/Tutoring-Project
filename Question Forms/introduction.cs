@@ -244,42 +244,41 @@ namespace Tutoring_Project
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
-            // Causing an issue 
+          
             Topics T = new Topics();
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 string text = File.ReadAllText("levelfile.txt");
                 text = text.Replace("3", "4");
-
-                File.WriteAllText("levelfile.txt", text);
-
-                this.Hide();
-                
+                File.WriteAllText("levelfile.txt", text);                         
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
-                T.pictureBox1.Tag = "user1";
-               
+                T.pictureBox1.Tag = "user1";             
             }
             else if ((string)this.pictureBox1.Tag == "user2")
             {
                 string text = File.ReadAllText("user2level.txt");
                 text = text.Replace("3", "4");
-
                 File.WriteAllText("user2level.txt", text);
+                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                T.pictureBox1.Tag = "user2";
             }
             else if ((string)this.pictureBox1.Tag == "user3")
             {
                 string text = File.ReadAllText("user3level.txt");
                 text = text.Replace("3", "4");
-
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";
                 File.WriteAllText("user3level.txt", text);
             }
             else if ((string)this.pictureBox1.Tag == "user4")
             {
                 string text = File.ReadAllText("user4level.txt");
                 text = text.Replace("3", "4");
-
                 File.WriteAllText("user4level.txt", text);
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                T.pictureBox1.Tag = "user4";
             }
+            this.Close();
             T.ShowDialog();
         }
     }

@@ -196,6 +196,8 @@
     <Content Include="levelfile.txt" />
     <None Include="Resources\Using System.png" />
     <None Include="Resources\code example.png" />
+    <None Include="Resources\code example1.png" />
+    <None Include="Resources\code example no text.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />

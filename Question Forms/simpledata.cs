@@ -93,5 +93,109 @@ namespace Tutoring_Project.Question_Forms
                 MessageBox.Show("Answer is incorrect");
             }
         }
+
+        private void Conquestion2_btn_Click(object sender, EventArgs e)
+        {
+            if (radioButton7.Checked)
+            {
+                tabControl1.SelectTab(4);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    string text = File.ReadAllText("levelfile.txt");
+                    text = text.Replace("5", "6");
+
+                    File.WriteAllText("levelfile.txt", text);
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    string text = File.ReadAllText("user2level.txt");
+                    text = text.Replace("5", "6");
+
+                    File.WriteAllText("user2level.txt", text);
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    string text = File.ReadAllText("user3level.txt");
+                    text = text.Replace("5", "6");
+
+                    File.WriteAllText("user3level.txt", text);
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    string text = File.ReadAllText("user4level.txt");
+                    text = text.Replace("5", "6");
+
+                    File.WriteAllText("user4level.txt", text);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+           
+
+
+            if (textBox1.Text.Equals("static") | (textBox1.Text.Equals("Static") && textBox2.Text.Equals("void") | textBox2.Text.Equals("Void") && textBox3.Text.Equals("Main()") | textBox3.Text.Equals("main()")))
+            {
+                tabControl1.SelectTab(6);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    string text = File.ReadAllText("levelfile.txt");
+                    text = text.Replace("6", "7");
+
+                    File.WriteAllText("levelfile.txt", text);
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    string text = File.ReadAllText("user2level.txt");
+                    text = text.Replace("6", "7");
+
+                    File.WriteAllText("user2level.txt", text);
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    string text = File.ReadAllText("user3level.txt");
+                    text = text.Replace("6", "7");
+
+                    File.WriteAllText("user3level.txt", text);
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    string text = File.ReadAllText("user4level.txt");
+                    text = text.Replace("6", "7");
+
+                    File.WriteAllText("user4level.txt", text);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(5);
+        }
+
+        private void Label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -44,10 +44,10 @@
             this.con_btn1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.back_btn2 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -70,11 +70,10 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -89,6 +88,7 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -246,10 +246,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.pictureBox3);
             this.tabPage2.Controls.Add(this.richTextBox4);
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.back_btn2);
+            this.tabPage2.Controls.Add(this.pictureBox3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -268,16 +268,6 @@
             this.label2.Size = new System.Drawing.Size(132, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Using System;";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Tutoring_Project.Properties.Resources.Using_System;
-            this.pictureBox3.Location = new System.Drawing.Point(529, 48);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(252, 251);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
             // 
             // richTextBox4
             // 
@@ -312,6 +302,16 @@
             this.back_btn2.Text = "Previous";
             this.back_btn2.UseVisualStyleBackColor = true;
             this.back_btn2.Click += new System.EventHandler(this.Back_btn2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Tutoring_Project.Properties.Resources.Using_System;
+            this.pictureBox3.Location = new System.Drawing.Point(529, 48);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(252, 251);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
             // 
             // tabPage3
             // 
@@ -494,6 +494,7 @@
             this.conquestion2_btn.TabIndex = 1;
             this.conquestion2_btn.Text = "Continue";
             this.conquestion2_btn.UseVisualStyleBackColor = true;
+            this.conquestion2_btn.Click += new System.EventHandler(this.Conquestion2_btn_Click);
             // 
             // tabPage5
             // 
@@ -514,21 +515,22 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label5.Location = new System.Drawing.Point(6, 19);
+            this.label5.Location = new System.Drawing.Point(0, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(234, 25);
+            this.label5.Size = new System.Drawing.Size(151, 25);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Introduction To Compilers";
+            this.label5.Text = "Static Void Main";
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // richTextBox3
             // 
             this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox3.Location = new System.Drawing.Point(10, 47);
+            this.richTextBox3.Location = new System.Drawing.Point(5, 31);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.ReadOnly = true;
-            this.richTextBox3.Size = new System.Drawing.Size(784, 282);
+            this.richTextBox3.Size = new System.Drawing.Size(784, 286);
             this.richTextBox3.TabIndex = 4;
             this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
             // 
@@ -543,20 +545,20 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(719, 335);
+            this.button5.Location = new System.Drawing.Point(706, 335);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 1;
             this.button5.Text = "Continue";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.radioButton9);
-            this.tabPage6.Controls.Add(this.radioButton10);
-            this.tabPage6.Controls.Add(this.radioButton11);
-            this.tabPage6.Controls.Add(this.radioButton12);
-            this.tabPage6.Controls.Add(this.label6);
+            this.tabPage6.Controls.Add(this.textBox3);
+            this.tabPage6.Controls.Add(this.textBox2);
+            this.tabPage6.Controls.Add(this.textBox1);
+            this.tabPage6.Controls.Add(this.pictureBox4);
             this.tabPage6.Controls.Add(this.button2);
             this.tabPage6.Controls.Add(this.button1);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
@@ -567,64 +569,48 @@
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // textBox3
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(81, 192);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(310, 17);
-            this.radioButton9.TabIndex = 23;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Objects are used to make the code longer and more precise ";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.textBox3.BackColor = System.Drawing.Color.SlateGray;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Location = new System.Drawing.Point(205, 61);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(59, 13);
+            this.textBox3.TabIndex = 22;
             // 
-            // radioButton10
+            // textBox2
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(81, 169);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(249, 17);
-            this.radioButton10.TabIndex = 22;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "The use of functions make code easier to write ";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.textBox2.BackColor = System.Drawing.Color.SlateGray;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(135, 61);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(64, 13);
+            this.textBox2.TabIndex = 21;
             // 
-            // radioButton11
+            // textBox1
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(81, 146);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(468, 17);
-            this.radioButton11.TabIndex = 21;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Breaks Code down into sensible size chunks, which allows for much easier design a" +
-    "nd testing ";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.textBox1.BackColor = System.Drawing.Color.SlateGray;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(70, 61);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(59, 13);
+            this.textBox1.TabIndex = 20;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // radioButton12
+            // pictureBox4
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(81, 123);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(421, 17);
-            this.radioButton12.TabIndex = 20;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Allows for larger scale programs to be divided into smaller programs to make it e" +
-    "asier ";
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(78, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(276, 13);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "How does Object Oriented Programming Benefit Projects ";
+            this.pictureBox4.Image = global::Tutoring_Project.Properties.Resources.code_example_no_text;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 15);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(650, 314);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(52, 335);
+            this.button2.Location = new System.Drawing.Point(12, 335);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 18;
@@ -639,6 +625,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Continue";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // tabPage7
             // 
@@ -679,6 +666,7 @@
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -720,11 +708,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.Button button3;
@@ -734,5 +717,9 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

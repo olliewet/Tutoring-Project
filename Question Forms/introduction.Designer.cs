@@ -76,7 +76,7 @@
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
+            this.finish_btn = new System.Windows.Forms.Button();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -639,7 +639,7 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.button3);
+            this.tabPage7.Controls.Add(this.finish_btn);
             this.tabPage7.Controls.Add(this.richTextBox4);
             this.tabPage7.Controls.Add(this.label7);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
@@ -650,16 +650,16 @@
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // finish_btn
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(23, 228);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Finish Section!";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click_1);
+            this.finish_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finish_btn.Location = new System.Drawing.Point(23, 228);
+            this.finish_btn.Name = "finish_btn";
+            this.finish_btn.Size = new System.Drawing.Size(115, 23);
+            this.finish_btn.TabIndex = 6;
+            this.finish_btn.Text = "Finish Section!";
+            this.finish_btn.UseVisualStyleBackColor = true;
+            this.finish_btn.Click += new System.EventHandler(this.Button3_Click_1);
             // 
             // richTextBox4
             // 
@@ -766,7 +766,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage tabPage7;
         public System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button finish_btn;
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.Label label7;
     }

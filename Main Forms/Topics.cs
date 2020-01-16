@@ -377,13 +377,13 @@ namespace Tutoring_Project
                         ChangeTabSimple(0);
                         break;
                     case 5:
-                        ChangeTabSimple(2);
+                        ChangeTabSimple(3);
                         break;
                     case 6:
-                        ChangeTabSimple(4);
+                        ChangeTabSimple(6);
                         break;
                     case 7:
-                        ChangeTabSimple(6);
+                        ChangeTabSimple(7);
                         break;
                     default:
                         MessageBox.Show("Completed this section");
