@@ -244,7 +244,7 @@ namespace Tutoring_Project
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
-          
+            this.Hide();
             Topics T = new Topics();
             if ((string)this.pictureBox1.Tag == "user1")
             {

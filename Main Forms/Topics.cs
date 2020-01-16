@@ -42,14 +42,17 @@ namespace Tutoring_Project
 
         private void ChangeTab(int tab)
         {
+            
             T.tabControl1.SelectTab(tab);
             T.ShowDialog();
             this.Close();
+
         }
         private void ChangeTabSimple(int tab)
         {
             S.tabControl1.SelectTab(tab);
             S.ShowDialog();
+            this.Close();
         }
 
         private void Topics_Load(object sender, EventArgs e)
@@ -98,8 +101,8 @@ namespace Tutoring_Project
             //Statement used to check what user is logged in
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                //Hides Current Form 
-                this.Hide();
+                
+                
              
                 //The picture box of current instance is set to image of user 
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
@@ -115,32 +118,34 @@ namespace Tutoring_Project
                     switch (x)
                     {
                         case 0:
-                            ChangeTab(0);
-                            break;
+                        this.Hide();
+                        ChangeTab(0);                       
+                        break;
                         case 1:
-                            ChangeTab(2);
-                            break;
+                        this.Hide();
+                        ChangeTab(2);                      
+                        break;
                         case 2:
-                            ChangeTab(4);
-                            break;
+                        this.Hide();
+                        ChangeTab(4);                    
+                        break;
                         case 3:
-                            ChangeTab(6);
-                            break;
+                        this.Hide();
+                        ChangeTab(6);
+                       
+                        break;
                         default:
                             MessageBox.Show("Completed this section");
                             break;
                     }
-                this.Close();
-
-
+                
 
 
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
-                //Hides Current Form 
-                this.Hide();
+                
               
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
@@ -155,28 +160,30 @@ namespace Tutoring_Project
                 switch (x)
                 {
                     case 0:
+                        this.Hide();
                         ChangeTab(0);
                         break;
                     case 1:
+                        this.Hide();
                         ChangeTab(2);
                         break;
                     case 2:
+                        this.Hide();
                         ChangeTab(4);
                         break;
                     case 3:
+                        this.Hide();
                         ChangeTab(6);
                         break;
                     default:
                         MessageBox.Show("Completed this section");
                         break;
-                }
-                this.Close();
+                }                
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-                //Hides Current Form 
-                this.Hide();
+                
 
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
@@ -191,29 +198,32 @@ namespace Tutoring_Project
                 switch (x)
                 {
                     case 0:
+                        this.Hide();
                         ChangeTab(0);
                         break;
                     case 1:
+                        this.Hide();
                         ChangeTab(2);
                         break;
                     case 2:
+                        this.Hide();
                         ChangeTab(4);
                         break;
                     case 3:
+                        this.Hide();
                         ChangeTab(6);
                         break;
                     default:
                         MessageBox.Show("Completed this section");
                         break;
                 }
-                this.Close();
+                
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
                 //Hides Current Form 
-                this.Hide();
-
+                
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 T.pictureBox1.Tag = "user4";
@@ -228,49 +238,67 @@ namespace Tutoring_Project
                 switch (x)
                 {
                     case 0:
+                        this.Hide();
                         ChangeTab(0);
                         break;
                     case 1:
+                        this.Hide();
                         ChangeTab(2);
                         break;
                     case 2:
+                        this.Hide();
                         ChangeTab(4);
                         break;
                     case 3:
+                        this.Hide();
                         ChangeTab(6);
                         break;
-                    case 4:
-                        MessageBox.Show("Completed this section");
-                        // Closes Application Fix
-                        break;
                     default:
-                        
+                        MessageBox.Show("Completed this section");
                         break;
                 }
-                this.Close();
+                
             }
         }
 
         private void Cp_btn_Click(object sender, EventArgs e)
         {
+            
             //If statement to check if the forms picture box contains a certain image 
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 this.Hide();
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+
+                if ( x > 10 )
+                {
+                    MessageBox.Show("Not Completed the Previous Section");
+                }
                 //Add Code to Open up The form for this button and load the data for this user 
-                this.Close();
+                
             }
             else if ((string)this.pictureBox1.Tag == "user2")
             {
                 this.Hide();
-                //Add Code to Open up The form for this button and load the data for this user 
-                this.Close();
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+
+                if (x > 10)
+                {
+                    MessageBox.Show("Not Completed the Previous Section");
+                }
             }
             else if ((string)this.pictureBox1.Tag == "user3")
             {
                 this.Hide();
-                //Add Code to Open up The form for this button and load the data for this user 
-                this.Close();
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+
+                if (x > 10)
+                {
+                    MessageBox.Show("Not Completed the Previous Section");
+                }
             }
             else if ((string)this.pictureBox1.Tag == "user4")
             {
@@ -355,7 +383,7 @@ namespace Tutoring_Project
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 //Hides Current Form 
-                this.Hide();
+                
 
                 //Creates new instance of introduction form 
                 
@@ -374,15 +402,19 @@ namespace Tutoring_Project
                 switch (x)
                 {
                     case 4:
+                        this.Hide();
                         ChangeTabSimple(0);
                         break;
                     case 5:
+                        this.Hide();
                         ChangeTabSimple(3);
                         break;
                     case 6:
+                        this.Hide();
                         ChangeTabSimple(6);
                         break;
                     case 7:
+                        this.Hide();
                         ChangeTabSimple(7);
                         break;
                     default:
@@ -395,8 +427,7 @@ namespace Tutoring_Project
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
-                //Hides Current Form 
-                this.Hide();
+                
 
                 //Creates new instance of introduction form 
                
@@ -414,29 +445,31 @@ namespace Tutoring_Project
                 switch (x)
                 {
                     case 4:
+                        this.Hide();
                         ChangeTabSimple(0);
                         break;
                     case 5:
+                        this.Hide();
                         ChangeTabSimple(2);
                         break;
                     case 6:
+                        this.Hide();
                         ChangeTabSimple(4);
                         break;
                     case 7:
+                        this.Hide();
                         ChangeTabSimple(6);
                         break;
                     default:
                         MessageBox.Show("Completed this section");
                         break;
                 }
-                this.Close();
+                
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-                //Hides Current Form 
-                this.Hide();
-
+               
                 //Creates new instance of introduction form 
                 
 
@@ -453,15 +486,19 @@ namespace Tutoring_Project
                 switch (x)
                 {
                     case 4:
+                        this.Hide();
                         ChangeTabSimple(0);
                         break;
                     case 5:
+                        this.Hide();
                         ChangeTabSimple(2);
                         break;
                     case 6:
+                        this.Hide();
                         ChangeTabSimple(4);
                         break;
                     case 7:
+                        this.Hide();
                         ChangeTabSimple(6);
                         break;
                     default:
@@ -473,9 +510,7 @@ namespace Tutoring_Project
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
-                //Hides Current Form 
-                this.Hide();
-
+               
                 //Creates new instance of introduction form 
                 
 
@@ -493,22 +528,26 @@ namespace Tutoring_Project
                 switch (x)
                 {
                     case 4:
+                        this.Hide();
                         ChangeTabSimple(0);
                         break;
                     case 5:
+                        this.Hide();
                         ChangeTabSimple(2);
                         break;
                     case 6:
+                        this.Hide();
                         ChangeTabSimple(4);
                         break;
                     case 7:
+                        this.Hide();
                         ChangeTabSimple(6);
                         break;
                     default:
                         MessageBox.Show("Completed this section");
                         break;
                 }
-                this.Close();
+                
             }
         }
 
