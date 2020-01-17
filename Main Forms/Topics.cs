@@ -20,26 +20,14 @@ namespace Tutoring_Project
         introduction T = new introduction();
         Question_Forms.simpledata S = new Question_Forms.simpledata();
         
-
         public Topics()
         {
             InitializeComponent();
             
         }
+       
 
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            const string message = "Are you sure you want to exit?";
-            const string caption = "";
-
-            var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
+        #region Change Tab Methods 
         private void ChangeTab(int tab)
         {
             
@@ -54,7 +42,9 @@ namespace Tutoring_Project
             S.ShowDialog();
             this.Close();
         }
+        #endregion
 
+        #region Random UI Unused Methods
         private void Topics_Load(object sender, EventArgs e)
         {
 
@@ -64,7 +54,13 @@ namespace Tutoring_Project
         {
 
         }
+        private void PictureBox5_Click(object sender, EventArgs e)
+        {
 
+        }
+        #endregion
+
+        #region Exit Button 
         /// <summary>
         /// Exit Button that exists the application
         /// </summary>
@@ -82,6 +78,21 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            const string message = "Are you sure you want to exit?";
+            const string caption = "";
+
+            var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+        #endregion
+
+        #region Home Button 
 
         /// <summary>
         /// Home Button that brings user to the home page 
@@ -95,6 +106,10 @@ namespace Tutoring_Project
             home.ShowDialog();
             this.Close();
         }
+
+        #endregion
+
+        #region Introduction Page Button 
 
         private void Intro_btn_Click(object sender, EventArgs e)
         {
@@ -137,10 +152,7 @@ namespace Tutoring_Project
                         default:
                             MessageBox.Show("Completed this section");
                             break;
-                    }
-                
-
-
+                    }               
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
@@ -261,6 +273,10 @@ namespace Tutoring_Project
             }
         }
 
+        #endregion
+
+        #region Creating Programs 
+
         private void Cp_btn_Click(object sender, EventArgs e)
         {
             
@@ -308,6 +324,8 @@ namespace Tutoring_Project
             }
         }
 
+        #endregion 
+
         #region User Page Button 
         /// <summary>
         /// Button to open the users profile, four if statements to see which user is logged in
@@ -323,14 +341,15 @@ namespace Tutoring_Project
                 UserProfile UserProfile1 = new UserProfile();
                 UserProfile1.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 UserProfile1.pictureBox1.Tag = "user1";
-                UserProfile1.name_lb.Text =  "user1";
+                UserProfile1.name_lb.Text =  "User 1";
                 UserProfile1.level.Text = currentlevel;
                 
                 int x = Int32.Parse(currentlevel);
 
-                if (x == 3)
+                if (x >= 3)
                 {
-                     UserProfile1.pictureBox2.Image = Properties.Resources.medal;                  
+                    UserProfile1.pictureBox2.Image = Properties.Resources.medal;
+                    UserProfile1.ach_lb1.Text = "Getting Started! - Achieved their first badge"; 
                 }
                 UserProfile1.ShowDialog();
 
@@ -342,7 +361,7 @@ namespace Tutoring_Project
                 UserProfile UserProfile2 = new UserProfile();
                 UserProfile2.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 UserProfile2.pictureBox1.Tag = "user2";
-                UserProfile2.name_lb.Text = "user 2";
+                UserProfile2.name_lb.Text = "User 2";
                 UserProfile2.level.Text = File.ReadAllText("user2level.txt");
                 UserProfile2.ShowDialog();
                 this.Close();
@@ -353,7 +372,7 @@ namespace Tutoring_Project
                 UserProfile UserProfile3 = new UserProfile();
                 UserProfile3.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
                 UserProfile3.pictureBox1.Tag = "user3";
-                UserProfile3.name_lb.Text = "user 3";
+                UserProfile3.name_lb.Text = "User 3";
                 UserProfile3.level.Text = File.ReadAllText("user3level.txt");
                 UserProfile3.ShowDialog();
                 this.Close();
@@ -364,7 +383,7 @@ namespace Tutoring_Project
                 UserProfile UserProfile4 = new UserProfile();
                 UserProfile4.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 UserProfile4.pictureBox1.Tag = "user4";
-                UserProfile4.name_lb.Text = "user 4";
+                UserProfile4.name_lb.Text = "User 4";
                 UserProfile4.level.Text = File.ReadAllText("user4level.txt");
                 UserProfile4.ShowDialog();
                 this.Close();
@@ -373,22 +392,26 @@ namespace Tutoring_Project
 
         #endregion
 
+        #region Picture Box Clicks
+
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             
         }
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        #endregion 
+
+        #region Simple Data Page Button 
         private void Sdp_btn_Click(object sender, EventArgs e)
         {
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                //Hides Current Form 
-                
-
-                //Creates new instance of introduction form 
                 
                 
-
                 //The picture box of current instance is set to image of user 
                 S.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 S.pictureBox1.Tag = "user1";
@@ -551,11 +574,10 @@ namespace Tutoring_Project
             }
         }
 
-        private void PictureBox2_Click(object sender, EventArgs e)
-        {
+        #endregion
 
-        }
 
+        #region End Game Button 
         private void Button1_Click(object sender, EventArgs e)
         {
             
@@ -570,10 +592,8 @@ namespace Tutoring_Project
                 MessageBox.Show("Please Reach Level 50 warrior");
             }
         }
+        #endregion
 
-        private void PictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

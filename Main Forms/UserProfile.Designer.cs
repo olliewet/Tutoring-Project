@@ -40,6 +40,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ach_lb1 = new System.Windows.Forms.Label();
+            this.ach_lb2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -68,7 +71,7 @@
             this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
             this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.topics_btn.Location = new System.Drawing.Point(548, -15);
+            this.topics_btn.Location = new System.Drawing.Point(3, -15);
             this.topics_btn.Name = "topics_btn";
             this.topics_btn.Size = new System.Drawing.Size(143, 91);
             this.topics_btn.TabIndex = 15;
@@ -80,6 +83,7 @@
             // 
             this.exit.BackColor = System.Drawing.Color.White;
             this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatAppearance.BorderSize = 0;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
@@ -109,7 +113,7 @@
             this.badge_lb.AutoSize = true;
             this.badge_lb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.badge_lb.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.badge_lb.Location = new System.Drawing.Point(12, 292);
+            this.badge_lb.Location = new System.Drawing.Point(7, 292);
             this.badge_lb.Name = "badge_lb";
             this.badge_lb.Size = new System.Drawing.Size(186, 25);
             this.badge_lb.TabIndex = 7;
@@ -140,7 +144,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(329, 320);
+            this.pictureBox5.Location = new System.Drawing.Point(324, 320);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(98, 88);
             this.pictureBox5.TabIndex = 18;
@@ -148,7 +152,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(225, 320);
+            this.pictureBox4.Location = new System.Drawing.Point(220, 320);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(98, 88);
             this.pictureBox4.TabIndex = 17;
@@ -156,7 +160,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(121, 320);
+            this.pictureBox3.Location = new System.Drawing.Point(116, 320);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(98, 88);
             this.pictureBox3.TabIndex = 16;
@@ -164,7 +168,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(17, 320);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 320);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 88);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -179,12 +183,44 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label1.Location = new System.Drawing.Point(546, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 25);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Achievements";
+            // 
+            // ach_lb1
+            // 
+            this.ach_lb1.AutoSize = true;
+            this.ach_lb1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.ach_lb1.Location = new System.Drawing.Point(548, 86);
+            this.ach_lb1.Name = "ach_lb1";
+            this.ach_lb1.Size = new System.Drawing.Size(0, 13);
+            this.ach_lb1.TabIndex = 20;
+            // 
+            // ach_lb2
+            // 
+            this.ach_lb2.AutoSize = true;
+            this.ach_lb2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.ach_lb2.Location = new System.Drawing.Point(548, 107);
+            this.ach_lb2.Name = "ach_lb2";
+            this.ach_lb2.Size = new System.Drawing.Size(0, 13);
+            this.ach_lb2.TabIndex = 21;
+            // 
             // UserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ach_lb2);
+            this.Controls.Add(this.ach_lb1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -224,5 +260,8 @@
         public System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label ach_lb1;
+        public System.Windows.Forms.Label ach_lb2;
     }
 }

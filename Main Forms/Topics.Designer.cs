@@ -44,7 +44,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.endgame_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -245,19 +245,19 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
-            // button1
+            // endgame_btn
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.Location = new System.Drawing.Point(532, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 38);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "End Game";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.endgame_btn.FlatAppearance.BorderSize = 0;
+            this.endgame_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.endgame_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.endgame_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.endgame_btn.Location = new System.Drawing.Point(532, 178);
+            this.endgame_btn.Name = "endgame_btn";
+            this.endgame_btn.Size = new System.Drawing.Size(87, 38);
+            this.endgame_btn.TabIndex = 9;
+            this.endgame_btn.Text = "End Game";
+            this.endgame_btn.UseVisualStyleBackColor = true;
+            this.endgame_btn.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Topics
             // 
@@ -265,7 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.endgame_btn);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -308,6 +308,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button endgame_btn;
     }
 }

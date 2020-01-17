@@ -94,7 +94,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.level);
             this.panel1.Controls.Add(this.panel2);
@@ -108,9 +107,9 @@
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(129, 53);
+            this.panel3.Location = new System.Drawing.Point(-10, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(817, 18);
+            this.panel3.Size = new System.Drawing.Size(841, 41);
             this.panel3.TabIndex = 4;
             // 
             // pictureBox1
@@ -690,6 +689,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
