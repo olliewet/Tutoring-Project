@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(introduction));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.level = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.topics_btn = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.intro_lb = new System.Windows.Forms.Label();
@@ -68,12 +68,12 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.finish_btn = new System.Windows.Forms.Button();
@@ -104,13 +104,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(806, 56);
             this.panel1.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(-10, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(841, 41);
-            this.panel3.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -170,6 +163,14 @@
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(-10, 49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(841, 35);
+            this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel3_Paint);
             // 
             // tabControl1
             // 
@@ -541,12 +542,12 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.radioButton1);
             this.tabPage6.Controls.Add(this.button2);
             this.tabPage6.Controls.Add(this.button1);
             this.tabPage6.Controls.Add(this.radioButton9);
             this.tabPage6.Controls.Add(this.radioButton10);
             this.tabPage6.Controls.Add(this.radioButton11);
-            this.tabPage6.Controls.Add(this.radioButton12);
             this.tabPage6.Controls.Add(this.label6);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
@@ -555,6 +556,18 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(52, 130);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(465, 17);
+            this.radioButton1.TabIndex = 19;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Converts Code into low level instructions which can be read and understood by the" +
+    " hardware ";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -612,19 +625,6 @@
             this.radioButton11.Text = "To Run Code ";
             this.radioButton11.UseVisualStyleBackColor = true;
             this.radioButton11.CheckedChanged += new System.EventHandler(this.RadioButton11_CheckedChanged);
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(52, 130);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(465, 17);
-            this.radioButton12.TabIndex = 13;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Converts Code into low level instructions which can be read and understood by the" +
-    " hardware ";
-            this.radioButton12.UseVisualStyleBackColor = true;
-            this.radioButton12.CheckedChanged += new System.EventHandler(this.RadioButton12_CheckedChanged);
             // 
             // label6
             // 
@@ -760,7 +760,6 @@
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -769,5 +768,6 @@
         private System.Windows.Forms.Button finish_btn;
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

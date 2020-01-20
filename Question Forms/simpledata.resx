@@ -133,4 +133,7 @@ Main
 You choose the names of your methods to reflect what they are going to do for you. Except for Main. This method (and there must be one, and only one such method) is where your program starts running. When your program is loaded and run the first method given control is the one called Main. If you miss out the Main method the system quite literally does not know where to start.
 </value>
   </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>This is a brace. As the name implies, braces come in packs of two, i.e. for every open brace there must be a matching close. Braces allow programmers to lump pieces of program together. Such a lump of program is often called a block. A block can contain the declaration of variables used within it, followed by a sequence of program statements which are executed in order. In this case the braces enclose the working parts of the method Main. When the compiler sees the matching close brace at the end it knows that it has reached the end of the method and can look for another (if any). The effects of an un-paired brace are invariably fatal....</value>
+  </data>
 </root>

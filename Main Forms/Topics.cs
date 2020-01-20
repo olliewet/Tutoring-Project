@@ -283,11 +283,11 @@ namespace Tutoring_Project
             //If statement to check if the forms picture box contains a certain image 
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                this.Hide();
+                
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
 
-                if ( x > 10 )
+                if ( x < 10 )
                 {
                     MessageBox.Show("Not Completed the Previous Section");
                 }

@@ -73,10 +73,23 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.rb_4 = new System.Windows.Forms.RadioButton();
+            this.rb_3 = new System.Windows.Forms.RadioButton();
+            this.rb_2 = new System.Windows.Forms.RadioButton();
+            this.rd_1 = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -89,6 +102,9 @@
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -180,6 +196,7 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Location = new System.Drawing.Point(3, 52);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -393,6 +410,7 @@
             this.prevobj_btn.TabIndex = 2;
             this.prevobj_btn.Text = "Previous";
             this.prevobj_btn.UseVisualStyleBackColor = true;
+            this.prevobj_btn.Click += new System.EventHandler(this.Prevobj_btn_Click);
             // 
             // conobj_btn
             // 
@@ -421,6 +439,7 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.TabPage4_Click);
             // 
             // radioButton5
             // 
@@ -479,6 +498,7 @@
             // 
             // prevquestion2_btn
             // 
+            this.prevquestion2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prevquestion2_btn.Location = new System.Drawing.Point(18, 315);
             this.prevquestion2_btn.Name = "prevquestion2_btn";
             this.prevquestion2_btn.Size = new System.Drawing.Size(75, 23);
@@ -488,6 +508,7 @@
             // 
             // conquestion2_btn
             // 
+            this.conquestion2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.conquestion2_btn.Location = new System.Drawing.Point(706, 315);
             this.conquestion2_btn.Name = "conquestion2_btn";
             this.conquestion2_btn.Size = new System.Drawing.Size(75, 23);
@@ -542,6 +563,7 @@
             this.button6.TabIndex = 2;
             this.button6.Text = "Previous";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // button5
             // 
@@ -558,9 +580,9 @@
             this.tabPage6.Controls.Add(this.textBox3);
             this.tabPage6.Controls.Add(this.textBox2);
             this.tabPage6.Controls.Add(this.textBox1);
-            this.tabPage6.Controls.Add(this.pictureBox4);
             this.tabPage6.Controls.Add(this.button2);
             this.tabPage6.Controls.Add(this.button1);
+            this.tabPage6.Controls.Add(this.pictureBox4);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -571,31 +593,51 @@
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.SlateGray;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(205, 61);
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Location = new System.Drawing.Point(205, 54);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(59, 13);
+            this.textBox3.Size = new System.Drawing.Size(72, 20);
             this.textBox3.TabIndex = 22;
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.SlateGray;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(135, 61);
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(135, 54);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(64, 13);
+            this.textBox2.Size = new System.Drawing.Size(64, 20);
             this.textBox2.TabIndex = 21;
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.SlateGray;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(70, 61);
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(70, 54);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 13);
+            this.textBox1.Size = new System.Drawing.Size(59, 20);
             this.textBox1.TabIndex = 20;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 335);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Previous";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(706, 335);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Continue";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // pictureBox4
             // 
@@ -608,27 +650,15 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 335);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Previous";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(693, 335);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Continue";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.button7);
+            this.tabPage7.Controls.Add(this.button4);
+            this.tabPage7.Controls.Add(this.pictureBox5);
+            this.tabPage7.Controls.Add(this.label8);
+            this.tabPage7.Controls.Add(this.label7);
+            this.tabPage7.Controls.Add(this.richTextBox2);
+            this.tabPage7.Controls.Add(this.label6);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -636,6 +666,150 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(5, 331);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 22;
+            this.button7.Text = "Previous";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(706, 331);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "Continue";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Tutoring_Project.Properties.Resources.bracket;
+            this.pictureBox5.Location = new System.Drawing.Point(399, 65);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(382, 239);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 20;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label8.Location = new System.Drawing.Point(394, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(142, 25);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Brace Example ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label7.Location = new System.Drawing.Point(6, 37);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 25);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "{ ..... } ";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.Location = new System.Drawing.Point(8, 65);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.Size = new System.Drawing.Size(369, 239);
+            this.richTextBox2.TabIndex = 7;
+            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label6.Location = new System.Drawing.Point(6, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 25);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Brace";
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.rb_4);
+            this.tabPage8.Controls.Add(this.rb_3);
+            this.tabPage8.Controls.Add(this.rb_2);
+            this.tabPage8.Controls.Add(this.rd_1);
+            this.tabPage8.Controls.Add(this.label9);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(796, 370);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // rb_4
+            // 
+            this.rb_4.AutoSize = true;
+            this.rb_4.Location = new System.Drawing.Point(37, 176);
+            this.rb_4.Name = "rb_4";
+            this.rb_4.Size = new System.Drawing.Size(269, 17);
+            this.rb_4.TabIndex = 21;
+            this.rb_4.TabStop = true;
+            this.rb_4.Text = "Allows for users to declare variables and write code ";
+            this.rb_4.UseVisualStyleBackColor = true;
+            // 
+            // rb_3
+            // 
+            this.rb_3.AutoSize = true;
+            this.rb_3.Location = new System.Drawing.Point(37, 153);
+            this.rb_3.Name = "rb_3";
+            this.rb_3.Size = new System.Drawing.Size(152, 17);
+            this.rb_3.TabIndex = 20;
+            this.rb_3.TabStop = true;
+            this.rb_3.Text = "Prevent any memory leaks ";
+            this.rb_3.UseVisualStyleBackColor = true;
+            // 
+            // rb_2
+            // 
+            this.rb_2.AutoSize = true;
+            this.rb_2.Location = new System.Drawing.Point(37, 130);
+            this.rb_2.Name = "rb_2";
+            this.rb_2.Size = new System.Drawing.Size(556, 17);
+            this.rb_2.TabIndex = 19;
+            this.rb_2.TabStop = true;
+            this.rb_2.Text = "To define a block, also indicates to the compiler when it has reached the end whe" +
+    "n the closing brace is reached ";
+            this.rb_2.UseVisualStyleBackColor = true;
+            // 
+            // rd_1
+            // 
+            this.rd_1.AutoSize = true;
+            this.rd_1.Location = new System.Drawing.Point(37, 107);
+            this.rd_1.Name = "rd_1";
+            this.rd_1.Size = new System.Drawing.Size(202, 17);
+            this.rd_1.TabIndex = 18;
+            this.rd_1.TabStop = true;
+            this.rd_1.Text = "Prevents the compiler throwing errors ";
+            this.rd_1.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(34, 81);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(233, 13);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "What is the purpose of a brace after the Main ? ";
             // 
             // simpledata
             // 
@@ -667,6 +841,11 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -721,5 +900,18 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.RadioButton rb_4;
+        private System.Windows.Forms.RadioButton rb_3;
+        private System.Windows.Forms.RadioButton rb_2;
+        private System.Windows.Forms.RadioButton rd_1;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -204,35 +204,35 @@ namespace Tutoring_Project
         private void Button1_Click_1(object sender, EventArgs e)
         {
             
-            if (radioButton12.Checked)
+            if (radioButton1.Checked)
             {
                 tabControl1.SelectTab(6);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
                     string text = File.ReadAllText("levelfile.txt");
                     text = text.Replace("2", "3");
-
+                    MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
                     File.WriteAllText("levelfile.txt", text);
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
                     string text = File.ReadAllText("user2level.txt");
                     text = text.Replace("2", "3");
-
+                    MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
                     File.WriteAllText("user2level.txt", text);
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
                     string text = File.ReadAllText("user3level.txt");
                     text = text.Replace("2", "3");
-
+                    MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
                     File.WriteAllText("user3level.txt", text);
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
                     string text = File.ReadAllText("user4level.txt");
                     text = text.Replace("2", "3");
-
+                    MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
                     File.WriteAllText("user4level.txt", text);
                 }
             }
@@ -280,6 +280,11 @@ namespace Tutoring_Project
             }
             this.Close();
             T.ShowDialog();
+        }
+
+        private void Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     
