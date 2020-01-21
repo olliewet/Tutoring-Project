@@ -26,6 +26,70 @@ namespace Tutoring_Project
             this.Close();
         }
 
+        private void Exp()
+        {
+            try
+            {
+                string exp = File.ReadAllText("exp1.txt");
+                int x = int.Parse(exp);
+                x = x + 10;
+                exp = x.ToString();
+                File.WriteAllText("exp1.txt", exp);
+            }
+            catch
+            {
+                MessageBox.Show("Error With the File");
+            }
+        }
+
+        private void Exp2()
+        {
+            try
+            {
+                string exp = File.ReadAllText("exp2.txt");
+                int x = int.Parse(exp);
+                x = x + 10;
+                exp = x.ToString();
+                File.WriteAllText("exp2.txt", exp);
+            }
+            catch
+            {
+                MessageBox.Show("Error With the File");
+            }
+        }
+
+        private void Exp3()
+        {
+            try
+            {
+                string exp = File.ReadAllText("exp3.txt");
+                int x = int.Parse(exp);
+                x = x + 10;
+                exp = x.ToString();
+                File.WriteAllText("exp3.txt", exp);
+            }
+            catch
+            {
+                MessageBox.Show("Error With the File");
+            }
+        }
+
+        private void Exp4()
+        {
+            try
+            {
+                string exp = File.ReadAllText("exp4.txt");
+                int x = int.Parse(exp);
+                x = x + 10;
+                exp = x.ToString();
+                File.WriteAllText("exp4.txt", exp);
+            }
+            catch
+            {
+                MessageBox.Show("Error With the File");
+            }
+        }
+
         private void Exit_Click(object sender, EventArgs e)
         {
             const string message = "Are you sure you want to exit?";
@@ -61,39 +125,28 @@ namespace Tutoring_Project
                     string text = File.ReadAllText("levelfile.txt");
                     text = text.Replace("0", "1");
                     File.WriteAllText("levelfile.txt", text);
-
-                    // Semi Implemented Experience 
-                    // Come Back to at a later date  
-                    // if statement to see what level they would be if x is between 100 and 200 level 2 
-                    string texttest = File.ReadAllText("test.txt");
-                    int x = int.Parse(texttest);
-                    x = x + 10;                   
-                    texttest = x.ToString();
-
-
-                    File.WriteAllText("test.txt", texttest);
-
+                    Exp();
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
                     string text = File.ReadAllText("user2level.txt");
                     text = text.Replace("0", "1");
-
                     File.WriteAllText("user2level.txt", text);
+                    Exp2();                   
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
                     string text = File.ReadAllText("user3level.txt");
                     text = text.Replace("0", "1");
-
                     File.WriteAllText("user3level.txt", text);
+                    Exp3();
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
                     string text = File.ReadAllText("user4level.txt");
                     text = text.Replace("0", "1");
-
                     File.WriteAllText("user4level.txt", text);
+                    Exp4();
                 }
             }
             else
@@ -117,28 +170,28 @@ namespace Tutoring_Project
                 {
                     string text = File.ReadAllText("levelfile.txt");
                     text = text.Replace("1", "2");
-
                     File.WriteAllText("levelfile.txt", text);
+                    Exp();
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
                     string text = File.ReadAllText("user2level.txt");
                     text = text.Replace("1", "2");
-
                     File.WriteAllText("user2level.txt", text);
+                    Exp2();
                 } else if ((string)this.pictureBox1.Tag == "user3")
                 {
                     string text = File.ReadAllText("user3level.txt");
                     text = text.Replace("1", "2");
-
                     File.WriteAllText("user3level.txt", text);
+                    Exp3();
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
                     string text = File.ReadAllText("user4level.txt");
                     text = text.Replace("1", "2");
-
                     File.WriteAllText("user4level.txt", text);
+                    Exp4();
                 }
             }
             else
@@ -225,6 +278,7 @@ namespace Tutoring_Project
                     text = text.Replace("2", "3");
                     MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
                     File.WriteAllText("levelfile.txt", text);
+                    Exp();
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
@@ -232,6 +286,7 @@ namespace Tutoring_Project
                     text = text.Replace("2", "3");
                     MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
                     File.WriteAllText("user2level.txt", text);
+                    Exp2();
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
@@ -239,6 +294,7 @@ namespace Tutoring_Project
                     text = text.Replace("2", "3");
                     MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
                     File.WriteAllText("user3level.txt", text);
+                    Exp3();
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
@@ -246,6 +302,7 @@ namespace Tutoring_Project
                     text = text.Replace("2", "3");
                     MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
                     File.WriteAllText("user4level.txt", text);
+                    Exp4();
                 }
             }
             else
@@ -262,7 +319,8 @@ namespace Tutoring_Project
             {
                 string text = File.ReadAllText("levelfile.txt");
                 text = text.Replace("3", "4");
-                File.WriteAllText("levelfile.txt", text);                         
+                File.WriteAllText("levelfile.txt", text);
+                Exp();
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 T.pictureBox1.Tag = "user1";             
             }
@@ -271,6 +329,7 @@ namespace Tutoring_Project
                 string text = File.ReadAllText("user2level.txt");
                 text = text.Replace("3", "4");
                 File.WriteAllText("user2level.txt", text);
+                Exp2();
                 T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 T.pictureBox1.Tag = "user2";
             }
@@ -278,15 +337,17 @@ namespace Tutoring_Project
             {
                 string text = File.ReadAllText("user3level.txt");
                 text = text.Replace("3", "4");
-                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
-                T.pictureBox1.Tag = "user3";
                 File.WriteAllText("user3level.txt", text);
+                Exp3();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";               
             }
             else if ((string)this.pictureBox1.Tag == "user4")
             {
                 string text = File.ReadAllText("user4level.txt");
                 text = text.Replace("3", "4");
                 File.WriteAllText("user4level.txt", text);
+                Exp4();
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 T.pictureBox1.Tag = "user4";
             }
@@ -295,6 +356,11 @@ namespace Tutoring_Project
         }
 
         private void Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TabPage2_Click(object sender, EventArgs e)
         {
 
         }

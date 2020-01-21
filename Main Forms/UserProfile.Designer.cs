@@ -43,6 +43,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ach_lb1 = new System.Windows.Forms.Label();
             this.ach_lb2 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.exp = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -126,16 +128,16 @@
             this.Level_lb.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.Level_lb.Location = new System.Drawing.Point(7, 170);
             this.Level_lb.Name = "Level_lb";
-            this.Level_lb.Size = new System.Drawing.Size(112, 25);
+            this.Level_lb.Size = new System.Drawing.Size(194, 25);
             this.Level_lb.TabIndex = 13;
-            this.Level_lb.Text = "User Level -";
+            this.Level_lb.Text = "User Question Level -";
             // 
             // level
             // 
             this.level.AutoSize = true;
             this.level.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.level.ForeColor = System.Drawing.Color.Black;
-            this.level.Location = new System.Drawing.Point(112, 170);
+            this.level.Location = new System.Drawing.Point(191, 170);
             this.level.Name = "level";
             this.level.Size = new System.Drawing.Size(23, 25);
             this.level.TabIndex = 14;
@@ -212,12 +214,36 @@
             this.ach_lb2.Size = new System.Drawing.Size(0, 13);
             this.ach_lb2.TabIndex = 21;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label2.Location = new System.Drawing.Point(7, 195);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 25);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Experience - ";
+            // 
+            // exp
+            // 
+            this.exp.AutoSize = true;
+            this.exp.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.exp.ForeColor = System.Drawing.Color.Black;
+            this.exp.Location = new System.Drawing.Point(121, 195);
+            this.exp.Name = "exp";
+            this.exp.Size = new System.Drawing.Size(23, 25);
+            this.exp.TabIndex = 23;
+            this.exp.Text = "0";
+            // 
             // UserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exp);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ach_lb2);
             this.Controls.Add(this.ach_lb1);
             this.Controls.Add(this.label1);
@@ -263,5 +289,7 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label ach_lb1;
         public System.Windows.Forms.Label ach_lb2;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label exp;
     }
 }

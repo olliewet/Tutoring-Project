@@ -345,7 +345,7 @@ namespace Tutoring_Project
                 UserProfile1.pictureBox1.Tag = "user1";
                 UserProfile1.name_lb.Text =  "User 1";
                 UserProfile1.level.Text = currentlevel;
-                
+                UserProfile1.exp.Text = File.ReadAllText("exp1.txt");
                 int x = Int32.Parse(currentlevel);
 
                 if (x >= 3)
@@ -365,6 +365,7 @@ namespace Tutoring_Project
                 UserProfile2.pictureBox1.Tag = "user2";
                 UserProfile2.name_lb.Text = "User 2";
                 UserProfile2.level.Text = File.ReadAllText("user2level.txt");
+                UserProfile2.exp.Text = File.ReadAllText("exp2.txt");
                 UserProfile2.ShowDialog();
                 this.Close();
             }
@@ -376,6 +377,7 @@ namespace Tutoring_Project
                 UserProfile3.pictureBox1.Tag = "user3";
                 UserProfile3.name_lb.Text = "User 3";
                 UserProfile3.level.Text = File.ReadAllText("user3level.txt");
+                UserProfile3.exp.Text = File.ReadAllText("exp3.txt");
                 UserProfile3.ShowDialog();
                 this.Close();
             }
@@ -387,6 +389,7 @@ namespace Tutoring_Project
                 UserProfile4.pictureBox1.Tag = "user4";
                 UserProfile4.name_lb.Text = "User 4";
                 UserProfile4.level.Text = File.ReadAllText("user4level.txt");
+                UserProfile4.exp.Text = File.ReadAllText("exp4.txt");
                 UserProfile4.ShowDialog();
                 this.Close();
             }

@@ -37,5 +37,15 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
+
+        private void Leaderboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

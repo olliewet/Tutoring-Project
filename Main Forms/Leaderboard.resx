@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lrg_tb.Text" xml:space="preserve">
+    <value>In this application, there are two types of levels. These levels are called user question level and experience level. The user question level is a level that changes once a question has been completed, each question is significant to a level, this is to ensure what question the user is on. Experience level is a level that changes depending on how much experience the user has, each experience level requires 100 experience to progress to the next level, the experience can be gained from completing questions the amount varies depending on the difficulty of the question. </value>
+  </data>
 </root>

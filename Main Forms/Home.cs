@@ -87,6 +87,92 @@ namespace Tutoring_Project
             led.user2.Text = File.ReadAllText("user2level.txt");
             led.user3.Text = File.ReadAllText("user3level.txt");
             led.user4.Text = File.ReadAllText("user4level.txt");
+
+            led.Oexp.Text = File.ReadAllText("exp1.txt");
+            led.Oexp2.Text = File.ReadAllText("exp2.txt");
+            led.Oexp3.Text = File.ReadAllText("exp3.txt");
+            led.Oexp4.Text = File.ReadAllText("exp4.txt");
+
+            string exp = File.ReadAllText("exp1.txt");
+            int x = int.Parse(exp);
+
+            if (Enumerable.Range(1, 100).Contains(x))
+            {
+                led.exp1.Text = "0";
+            }
+            else if (Enumerable.Range(101, 200).Contains(x))
+            {
+                led.exp1.Text = "1";
+            }
+            else if (Enumerable.Range(201, 300).Contains(x))
+            {
+                led.exp1.Text = "2";
+            }
+            else if (Enumerable.Range(301, 400).Contains(x))
+            {
+                led.exp1.Text = "3";
+            }
+
+            string exp2 = File.ReadAllText("exp2.txt");
+            int i = int.Parse(exp2);
+            if (Enumerable.Range(1, 100).Contains(i))
+            {
+                led.exp2.Text = "0";
+            }
+            else if (Enumerable.Range(101, 200).Contains(i))
+            {
+                led.exp2.Text = "1";
+            }
+            else if (Enumerable.Range(201, 300).Contains(i))
+            {
+                led.exp2.Text = "2";
+            }
+            else if (Enumerable.Range(301, 400).Contains(i))
+            {
+                led.exp2.Text = "3";
+            }
+
+            string exp3 = File.ReadAllText("exp3.txt");
+            int ii = int.Parse(exp3);
+            if (Enumerable.Range(1, 100).Contains(ii))
+            {
+                led.exp3.Text = "0";
+            }
+            else if (Enumerable.Range(101, 200).Contains(ii))
+            {
+                led.exp3.Text = "1";
+            }
+            else if (Enumerable.Range(201, 300).Contains(ii))
+            {
+                led.exp3.Text = "2";
+            }
+            else if (Enumerable.Range(301, 400).Contains(ii))
+            {
+                led.exp3.Text = "3";
+            }
+
+            string exp4 = File.ReadAllText("exp4.txt");
+            int h = int.Parse(exp4);
+            if (Enumerable.Range(1, 100).Contains(h))
+            {
+                led.exp4.Text = "0";
+            }
+            else if (Enumerable.Range(101, 200).Contains(h))
+            {
+                led.exp4.Text = "1";
+            }
+            else if (Enumerable.Range(201, 300).Contains(h))
+            {
+                led.exp4.Text = "2";
+            }
+            else if (Enumerable.Range(301, 400).Contains(h))
+            {
+                led.exp4.Text = "3";
+            }
+
+
+
+
             led.ShowDialog();
             this.Close();
         }
