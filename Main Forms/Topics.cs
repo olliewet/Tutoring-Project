@@ -15,11 +15,13 @@ namespace Tutoring_Project
 {
     public partial class Topics : Form
     {
-        
+
+        #region Declared Variables
         string currentlevel;
         introduction T = new introduction();
         Question_Forms.simpledata S = new Question_Forms.simpledata();
-        
+        #endregion
+
         public Topics()
         {
             InitializeComponent();
@@ -575,7 +577,6 @@ namespace Tutoring_Project
         }
 
         #endregion
-
 
         #region End Game Button 
         private void Button1_Click(object sender, EventArgs e)

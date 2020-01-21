@@ -18,8 +18,8 @@ namespace Tutoring_Project
             InitializeComponent();
         }
 
-       
 
+        #region Exit Button 
         private void Exit_Click(object sender, EventArgs e)
         {
             const string message = "Are you sure you want to exit?";
@@ -32,6 +32,23 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
+        #endregion
+
+        #region Topic Button 
+        private void Topics_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Userpage T = new Userpage();
+            T.ShowDialog();
+            this.Close();
+        }
+        #endregion
+
+        #region unused Buttons 
+        private void Level_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void UserProfile_Load(object sender, EventArgs e)
         {
@@ -42,18 +59,6 @@ namespace Tutoring_Project
         {
 
         }
-
-        private void Topics_btn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Userpage T = new Userpage();
-            T.ShowDialog();
-            this.Close();
-        }
-
-        private void Level_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion 
     }
 }

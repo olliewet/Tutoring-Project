@@ -17,7 +17,8 @@ namespace Tutoring_Project
         {
             InitializeComponent();
         }
-        
+
+        #region User 1 
         private void User1_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -25,11 +26,11 @@ namespace Tutoring_Project
             T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
             T.pictureBox1.Tag = "user1";
             T.ShowDialog();
-           
-            
             this.Close();
         }
+        #endregion
 
+        #region User 2 
         private void User2_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -40,7 +41,9 @@ namespace Tutoring_Project
             T.ShowDialog();
             this.Close();
         }
+        #endregion
 
+        #region User 3 
         private void User3_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -50,7 +53,9 @@ namespace Tutoring_Project
             T.ShowDialog();
             this.Close();
         }
+        #endregion
 
+        #region User 4 
         private void User4_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -58,6 +63,16 @@ namespace Tutoring_Project
             T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
             T.pictureBox1.Tag = "user4";
             T.ShowDialog();
+            this.Close();
+        }
+        #endregion
+
+        #region Home and Exit Buttons
+        private void Home_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
             this.Close();
         }
 
@@ -73,15 +88,9 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
+        #endregion
 
-        private void Home_btn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
-            this.Close();
-        }
-
+        #region Unused Buttons 
         private void Userpage_Load(object sender, EventArgs e)
         {
 
@@ -91,5 +100,7 @@ namespace Tutoring_Project
         {
 
         }
+
+        #endregion
     }
 }

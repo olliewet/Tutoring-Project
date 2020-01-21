@@ -168,7 +168,7 @@
             // 
             this.panel3.Location = new System.Drawing.Point(-10, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(841, 35);
+            this.panel3.Size = new System.Drawing.Size(841, 20);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel3_Paint);
             // 

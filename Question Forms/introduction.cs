@@ -57,10 +57,22 @@ namespace Tutoring_Project
                 tabControl1.SelectTab(2);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
+                                     
                     string text = File.ReadAllText("levelfile.txt");
                     text = text.Replace("0", "1");
-
                     File.WriteAllText("levelfile.txt", text);
+
+                    // Semi Implemented Experience 
+                    // Come Back to at a later date  
+                    // if statement to see what level they would be if x is between 100 and 200 level 2 
+                    string texttest = File.ReadAllText("test.txt");
+                    int x = int.Parse(texttest);
+                    x = x + 10;                   
+                    texttest = x.ToString();
+
+
+                    File.WriteAllText("test.txt", texttest);
+
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {

@@ -18,6 +18,7 @@ namespace Tutoring_Project
             InitializeComponent();
         }
 
+        #region Unused Buttons 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -27,17 +28,6 @@ namespace Tutoring_Project
         {
 
         }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            
-            this.Hide();                     
-            Userpage UP = new Userpage();
-            UP.ShowDialog();          
-            this.Close();
-            
-        }
-
         private void PictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -47,7 +37,22 @@ namespace Tutoring_Project
         {
 
         }
+        #endregion
 
+        #region User Page 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();                     
+            Userpage UP = new Userpage();
+            UP.ShowDialog();          
+            this.Close();
+            
+        }
+        #endregion
+
+
+        #region Exit Button 
         private void Exit_Click(object sender, EventArgs e)
         {
             const string message = "Are you sure you want to exit?";
@@ -60,7 +65,9 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
+        #endregion
 
+        #region reference Button 
         private void Button1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
@@ -68,7 +75,10 @@ namespace Tutoring_Project
             Ref.ShowDialog();
             this.Close();
         }
+        #endregion
 
+
+        #region Leaderboard Button 
         private void Button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -80,5 +90,7 @@ namespace Tutoring_Project
             led.ShowDialog();
             this.Close();
         }
+
+        #endregion 
     }
 }
