@@ -138,11 +138,11 @@
             this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
             this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.topics_btn.Location = new System.Drawing.Point(525, 1);
+            this.topics_btn.Location = new System.Drawing.Point(555, 2);
             this.topics_btn.Name = "topics_btn";
-            this.topics_btn.Size = new System.Drawing.Size(156, 54);
+            this.topics_btn.Size = new System.Drawing.Size(126, 54);
             this.topics_btn.TabIndex = 15;
-            this.topics_btn.Text = "User Page";
+            this.topics_btn.Text = "Home";
             this.topics_btn.UseVisualStyleBackColor = false;
             this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
             // 
@@ -168,7 +168,7 @@
             // 
             this.panel3.Location = new System.Drawing.Point(-10, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(841, 20);
+            this.panel3.Size = new System.Drawing.Size(841, 37);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel3_Paint);
             // 
@@ -693,7 +693,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "introduction";
             this.Text = "introduction";
             this.panel1.ResumeLayout(false);

@@ -21,7 +21,6 @@ namespace Tutoring_Project
             user1.level = (data[1]);
             user1.question = (data[2]);
             return user1;
-        }
-
+        }       
     }
 }

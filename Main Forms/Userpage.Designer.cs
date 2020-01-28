@@ -213,7 +213,7 @@
             this.Controls.Add(this.user2_btn);
             this.Controls.Add(this.user1_btn);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Userpage";
             this.Text = "Userpage";
             this.Load += new System.EventHandler(this.Userpage_Load);

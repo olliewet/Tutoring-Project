@@ -339,6 +339,7 @@ namespace Tutoring_Project
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 this.Hide();
+
                 currentlevel = File.ReadAllText("levelfile.txt");
                 UserProfile UserProfile1 = new UserProfile();
                 UserProfile1.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
@@ -346,13 +347,20 @@ namespace Tutoring_Project
                 UserProfile1.name_lb.Text =  "User 1";
                 UserProfile1.level.Text = currentlevel;
                 UserProfile1.exp.Text = File.ReadAllText("exp1.txt");
+                
                 int x = Int32.Parse(currentlevel);
 
                 if (x >= 3)
                 {
                     UserProfile1.pictureBox2.Image = Properties.Resources.medal;
-                    UserProfile1.ach_lb1.Text = "Getting Started! - Achieved their first badge"; 
+                    
                 }
+                if (x >= 4)
+                {
+
+                    UserProfile1.pictureBox6.Image = Properties.Resources.award;
+                }
+
                 UserProfile1.ShowDialog();
 
                 this.Close();
@@ -360,36 +368,71 @@ namespace Tutoring_Project
             else if ((string)this.pictureBox1.Tag == "user2")
             {
                 this.Hide();
+                currentlevel = File.ReadAllText("user2level.txt");
                 UserProfile UserProfile2 = new UserProfile();
                 UserProfile2.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 UserProfile2.pictureBox1.Tag = "user2";
                 UserProfile2.name_lb.Text = "User 2";
                 UserProfile2.level.Text = File.ReadAllText("user2level.txt");
                 UserProfile2.exp.Text = File.ReadAllText("exp2.txt");
+                int x = Int32.Parse(currentlevel);
+                if (x >= 3)
+                {
+                    UserProfile2.pictureBox2.Image = Properties.Resources.medal;
+                    
+                    
+                }
+                if ( x >= 4)
+                {
+                    
+                    UserProfile2.pictureBox6.Image = Properties.Resources.award;
+                }
                 UserProfile2.ShowDialog();
                 this.Close();
             }
             else if ((string)this.pictureBox1.Tag == "user3")
             {
                 this.Hide();
+                currentlevel = File.ReadAllText("user3level.txt");
                 UserProfile UserProfile3 = new UserProfile();
                 UserProfile3.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
                 UserProfile3.pictureBox1.Tag = "user3";
                 UserProfile3.name_lb.Text = "User 3";
                 UserProfile3.level.Text = File.ReadAllText("user3level.txt");
                 UserProfile3.exp.Text = File.ReadAllText("exp3.txt");
+                int x = Int32.Parse(currentlevel);
+                if (x >= 3)
+                {
+                    UserProfile3.pictureBox2.Image = Properties.Resources.medal;
+                   
+                }
+                if (x >= 4)
+                {
+
+                    UserProfile3.pictureBox6.Image = Properties.Resources.award;
+                }
                 UserProfile3.ShowDialog();
                 this.Close();
             }
             else if ((string)this.pictureBox1.Tag == "user4")
             {
                 this.Hide();
+                currentlevel = File.ReadAllText("user4level.txt");
                 UserProfile UserProfile4 = new UserProfile();
                 UserProfile4.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 UserProfile4.pictureBox1.Tag = "user4";
                 UserProfile4.name_lb.Text = "User 4";
                 UserProfile4.level.Text = File.ReadAllText("user4level.txt");
                 UserProfile4.exp.Text = File.ReadAllText("exp4.txt");
+                int x = Int32.Parse(currentlevel);
+                if (x >= 3)
+                {
+                    UserProfile4.pictureBox2.Image = Properties.Resources.medal;                  
+                }
+                if (x >= 4)
+                {
+                    UserProfile4.pictureBox6.Image = Properties.Resources.award;
+                }
                 UserProfile4.ShowDialog();
                 this.Close();
             }
@@ -431,26 +474,30 @@ namespace Tutoring_Project
                 {
                     case 4:
                         this.Hide();
+                        this.Close();
                         ChangeTabSimple(0);
                         break;
                     case 5:
                         this.Hide();
+                        this.Close();
                         ChangeTabSimple(3);
                         break;
                     case 6:
                         this.Hide();
+                        this.Close();
                         ChangeTabSimple(6);
                         break;
                     case 7:
                         this.Hide();
+                        this.Close();
                         ChangeTabSimple(7);
                         break;
                     default:
-                        MessageBox.Show("Completed this section");
+                        MessageBox.Show("Complete Previous Section");
                         break;
                 }
 
-                this.Close();
+                
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
@@ -596,8 +643,108 @@ namespace Tutoring_Project
                 MessageBox.Show("Please Reach Level 50 warrior");
             }
         }
+
         #endregion
 
-       
+        
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {            
+            Achievements Ach = new Achievements();
+                   
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                
+                this.Hide();
+                Ach.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                Ach.pictureBox1.Tag = "user1";
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+
+                if (x >= 3)
+                {
+                    Ach.lb1.Text = "Badge Collector! - Achieved their first badge";
+                }
+                if (x >= 4)
+                {
+                    Ach.lb2.Text = "Getting the Basics! – Completed the introduction of the tutor system";
+                }
+                if (x >= 7)
+                {
+                    Ach.lb3.Text = "Problem Fixer! – Completed the first missing code problem ";
+                }
+                Ach.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                this.Hide();
+                Ach.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                Ach.pictureBox1.Tag = "user2";
+                currentlevel = File.ReadAllText("user2level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                if (x >= 3)
+                {
+                    Ach.lb1.Text = "Badge Collector! - Achieved their first badge";
+                }
+                if (x >= 4)
+                {
+                    Ach.lb2.Text = "Getting the Basics! – Completed the introduction of the tutor system";
+                }
+                if (x >= 7)
+                {
+                    Ach.lb3.Text = "Problem Fixer! – Completed the first missing code problem ";
+                }
+                Ach.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                this.Hide();
+                Ach.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                Ach.pictureBox1.Tag = "user3";
+                currentlevel = File.ReadAllText("user3level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                if (x >= 3)
+                {
+                    Ach.lb1.Text = "Badge Collector! - Achieved their first badge";
+                }
+                if (x >= 4)
+                {
+                    Ach.lb2.Text = "Getting the Basics! – Completed the introduction of the tutor system";
+                }
+                if (x >= 7)
+                {
+                    Ach.lb3.Text = "Problem Fixer! – Completed the first missing code problem ";
+                }
+                Ach.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                this.Hide();
+                Ach.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                Ach.pictureBox1.Tag = "user4";
+                currentlevel = File.ReadAllText("user4level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                if (x >= 3)
+                {
+                    Ach.lb1.Text = "Badge Collector! - Achieved their first badge";
+                }
+                if (x >= 4)
+                {
+                    Ach.lb2.Text = "Getting the Basics! – Completed the introduction of the tutor system";
+                }
+                if (x >= 7)
+                {
+                    Ach.lb3.Text = "Problem Fixer! – Completed the first missing code problem ";
+                }
+                Ach.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }

@@ -57,5 +57,15 @@ namespace Tutoring_Project
         {           
             tabControl1.SelectTab(1);
         }
+
+        private void TabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
     }
 }

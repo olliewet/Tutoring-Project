@@ -13,9 +13,11 @@ namespace Tutoring_Project
 {
     public partial class Home : Form
     {
+
         public Home()
         {
             InitializeComponent();
+            
         }
 
         #region Unused Buttons 

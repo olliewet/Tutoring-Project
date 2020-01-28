@@ -34,6 +34,7 @@
             this.exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -98,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(352, 11);
+            this.label1.Location = new System.Drawing.Point(365, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 24);
             this.label1.TabIndex = 2;
@@ -106,6 +107,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.richTextBox2);
             this.tabPage5.Controls.Add(this.button6);
             this.tabPage5.Controls.Add(this.button5);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -115,15 +117,27 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.TabPage5_Click);
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Location = new System.Drawing.Point(6, 17);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(759, 136);
+            this.richTextBox2.TabIndex = 5;
+            this.richTextBox2.Text = "\"Standard\" Icon made by Freepik from www.flaticon.com\n\"Award\" Icon made by Freepi" +
+    "k from www.flaticon.com";
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(18, 315);
+            this.button6.Location = new System.Drawing.Point(12, 274);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 2;
             this.button6.Text = "Previous";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // button5
             // 
@@ -181,7 +195,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(-18, 80);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(861, 51);
+            this.panel2.Size = new System.Drawing.Size(861, 59);
             this.panel2.TabIndex = 5;
             // 
             // References
@@ -193,7 +207,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "References";
             this.Text = "References";
             this.panel1.ResumeLayout(false);
@@ -220,5 +234,6 @@
         private System.Windows.Forms.Button con_btn1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }

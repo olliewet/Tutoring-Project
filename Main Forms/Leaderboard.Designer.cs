@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Leaderboard));
             this.exit = new System.Windows.Forms.Button();
             this.topics_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,6 +60,8 @@
             this.Oexp4 = new System.Windows.Forms.Label();
             this.lrg_tb = new System.Windows.Forms.RichTextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -243,10 +244,11 @@
             this.exp1.AutoSize = true;
             this.exp1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.exp1.ForeColor = System.Drawing.Color.Black;
-            this.exp1.Location = new System.Drawing.Point(252, 96);
+            this.exp1.Location = new System.Drawing.Point(281, 92);
             this.exp1.Name = "exp1";
-            this.exp1.Size = new System.Drawing.Size(0, 25);
+            this.exp1.Size = new System.Drawing.Size(23, 25);
             this.exp1.TabIndex = 34;
+            this.exp1.Text = "0";
             // 
             // label5
             // 
@@ -286,7 +288,7 @@
             this.exp2.AutoSize = true;
             this.exp2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.exp2.ForeColor = System.Drawing.Color.Black;
-            this.exp2.Location = new System.Drawing.Point(252, 190);
+            this.exp2.Location = new System.Drawing.Point(281, 190);
             this.exp2.Name = "exp2";
             this.exp2.Size = new System.Drawing.Size(23, 25);
             this.exp2.TabIndex = 38;
@@ -297,7 +299,7 @@
             this.exp3.AutoSize = true;
             this.exp3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.exp3.ForeColor = System.Drawing.Color.Black;
-            this.exp3.Location = new System.Drawing.Point(252, 281);
+            this.exp3.Location = new System.Drawing.Point(281, 281);
             this.exp3.Name = "exp3";
             this.exp3.Size = new System.Drawing.Size(23, 25);
             this.exp3.TabIndex = 39;
@@ -308,7 +310,7 @@
             this.exp4.AutoSize = true;
             this.exp4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.exp4.ForeColor = System.Drawing.Color.Black;
-            this.exp4.Location = new System.Drawing.Point(252, 374);
+            this.exp4.Location = new System.Drawing.Point(281, 374);
             this.exp4.Name = "exp4";
             this.exp4.Size = new System.Drawing.Size(23, 25);
             this.exp4.TabIndex = 40;
@@ -375,7 +377,7 @@
             this.Oexp2.AutoSize = true;
             this.Oexp2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.Oexp2.ForeColor = System.Drawing.Color.Black;
-            this.Oexp2.Location = new System.Drawing.Point(264, 215);
+            this.Oexp2.Location = new System.Drawing.Point(281, 215);
             this.Oexp2.Name = "Oexp2";
             this.Oexp2.Size = new System.Drawing.Size(23, 25);
             this.Oexp2.TabIndex = 46;
@@ -386,7 +388,7 @@
             this.Oexp3.AutoSize = true;
             this.Oexp3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.Oexp3.ForeColor = System.Drawing.Color.Black;
-            this.Oexp3.Location = new System.Drawing.Point(264, 306);
+            this.Oexp3.Location = new System.Drawing.Point(281, 306);
             this.Oexp3.Name = "Oexp3";
             this.Oexp3.Size = new System.Drawing.Size(23, 25);
             this.Oexp3.TabIndex = 47;
@@ -405,29 +407,59 @@
             // 
             // lrg_tb
             // 
-            this.lrg_tb.BackColor = System.Drawing.SystemColors.Control;
+            this.lrg_tb.BackColor = System.Drawing.Color.White;
             this.lrg_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lrg_tb.Cursor = System.Windows.Forms.Cursors.Default;
             this.lrg_tb.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lrg_tb.ForeColor = System.Drawing.Color.Black;
-            this.lrg_tb.Location = new System.Drawing.Point(383, 101);
+            this.lrg_tb.Location = new System.Drawing.Point(383, 111);
             this.lrg_tb.Name = "lrg_tb";
             this.lrg_tb.ReadOnly = true;
             this.lrg_tb.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.lrg_tb.Size = new System.Drawing.Size(336, 239);
+            this.lrg_tb.Size = new System.Drawing.Size(336, 104);
             this.lrg_tb.TabIndex = 49;
-            this.lrg_tb.Text = resources.GetString("lrg_tb.Text");
+            this.lrg_tb.Text = "Experience level is level that changes depending on experience gained, each exper" +
+    "ience level requires 100 experience to progress to next level, experience can be" +
+    " gained from completeing questions.";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label12.Location = new System.Drawing.Point(378, 73);
+            this.label12.Location = new System.Drawing.Point(378, 83);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(272, 25);
+            this.label12.Size = new System.Drawing.Size(159, 25);
             this.label12.TabIndex = 50;
-            this.label12.Text = "Rankings and Levels Explained";
+            this.label12.Text = "Experience Level ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label13.Location = new System.Drawing.Point(378, 233);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(148, 25);
+            this.label13.TabIndex = 51;
+            this.label13.Text = "Question  Level ";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.richTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.richTextBox1.Location = new System.Drawing.Point(383, 261);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richTextBox1.Size = new System.Drawing.Size(336, 104);
+            this.richTextBox1.TabIndex = 52;
+            this.richTextBox1.Text = "User question level is a level changes once a question has been completed, each q" +
+    "uestion is significant to a level, this is to ensure what question the user is o" +
+    "n.";
             // 
             // Leaderboard
             // 
@@ -435,6 +467,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lrg_tb);
             this.Controls.Add(this.Oexp4);
@@ -467,7 +501,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.topics_btn);
             this.Controls.Add(this.exit);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Leaderboard";
             this.Text = "Leaderboard";
             this.Load += new System.EventHandler(this.Leaderboard_Load);
@@ -514,5 +548,7 @@
         public System.Windows.Forms.Label Oexp4;
         private System.Windows.Forms.RichTextBox lrg_tb;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

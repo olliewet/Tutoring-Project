@@ -90,6 +90,7 @@
             this.rb_2 = new System.Windows.Forms.RadioButton();
             this.rd_1 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -118,7 +119,7 @@
             this.panel1.Controls.Add(this.exit);
             this.panel1.Location = new System.Drawing.Point(-4, -4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(811, 55);
+            this.panel1.Size = new System.Drawing.Size(811, 57);
             this.panel1.TabIndex = 3;
             // 
             // panel3
@@ -165,7 +166,7 @@
             this.topics_btn.Name = "topics_btn";
             this.topics_btn.Size = new System.Drawing.Size(152, 55);
             this.topics_btn.TabIndex = 15;
-            this.topics_btn.Text = "User Page";
+            this.topics_btn.Text = "Home";
             this.topics_btn.UseVisualStyleBackColor = false;
             this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
             // 
@@ -197,7 +198,7 @@
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
-            this.tabControl1.Location = new System.Drawing.Point(3, 52);
+            this.tabControl1.Location = new System.Drawing.Point(3, 59);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(804, 396);
@@ -216,6 +217,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
             // 
             // pictureBox2
             // 
@@ -811,15 +813,23 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "What is the purpose of a brace after the Main ? ";
             // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(-4, 52);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(907, 29);
+            this.panel4.TabIndex = 5;
+            // 
             // simpledata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "simpledata";
             this.Text = "simpledata";
             this.panel1.ResumeLayout(false);
@@ -913,5 +923,6 @@
         private System.Windows.Forms.RadioButton rb_2;
         private System.Windows.Forms.RadioButton rd_1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel4;
     }
 }

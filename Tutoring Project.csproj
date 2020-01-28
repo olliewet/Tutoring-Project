@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main Forms\Achievements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Achievements.Designer.cs">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main Forms\Leaderboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Main Forms\UserProfile.Designer.cs">
       <DependentUpon>UserProfile.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Main Forms\Achievements.resx">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Forms\Leaderboard.resx">
       <DependentUpon>Leaderboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,11 +203,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\standard.png" />
     <None Include="Resources\Using System.png" />
     <None Include="Resources\code example.png" />
     <None Include="Resources\code example1.png" />
     <None Include="Resources\code example no text.png" />
     <None Include="Resources\bracket.png" />
+    <None Include="Resources\award.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />

@@ -166,9 +166,9 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(495, 8);
+            this.button2.Location = new System.Drawing.Point(499, 8);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 28);
+            this.button2.Size = new System.Drawing.Size(93, 28);
             this.button2.TabIndex = 7;
             this.button2.Text = "Rankings";
             this.button2.UseVisualStyleBackColor = false;
@@ -184,7 +184,7 @@
             this.button1.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.button1.Image = global::Tutoring_Project.Properties.Resources.book_26px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(609, -7);
+            this.button1.Location = new System.Drawing.Point(596, -7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 58);
             this.button1.TabIndex = 6;
@@ -222,7 +222,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Tutoring_Project.Properties.Resources.leaderboard_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(463, -7);
+            this.pictureBox1.Location = new System.Drawing.Point(453, -7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 43);
             this.pictureBox1.TabIndex = 8;
@@ -243,7 +243,7 @@
             this.Controls.Add(this.logo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.AboutPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Home";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Home_Load);

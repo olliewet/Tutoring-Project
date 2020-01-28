@@ -20,10 +20,42 @@ namespace Tutoring_Project
 
         private void Topics_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Userpage T = new Userpage();
-            T.ShowDialog();
-            this.Close();
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                this.Hide();
+                Topics T = new Topics();
+                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                T.pictureBox1.Tag = "user1";
+                T.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                this.Hide();
+                Topics T = new Topics();
+                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                T.pictureBox1.Tag = "user2";
+                T.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                this.Hide();
+                Topics T = new Topics();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";
+                T.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                this.Hide();
+                Topics T = new Topics();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                T.pictureBox1.Tag = "user4";
+                T.ShowDialog();
+                this.Close();
+            }
         }
 
         private void Exp()
@@ -319,6 +351,7 @@ namespace Tutoring_Project
             {
                 string text = File.ReadAllText("levelfile.txt");
                 text = text.Replace("3", "4");
+                MessageBox.Show("Well Done Section Completed, Badge and achievement Unlocked!");
                 File.WriteAllText("levelfile.txt", text);
                 Exp();
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
@@ -328,6 +361,7 @@ namespace Tutoring_Project
             {
                 string text = File.ReadAllText("user2level.txt");
                 text = text.Replace("3", "4");
+                MessageBox.Show("Well Done Section Completed, Badge Unlocked!");
                 File.WriteAllText("user2level.txt", text);
                 Exp2();
                 T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
@@ -337,6 +371,7 @@ namespace Tutoring_Project
             {
                 string text = File.ReadAllText("user3level.txt");
                 text = text.Replace("3", "4");
+                MessageBox.Show("Well Done Section Completed, Badge Unlocked!");
                 File.WriteAllText("user3level.txt", text);
                 Exp3();
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
@@ -346,6 +381,7 @@ namespace Tutoring_Project
             {
                 string text = File.ReadAllText("user4level.txt");
                 text = text.Replace("3", "4");
+                MessageBox.Show("Well Done Section Completed, Badge Unlocked!");
                 File.WriteAllText("user4level.txt", text);
                 Exp4();
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
