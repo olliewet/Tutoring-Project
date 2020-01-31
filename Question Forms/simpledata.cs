@@ -18,69 +18,9 @@ namespace Tutoring_Project.Question_Forms
             InitializeComponent();
         }
 
-        private void Exp()
-        {
-            try
-            {
-                string exp = File.ReadAllText("exp1.txt");
-                int x = int.Parse(exp);
-                x = x + 20;
-                exp = x.ToString();
-                File.WriteAllText("exp1.txt", exp);
-            }
-            catch
-            {
-                MessageBox.Show("Error With the File");
-            }
-        }
-
-        private void Exp2()
-        {
-            try
-            {
-                string exp = File.ReadAllText("exp2.txt");
-                int x = int.Parse(exp);
-                x = x + 20;
-                exp = x.ToString();
-                File.WriteAllText("exp2.txt", exp);
-            }
-            catch
-            {
-                MessageBox.Show("Error With the File");
-            }
-        }
-
-        private void Exp3()
-        {
-            try
-            {
-                string exp = File.ReadAllText("exp3.txt");
-                int x = int.Parse(exp);
-                x = x + 20;
-                exp = x.ToString();
-                File.WriteAllText("exp3.txt", exp);
-            }
-            catch
-            {
-                MessageBox.Show("Error With the File");
-            }
-        }
-
-        private void Exp4()
-        {
-            try
-            {
-                string exp = File.ReadAllText("exp4.txt");
-                int x = int.Parse(exp);
-                x = x + 20;
-                exp = x.ToString();
-                File.WriteAllText("exp4.txt", exp);
-            }
-            catch
-            {
-                MessageBox.Show("Error With the File");
-            }
-        }
+        int counter;
+       
+             
 
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -150,38 +90,30 @@ namespace Tutoring_Project.Question_Forms
             tabControl1.SelectTab(2);
         }
 
-        private void Conobj_btn_Click(object sender, EventArgs e)
+        private void SimpleQ1(object sender, EventArgs e)
         {
             if (radioButton4.Checked)
             {
                 tabControl1.SelectTab(3);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
-                    string text = File.ReadAllText("levelfile.txt");
-                    text = text.Replace("4", "5");                   
-                    File.WriteAllText("levelfile.txt", text);
-                    Exp();
+                    User.User1(4, 5);
+                    User.Exp();
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
-                    string text = File.ReadAllText("user2level.txt");
-                    text = text.Replace("4", "5");                   
-                    File.WriteAllText("user2level.txt", text);
-                    Exp2();
+                    User.User2(4, 5);
+                    User.Exp2();
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
-                    string text = File.ReadAllText("user3level.txt");
-                    text = text.Replace("4", "5");                  
-                    File.WriteAllText("user3level.txt", text);
-                    Exp3();
+                    User.User3(4, 5);
+                    User.Exp3();
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
-                    string text = File.ReadAllText("user4level.txt");
-                    text = text.Replace("4", "5");                   
-                    File.WriteAllText("user4level.txt", text);
-                    Exp4();
+                    User.User4(4, 5);
+                    User.Exp4();
                 }
             }
             else
@@ -190,84 +122,83 @@ namespace Tutoring_Project.Question_Forms
             }
         }
 
-        private void Conquestion2_btn_Click(object sender, EventArgs e)
+        private void SimpleQ2_btn(object sender, EventArgs e)
         {
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("OO Programming allows for better organisation since code can be put into smaller size chunks"); //Add Hit 
+            }
+                    
             if (radioButton7.Checked)
             {
                 tabControl1.SelectTab(4);
                 if ((string)this.pictureBox1.Tag == "user1")
-                {
-                    string text = File.ReadAllText("levelfile.txt");
-                    text = text.Replace("5", "6");                  
-                    File.WriteAllText("levelfile.txt", text);
-                    Exp();
+                {                  
+                    User.User1(5, 6);
+                    User.Exp();
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
-                    string text = File.ReadAllText("user2level.txt");
-                    text = text.Replace("5", "6");                   
-                    File.WriteAllText("user2level.txt", text);
-                    Exp2();
+                    User.User2(5, 6);
+                    User.Exp2();
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
-                    string text = File.ReadAllText("user3level.txt");
-                    text = text.Replace("5", "6");                    
-                    File.WriteAllText("user3level.txt", text);
-                    Exp3();
+                    User.User3(5, 6);
+                    User.Exp3();
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
-                    string text = File.ReadAllText("user4level.txt");
-                    text = text.Replace("5", "6");                  
-                    File.WriteAllText("user4level.txt", text);
-                    Exp4();
+                    User.User4(5, 6);
+                    User.Exp4();
                 }
             }
             else
             {
                 MessageBox.Show("Answer is incorrect");
             }
+            
         }
+        
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void SimpleQ3_btn(object sender, EventArgs e)
         {
-           
+            
+            counter = 0; 
+            counter++;
+            if (counter >= 3 )
+            {
+                MessageBox.Show("Remember What we previously Covered, these three keywords are required otherwise the program will not compile and erros will be thrown, go back to the previous page if help is needed."); //Add Hit 
+            } 
 
-
-            if (textBox1.Text.Equals("static") | (textBox1.Text.Equals("Static") && textBox2.Text.Equals("void") | textBox2.Text.Equals("Void") && textBox3.Text.Equals("Main()") | textBox3.Text.Equals("main()")))
+                        
+            if (textBox1.Text.Equals("static") | (textBox1.Text.Equals("Static") && textBox2.Text.Equals("void") | textBox2.Text.Equals("Void") && textBox3.Text.Equals("Main()") | textBox3.Text.Equals("main()"))) //Statement Might be Incorrect  
             {
                 tabControl1.SelectTab(6);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
-                    string text = File.ReadAllText("levelfile.txt");
-                    text = text.Replace("6", "7");
-                    File.WriteAllText("levelfile.txt", text);
-                    Exp();
+                    User.User1(6,7);
+                    User.Exp();
                     MessageBox.Show("Well Done Section Completed, Achievement Unlocked!");
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
-                    string text = File.ReadAllText("user2level.txt");
-                    text = text.Replace("6", "7");
-                    File.WriteAllText("user2level.txt", text);
-                    Exp2();
+                    User.User2(6, 7);
+                    User.Exp2();
                     MessageBox.Show("Well Done Section Completed, Achievement Unlocked!");
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
-                    string text = File.ReadAllText("user3level.txt");
-                    text = text.Replace("6", "7");
-                    File.WriteAllText("user3level.txt", text);
-                    Exp3();
+                    User.User3(6, 7);
+                    User.Exp3();
                     MessageBox.Show("Well Done Section Completed, Achievement Unlocked!");
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
-                    string text = File.ReadAllText("user4level.txt");
-                    text = text.Replace("6", "7");
-                    File.WriteAllText("user4level.txt", text);
-                    Exp4();
+                    User.User4(6, 7);
+                    User.Exp4();
                     MessageBox.Show("Well Done Section Completed, Achievement Unlocked!");
                 }
             }
@@ -307,7 +238,7 @@ namespace Tutoring_Project.Question_Forms
 
         private void TabPage4_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(2);
+            
         }
 
         private void Button6_Click(object sender, EventArgs e)
@@ -331,6 +262,55 @@ namespace Tutoring_Project.Question_Forms
         private void TabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void RichTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Prevquestion2_btn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
+
+        private void SimpleQ4_btn(object sender, EventArgs e)
+        {
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("OO Programming allows for better organisation since code can be put into smaller size chunks"); //Add Hit 
+            }
+
+            if (rb_2.Checked)
+            {
+                tabControl1.SelectTab(4);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(7,8);
+                    User.Exp();
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(7,8);
+                    User.Exp2();
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(7,8);
+                    User.Exp3();
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(7,8);
+                    User.Exp4();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
         }
     }
 }

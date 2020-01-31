@@ -205,4 +205,13 @@
   <data name="standard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\standard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BadgeCollector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BadgeCollector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Basics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Basics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProblemSolver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProblemSolver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -91,6 +91,8 @@
             this.rd_1 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -198,6 +200,7 @@
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
+            this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Location = new System.Drawing.Point(3, 59);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -423,7 +426,7 @@
             this.conobj_btn.TabIndex = 1;
             this.conobj_btn.Text = "Continue";
             this.conobj_btn.UseVisualStyleBackColor = true;
-            this.conobj_btn.Click += new System.EventHandler(this.Conobj_btn_Click);
+            this.conobj_btn.Click += new System.EventHandler(this.SimpleQ1);
             // 
             // tabPage4
             // 
@@ -507,6 +510,7 @@
             this.prevquestion2_btn.TabIndex = 2;
             this.prevquestion2_btn.Text = "Previous";
             this.prevquestion2_btn.UseVisualStyleBackColor = true;
+            this.prevquestion2_btn.Click += new System.EventHandler(this.Prevquestion2_btn_Click);
             // 
             // conquestion2_btn
             // 
@@ -517,7 +521,7 @@
             this.conquestion2_btn.TabIndex = 1;
             this.conquestion2_btn.Text = "Continue";
             this.conquestion2_btn.UseVisualStyleBackColor = true;
-            this.conquestion2_btn.Click += new System.EventHandler(this.Conquestion2_btn_Click);
+            this.conquestion2_btn.Click += new System.EventHandler(this.SimpleQ2_btn);
             // 
             // tabPage5
             // 
@@ -556,6 +560,7 @@
             this.richTextBox3.Size = new System.Drawing.Size(784, 286);
             this.richTextBox3.TabIndex = 4;
             this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
+            this.richTextBox3.TextChanged += new System.EventHandler(this.RichTextBox3_TextChanged);
             // 
             // button6
             // 
@@ -639,7 +644,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Continue";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button1.Click += new System.EventHandler(this.SimpleQ3_btn);
             // 
             // pictureBox4
             // 
@@ -746,6 +751,7 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.button8);
             this.tabPage8.Controls.Add(this.rb_4);
             this.tabPage8.Controls.Add(this.rb_3);
             this.tabPage8.Controls.Add(this.rb_2);
@@ -817,8 +823,28 @@
             // 
             this.panel4.Location = new System.Drawing.Point(-4, 52);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(907, 29);
+            this.panel4.Size = new System.Drawing.Size(907, 12);
             this.panel4.TabIndex = 5;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(796, 370);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "tabPage9";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(697, 322);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 22;
+            this.button8.Text = "Continue";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.SimpleQ4_btn);
             // 
             // simpledata
             // 
@@ -924,5 +950,7 @@
         private System.Windows.Forms.RadioButton rd_1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TabPage tabPage9;
     }
 }

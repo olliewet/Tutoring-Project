@@ -168,7 +168,7 @@
             // 
             this.panel3.Location = new System.Drawing.Point(-10, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(841, 37);
+            this.panel3.Size = new System.Drawing.Size(841, 34);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel3_Paint);
             // 
@@ -326,7 +326,7 @@
             this.con_btn2.TabIndex = 1;
             this.con_btn2.Text = "Continue";
             this.con_btn2.UseVisualStyleBackColor = true;
-            this.con_btn2.Click += new System.EventHandler(this.Button1_Click);
+            this.con_btn2.Click += new System.EventHandler(this.Question1_btn);
             // 
             // tabPage3
             // 
@@ -480,7 +480,7 @@
             this.conquestion2_btn.TabIndex = 1;
             this.conquestion2_btn.Text = "Continue";
             this.conquestion2_btn.UseVisualStyleBackColor = true;
-            this.conquestion2_btn.Click += new System.EventHandler(this.Button4_Click);
+            this.conquestion2_btn.Click += new System.EventHandler(this.Question2_btn);
             // 
             // tabPage5
             // 
@@ -589,7 +589,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Continue";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.Question3_btn);
             // 
             // radioButton9
             // 
@@ -659,7 +659,7 @@
             this.finish_btn.TabIndex = 6;
             this.finish_btn.Text = "Finish Section!";
             this.finish_btn.UseVisualStyleBackColor = true;
-            this.finish_btn.Click += new System.EventHandler(this.Button3_Click_1);
+            this.finish_btn.Click += new System.EventHandler(this.FinishSection_btn);
             // 
             // richTextBox4
             // 
@@ -672,6 +672,7 @@
             this.richTextBox4.Size = new System.Drawing.Size(435, 207);
             this.richTextBox4.TabIndex = 5;
             this.richTextBox4.Text = resources.GetString("richTextBox4.Text");
+            this.richTextBox4.TextChanged += new System.EventHandler(this.RichTextBox4_TextChanged);
             // 
             // label7
             // 

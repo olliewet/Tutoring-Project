@@ -58,69 +58,7 @@ namespace Tutoring_Project
             }
         }
 
-        private void Exp()
-        {
-            try
-            {
-                string exp = File.ReadAllText("exp1.txt");
-                int x = int.Parse(exp);
-                x = x + 10;
-                exp = x.ToString();
-                File.WriteAllText("exp1.txt", exp);
-            }
-            catch
-            {
-                MessageBox.Show("Error With the File");
-            }
-        }
-
-        private void Exp2()
-        {
-            try
-            {
-                string exp = File.ReadAllText("exp2.txt");
-                int x = int.Parse(exp);
-                x = x + 10;
-                exp = x.ToString();
-                File.WriteAllText("exp2.txt", exp);
-            }
-            catch
-            {
-                MessageBox.Show("Error With the File");
-            }
-        }
-
-        private void Exp3()
-        {
-            try
-            {
-                string exp = File.ReadAllText("exp3.txt");
-                int x = int.Parse(exp);
-                x = x + 10;
-                exp = x.ToString();
-                File.WriteAllText("exp3.txt", exp);
-            }
-            catch
-            {
-                MessageBox.Show("Error With the File");
-            }
-        }
-
-        private void Exp4()
-        {
-            try
-            {
-                string exp = File.ReadAllText("exp4.txt");
-                int x = int.Parse(exp);
-                x = x + 10;
-                exp = x.ToString();
-                File.WriteAllText("exp4.txt", exp);
-            }
-            catch
-            {
-                MessageBox.Show("Error With the File");
-            }
-        }
+       
 
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -145,7 +83,7 @@ namespace Tutoring_Project
             tabControl1.SelectTab(1);
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Question1_btn(object sender, EventArgs e)
         {
             
             if (btn_3.Checked)
@@ -153,32 +91,23 @@ namespace Tutoring_Project
                 tabControl1.SelectTab(2);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
-                                     
-                    string text = File.ReadAllText("levelfile.txt");
-                    text = text.Replace("0", "1");
-                    File.WriteAllText("levelfile.txt", text);
-                    Exp();
+                    User.User1(0, 1);
+                    User.Exp();
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
-                    string text = File.ReadAllText("user2level.txt");
-                    text = text.Replace("0", "1");
-                    File.WriteAllText("user2level.txt", text);
-                    Exp2();                   
+                    User.User2(0, 1);
+                    User.Exp2();                   
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
-                    string text = File.ReadAllText("user3level.txt");
-                    text = text.Replace("0", "1");
-                    File.WriteAllText("user3level.txt", text);
-                    Exp3();
+                    User.User3(0, 1);
+                    User.Exp3();
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
-                    string text = File.ReadAllText("user4level.txt");
-                    text = text.Replace("0", "1");
-                    File.WriteAllText("user4level.txt", text);
-                    Exp4();
+                    User.User4(0, 1);
+                    User.Exp4();
                 }
             }
             else
@@ -192,7 +121,7 @@ namespace Tutoring_Project
             tabControl1.SelectTab(3);
         }
 
-        private void Button4_Click(object sender, EventArgs e)
+        private void Question2_btn(object sender, EventArgs e)
         {
 
             if (radioButton7.Checked)
@@ -200,30 +129,22 @@ namespace Tutoring_Project
                 tabControl1.SelectTab(4);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
-                    string text = File.ReadAllText("levelfile.txt");
-                    text = text.Replace("1", "2");
-                    File.WriteAllText("levelfile.txt", text);
-                    Exp();
+                    User.User1(1, 2);
+                    User.Exp();
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
-                    string text = File.ReadAllText("user2level.txt");
-                    text = text.Replace("1", "2");
-                    File.WriteAllText("user2level.txt", text);
-                    Exp2();
+                    User.User2(1, 2);
+                    User.Exp2();
                 } else if ((string)this.pictureBox1.Tag == "user3")
                 {
-                    string text = File.ReadAllText("user3level.txt");
-                    text = text.Replace("1", "2");
-                    File.WriteAllText("user3level.txt", text);
-                    Exp3();
+                    User.User3(1, 2);
+                    User.Exp3();
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
-                    string text = File.ReadAllText("user4level.txt");
-                    text = text.Replace("1", "2");
-                    File.WriteAllText("user4level.txt", text);
-                    Exp4();
+                    User.User4(1, 2);
+                    User.Exp4();
                 }
             }
             else
@@ -233,6 +154,7 @@ namespace Tutoring_Project
             
         }
 
+        #region Tab Buttons
         private void Button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(5);
@@ -298,7 +220,9 @@ namespace Tutoring_Project
 
         }
 
-        private void Button1_Click_1(object sender, EventArgs e)
+        #endregion
+
+        private void Question3_btn(object sender, EventArgs e)
         {
             
             if (radioButton1.Checked)
@@ -306,35 +230,27 @@ namespace Tutoring_Project
                 tabControl1.SelectTab(6);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
-                    string text = File.ReadAllText("levelfile.txt");
-                    text = text.Replace("2", "3");
+                    User.User1(2, 3);
                     MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
-                    File.WriteAllText("levelfile.txt", text);
-                    Exp();
+                    User.Exp();
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
-                    string text = File.ReadAllText("user2level.txt");
-                    text = text.Replace("2", "3");
+                    User.User2(2, 3);
                     MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
-                    File.WriteAllText("user2level.txt", text);
-                    Exp2();
+                    User.Exp2();
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
-                    string text = File.ReadAllText("user3level.txt");
-                    text = text.Replace("2", "3");
+                    User.User3(2, 3);
                     MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
-                    File.WriteAllText("user3level.txt", text);
-                    Exp3();
+                    User.Exp3();
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
-                    string text = File.ReadAllText("user4level.txt");
-                    text = text.Replace("2", "3");
+                    User.User4(2, 3);
                     MessageBox.Show("Well Done, Achievement and Badge Unlocked!");
-                    File.WriteAllText("user4level.txt", text);
-                    Exp4();
+                    User.Exp4();
                 }
             }
             else
@@ -343,47 +259,39 @@ namespace Tutoring_Project
             }
         }
 
-        private void Button3_Click_1(object sender, EventArgs e)
+        private void FinishSection_btn(object sender, EventArgs e)
         {
             this.Hide();
             Topics T = new Topics();
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                string text = File.ReadAllText("levelfile.txt");
-                text = text.Replace("3", "4");
+                User.User1(3, 4);
                 MessageBox.Show("Well Done Section Completed, Badge and achievement Unlocked!");
-                File.WriteAllText("levelfile.txt", text);
-                Exp();
+                User.Exp();
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 T.pictureBox1.Tag = "user1";             
             }
             else if ((string)this.pictureBox1.Tag == "user2")
             {
-                string text = File.ReadAllText("user2level.txt");
-                text = text.Replace("3", "4");
+                User.User2(3, 4);
                 MessageBox.Show("Well Done Section Completed, Badge Unlocked!");
-                File.WriteAllText("user2level.txt", text);
-                Exp2();
+                User.Exp2();
                 T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 T.pictureBox1.Tag = "user2";
             }
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-                string text = File.ReadAllText("user3level.txt");
-                text = text.Replace("3", "4");
+                User.User3(3, 4);
                 MessageBox.Show("Well Done Section Completed, Badge Unlocked!");
-                File.WriteAllText("user3level.txt", text);
-                Exp3();
+                User.Exp3();
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
                 T.pictureBox1.Tag = "user3";               
             }
             else if ((string)this.pictureBox1.Tag == "user4")
             {
-                string text = File.ReadAllText("user4level.txt");
-                text = text.Replace("3", "4");
+                User.User4(3, 4);
                 MessageBox.Show("Well Done Section Completed, Badge Unlocked!");
-                File.WriteAllText("user4level.txt", text);
-                Exp4();
+                User.Exp4();
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 T.pictureBox1.Tag = "user4";
             }
@@ -397,6 +305,11 @@ namespace Tutoring_Project
         }
 
         private void TabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RichTextBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

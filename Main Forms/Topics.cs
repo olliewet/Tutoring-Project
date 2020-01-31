@@ -19,6 +19,8 @@ namespace Tutoring_Project
         #region Declared Variables
         string currentlevel;
         introduction T = new introduction();
+        Achievements Ach = new Achievements();
+        UserProfile UserProfiles = new UserProfile();
         Question_Forms.simpledata S = new Question_Forms.simpledata();
         #endregion
 
@@ -45,6 +47,38 @@ namespace Tutoring_Project
             this.Close();
         }
         #endregion
+
+        private void Achievements(int x)
+        {           
+            if (x >= 3)
+            {                
+                Ach.pictureBox2.Image = Properties.Resources.BadgeCollector;
+            }
+            if (x >= 4)
+            {
+                Ach.pictureBox3.Image = Properties.Resources.Basics;               
+            }
+            if (x >= 7)
+            {
+                Ach.pictureBox4.Image = Properties.Resources.ProblemSolver;              
+            }
+        }
+
+        private void Badges(int x)
+        {
+            if (x >= 3)
+            {
+                UserProfiles.pictureBox2.Image = Properties.Resources.medal;
+
+            }
+
+            if (x >= 4)
+            {
+
+                UserProfiles.pictureBox6.Image = Properties.Resources.award;
+            }
+        }
+
 
         #region Random UI Unused Methods
         private void Topics_Load(object sender, EventArgs e)
@@ -341,99 +375,60 @@ namespace Tutoring_Project
                 this.Hide();
 
                 currentlevel = File.ReadAllText("levelfile.txt");
-                UserProfile UserProfile1 = new UserProfile();
-                UserProfile1.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
-                UserProfile1.pictureBox1.Tag = "user1";
-                UserProfile1.name_lb.Text =  "User 1";
-                UserProfile1.level.Text = currentlevel;
-                UserProfile1.exp.Text = File.ReadAllText("exp1.txt");
-                
+
+                UserProfiles.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                UserProfiles.pictureBox1.Tag = "user1";
+                UserProfiles.name_lb.Text =  "User 1";
+                UserProfiles.level.Text = currentlevel;
+                UserProfiles.exp.Text = File.ReadAllText("exp1.txt");              
                 int x = Int32.Parse(currentlevel);
-
-                if (x >= 3)
-                {
-                    UserProfile1.pictureBox2.Image = Properties.Resources.medal;
-                    
-                }
-                if (x >= 4)
-                {
-
-                    UserProfile1.pictureBox6.Image = Properties.Resources.award;
-                }
-
-                UserProfile1.ShowDialog();
-
+                Badges(x);
+                UserProfiles.ShowDialog();
                 this.Close();
             }      
             else if ((string)this.pictureBox1.Tag == "user2")
             {
                 this.Hide();
                 currentlevel = File.ReadAllText("user2level.txt");
-                UserProfile UserProfile2 = new UserProfile();
-                UserProfile2.pictureBox1.Image = Properties.Resources.user_male_olive_green;
-                UserProfile2.pictureBox1.Tag = "user2";
-                UserProfile2.name_lb.Text = "User 2";
-                UserProfile2.level.Text = File.ReadAllText("user2level.txt");
-                UserProfile2.exp.Text = File.ReadAllText("exp2.txt");
+
+                UserProfiles.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                UserProfiles.pictureBox1.Tag = "user2";
+                UserProfiles.name_lb.Text = "User 2";
+                UserProfiles.level.Text = File.ReadAllText("user2level.txt");
+                UserProfiles.exp.Text = File.ReadAllText("exp2.txt");
                 int x = Int32.Parse(currentlevel);
-                if (x >= 3)
-                {
-                    UserProfile2.pictureBox2.Image = Properties.Resources.medal;
-                    
-                    
-                }
-                if ( x >= 4)
-                {
-                    
-                    UserProfile2.pictureBox6.Image = Properties.Resources.award;
-                }
-                UserProfile2.ShowDialog();
+                Badges(x);
+                UserProfiles.ShowDialog();
                 this.Close();
             }
             else if ((string)this.pictureBox1.Tag == "user3")
             {
                 this.Hide();
                 currentlevel = File.ReadAllText("user3level.txt");
-                UserProfile UserProfile3 = new UserProfile();
-                UserProfile3.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
-                UserProfile3.pictureBox1.Tag = "user3";
-                UserProfile3.name_lb.Text = "User 3";
-                UserProfile3.level.Text = File.ReadAllText("user3level.txt");
-                UserProfile3.exp.Text = File.ReadAllText("exp3.txt");
-                int x = Int32.Parse(currentlevel);
-                if (x >= 3)
-                {
-                    UserProfile3.pictureBox2.Image = Properties.Resources.medal;
-                   
-                }
-                if (x >= 4)
-                {
 
-                    UserProfile3.pictureBox6.Image = Properties.Resources.award;
-                }
-                UserProfile3.ShowDialog();
+                UserProfiles.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                UserProfiles.pictureBox1.Tag = "user3";
+                UserProfiles.name_lb.Text = "User 3";
+                UserProfiles.level.Text = File.ReadAllText("user3level.txt");
+                UserProfiles.exp.Text = File.ReadAllText("exp3.txt");
+                int x = Int32.Parse(currentlevel);
+                Badges(x);
+                UserProfiles.ShowDialog();
                 this.Close();
             }
             else if ((string)this.pictureBox1.Tag == "user4")
             {
                 this.Hide();
                 currentlevel = File.ReadAllText("user4level.txt");
-                UserProfile UserProfile4 = new UserProfile();
-                UserProfile4.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
-                UserProfile4.pictureBox1.Tag = "user4";
-                UserProfile4.name_lb.Text = "User 4";
-                UserProfile4.level.Text = File.ReadAllText("user4level.txt");
-                UserProfile4.exp.Text = File.ReadAllText("exp4.txt");
+
+                UserProfiles.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                UserProfiles.pictureBox1.Tag = "user4";
+                UserProfiles.name_lb.Text = "User 4";
+                UserProfiles.level.Text = File.ReadAllText("user4level.txt");
+                UserProfiles.exp.Text = File.ReadAllText("exp4.txt");
                 int x = Int32.Parse(currentlevel);
-                if (x >= 3)
-                {
-                    UserProfile4.pictureBox2.Image = Properties.Resources.medal;                  
-                }
-                if (x >= 4)
-                {
-                    UserProfile4.pictureBox6.Image = Properties.Resources.award;
-                }
-                UserProfile4.ShowDialog();
+                Badges(x);
+                UserProfiles.ShowDialog();
                 this.Close();
             }
         }
@@ -457,9 +452,7 @@ namespace Tutoring_Project
         private void Sdp_btn_Click(object sender, EventArgs e)
         {
             if ((string)this.pictureBox1.Tag == "user1")
-            {
-                
-                
+            {                              
                 //The picture box of current instance is set to image of user 
                 S.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 S.pictureBox1.Tag = "user1";
@@ -501,12 +494,7 @@ namespace Tutoring_Project
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
-            {
-                
-
-                //Creates new instance of introduction form 
-               
-
+            {                            
                 //The picture box of current instance is set to image of current user 
                 S.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 S.pictureBox1.Tag = "user2";
@@ -544,9 +532,6 @@ namespace Tutoring_Project
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-               
-                //Creates new instance of introduction form 
-                
 
                 //The picture box of current instance is set to image of current user 
                 S.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
@@ -585,10 +570,6 @@ namespace Tutoring_Project
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
-               
-                //Creates new instance of introduction form 
-                
-
                 //The picture box of current instance is set to image of current user 
                 S.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 S.pictureBox1.Tag = "user4";
@@ -648,10 +629,9 @@ namespace Tutoring_Project
 
         
 
-        private void Button1_Click_1(object sender, EventArgs e)
+        private void Ach_button(object sender, EventArgs e)
         {            
-            Achievements Ach = new Achievements();
-                   
+          
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 
@@ -660,19 +640,7 @@ namespace Tutoring_Project
                 Ach.pictureBox1.Tag = "user1";
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
-
-                if (x >= 3)
-                {
-                    Ach.lb1.Text = "Badge Collector! - Achieved their first badge";
-                }
-                if (x >= 4)
-                {
-                    Ach.lb2.Text = "Getting the Basics! – Completed the introduction of the tutor system";
-                }
-                if (x >= 7)
-                {
-                    Ach.lb3.Text = "Problem Fixer! – Completed the first missing code problem ";
-                }
+                Achievements(x);
                 Ach.ShowDialog();
                 this.Close();
             }
@@ -683,19 +651,7 @@ namespace Tutoring_Project
                 Ach.pictureBox1.Tag = "user2";
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
-
-                if (x >= 3)
-                {
-                    Ach.lb1.Text = "Badge Collector! - Achieved their first badge";
-                }
-                if (x >= 4)
-                {
-                    Ach.lb2.Text = "Getting the Basics! – Completed the introduction of the tutor system";
-                }
-                if (x >= 7)
-                {
-                    Ach.lb3.Text = "Problem Fixer! – Completed the first missing code problem ";
-                }
+                Achievements(x);
                 Ach.ShowDialog();
                 this.Close();
             }
@@ -706,19 +662,7 @@ namespace Tutoring_Project
                 Ach.pictureBox1.Tag = "user3";
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
-
-                if (x >= 3)
-                {
-                    Ach.lb1.Text = "Badge Collector! - Achieved their first badge";
-                }
-                if (x >= 4)
-                {
-                    Ach.lb2.Text = "Getting the Basics! – Completed the introduction of the tutor system";
-                }
-                if (x >= 7)
-                {
-                    Ach.lb3.Text = "Problem Fixer! – Completed the first missing code problem ";
-                }
+                Achievements(x);               
                 Ach.ShowDialog();
                 this.Close();
             }
@@ -729,19 +673,7 @@ namespace Tutoring_Project
                 Ach.pictureBox1.Tag = "user4";
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
-
-                if (x >= 3)
-                {
-                    Ach.lb1.Text = "Badge Collector! - Achieved their first badge";
-                }
-                if (x >= 4)
-                {
-                    Ach.lb2.Text = "Getting the Basics! – Completed the introduction of the tutor system";
-                }
-                if (x >= 7)
-                {
-                    Ach.lb3.Text = "Problem Fixer! – Completed the first missing code problem ";
-                }
+                Achievements(x);               
                 Ach.ShowDialog();
                 this.Close();
             }

@@ -69,5 +69,30 @@ namespace Tutoring_Project
                 this.Close();
             }
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Achievements_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Introduction_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+        }
     }
 }

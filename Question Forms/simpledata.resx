@@ -129,7 +129,7 @@
 This keyword makes sure that the method which follows is always present, i.e. the word static in this context means "is part of the enclosing class and is always here". When we get to consider objects we will find that this little keyword has all kinds of interesting ramifications. But for now I'd be grateful if you'd just make sure that you put it here in order to make your programs work properly.
 void 
 A void is nothing. In programming terms the void keyword means that the method we are about to describe does not return anything of interest to us. The method will just do a job and then finish. In some cases we write methods which return a result (in fact we will use such a method later in the program). However, in order to stop someone else accidentally making use of the value returned by our Main method, we are explicitly stating that it returns nothing. This makes our programs safer, in that the compiler now knows that if someone tries to use the value returned by this method, this must be a mistake.
-Main 
+Main ()
 You choose the names of your methods to reflect what they are going to do for you. Except for Main. This method (and there must be one, and only one such method) is where your program starts running. When your program is loaded and run the first method given control is the one called Main. If you miss out the Main method the system quite literally does not know where to start.
 </value>
   </data>
