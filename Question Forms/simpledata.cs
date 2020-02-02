@@ -19,7 +19,10 @@ namespace Tutoring_Project.Question_Forms
         }
 
         int counter;
+
        
+        
+
              
 
         private void Exit_Click(object sender, EventArgs e)
@@ -128,7 +131,7 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("OO Programming allows for better organisation since code can be put into smaller size chunks"); //Add Hit 
+                MessageBox.Show("Classes are the main part of OO Programming, Classes act like a container to hold code."); //Add Hit 
             }
                     
             if (radioButton7.Checked)
@@ -208,7 +211,7 @@ namespace Tutoring_Project.Question_Forms
             }
 
         }
-
+        #region Unused or pointless buttons
         private void Button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(5);
@@ -274,6 +277,8 @@ namespace Tutoring_Project.Question_Forms
             tabControl1.SelectTab(2);
         }
 
+        #endregion
+
         private void SimpleQ4_btn(object sender, EventArgs e)
         {
             counter = 0;
@@ -285,7 +290,7 @@ namespace Tutoring_Project.Question_Forms
 
             if (rb_2.Checked)
             {
-                tabControl1.SelectTab(4);
+                tabControl1.SelectTab(8);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
                     User.User1(7,8);
@@ -311,6 +316,70 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("Answer is incorrect");
             }
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(9);
+        }
+
+        private void Tip_btn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("These variables are stored as doubles, as they are storing numbers however numbers can stored be stored as floats or ints depending on how precise it has to be regrading floating points.");
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(10);
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+            string text;
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("ADD HINT ADD HINT ADD HINT"); //Add Hit 
+            }
+            text = tb_4.Text;
+            if (text.Contains("Int") && text.Contains("Num1") && text.Contains(",") && text.Contains("Num2") && text.Contains(";") && text.Contains("String") && text.Contains("String1") && text.Contains(",") && text.Contains("String2") && text.Contains(";"))         
+                {
+                tabControl1.SelectTab(11);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(8, 9);
+                    User.Exp();
+                    
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(8, 9);
+                    User.Exp2();
+                   
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(8, 9);
+                    User.Exp3();
+                    
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(8, 9);
+                    User.Exp4();
+                    
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+        }
+
+        private void TabPage11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

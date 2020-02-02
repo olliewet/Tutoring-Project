@@ -485,6 +485,16 @@ namespace Tutoring_Project
                         this.Close();
                         ChangeTabSimple(7);
                         break;
+                    case 8:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(8);
+                        break;
+                    case 9:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(11);
+                        break;
                     default:
                         MessageBox.Show("Complete Previous Section");
                         break;
