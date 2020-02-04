@@ -203,6 +203,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\Yellow Book Example.png" />
+    <None Include="Resources\variables and readlines1.png" />
+    <None Include="Resources\variables and readlines.png" />
     <None Include="Resources\Varaibles examples.png" />
     <None Include="Resources\ProblemSolver.png" />
     <None Include="Resources\standard.png" />
@@ -214,6 +217,9 @@
     <None Include="Resources\award.png" />
     <None Include="Resources\BadgeCollector.png" />
     <None Include="Resources\Basics.png" />
+    <None Include="Resources\glass area.png" />
+    <None Include="Resources\code example no text1.png" />
+    <None Include="Resources\Console.writeline.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />

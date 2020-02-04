@@ -193,9 +193,29 @@ namespace Tutoring_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap code_example_no_text1 {
+            get {
+                object obj = ResourceManager.GetObject("code example no text1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap code_example1 {
             get {
                 object obj = ResourceManager.GetObject("code example1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Console_writeline {
+            get {
+                object obj = ResourceManager.GetObject("Console.writeline", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +236,16 @@ namespace Tutoring_Project.Properties {
         internal static System.Drawing.Bitmap exit_26px {
             get {
                 object obj = ResourceManager.GetObject("exit_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap glass_area {
+            get {
+                object obj = ResourceManager.GetObject("glass area", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -386,6 +416,36 @@ namespace Tutoring_Project.Properties {
         internal static System.Drawing.Bitmap Varaibles_examples {
             get {
                 object obj = ResourceManager.GetObject("Varaibles examples", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap variables_and_readlines {
+            get {
+                object obj = ResourceManager.GetObject("variables and readlines", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap variables_and_readlines1 {
+            get {
+                object obj = ResourceManager.GetObject("variables and readlines1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Yellow_Book_Example {
+            get {
+                object obj = ResourceManager.GetObject("Yellow Book Example", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

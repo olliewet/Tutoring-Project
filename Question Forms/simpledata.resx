@@ -117,16 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>This is a valid program. If you gave it to a C# compiler it would compile, and you could run it. The actual work is done by the two lines that I have highlighted. Broadly speaking the stuff before these two lines is concerned with setting things up and getting the values in to be processed. The stuff after the two lines is concerned with displaying the answer to the user. We can now go through each line in turn and try to see how it fits into our program. You will be asked questions regarding the piece of code provided. 
+  <data name="richTextBox13.Text" xml:space="preserve">
+    <value>A method call is followed by the parameters to the method. A parameter is something that is passed into a method for it to work on. Think of it as raw materials for a process of some kind. In the case of ReadLine it has no raw materials; it is going to fetch the information from the user who will type it in. However, we still have to provide the list of parameters even if it is empty.
 </value>
   </data>
-  <data name="richTextBox4.Text" xml:space="preserve">
-    <value>This is an instruction to the C# compiler to tell it that we want to use things from the System namespace. A namespace is a place where particular names have meaning. We have namespaces in our conversations too, if I am using the "Football" namespace and I say “That team is really on fire” I'm saying something good. If I am using the "Firefighter" namespace I'm saying something less good. In the case of C# the System namespace is where lots of useful things are described. One of these useful things provided with C# is the Console class which will let me write things which will appear on the screen in front of the user. If I want to just refer to this as Console I have to tell the compiler I'm using the System namespace. This means that if I refer to something by a particular name the compiler will look in System to see if there is anything matching that name. We will use other namespaces later on.</value>
-  </data>
-  <data name="richTextBox5.Text" xml:space="preserve">
-    <value>Classes are the basis of object oriented programming, as we shall see later. A C# program is made up of one or more classes. A class is a container which holds data and program code to do a particular job. In the case of our double glazing calculator the class just contains a single method which will work out our wood lengths and glass area, but a class can contain much more than that if it needs to. You need to invent an identifier for every class that you create. I've called ours GlazerCalc since this reflects what it does. For now, don't worry too much about classes; just make sure that you pick sensible names for the classes that you create. Oh, and one other thing. There is a convention that the name of the file which contains a particular class should match the class itself, in other words the program above should be held in a file called GlazerCalc.cs.
+  <data name="richTextBox12.Text" xml:space="preserve">
+    <value>This indicates that the ReadLine method is to be invoked. This asks the running program to dash off, do whatever statements there are in this method, and then come back. Methods are a way in which you can break up your program into a number of chunks, each of which has a particular job. They also mean that you only have to write a particular piece of code once, put it in a method, and then call that method whenever you want that particular job done. The C# system contains a number of built in methods to do things for our programs. ReadLine is one of these. When this program runs the ReadLine method is invoked (or called). It will wait for the user to enter a line of text and press the Enter key. Whatever is typed in is then returned as a string by the ReadLine method. The result of the method call is placed in the widthString variable.
 </value>
+  </data>
+  <data name="richTextBox11.Text" xml:space="preserve">
+    <value>On the right of the equals we have the thing which is going to be assigned to widthString. In this case the result is going to be the string returned by the method ReadLine. This method is part of an object called Console which looks after the user input and output. The full stop (.) separates the object identifier from the method identifier.
+</value>
+  </data>
+  <data name="richTextBox10.Text" xml:space="preserve">
+    <value>This is an assignment statement. In this C# statement we are going to change the value in a variable. Our program is going to read a line of text from the user and place the result in the variable we have called widthString. Remember that a variable is simply a named box of a particular size, which can hold a single data item (in this case a string of text). A good proportion of your programs will be instructions to assign new values to variables, as the various results are calculated. C# uses the = character to make assignments happen. The first part of this statement is the name of a previously defined variable. This is followed by the = character which I call the gozzinta. I call it that because the value on the right gozzinta (goes into) the variable on the left. Sorry.
+</value>
+  </data>
+  <data name="richTextBox8.Text" xml:space="preserve">
+    <value>We have made some variables which can hold numbers. Now we are going to make some which can contain strings. This is because when we read the numbers from our user we first read them in as strings of text. We then convert the text into a number. The variables widthString and heightString (note the sensible names) will contain text versions of the numbers.
+</value>
+  </data>
+  <data name="richTextBox7.Text" xml:space="preserve">
+    <value>This is a list. A list of items in C# is separated by , (comma) characters. In this case it is a list of variable names. Once the compiler has seen the word double (see above) it is expecting to find the name of at least one variable to be created. The compiler works its way through the list, creating boxes which can hold values of type double and giving them the appropriate names. From this point on we can refer to the above names, and the compiler will know that we are using that particular variable.</value>
+  </data>
+  <data name="richTextBox6.Text" xml:space="preserve">
+    <value>By now you probably feel that you need a drink. But that is not what double means in this context. What it means is "double precision floating point number".Our program needs to remember certain values as it runs. Notably it will read in values for the width and height of the windows and then calculate and print values for the glass area and wood length. C# calls the places where values are put variables. At the beginning of any block you can tell C# that you want to reserve some space to hold some data values. Each item can hold a particular kind of value. Essentially, C# can handle three types of data, floating point numbers, integer numbers and text (i.e. letters, digits and punctuation). The process of creating a variable is called declaring the variable.
+</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>This is a brace. As the name implies, braces come in packs of two, i.e. for every open brace there must be a matching close. Braces allow programmers to lump pieces of program together. Such a lump of program is often called a block. A block can contain the declaration of variables used within it, followed by a sequence of program statements which are executed in order. In this case the braces enclose the working parts of the method Main. When the compiler sees the matching close brace at the end it knows that it has reached the end of the method and can look for another (if any). The effects of an un-paired brace are invariably fatal....</value>
   </data>
   <data name="richTextBox3.Text" xml:space="preserve">
     <value>Static 
@@ -140,14 +159,73 @@ You choose the names of your methods to reflect what they are going to do for yo
 This is a pair of brackets enclosing nothing. This may sound stupid, but actually tells the compiler that the method Main has no parameters. A parameter to a method gives the method something to work on. When you define a method you can tell C# that it works on one or more things, for example sin(x) could work on a floating point
 value of angle x. We will cover methods in very great detail later in this document.</value>
   </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value>This is a brace. As the name implies, braces come in packs of two, i.e. for every open brace there must be a matching close. Braces allow programmers to lump pieces of program together. Such a lump of program is often called a block. A block can contain the declaration of variables used within it, followed by a sequence of program statements which are executed in order. In this case the braces enclose the working parts of the method Main. When the compiler sees the matching close brace at the end it knows that it has reached the end of the method and can look for another (if any). The effects of an un-paired brace are invariably fatal....</value>
-  </data>
-  <data name="richTextBox6.Text" xml:space="preserve">
-    <value>By now you probably feel that you need a drink. But that is not what double means in this context. What it means is "double precision floating point number".Our program needs to remember certain values as it runs. Notably it will read in values for the width and height of the windows and then calculate and print values for the glass area and wood length. C# calls the places where values are put variables. At the beginning of any block you can tell C# that you want to reserve some space to hold some data values. Each item can hold a particular kind of value. Essentially, C# can handle three types of data, floating point numbers, integer numbers and text (i.e. letters, digits and punctuation). The process of creating a variable is called declaring the variable.
+  <data name="richTextBox5.Text" xml:space="preserve">
+    <value>Classes are the basis of object oriented programming, as we shall see later. A C# program is made up of one or more classes. A class is a container which holds data and program code to do a particular job. In the case of our double glazing calculator the class just contains a single method which will work out our wood lengths and glass area, but a class can contain much more than that if it needs to. You need to invent an identifier for every class that you create. I've called ours GlazerCalc since this reflects what it does. For now, don't worry too much about classes; just make sure that you pick sensible names for the classes that you create. Oh, and one other thing. There is a convention that the name of the file which contains a particular class should match the class itself, in other words the program above should be held in a file called GlazerCalc.cs.
 </value>
   </data>
-  <data name="richTextBox7.Text" xml:space="preserve">
-    <value>This is a list. A list of items in C# is separated by , (comma) characters. In this case it is a list of variable names. Once the compiler has seen the word double (see above) it is expecting to find the name of at least one variable to be created. The compiler works its way through the list, creating boxes which can hold values of type double and giving them the appropriate names. From this point on we can refer to the above names, and the compiler will know that we are using that particular variable.</value>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>This is an instruction to the C# compiler to tell it that we want to use things from the System namespace. A namespace is a place where particular names have meaning. We have namespaces in our conversations too, if I am using the "Football" namespace and I say “That team is really on fire” I'm saying something good. If I am using the "Firefighter" namespace I'm saying something less good. In the case of C# the System namespace is where lots of useful things are described. One of these useful things provided with C# is the Console class which will let me write things which will appear on the screen in front of the user. If I want to just refer to this as Console I have to tell the compiler I'm using the System namespace. This means that if I refer to something by a particular name the compiler will look in System to see if there is anything matching that name. We will use other namespaces later on.</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>This is a valid program. If you gave it to a C# compiler it would compile, and you could run it. The actual work is done by the two lines that I have highlighted. Broadly speaking the stuff before these two lines is concerned with setting things up and getting the values in to be processed. The stuff after the two lines is concerned with displaying the answer to the user. We can now go through each line in turn and try to see how it fits into our program. You will be asked questions regarding the piece of code provided. 
+</value>
+  </data>
+  <data name="richTextBox26.Text" xml:space="preserve">
+    <value>Plus is an addition operator. We have seen it applied to add two integers together. However, the plus here means something completely different2 . In this case it means "add two strings together". You will have to get used to the idea of context in your programs. We have seen this with namespaces. Here it is with operators. The C# system uses the context of an operation to decide what to do. In the case of the previous +, between two double precision floating point numbers it means "do a sum". Here it has a string on the left hand side. This means that it is going to perform string concatenation rather than mathematical addition.
+</value>
+  </data>
+  <data name="richTextBox16.Text" xml:space="preserve">
+    <value>But the rest of the statement looks a bit scary. In fact it is not too tricky. We are asking Mr. double (the thing responsible holding for double precision floating point numbers) to do a little job for us. In this case the little job is "take the string held by widthString and convert it into a double precision floating point number". Mr. double provides this ability by exposing a method called Parse. Note that there is nothing wrong or naughty about something in C# exposing its methods. It is how we get things done for us. When you come to design larger programs you will find that the best way to do this is to create components which expose methods to get the job done. The whole of the C# library set is provided as a series of methods and one of the things that you will have to get to grips with is where the methods are and how to use them. As with many things in life, the trick is knowing who to ask…
+</value>
+  </data>
+  <data name="richTextBox18.Text" xml:space="preserve">
+    <value>The Parse method has the job of converting the string it has been given into a double precision floating point number. To do this it must look along the string, pull out each digit in turn and then calculate the actual value, as in "12" means a ten and two units. This process of looking along things is often called parsing. Hence the name of the method we are using. The method is given the string that is to be parsed and returns the number that it has found. Note that this gives significant potential for evil, in that if the user doesn’t type in a value or types something like "Twenty Five" the Parse method call will not be able to resolve a number and will fail as a result. How it fails, and how you can resolve this failure, will be left for a future section in order to add more excitement to this text.
+</value>
+  </data>
+  <data name="richTextBox19.Text" xml:space="preserve">
+    <value>We have seen that a call of a method must be followed by the raw materials (parameters) for that method. In the case of ReadLine there are no parameters, but we still need to supply an empty list to indicate this. In the case of Parse the method needs to be given the string that it is to work on. We do this by putting the name of the string variable containing the text (widthString) into the brackets as above. The value of the information in widthString (i.e. the text that the user has typed in) is passed into the Parse method for it to work on and extract the number from.
+</value>
+  </data>
+  <data name="richTextBox21.Text" xml:space="preserve">
+    <value>This is the actual nub of the program itself. This is the bit that does the work. It takes the height and width values and uses them to calculate the length of wood required. When I write programs I use brackets even when the compiler does not need them. This makes the program clearer. The calculation is an expression much like above, this time it is important that you notice the use of parenthesis to modify the order in which values are calculated in the expression. Normally C# will work out expressions in the way you would expect, i.e. all multiplication and division will be done first, followed by addition and subtraction. In the above expression I wanted to do some parts first, so I did what you would do in mathematics, I put brackets around the parts to be done first. Note that I use a factor of 3.25 to allow for the fact that the customer wants the length of wood in feet. There are around 3.25 feet in a meter, so I multiply the result in meters by this factor. The + and * characters in the expression are called operators in that they cause an operation to take place. The other items in the expression are called operands. These are what the operators work on
+</value>
+  </data>
+  <data name="richTextBox22.Text" xml:space="preserve">
+    <value>This line repeats the calculation for the area of the glass. Note that the area is given in square meters, so no conversion is required. I've put one multiplication in brackets to allow me to indicate that I am working out two times the area (i.e. for two panes of glass). There is no need to do this particularly, but I think it makes it slightly clearer.
+</value>
+  </data>
+  <data name="richTextBox25.Text" xml:space="preserve">
+    <value>This is a string literal. It is a string of text which is literally just in the program. The string of text is enclosed in double quote characters to tell the compiler that this is part of a value in the program, not instructions to the compiler itself.
+</value>
+  </data>
+  <data name="richTextBox27.Text" xml:space="preserve">
+    <value>This is another example of context at work. Previously we have used woodLength as a numeric representation of a value, in this program the length of the wood required. However, in the context it is being used at the moment (added to the end of a string) it cannot work like that. 
+The C# compiler must therefore ask the woodLength data item to convert itself into a string so it can be used correctly in this position. Fortunately it can do this, and so the program works as you would expect. 
+It is very important that you understand precisely what is going on here. Consider: 
+
+Console.WriteLine ( 2.0 + 3.0 ); 
+
+This would perform a numeric calculation (2.0 + 3.0) and produce a double precision floating point value. This result value would then be asked to provide a string version of itself to be printed, giving the output: 
+5
+But the line of code: Console.WriteLine ( "2.0" + 3.0 ); 
+Would regard the + as concatenating two strings. It would ask the value 3 to convert itself into a string (sounds strange – but this is what happens. It would then produce the output: 
+2.03 
+The string "2.0" has the text of the value 3.0 added on the end. This difference in behaviour is all because of the context of the operation that is being performed. 
+You can think of all of the variables in our program being tagged with metadata (there is that word again) which the compiler uses to decide what to do with them. The variable heightString is tagged with information that says "this is a string, use a plus with this and you concatenate". The variable woodLength is tagged with metadata which says "this is a double precision floating point value, use a plus with this and you perform arithmetic".
+</value>
+  </data>
+  <data name="richTextBox29.Text" xml:space="preserve">
+    <value>The bracket marks the end of the parameter being constructed for the WriteLine method call. When the method is called the program first assembles a completed string out of all the components, adding (or concatenating) them to produce a single result. It then passes the resulting string value into the method which will print it out on the console.</value>
+  </data>
+  <data name="richTextBox31.Text" xml:space="preserve">
+    <value>Now for some really important stuff. The program is essentially complete. We have added all the behaviours that we need. However, the compiler still needs to be told that we have reached the end of the program. This first close brace marks the end of the block of code which is the body of the Main method. A block of code starts with a { and ends with a }. When the compiler sees this it says to itself "that is the end of the Main method".
+</value>
+  </data>
+  <data name="richTextBox32.Text" xml:space="preserve">
+    <value>The second closing brace has an equally important job to the first. It marks the end of the class GlazerCalc. In C# everything exists inside a class. A class is a container for a whole bunch of things, including methods. If we want to (and we will do this later) we may put a number of methods into a class. For now however, we only want the one method in the class. And so we use the second closing brace to mark the end of the class itself.
+</value>
+  </data>
+  <data name="richTextBox33.Text" xml:space="preserve">
+    <value>That marks the end of our program. One of the things that you will have noticed is that there is an awful lot of punctuation in there. This is vital and must be supplied exactly as C# wants it, otherwise you will get what is called a compilation error. This simply indicates that the compiler is too stupid to make sense of what you have given it! You will quickly get used to hunting for and spotting compilation errors. One of the things you will find is that the compiler does not always detect the error where it takes place; consider the effect of missing out a "(" character. However, note that just because the compiler reckons your program is OK is no guarantee of it doing what you want! Another thing to remember is that the layout of the program does not bother the compiler, the following is just as valid:</value>
   </data>
 </root>

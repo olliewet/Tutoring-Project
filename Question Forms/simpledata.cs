@@ -325,7 +325,7 @@ namespace Tutoring_Project.Question_Forms
 
         private void Tip_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("These variables are stored as doubles, as they are storing numbers however numbers can stored be stored as floats or ints depending on how precise it has to be regrading floating points.");
+            MessageBox.Show("These variables are stored as doubles, as they are storing numbers however numbers can stored be stored as floats or ints depending on how precise it has to be regrading floating points. Also, dont forgot the semi-colon after declaring the variables!");
         }
 
         private void Button10_Click(object sender, EventArgs e)
@@ -340,9 +340,12 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("ADD HINT ADD HINT ADD HINT"); //Add Hit 
+                MessageBox.Show("Look at how the variables are declared in the programming example"); //Add Hit 
+            } else if (counter >= 6)
+            {
+                MessageBox.Show("It seems like this question is causing trouble");//Add more text
             }
-            text = tb_4.Text;
+                text = tb_4.Text;
             if (text.Contains("Int") && text.Contains("Num1") && text.Contains(",") && text.Contains("Num2") && text.Contains(";") && text.Contains("String") && text.Contains("String1") && text.Contains(",") && text.Contains("String2") && text.Contains(";"))         
                 {
                 tabControl1.SelectTab(11);
@@ -381,5 +384,279 @@ namespace Tutoring_Project.Question_Forms
         {
 
         }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(9);
+        }
+
+        private void Button13_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(12);
+        }
+
+        private void Button14_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(10);
+        }
+
+       
+
+        private void Button15_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(13);
+        }
+
+        
+
+        private void Button17_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(14);
+        }
+
+        private void Button18_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(12);
+        }
+
+        private void Button21_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(16);
+        }
+
+        private void Button19_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(15);
+        }
+
+        private void Button20_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(13);
+        }
+
+        private void Button23_Click(object sender, EventArgs e)
+        {
+            string text;
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("Look at how the variables are declared in the programming example"); //Add Hit 
+            }
+            else if (counter >= 6)
+            {
+                MessageBox.Show("It seems like this question is causing trouble");//Add more text
+            }
+            text = textBox4.Text;
+            if (text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console") && text.Contains(".") && text.Contains("readLine") && text.Contains("()") && text.Contains(";") | text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console.readLine();"))
+            {
+                tabControl1.SelectTab(17);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(9, 10);
+                    User.Exp();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(9, 10);
+                    User.Exp2();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(9, 10);
+                    User.Exp3();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(9, 10);
+                    User.Exp4();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+        }
+        #region more buttons 
+        private void TabPage13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button24_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(18);
+        }
+
+        private void Button25_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(19);
+        }
+
+        private void Button22_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(14);
+        }
+
+        private void Button26_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(15);
+        }
+
+        private void Button27_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(16);
+        }
+
+        private void Button28_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(17);
+        }
+
+        private void Button30_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(18);
+        }
+
+        private void Button31_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(19);
+        }
+
+        private void Button32_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(21);
+        }
+
+        private void Button29_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(20);
+        }
+
+        private void Button33_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(22);
+        }
+        #endregion
+
+        private void Button34_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(20);
+        }
+
+        private void Button36_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(21);
+        }
+
+        private void Button35_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(23);
+        }
+
+        private void Button38_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(22);
+        }
+
+        private void Button37_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(24);
+        }
+
+        private void TabPage25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button39_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(23);
+        }
+
+        private void Button40_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(25);
+        }
+
+        private void Button41_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(26);
+        }
+
+        private void Button43_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(27);
+        }
+
+        private void Button42_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(24);
+        }
+
+        private void Button44_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(25);
+        }
+
+        private void Button46_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(26);
+        }
+
+        private void Button48_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(27);
+        }
+
+        private void Button47_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(29);
+        }
+
+        private void Button50_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(28);
+        }
+
+        private void Button49_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(30);
+        }
+
+        private void TabPage30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button52_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(29);
+        }
+
+        private void Button51_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(31);
+        }
+
+        private void Button53_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(30);
+        }
+
+        private void Button54_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(32);
+        }
+
+        private void Button45_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(28);
+        }
     }
 }
+
