@@ -46,6 +46,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.endgame_btn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -53,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -154,7 +157,7 @@
             this.Intro_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Intro_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Intro_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.Intro_btn.Location = new System.Drawing.Point(229, 177);
+            this.Intro_btn.Location = new System.Drawing.Point(146, 175);
             this.Intro_btn.Name = "Intro_btn";
             this.Intro_btn.Size = new System.Drawing.Size(99, 31);
             this.Intro_btn.TabIndex = 1;
@@ -168,11 +171,11 @@
             this.sdp_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sdp_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.sdp_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.sdp_btn.Location = new System.Drawing.Point(334, 182);
+            this.sdp_btn.Location = new System.Drawing.Point(255, 175);
             this.sdp_btn.Name = "sdp_btn";
-            this.sdp_btn.Size = new System.Drawing.Size(99, 20);
+            this.sdp_btn.Size = new System.Drawing.Size(99, 61);
             this.sdp_btn.TabIndex = 2;
-            this.sdp_btn.Text = "Simple Data Processing";
+            this.sdp_btn.Text = "Simple Data Processing\r\nPart 1 ";
             this.sdp_btn.UseVisualStyleBackColor = true;
             this.sdp_btn.Click += new System.EventHandler(this.Sdp_btn_Click);
             // 
@@ -182,7 +185,7 @@
             this.cp_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cp_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cp_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.cp_btn.Location = new System.Drawing.Point(439, 182);
+            this.cp_btn.Location = new System.Drawing.Point(465, 180);
             this.cp_btn.Name = "cp_btn";
             this.cp_btn.Size = new System.Drawing.Size(87, 38);
             this.cp_btn.TabIndex = 3;
@@ -225,7 +228,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Tutoring_Project.Properties.Resources.school_director_filled_50px;
-            this.pictureBox5.Location = new System.Drawing.Point(543, 109);
+            this.pictureBox5.Location = new System.Drawing.Point(589, 107);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(63, 63);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,7 +239,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Tutoring_Project.Properties.Resources.binary_file_80px;
-            this.pictureBox4.Location = new System.Drawing.Point(452, 109);
+            this.pictureBox4.Location = new System.Drawing.Point(479, 107);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(63, 63);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -246,7 +249,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Tutoring_Project.Properties.Resources.database_50px;
-            this.pictureBox3.Location = new System.Drawing.Point(353, 109);
+            this.pictureBox3.Location = new System.Drawing.Point(270, 107);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(63, 63);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -256,7 +259,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Tutoring_Project.Properties.Resources.C_Sharp_012;
-            this.pictureBox2.Location = new System.Drawing.Point(251, 109);
+            this.pictureBox2.Location = new System.Drawing.Point(168, 107);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 63);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -270,7 +273,7 @@
             this.endgame_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.endgame_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.endgame_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.endgame_btn.Location = new System.Drawing.Point(532, 178);
+            this.endgame_btn.Location = new System.Drawing.Point(579, 175);
             this.endgame_btn.Name = "endgame_btn";
             this.endgame_btn.Size = new System.Drawing.Size(87, 38);
             this.endgame_btn.TabIndex = 9;
@@ -278,12 +281,38 @@
             this.endgame_btn.UseVisualStyleBackColor = true;
             this.endgame_btn.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button2.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.button2.Location = new System.Drawing.Point(360, 169);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(99, 61);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Simple Data Processing\r\nPart 2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Tutoring_Project.Properties.Resources.database_50px;
+            this.pictureBox6.Location = new System.Drawing.Point(377, 107);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
+            // 
             // Topics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.endgame_btn);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -306,6 +335,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -329,5 +359,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button endgame_btn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

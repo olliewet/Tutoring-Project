@@ -170,9 +170,8 @@ value of angle x. We will cover methods in very great detail later in this docum
     <value>This is a valid program. If you gave it to a C# compiler it would compile, and you could run it. The actual work is done by the two lines that I have highlighted. Broadly speaking the stuff before these two lines is concerned with setting things up and getting the values in to be processed. The stuff after the two lines is concerned with displaying the answer to the user. We can now go through each line in turn and try to see how it fits into our program. You will be asked questions regarding the piece of code provided. 
 </value>
   </data>
-  <data name="richTextBox26.Text" xml:space="preserve">
-    <value>Plus is an addition operator. We have seen it applied to add two integers together. However, the plus here means something completely different2 . In this case it means "add two strings together". You will have to get used to the idea of context in your programs. We have seen this with namespaces. Here it is with operators. The C# system uses the context of an operation to decide what to do. In the case of the previous +, between two double precision floating point numbers it means "do a sum". Here it has a string on the left hand side. This means that it is going to perform string concatenation rather than mathematical addition.
-</value>
+  <data name="richTextBox35.Text" xml:space="preserve">
+    <value>Well done on completing the first section of the tutoring program, this section was designed to be easy and to give you an insight into the programming language C#. Simple data is now unlocked, this topic is a lot harder and has different types of questions, not just the standard multiple-choice questions shown in the tutorial. During the tutorial you may have realised, you unlocked a badge! to see this badge they are located on the user profile. </value>
   </data>
   <data name="richTextBox16.Text" xml:space="preserve">
     <value>But the rest of the statement looks a bit scary. In fact it is not too tricky. We are asking Mr. double (the thing responsible holding for double precision floating point numbers) to do a little job for us. In this case the little job is "take the string held by widthString and convert it into a double precision floating point number". Mr. double provides this ability by exposing a method called Parse. Note that there is nothing wrong or naughty about something in C# exposing its methods. It is how we get things done for us. When you come to design larger programs you will find that the best way to do this is to create components which expose methods to get the job done. The whole of the C# library set is provided as a series of methods and one of the things that you will have to get to grips with is where the methods are and how to use them. As with many things in life, the trick is knowing who to ask…
@@ -198,6 +197,10 @@ value of angle x. We will cover methods in very great detail later in this docum
     <value>This is a string literal. It is a string of text which is literally just in the program. The string of text is enclosed in double quote characters to tell the compiler that this is part of a value in the program, not instructions to the compiler itself.
 </value>
   </data>
+  <data name="richTextBox26.Text" xml:space="preserve">
+    <value>Plus is an addition operator. We have seen it applied to add two integers together. However, the plus here means something completely different2 . In this case it means "add two strings together". You will have to get used to the idea of context in your programs. We have seen this with namespaces. Here it is with operators. The C# system uses the context of an operation to decide what to do. In the case of the previous +, between two double precision floating point numbers it means "do a sum". Here it has a string on the left hand side. This means that it is going to perform string concatenation rather than mathematical addition.
+</value>
+  </data>
   <data name="richTextBox27.Text" xml:space="preserve">
     <value>This is another example of context at work. Previously we have used woodLength as a numeric representation of a value, in this program the length of the wood required. However, in the context it is being used at the moment (added to the end of a string) it cannot work like that. 
 The C# compiler must therefore ask the woodLength data item to convert itself into a string so it can be used correctly in this position. Fortunately it can do this, and so the program works as you would expect. 
@@ -217,12 +220,12 @@ You can think of all of the variables in our program being tagged with metadata 
   <data name="richTextBox29.Text" xml:space="preserve">
     <value>The bracket marks the end of the parameter being constructed for the WriteLine method call. When the method is called the program first assembles a completed string out of all the components, adding (or concatenating) them to produce a single result. It then passes the resulting string value into the method which will print it out on the console.</value>
   </data>
-  <data name="richTextBox31.Text" xml:space="preserve">
-    <value>Now for some really important stuff. The program is essentially complete. We have added all the behaviours that we need. However, the compiler still needs to be told that we have reached the end of the program. This first close brace marks the end of the block of code which is the body of the Main method. A block of code starts with a { and ends with a }. When the compiler sees this it says to itself "that is the end of the Main method".
-</value>
-  </data>
   <data name="richTextBox32.Text" xml:space="preserve">
     <value>The second closing brace has an equally important job to the first. It marks the end of the class GlazerCalc. In C# everything exists inside a class. A class is a container for a whole bunch of things, including methods. If we want to (and we will do this later) we may put a number of methods into a class. For now however, we only want the one method in the class. And so we use the second closing brace to mark the end of the class itself.
+</value>
+  </data>
+  <data name="richTextBox31.Text" xml:space="preserve">
+    <value>Now for some really important stuff. The program is essentially complete. We have added all the behaviours that we need. However, the compiler still needs to be told that we have reached the end of the program. This first close brace marks the end of the block of code which is the body of the Main method. A block of code starts with a { and ends with a }. When the compiler sees this it says to itself "that is the end of the Main method".
 </value>
   </data>
   <data name="richTextBox33.Text" xml:space="preserve">

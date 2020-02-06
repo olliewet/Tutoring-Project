@@ -22,6 +22,7 @@ namespace Tutoring_Project
         Achievements Ach = new Achievements();
         UserProfile UserProfiles = new UserProfile();
         Question_Forms.simpledata S = new Question_Forms.simpledata();
+        Question_Forms.SimplePart2 S2 = new Question_Forms.SimplePart2();
         #endregion
 
         public Topics()
@@ -44,6 +45,13 @@ namespace Tutoring_Project
         {
             S.tabControl1.SelectTab(tab);
             S.ShowDialog();
+            this.Close();
+        }
+
+        private void ChangeTabSimplePart2(int tab)
+        {
+            S2.tabControl1.SelectTab(tab);
+            S2.ShowDialog();
             this.Close();
         }
         #endregion
@@ -323,7 +331,7 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
 
-                if ( x < 10 )
+                if ( x < 16)
                 {
                     MessageBox.Show("Not Completed the Previous Section");
                 }
@@ -333,10 +341,10 @@ namespace Tutoring_Project
             else if ((string)this.pictureBox1.Tag == "user2")
             {
                 this.Hide();
-                currentlevel = File.ReadAllText("levelfile.txt");
+                currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
 
-                if (x > 10)
+                if (x > 16)
                 {
                     MessageBox.Show("Not Completed the Previous Section");
                 }
@@ -344,19 +352,25 @@ namespace Tutoring_Project
             else if ((string)this.pictureBox1.Tag == "user3")
             {
                 this.Hide();
-                currentlevel = File.ReadAllText("levelfile.txt");
+                currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
 
-                if (x > 10)
+                if (x > 16)
                 {
                     MessageBox.Show("Not Completed the Previous Section");
                 }
             }
             else if ((string)this.pictureBox1.Tag == "user4")
             {
+
                 this.Hide();
-                //Add Code to Open up The form for this button and load the data for this user 
-                this.Close();
+                currentlevel = File.ReadAllText("user4level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                if (x > 16)
+                {
+                    MessageBox.Show("Not Completed the Previous Section");
+                }
             }
         }
 
@@ -500,6 +514,16 @@ namespace Tutoring_Project
                         this.Close();
                         ChangeTabSimple(17);
                         break;
+                    case 11:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(22);
+                        break;
+                    case 12:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(27);
+                        break;
                     default:
                         MessageBox.Show("Complete Previous Section");
                         break;
@@ -524,22 +548,51 @@ namespace Tutoring_Project
                 {
                     case 4:
                         this.Hide();
+                        this.Close();
                         ChangeTabSimple(0);
                         break;
                     case 5:
                         this.Hide();
-                        ChangeTabSimple(2);
+                        this.Close();
+                        ChangeTabSimple(3);
                         break;
                     case 6:
                         this.Hide();
-                        ChangeTabSimple(4);
+                        this.Close();
+                        ChangeTabSimple(6);
                         break;
                     case 7:
                         this.Hide();
-                        ChangeTabSimple(6);
+                        this.Close();
+                        ChangeTabSimple(7);
+                        break;
+                    case 8:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(8);
+                        break;
+                    case 9:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(11);
+                        break;
+                    case 10:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(17);
+                        break;
+                    case 11:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(22);
+                        break;
+                    case 12:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(27);
                         break;
                     default:
-                        MessageBox.Show("Completed this section");
+                        MessageBox.Show("Complete Previous Section");
                         break;
                 }
                 
@@ -562,22 +615,51 @@ namespace Tutoring_Project
                 {
                     case 4:
                         this.Hide();
+                        this.Close();
                         ChangeTabSimple(0);
                         break;
                     case 5:
                         this.Hide();
-                        ChangeTabSimple(2);
+                        this.Close();
+                        ChangeTabSimple(3);
                         break;
                     case 6:
                         this.Hide();
-                        ChangeTabSimple(4);
+                        this.Close();
+                        ChangeTabSimple(6);
                         break;
                     case 7:
                         this.Hide();
-                        ChangeTabSimple(6);
+                        this.Close();
+                        ChangeTabSimple(7);
+                        break;
+                    case 8:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(8);
+                        break;
+                    case 9:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(11);
+                        break;
+                    case 10:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(17);
+                        break;
+                    case 11:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(22);
+                        break;
+                    case 12:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(27);
                         break;
                     default:
-                        MessageBox.Show("Completed this section");
+                        MessageBox.Show("Complete Previous Section");
                         break;
                 }
                 this.Close();
@@ -600,22 +682,51 @@ namespace Tutoring_Project
                 {
                     case 4:
                         this.Hide();
+                        this.Close();
                         ChangeTabSimple(0);
                         break;
                     case 5:
                         this.Hide();
-                        ChangeTabSimple(2);
+                        this.Close();
+                        ChangeTabSimple(3);
                         break;
                     case 6:
                         this.Hide();
-                        ChangeTabSimple(4);
+                        this.Close();
+                        ChangeTabSimple(6);
                         break;
                     case 7:
                         this.Hide();
-                        ChangeTabSimple(6);
+                        this.Close();
+                        ChangeTabSimple(7);
+                        break;
+                    case 8:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(8);
+                        break;
+                    case 9:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(11);
+                        break;
+                    case 10:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(17);
+                        break;
+                    case 11:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(22);
+                        break;
+                    case 12:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimple(27);
                         break;
                     default:
-                        MessageBox.Show("Completed this section");
+                        MessageBox.Show("Complete Previous Section");
                         break;
                 }
                 
@@ -691,6 +802,136 @@ namespace Tutoring_Project
                 Achievements(x);               
                 Ach.ShowDialog();
                 this.Close();
+            }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                //The picture box of current instance is set to image of user 
+                S2.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                S2.pictureBox1.Tag = "user1";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 13:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(0);
+                        break;
+                    case 14:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(0);
+                        break;
+                    default:
+                        MessageBox.Show("Complete Previous Section");
+                        break;
+                }
+
+
+            }
+            //Statement used to check what user is logged in
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                //The picture box of current instance is set to image of current user 
+                S2.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                S2.pictureBox1.Tag = "user2";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user2level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 13:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(0);
+                        break;
+                    case 14:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(0);
+                        break;
+                    default:
+                        MessageBox.Show("Complete Previous Section");
+                        break;
+                }
+
+            }
+            //Statement used to check what user is logged in
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+
+                //The picture box of current instance is set to image of current user 
+                S2.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                S2.pictureBox1.Tag = "user3";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user3level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 13:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(0);
+                        break;
+                    case 14:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(0);
+                        break;
+                    default:
+                        MessageBox.Show("Complete Previous Section");
+                        break;
+                }
+                this.Close();
+            }
+            //Statement used to check what user is logged in
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                //The picture box of current instance is set to image of current user 
+                S2.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                S2.pictureBox1.Tag = "user4";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user4level.txt");
+                int x = Int32.Parse(currentlevel);
+
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 13:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(0);
+                        break;
+                    case 14:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(0);
+                        break;
+                    default:
+                        MessageBox.Show("Complete Previous Section");
+                        break;
+                }
+
             }
         }
     }

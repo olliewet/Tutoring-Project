@@ -539,7 +539,41 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button33_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(22);
+            
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("HINT HINT HINT"); //Add Hit 
+            }
+            if (radioButton9.Checked)
+            {
+                tabControl1.SelectTab(22);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(10,11);
+                    User.Exp();
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(10, 11);
+                    User.Exp2();
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(10, 11);
+                    User.Exp3();
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(10, 11);
+                    User.Exp4();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
         }
         #endregion
 
@@ -590,7 +624,51 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button43_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(27);
+            string text;
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("HINT HINT HINT"); //Add Hit 
+            }
+            else if (counter >= 6)
+            {
+                MessageBox.Show("It seems like this question is causing trouble");//Add more text
+            }
+            text = textBox5.Text;            
+            if (text.Contains("Console.WriteLine") && text.Contains("(num1 + num2)") | (text.Contains("Console.WriteLine") && text.Contains(" ( num1 + num2 ) ")))
+            {
+                tabControl1.SelectTab(27);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(11, 12);
+                    User.Exp();
+                    MessageBox.Show("Output: 40");
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(11, 12);
+                    User.Exp2();
+                    MessageBox.Show("Output: 40");
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(11, 12);
+                    User.Exp3();
+                    MessageBox.Show("Output: 40");
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(11, 12);
+                    User.Exp4();
+                    MessageBox.Show("Output: 40");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+            
         }
 
         private void Button42_Click(object sender, EventArgs e)
@@ -656,6 +734,52 @@ namespace Tutoring_Project.Question_Forms
         private void Button45_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(28);
+        }
+
+        private void Simpledata_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Finish_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topics T = new Topics();
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                User.User1(12, 13);               
+                User.Exp();
+                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                T.pictureBox1.Tag = "user1";
+            }
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                User.User2(12, 13);
+                User.Exp2();
+                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                T.pictureBox1.Tag = "user2";
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                User.User3(12, 13);
+                User.Exp3();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                User.User4(12, 13);
+                User.Exp4();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                T.pictureBox1.Tag = "user4";
+            }
+            this.Close();
+            T.ShowDialog();
         }
     }
 }
