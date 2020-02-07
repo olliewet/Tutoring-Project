@@ -70,5 +70,45 @@ namespace Tutoring_Project.Question_Forms
                 Application.Exit();
             }
         }
+
+        private void Simple_btn1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+        }
+
+        private void Simple_btn2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
+
+        private void Back_btn2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void Tip_btn1(object sender, EventArgs e)
+        {
+            MessageBox.Show("When you are writing a specification you should worry about the precision to which values are to be held. Too much accuracy may slow the machine down - too little may result in the wrong values being used.");
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(3);
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
     }
 }
