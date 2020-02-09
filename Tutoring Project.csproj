@@ -229,6 +229,7 @@
     <None Include="Resources\glass area.png" />
     <None Include="Resources\code example no text1.png" />
     <None Include="Resources\Console.writeline.png" />
+    <None Include="Resources\Integer Values.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />

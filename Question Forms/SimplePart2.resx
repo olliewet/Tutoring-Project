@@ -117,14 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox5.Text" xml:space="preserve">
-    <value>In the second case we can never hold what we are looking at exactly. Even if you measure a piece of string to 100 decimal places it is still not going to give you its exact length - you could always get the value more accurately. These are real. A computer is digital, i.e. it operates entirely on patterns of bits which can be regarded as numbers. Because we know that it works in terms of ons and offs it has problems holding real values. To handle real values the computer actually stores them to a limited accuracy, which we hope is adequate (and usually is). 
-
-This means that when we want to store something we have to tell the computer whether it is an integer or a real. We also need to consider the range of possible values that we need to hold so that we can choose the appropriate type to store the data
-
-You tell C# about a variable you want to create by declaring it. The declaration also identifies the type of the thing we want to store. Think of this as C# creating a box of a particular size, specifically designed to hold items of the given type. The box is tagged with some metadata (there is that word again) so that the system knows what can be put into it and how that box can be used.
-</value>
-  </data>
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>In this section we are going to take a look at how we can write programs that manipulate data, how values can be stored, retrieved and generally fiddled with. This provides us with the ability to perform the data processing part of programs.
 </value>
@@ -133,15 +125,33 @@ You tell C# about a variable you want to create by declaring it. The declaration
     <value>In the glazing program in the last section we decided to hold the width and the height of the windows that we are working on in variables that we described as double. Before we can go much further in our programming career we need to consider just what this means, and what other types of data we can store in programs that we write. Programs operate on data. A programming language must give you a way of storing the data you are processing, otherwise it is useless. What the data actually means is something that you as a programmer decide (see the above digression on data). A variable is a named location where you can store something. You can think of it as a box of a particular size with a name painted on the box. You chose the name to reflect what is going to be stored there (we used sensible names like woodLength in the above program). You also need to choose the type of the variable (particular size and shape of box) from the range of storage types which C# provides. The type of the variable is part of the metadata about that variable. Programs also contain literal values. A literal value is just a value in your program which you use for some purpose. For each type of variable the C# language has a way in which literal values of that type are expressed.
 </value>
   </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>In the second case we can never hold what we are looking at exactly. Even if you measure a piece of string to 100 decimal places it is still not going to give you its exact length - you could always get the value more accurately. These are real. A computer is digital, i.e. it operates entirely on patterns of bits which can be regarded as numbers. Because we know that it works in terms of ons and offs it has problems holding real values. To handle real values the computer actually stores them to a limited accuracy, which we hope is adequate (and usually is). 
+This means that when we want to store something we have to tell the computer whether it is an integer or a real. We also need to consider the range of possible values that we need to hold so that we can choose the appropriate type to store the data
+</value>
+  </data>
   <data name="richTextBox3.Text" xml:space="preserve">
     <value>When considering numeric values there are two kinds of data: 
 • Nice chunky individual values, for example the number of sheep in a field, teeth on a cog, apples in a basket. These are referred to as integers.
  • Nasty real world type things, for example the current temperature, the length of a piece of string, the speed of a car. These are referred to as reals.
 </value>
   </data>
-  <data name="richTextBox4.Text" xml:space="preserve">
+  <data name="richTextBox5.Text" xml:space="preserve">
     <value>In the second case we can never hold what we are looking at exactly. Even if you measure a piece of string to 100 decimal places it is still not going to give you its exact length - you could always get the value more accurately. These are real. A computer is digital, i.e. it operates entirely on patterns of bits which can be regarded as numbers. Because we know that it works in terms of ons and offs it has problems holding real values. To handle real values the computer actually stores them to a limited accuracy, which we hope is adequate (and usually is). 
+
 This means that when we want to store something we have to tell the computer whether it is an integer or a real. We also need to consider the range of possible values that we need to hold so that we can choose the appropriate type to store the data
+
+You tell C# about a variable you want to create by declaring it. The declaration also identifies the type of the thing we want to store. Think of this as C# creating a box of a particular size, specifically designed to hold items of the given type. The box is tagged with some metadata (there is that word again) so that the system knows what can be put into it and how that box can be used.
+</value>
+  </data>
+  <data name="richTextBox6.Text" xml:space="preserve">
+    <value>Integers are the easiest type of value for the computer to store. Each value will map onto a particular pattern of bits. The only issue is one of range. The bigger the value the larger the number of bits that you need to represent it. C# provides a variety of integer types, depending on the range of values you would like to store:
+
+The standard integer type, int, can hold frighteningly large numbers in C#, in the range -2,147,483,648 to 2,147,483,647. If you want to hold even larger integers than this (although I've no idea why you'd want this) there is a long version.
+
+An example of an integer variable would be something which kept track of the number of sheep in a field:
+int numberOfSheep = 0;
+
 </value>
   </data>
 </root>

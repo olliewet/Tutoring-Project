@@ -110,5 +110,25 @@ namespace Tutoring_Project.Question_Forms
         {
             tabControl1.SelectTab(2);
         }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Note that we can go one further negative than positive. This is because the numbers are stored using 2's complement notation.");
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(3);
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(5);
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
     }
 }

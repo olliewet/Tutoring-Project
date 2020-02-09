@@ -20,6 +20,9 @@ namespace Tutoring_Project
             
         }
 
+        
+
+
         #region Unused Buttons 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -98,82 +101,96 @@ namespace Tutoring_Project
             string exp = File.ReadAllText("exp1.txt");
             int x = int.Parse(exp);
 
-            if (Enumerable.Range(1, 100).Contains(x))
+            if (x >= 0 && x <= 100)
             {
                 led.exp1.Text = "0";
             }
-            else if (Enumerable.Range(101, 200).Contains(x))
+            else if (x >= 100 && x <= 200)
             {
                 led.exp1.Text = "1";
             }
-            else if (Enumerable.Range(201, 300).Contains(x))
+            else if (x >= 200 && x <= 300)
             {
                 led.exp1.Text = "2";
             }
-            else if (Enumerable.Range(301, 400).Contains(x))
+            else if (x >= 300 && x <= 400)
             {
                 led.exp1.Text = "3";
             }
+            else if (x >= 400 && x <= 500)
+            {
+                led.exp1.Text = "4";
+            }
+
 
             string exp2 = File.ReadAllText("exp2.txt");
             int i = int.Parse(exp2);
-            if (Enumerable.Range(1, 100).Contains(i))
+            if (i >= 0 && x <= 100)
             {
                 led.exp2.Text = "0";
             }
-            else if (Enumerable.Range(101, 200).Contains(i))
+            else if (i >= 100 && i <= 200)
             {
                 led.exp2.Text = "1";
             }
-            else if (Enumerable.Range(201, 300).Contains(i))
+            else if (i >= 201 && i <= 300)
             {
                 led.exp2.Text = "2";
             }
-            else if (Enumerable.Range(301, 400).Contains(i))
+            else if (i >= 300 && i <= 400)
             {
                 led.exp2.Text = "3";
+            }
+            else if (i >= 400 && i <= 500)
+            {
+                led.exp2.Text = "4";
             }
 
             string exp3 = File.ReadAllText("exp3.txt");
             int ii = int.Parse(exp3);
-            if (Enumerable.Range(1, 100).Contains(ii))
+            if (ii >= 0 && ii <= 100)
             {
                 led.exp3.Text = "0";
             }
-            else if (Enumerable.Range(101, 200).Contains(ii))
+            else if (ii >= 100 && ii <= 200)
             {
                 led.exp3.Text = "1";
             }
-            else if (Enumerable.Range(201, 300).Contains(ii))
+            else if (ii >= 200 && ii <= 300)
             {
                 led.exp3.Text = "2";
             }
-            else if (Enumerable.Range(301, 400).Contains(ii))
+            else if (ii >= 300 && ii <= 400)
             {
                 led.exp3.Text = "3";
+            }
+            else if (ii >= 400 && ii <= 500)
+            {
+                led.exp3.Text = "4";
             }
 
             string exp4 = File.ReadAllText("exp4.txt");
             int h = int.Parse(exp4);
-            if (Enumerable.Range(1, 100).Contains(h))
+            if (h >= 0 && h <= 100)
             {
                 led.exp4.Text = "0";
             }
-            else if (Enumerable.Range(101, 200).Contains(h))
+            else if (h >= 100 && h <= 200)
             {
                 led.exp4.Text = "1";
             }
-            else if (Enumerable.Range(201, 300).Contains(h))
+            else if (h >= 201 && h <= 300)
             {
                 led.exp4.Text = "2";
             }
-            else if (Enumerable.Range(301, 400).Contains(h))
+            else if (h >= 300 && h <= 400)
             {
                 led.exp4.Text = "3";
             }
-
-
-
+            else if (h >= 400 && h <= 500)
+            {
+                led.exp4.Text = "4";
+            }
 
             led.ShowDialog();
             this.Close();
