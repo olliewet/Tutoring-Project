@@ -54,6 +54,26 @@ namespace Tutoring_Project
             S2.ShowDialog();
             this.Close();
         }
+
+        private void CompleteIntroductionSection (int x)
+        {
+            if (x < 4)
+            {
+                MessageBox.Show("Complete Previous Section");
+            }
+        }
+
+        private void CompleteSimpleDataSection(int x)
+        {
+            if (x < 4)
+            {
+                MessageBox.Show("Complete Introduction");
+            }
+            else if ( x < 13)
+            {
+                MessageBox.Show("Complete Simple Data Section");
+            }
+        }
         #endregion
 
         private void Achievements(int x)
@@ -476,9 +496,10 @@ namespace Tutoring_Project
                 int x = Int32.Parse(currentlevel);
 
                 //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level                
+                CompleteIntroductionSection(x);
                 switch (x)
-                {
+                {                                         
                     case 4:
                         this.Hide();
                         this.Close();
@@ -525,11 +546,10 @@ namespace Tutoring_Project
                         ChangeTabSimple(27);
                         break;
                     default:
-                        MessageBox.Show("Complete Previous Section");
+                        MessageBox.Show("Completed Section");
                         break;
                 }
-
-                
+               
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
@@ -544,6 +564,7 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                CompleteIntroductionSection(x);
                 switch (x)
                 {
                     case 4:
@@ -608,7 +629,7 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
-
+                CompleteIntroductionSection(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
@@ -662,7 +683,7 @@ namespace Tutoring_Project
                         MessageBox.Show("Complete Previous Section");
                         break;
                 }
-                this.Close();
+                
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
@@ -674,8 +695,7 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
-
-
+                CompleteIntroductionSection(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
@@ -816,7 +836,7 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
-
+                CompleteSimpleDataSection(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
@@ -848,7 +868,7 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
-
+                CompleteSimpleDataSection(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
@@ -880,7 +900,7 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
-
+                CompleteSimpleDataSection(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 switch (x)
@@ -911,7 +931,7 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
-
+                CompleteSimpleDataSection(x);
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level

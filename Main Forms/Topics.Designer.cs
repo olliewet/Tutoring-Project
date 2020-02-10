@@ -228,7 +228,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Tutoring_Project.Properties.Resources.school_director_filled_50px;
-            this.pictureBox5.Location = new System.Drawing.Point(589, 107);
+            this.pictureBox5.Location = new System.Drawing.Point(579, 106);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(63, 63);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -273,7 +273,7 @@
             this.endgame_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.endgame_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.endgame_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.endgame_btn.Location = new System.Drawing.Point(579, 175);
+            this.endgame_btn.Location = new System.Drawing.Point(562, 175);
             this.endgame_btn.Name = "endgame_btn";
             this.endgame_btn.Size = new System.Drawing.Size(87, 38);
             this.endgame_btn.TabIndex = 9;

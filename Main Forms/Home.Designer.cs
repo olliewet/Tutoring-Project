@@ -245,7 +245,6 @@
             this.Controls.Add(this.AboutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Home";
-            this.Text = " ";
             this.Load += new System.EventHandler(this.Home_Load);
             this.AboutPanel.ResumeLayout(false);
             this.AboutPanel.PerformLayout();

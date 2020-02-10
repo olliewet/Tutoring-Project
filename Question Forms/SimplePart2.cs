@@ -17,6 +17,10 @@ namespace Tutoring_Project.Question_Forms
             InitializeComponent();
         }
 
+        #region Variables 
+        int counter;
+        #endregion
+
         private void Topics_btn_Click(object sender, EventArgs e)
         {
 
@@ -129,6 +133,65 @@ namespace Tutoring_Project.Question_Forms
         private void Button9_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(4);
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(6); 
+        }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(5);
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+            
+            string text;
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("HINT HINT HINT"); //Add Hit 
+            }
+            else if (counter >= 6)
+            {
+                MessageBox.Show("HINT HINT HINT");//Add more text
+            }
+            text = tb_4.Text;
+            if (text.Contains("Int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("Int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5;"))
+            {
+                tabControl1.SelectTab(11);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(13, 14);
+                    User.Exp();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(13, 14);
+                    User.Exp2();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(13, 14);
+                    User.Exp3();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(13, 14);
+                    User.Exp4();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
         }
     }
 }
