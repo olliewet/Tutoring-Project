@@ -211,6 +211,8 @@
             this.button42 = new System.Windows.Forms.Button();
             this.button41 = new System.Windows.Forms.Button();
             this.tabPage27 = new System.Windows.Forms.TabPage();
+            this.richTextBox34 = new System.Windows.Forms.RichTextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button44 = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
             this.tabPage28 = new System.Windows.Forms.TabPage();
@@ -250,8 +252,6 @@
             this.label40 = new System.Windows.Forms.Label();
             this.richTextBox33 = new System.Windows.Forms.RichTextBox();
             this.tabPage33 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.richTextBox34 = new System.Windows.Forms.RichTextBox();
             this.finish_btn = new System.Windows.Forms.Button();
             this.richTextBox35 = new System.Windows.Forms.RichTextBox();
             this.label32 = new System.Windows.Forms.Label();
@@ -402,7 +402,7 @@
             // 
             this.panel4.Location = new System.Drawing.Point(-4, 52);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(907, 12);
+            this.panel4.Size = new System.Drawing.Size(907, 10);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
@@ -2434,6 +2434,27 @@
             this.tabPage27.Text = "tabPage27";
             this.tabPage27.UseVisualStyleBackColor = true;
             // 
+            // richTextBox34
+            // 
+            this.richTextBox34.BackColor = System.Drawing.Color.White;
+            this.richTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox34.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox34.Location = new System.Drawing.Point(6, 30);
+            this.richTextBox34.Name = "richTextBox34";
+            this.richTextBox34.ReadOnly = true;
+            this.richTextBox34.Size = new System.Drawing.Size(775, 71);
+            this.richTextBox34.TabIndex = 70;
+            this.richTextBox34.Text = "Question - Write a line of code which prints out the value of num1 and num2 added" +
+    " together. \nint num1 = 10; \nint num2 = 30;\n";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(6, 107);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(775, 191);
+            this.textBox5.TabIndex = 69;
+            // 
             // button44
             // 
             this.button44.Location = new System.Drawing.Point(5, 334);
@@ -2883,27 +2904,6 @@
             this.tabPage33.TabIndex = 32;
             this.tabPage33.Text = "tabPage33";
             this.tabPage33.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(6, 107);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(775, 191);
-            this.textBox5.TabIndex = 69;
-            // 
-            // richTextBox34
-            // 
-            this.richTextBox34.BackColor = System.Drawing.Color.White;
-            this.richTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox34.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox34.Location = new System.Drawing.Point(6, 30);
-            this.richTextBox34.Name = "richTextBox34";
-            this.richTextBox34.ReadOnly = true;
-            this.richTextBox34.Size = new System.Drawing.Size(775, 71);
-            this.richTextBox34.TabIndex = 70;
-            this.richTextBox34.Text = "Question - Write a line of code which prints out the value of num1 and num2 added" +
-    " together. \nint num1 = 10; \nint num2 = 30;\n";
             // 
             // finish_btn
             // 

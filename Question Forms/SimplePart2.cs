@@ -146,23 +146,22 @@ namespace Tutoring_Project.Question_Forms
         }
 
         private void Button11_Click(object sender, EventArgs e)
-        {
-            
+        {           
             string text;
             counter = 0;
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("HINT HINT HINT"); //Add Hit 
+                MessageBox.Show("Remember the structure of an assigenment statement, remember the difference = and ==, the single = should be used in this instance"); //Add Hit 
             }
             else if (counter >= 6)
             {
-                MessageBox.Show("HINT HINT HINT");//Add more text
+                MessageBox.Show("Example of an assigenment statement Double PreciseNumberOfDrinks = 5.1 ; ");
             }
             text = tb_4.Text;
-            if (text.Contains("Int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("Int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5;"))
+            if (text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5;"))
             {
-                tabControl1.SelectTab(11);
+                tabControl1.SelectTab(7);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
                     User.User1(13, 14);

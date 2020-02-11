@@ -95,6 +95,16 @@ namespace Tutoring_Project.Question_Forms
 
         private void SimpleQ1(object sender, EventArgs e)
         {
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("Namespaces are used within C#, to allow the user to use certain things from the namespace such as variables and methods, used for organisation");
+            }
+            else if (counter >= 6)
+            {
+                MessageBox.Show("The Tutor has understands you might be struggling with this question, namespaces are used to tell the compiler the user wants to use certains thing from the namespace, there can be lots of different namespaces, each will have different functions");
+            }
             if (radioButton4.Checked)
             {
                 tabControl1.SelectTab(3);
@@ -131,9 +141,13 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("Classes are the main part of OO Programming, Classes act like a container to hold code."); //Add Hit 
+                MessageBox.Show("Classes are the main part of OO Programming, Classes act like a container to hold code.");  
             }
-                    
+            else if (counter >= 6)
+            {
+                MessageBox.Show("This Question has been attempted more than 6 times, it seems like you might be having trouble, classes are used with OO programming and main purpose is to hold code, it helps with the organisation of things.");
+            }
+
             if (radioButton7.Checked)
             {
                 tabControl1.SelectTab(4);
@@ -175,9 +189,12 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("Remember What we previously Covered, these three keywords are required otherwise the program will not compile and erros will be thrown, go back to the previous page if help is needed."); //Add Hit 
             } 
+            else if ( counter >= 5)
+            {
+                MessageBox.Show("Remember that some of the keywords are lower cased such as static and void, however main is used with a captial!");
+            }
 
-                        
-            if (textBox1.Text.Equals("static") | (textBox1.Text.Equals("Static") && textBox2.Text.Equals("void") | textBox2.Text.Equals("Void") && textBox3.Text.Equals("Main()") | textBox3.Text.Equals("main()"))) //Statement Might be Incorrect  
+            if (textBox1.Text.Equals("static") && textBox2.Text.Equals("void") && textBox3.Text.Equals("Main()")) 
             {
                 tabControl1.SelectTab(6);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -285,7 +302,7 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("OO Programming allows for better organisation since code can be put into smaller size chunks"); //Add Hit 
+                MessageBox.Show("Braces are used within coding to define a block and without them errors are thrown by the compiler!"); 
             }
 
             if (rb_2.Checked)
@@ -343,10 +360,10 @@ namespace Tutoring_Project.Question_Forms
                 MessageBox.Show("Look at how the variables are declared in the programming example"); //Add Hit 
             } else if (counter >= 6)
             {
-                MessageBox.Show("It seems like this question is causing trouble");//Add more text
+                MessageBox.Show("It seems like this question is causing trouble, remember if the keyword you are using is supposed to have the first letter in captial, also make sure the variable names are spelt correctly");//Add more text
             }
                 text = tb_4.Text;
-            if (text.Contains("Int") && text.Contains("Num1") && text.Contains(",") && text.Contains("Num2") && text.Contains(";") && text.Contains("String") && text.Contains("String1") && text.Contains(",") && text.Contains("String2") && text.Contains(";"))         
+            if (text.Contains("int") && text.Contains("Num1") && text.Contains(",") && text.Contains("Num2") && text.Contains(";") && text.Contains("String") && text.Contains("String1") && text.Contains(",") && text.Contains("String2") && text.Contains(";"))         
                 {
                 tabControl1.SelectTab(11);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -441,12 +458,9 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("Look at how the variables are declared in the programming example"); //Add Hit 
+                MessageBox.Show("Look at how the variables are declared in the programming example, make sure the variables are spelt correctly!"); 
             }
-            else if (counter >= 6)
-            {
-                MessageBox.Show("It seems like this question is causing trouble");//Add more text
-            }
+            
             text = textBox4.Text;
             if (text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console") && text.Contains(".") && text.Contains("readLine") && text.Contains("()") && text.Contains(";") | text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console.readLine();"))
             {
@@ -544,7 +558,7 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("HINT HINT HINT"); //Add Hit 
+                MessageBox.Show("The Question is asking about double.Parse, .Parse can be used to parse into different types depending what is infornt of the .Parse!");
             }
             if (radioButton9.Checked)
             {
@@ -629,11 +643,11 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("HINT HINT HINT"); //Add Hit 
+                MessageBox.Show("Look at how the variables are declared in the programming example, make sure the variables are spelt correctly!"); 
             }
             else if (counter >= 6)
             {
-                MessageBox.Show("It seems like this question is causing trouble");//Add more text
+                MessageBox.Show("It seems like this question is causing trouble, refer back to previous pages for extra help!");//Add more text
             }
             text = textBox5.Text;            
             if (text.Contains("Console.WriteLine") && text.Contains("(num1 + num2)") | (text.Contains("Console.WriteLine") && text.Contains(" ( num1 + num2 ) ")))

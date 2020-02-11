@@ -170,9 +170,6 @@ value of angle x. We will cover methods in very great detail later in this docum
     <value>This is a valid program. If you gave it to a C# compiler it would compile, and you could run it. The actual work is done by the two lines that I have highlighted. Broadly speaking the stuff before these two lines is concerned with setting things up and getting the values in to be processed. The stuff after the two lines is concerned with displaying the answer to the user. We can now go through each line in turn and try to see how it fits into our program. You will be asked questions regarding the piece of code provided. 
 </value>
   </data>
-  <data name="richTextBox35.Text" xml:space="preserve">
-    <value>Well done on completing the first section of the tutoring program, this section was designed to be easy and to give you an insight into the programming language C#. Simple data is now unlocked, this topic is a lot harder and has different types of questions, not just the standard multiple-choice questions shown in the tutorial. During the tutorial you may have realised, you unlocked a badge! to see this badge they are located on the user profile. </value>
-  </data>
   <data name="richTextBox16.Text" xml:space="preserve">
     <value>But the rest of the statement looks a bit scary. In fact it is not too tricky. We are asking Mr. double (the thing responsible holding for double precision floating point numbers) to do a little job for us. In this case the little job is "take the string held by widthString and convert it into a double precision floating point number". Mr. double provides this ability by exposing a method called Parse. Note that there is nothing wrong or naughty about something in C# exposing its methods. It is how we get things done for us. When you come to design larger programs you will find that the best way to do this is to create components which expose methods to get the job done. The whole of the C# library set is provided as a series of methods and one of the things that you will have to get to grips with is where the methods are and how to use them. As with many things in life, the trick is knowing who to ask…
 </value>
@@ -230,5 +227,8 @@ You can think of all of the variables in our program being tagged with metadata 
   </data>
   <data name="richTextBox33.Text" xml:space="preserve">
     <value>That marks the end of our program. One of the things that you will have noticed is that there is an awful lot of punctuation in there. This is vital and must be supplied exactly as C# wants it, otherwise you will get what is called a compilation error. This simply indicates that the compiler is too stupid to make sense of what you have given it! You will quickly get used to hunting for and spotting compilation errors. One of the things you will find is that the compiler does not always detect the error where it takes place; consider the effect of missing out a "(" character. However, note that just because the compiler reckons your program is OK is no guarantee of it doing what you want! Another thing to remember is that the layout of the program does not bother the compiler, the following is just as valid:</value>
+  </data>
+  <data name="richTextBox35.Text" xml:space="preserve">
+    <value>Well done on completing the first section of the tutoring program, this section was designed to be easy and to give you an insight into the programming language C#. Simple data is now unlocked, this topic is a lot harder and has different types of questions, not just the standard multiple-choice questions shown in the tutorial. During the tutorial you may have realised, you unlocked a badge! to see this badge they are located on the user profile. </value>
   </data>
 </root>
