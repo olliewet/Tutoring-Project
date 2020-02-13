@@ -192,5 +192,63 @@ namespace Tutoring_Project.Question_Forms
                 MessageBox.Show("Answer is incorrect");
             }
         }
-    }
+
+        private void Button13_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Finally, if you want the ultimate in precision but require a slightly smaller range you can use the decimal type. This uses twice the storage space of a double and holds values to a precision of 28-29 digits. It is used in financial calculations where the numbers are not so large but they need to be held to very high accuracy. decimal robsOverdraft;");
+        }
+
+        private void Button15_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(6);
+        }
+
+        private void Button14_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(8);
+        }
+
+        private void Button16_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(7);
+        }
+
+        private void Button17_Click(object sender, EventArgs e)
+        {
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("The Question is asking about double.Parse, .Parse can be used to parse into different types depending what is infornt of the .Parse!");
+            }
+            if (answer_btn4.Checked)
+            {
+                tabControl1.SelectTab(9);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(14, 15);
+                    User.Exp();
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(14, 15);
+                    User.Exp2();
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(14, 15);
+                    User.Exp3();
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(14, 15);
+                    User.Exp4();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+        }
+        }
 }

@@ -849,7 +849,7 @@ namespace Tutoring_Project
                     case 14:
                         this.Hide();
                         this.Close();
-                        ChangeTabSimplePart2(0);
+                        ChangeTabSimplePart2(7);
                         break;
                     default:
                         MessageBox.Show("Complete Previous Section");
@@ -881,7 +881,7 @@ namespace Tutoring_Project
                     case 14:
                         this.Hide();
                         this.Close();
-                        ChangeTabSimplePart2(0);
+                        ChangeTabSimplePart2(7);
                         break;
                     default:
                         MessageBox.Show("Complete Previous Section");
@@ -913,7 +913,7 @@ namespace Tutoring_Project
                     case 14:
                         this.Hide();
                         this.Close();
-                        ChangeTabSimplePart2(0);
+                        ChangeTabSimplePart2(7);
                         break;
                     default:
                         MessageBox.Show("Complete Previous Section");
@@ -945,7 +945,7 @@ namespace Tutoring_Project
                     case 14:
                         this.Hide();
                         this.Close();
-                        ChangeTabSimplePart2(0);
+                        ChangeTabSimplePart2(7);
                         break;
                     default:
                         MessageBox.Show("Complete Previous Section");

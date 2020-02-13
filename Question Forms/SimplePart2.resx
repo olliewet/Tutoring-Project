@@ -157,4 +157,8 @@ This creates a variable which could keep track of over two thousand million shee
 
 </value>
   </data>
+  <data name="richTextBox8.Text" xml:space="preserve">
+    <value>"Real" is a generic term for numbers which are not integers. They have a decimal point and a fractional part. Depending on the value the decimal point floats around in the number, hence the name float. C# provides a type of box which can hold a real number. A standard float value has a range of 1.5E-45 to 3.4E48 with a precision of only 7 digits (i.e. not as good as most pocket calculators). If you want more precision (although of course your programs will use up more computer memory and run more slowly) you can use a double box instead (double is an abbreviation for double precision). This takes up more computer memory but it has a range of 5.0E-324 to 1.7E308 and a precision of 15 digits.
+</value>
+  </data>
 </root>
