@@ -333,6 +333,26 @@ namespace Tutoring_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OllieBadge {
+            get {
+                object obj = ResourceManager.GetObject("OllieBadge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OllieBasics {
+            get {
+                object obj = ResourceManager.GetObject("OllieBasics", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ProblemSolver {
             get {
                 object obj = ResourceManager.GetObject("ProblemSolver", resourceCulture);

@@ -70,10 +70,7 @@ namespace Tutoring_Project
             }
         }
 
-        private void Button5_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Achievements_Load(object sender, EventArgs e)
         {
@@ -87,12 +84,29 @@ namespace Tutoring_Project
 
         private void Button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Button10_Click(object sender, EventArgs e)
-        {
             tabControl1.SelectTab(1);
+        }  
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(3);
+        }
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(5);
+        }
+
+        
+     
     }
 }

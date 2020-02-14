@@ -250,5 +250,93 @@ namespace Tutoring_Project.Question_Forms
                 MessageBox.Show("Answer is incorrect");
             }
         }
+
+        private void Button19_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(8);
         }
+
+        private void Button18_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(10);
+        }
+
+        private void Button20_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("\"this is a string\"");
+        }
+
+        private void Button21_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("\" \\x0041BCDE\\a \""); // Needs ReCongiuring 
+        }
+
+        private void Button22_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ABCDE");
+        }
+
+        private void Button23_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Button24_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(9);
+        }
+
+        private void Button23_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(11);
+        }
+
+        private void Button25_Click(object sender, EventArgs e)
+        {
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("HINT HINT HINT HINT");
+            }
+            if (Q3_btn2.Checked)
+            {
+                tabControl1.SelectTab(12);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(15, 16);
+                    User.Exp();
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(15, 16);
+                    User.Exp2();
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(15, 16);
+                    User.Exp3();
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(15, 16);
+                    User.Exp4();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+        }
+
+        private void Button26_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(10);
+        }
+
+        private void Button27_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(11);
+        }
+    }
 }

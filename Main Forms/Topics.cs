@@ -80,11 +80,11 @@ namespace Tutoring_Project
         {           
             if (x >= 3)
             {                
-                Ach.pictureBox2.Image = Properties.Resources.BadgeCollector;
+                Ach.pictureBox2.Image = Properties.Resources.OllieBadge;
             }
             if (x >= 4)
             {
-                Ach.pictureBox3.Image = Properties.Resources.Basics;               
+                Ach.pictureBox3.Image = Properties.Resources.OllieBasics;               
             }
             if (x >= 7)
             {

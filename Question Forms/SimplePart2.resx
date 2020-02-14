@@ -161,4 +161,29 @@ This creates a variable which could keep track of over two thousand million shee
     <value>"Real" is a generic term for numbers which are not integers. They have a decimal point and a fractional part. Depending on the value the decimal point floats around in the number, hence the name float. C# provides a type of box which can hold a real number. A standard float value has a range of 1.5E-45 to 3.4E48 with a precision of only 7 digits (i.e. not as good as most pocket calculators). If you want more precision (although of course your programs will use up more computer memory and run more slowly) you can use a double box instead (double is an abbreviation for double precision). This takes up more computer memory but it has a range of 5.0E-324 to 1.7E308 and a precision of 15 digits.
 </value>
   </data>
+  <data name="richTextBox13.Text" xml:space="preserve">
+    <value>A char is a type of variable which can hold a single character. A character is what you get when you press a key on a keyboard or display a single character on the screen. C# uses a character set called UNICODE which can handle over 65,000 different character designs including a wide range of foreign characters. 
+An example of a character variable could be something which held the command key that the user has just pressed: 
+char commandKey;
+</value>
+  </data>
+  <data name="richTextBox12.Text" xml:space="preserve">
+    <value>Sometimes the information we want to store is text. This can be in the form of a single character; at other times it will be a string. C# provides variables for looking after both of these types of information:
+</value>
+  </data>
+  <data name="richTextBox14.Text" xml:space="preserve">
+    <value>You express a character by enclosing it in single quotes:
+'A'
+This means "the character A". It is what your program would get if you asked it to read
+a character off the keyboard and the user held down shift and pressed A. If you are
+editing your program using an editor that supports syntax highlighting a character
+literal is shown in red.</value>
+  </data>
+  <data name="richTextBox18.Text" xml:space="preserve">
+    <value>A bool (short for boolean) variable is a type of box which can hold whether or not something is true. Sometimes that is all you want. If you are storing whether or not a subscription has been paid or not there is no need to waste space by using a type which can hold a large number of possible values. Instead you just need to hold the states true or false. These are the only two values which the bool type allows. 
+
+An example of a bool variable could be one which holds the state of a network connection: 
+bool networkOK;
+</value>
+  </data>
 </root>

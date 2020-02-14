@@ -212,11 +212,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\ProblemSolver.png" />
+    <None Include="Resources\OllieBadge.png" />
+    <None Include="Resources\OllieBasics.png" />
     <None Include="Resources\Yellow Book Example.png" />
     <None Include="Resources\variables and readlines1.png" />
     <None Include="Resources\variables and readlines.png" />
     <None Include="Resources\Varaibles examples.png" />
-    <None Include="Resources\ProblemSolver.png" />
     <None Include="Resources\standard.png" />
     <None Include="Resources\Using System.png" />
     <None Include="Resources\code example.png" />
