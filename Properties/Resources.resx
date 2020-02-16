@@ -118,14 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="leaderboard_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaderboard_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="code example" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\code example.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Using System" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Using System.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="variables and readlines1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\variables and readlines1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="idea_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idea_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OllieBasics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OllieBasics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="glass area" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glass area.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,14 +181,14 @@
   <data name="C-Sharp-011" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\C-Sharp-011.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_female_olive_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_female_olive_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Part1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Part1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Integer Values" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Integer Values.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Varaibles examples" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Varaibles examples.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_female_olive_rbla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_female_olive_rbla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +196,8 @@
   <data name="code example no text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\code example no text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="award" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\award.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BadgeCollector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BadgeCollector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,26 +211,41 @@
   <data name="home_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Using System" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Using System.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Parse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Parse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OllieBadge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OllieBadge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="award" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\award.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="variables and readlines" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\variables and readlines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SDP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SDP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="idea_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idea_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AchiNotUnlocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AchiNotUnlocked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_male_olive_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_male_olive_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Var" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Var.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_female_olive_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_female_olive_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="code example no text1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\code example no text1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="leaderboard_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\leaderboard_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Console.writeline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Console.writeline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,16 +256,13 @@
   <data name="C-Sharp-012" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\C-Sharp-012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SDP11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SDP11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user_male_white_red_brown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_male_white_red_brown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Integer Values" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Integer Values.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OllieBadge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OllieBadge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OllieBasics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OllieBasics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SDP12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SDP12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

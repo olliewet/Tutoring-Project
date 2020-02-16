@@ -23,19 +23,20 @@ namespace Tutoring_Project
         UserProfile UserProfiles = new UserProfile();
         Question_Forms.simpledata S = new Question_Forms.simpledata();
         Question_Forms.SimplePart2 S2 = new Question_Forms.SimplePart2();
+        Identifiers I = new Identifiers();
         #endregion
 
         public Topics()
         {
             InitializeComponent();
-            
+
         }
-       
+
 
         #region Change Tab Methods 
         private void ChangeTab(int tab)
         {
-            
+
             T.tabControl1.SelectTab(tab);
             T.ShowDialog();
             this.Close();
@@ -54,8 +55,15 @@ namespace Tutoring_Project
             S2.ShowDialog();
             this.Close();
         }
+        private void ChangeTabID(int tab)
+        {
+            I.tabControl1.SelectTab(tab);
+            I.ShowDialog();
+            this.Close();
+        }
 
-        private void CompleteIntroductionSection (int x)
+
+        private void CompleteIntroductionSection(int x)
         {
             if (x < 4)
             {
@@ -69,27 +77,87 @@ namespace Tutoring_Project
             {
                 MessageBox.Show("Complete Introduction");
             }
-            else if ( x < 13)
+            else if (x < 13)
             {
                 MessageBox.Show("Complete Simple Data Section");
             }
         }
+
+        private void CompleteSimpleDataSectionPart2(int x)
+        {
+            if (x < 4)
+            {
+                MessageBox.Show("Complete Introduction");
+            }
+            else if (x < 13)
+            {
+                MessageBox.Show("Complete Simple Data Section");
+            }
+            else if (x < 17)
+            {
+                MessageBox.Show("Complete Simple Data Section");
+            }
+
+        }
         #endregion
 
         private void Achievements(int x)
-        {           
+        {
             if (x >= 3)
-            {                
+            {
                 Ach.pictureBox2.Image = Properties.Resources.OllieBadge;
             }
+            else if (x <= 3)
+            {
+                Ach.pictureBox2.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
             if (x >= 4)
             {
-                Ach.pictureBox3.Image = Properties.Resources.OllieBasics;               
+                Ach.pictureBox3.Image = Properties.Resources.OllieBasics;
             }
+            else if (x <= 4)
+            {
+                Ach.pictureBox3.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
             if (x >= 7)
             {
-                Ach.pictureBox4.Image = Properties.Resources.ProblemSolver;              
+                Ach.pictureBox4.Image = Properties.Resources.ProblemSolver;
             }
+            else if (x <= 7)
+            {
+                Ach.pictureBox4.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
+            if (x >= 9)
+            {
+                Ach.pictureBox7.Image = Properties.Resources.Var;
+            }
+            else if (x <= 9)
+            {
+                Ach.pictureBox7.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
+            if (x >= 11)
+            {
+                Ach.pictureBox6.Image = Properties.Resources.Parse;
+            }
+            else if (x <= 11)
+            {
+                Ach.pictureBox6.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
+            if (x >= 13)
+            {
+                Ach.pictureBox5.Image = Properties.Resources.Part1;
+            }
+            else if (x <= 13)
+            {
+                Ach.pictureBox5.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
+
         }
 
         private void Badges(int x)
@@ -180,49 +248,49 @@ namespace Tutoring_Project
             //Statement used to check what user is logged in
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                
-                
-             
+
+
+
                 //The picture box of current instance is set to image of user 
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 T.pictureBox1.Tag = "user1";
-                
+
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-               
-                    switch (x)
-                    {
-                        case 0:
+
+                switch (x)
+                {
+                    case 0:
                         this.Hide();
-                        ChangeTab(0);                       
+                        ChangeTab(0);
                         break;
-                        case 1:
+                    case 1:
                         this.Hide();
-                        ChangeTab(2);                      
+                        ChangeTab(2);
                         break;
-                        case 2:
+                    case 2:
                         this.Hide();
-                        ChangeTab(4);                    
+                        ChangeTab(4);
                         break;
-                        case 3:
+                    case 3:
                         this.Hide();
                         ChangeTab(6);
-                       
+
                         break;
-                        default:
-                            MessageBox.Show("Completed this section");
-                            break;
-                    }               
+                    default:
+                        MessageBox.Show("Completed this section");
+                        break;
+                }
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
-                
-              
+
+
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 T.pictureBox1.Tag = "user2";
@@ -254,12 +322,12 @@ namespace Tutoring_Project
                     default:
                         MessageBox.Show("Completed this section");
                         break;
-                }                
+                }
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-                
+
 
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
@@ -293,13 +361,13 @@ namespace Tutoring_Project
                         MessageBox.Show("Completed this section");
                         break;
                 }
-                
+
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
                 //Hides Current Form 
-                
+
                 //The picture box of current instance is set to image of current user 
                 T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 T.pictureBox1.Tag = "user4";
@@ -333,7 +401,7 @@ namespace Tutoring_Project
                         MessageBox.Show("Completed this section");
                         break;
                 }
-                
+
             }
         }
 
@@ -343,20 +411,20 @@ namespace Tutoring_Project
 
         private void Cp_btn_Click(object sender, EventArgs e)
         {
-            
+
             //If statement to check if the forms picture box contains a certain image 
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                
+
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
 
-                if ( x < 16)
+                if (x < 16)
                 {
                     MessageBox.Show("Not Completed the Previous Section");
                 }
                 //Add Code to Open up The form for this button and load the data for this user 
-                
+
             }
             else if ((string)this.pictureBox1.Tag == "user2")
             {
@@ -403,7 +471,7 @@ namespace Tutoring_Project
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void user_btn_Click(object sender, EventArgs e)
-        {                      
+        {
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 this.Hide();
@@ -412,14 +480,14 @@ namespace Tutoring_Project
 
                 UserProfiles.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 UserProfiles.pictureBox1.Tag = "user1";
-                UserProfiles.name_lb.Text =  "User 1";
+                UserProfiles.name_lb.Text = "User 1";
                 UserProfiles.level.Text = currentlevel;
-                UserProfiles.exp.Text = File.ReadAllText("exp1.txt");              
+                UserProfiles.exp.Text = File.ReadAllText("exp1.txt");
                 int x = Int32.Parse(currentlevel);
                 Badges(x);
                 UserProfiles.ShowDialog();
                 this.Close();
-            }      
+            }
             else if ((string)this.pictureBox1.Tag == "user2")
             {
                 this.Hide();
@@ -473,7 +541,7 @@ namespace Tutoring_Project
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
         private void PictureBox2_Click(object sender, EventArgs e)
         {
@@ -486,7 +554,7 @@ namespace Tutoring_Project
         private void Sdp_btn_Click(object sender, EventArgs e)
         {
             if ((string)this.pictureBox1.Tag == "user1")
-            {                              
+            {
                 //The picture box of current instance is set to image of user 
                 S.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 S.pictureBox1.Tag = "user1";
@@ -499,7 +567,7 @@ namespace Tutoring_Project
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level                
                 CompleteIntroductionSection(x);
                 switch (x)
-                {                                         
+                {
                     case 4:
                         this.Hide();
                         this.Close();
@@ -549,11 +617,11 @@ namespace Tutoring_Project
                         MessageBox.Show("Completed Section");
                         break;
                 }
-               
+
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
-            {                            
+            {
                 //The picture box of current instance is set to image of current user 
                 S.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 S.pictureBox1.Tag = "user2";
@@ -616,7 +684,7 @@ namespace Tutoring_Project
                         MessageBox.Show("Complete Previous Section");
                         break;
                 }
-                
+
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
@@ -683,7 +751,7 @@ namespace Tutoring_Project
                         MessageBox.Show("Complete Previous Section");
                         break;
                 }
-                
+
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
@@ -749,7 +817,7 @@ namespace Tutoring_Project
                         MessageBox.Show("Complete Previous Section");
                         break;
                 }
-                
+
             }
         }
 
@@ -758,14 +826,15 @@ namespace Tutoring_Project
         #region End Game Button 
         private void Button1_Click(object sender, EventArgs e)
         {
-            
-            string currentlevel; 
+
+            string currentlevel;
             currentlevel = File.ReadAllText("levelfile.txt");
             int x = Int32.Parse(currentlevel);
             if (x >= 50)
             {
                 //Open Form  
-            } else
+            }
+            else
             {
                 MessageBox.Show("Please Reach Level 50 warrior");
             }
@@ -773,14 +842,14 @@ namespace Tutoring_Project
 
         #endregion
 
-        
+
 
         private void Ach_button(object sender, EventArgs e)
-        {            
-          
+        {
+
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                
+
                 this.Hide();
                 Ach.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 Ach.pictureBox1.Tag = "user1";
@@ -808,7 +877,7 @@ namespace Tutoring_Project
                 Ach.pictureBox1.Tag = "user3";
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
-                Achievements(x);               
+                Achievements(x);
                 Ach.ShowDialog();
                 this.Close();
             }
@@ -819,7 +888,7 @@ namespace Tutoring_Project
                 Ach.pictureBox1.Tag = "user4";
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
-                Achievements(x);               
+                Achievements(x);
                 Ach.ShowDialog();
                 this.Close();
             }
@@ -850,6 +919,11 @@ namespace Tutoring_Project
                         this.Hide();
                         this.Close();
                         ChangeTabSimplePart2(7);
+                        break;
+                    case 15:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(9);
                         break;
                     default:
                         MessageBox.Show("Complete Previous Section");
@@ -883,6 +957,11 @@ namespace Tutoring_Project
                         this.Close();
                         ChangeTabSimplePart2(7);
                         break;
+                    case 15:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(9);
+                        break;
                     default:
                         MessageBox.Show("Complete Previous Section");
                         break;
@@ -914,6 +993,11 @@ namespace Tutoring_Project
                         this.Hide();
                         this.Close();
                         ChangeTabSimplePart2(7);
+                        break;
+                    case 15:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(9);
                         break;
                     default:
                         MessageBox.Show("Complete Previous Section");
@@ -947,11 +1031,125 @@ namespace Tutoring_Project
                         this.Close();
                         ChangeTabSimplePart2(7);
                         break;
+                    case 15:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabSimplePart2(9);
+                        break;
                     default:
                         MessageBox.Show("Complete Previous Section");
                         break;
                 }
 
+            }
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                //The picture box of current instance is set to image of user 
+                I.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                I.pictureBox1.Tag = "user1";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+                CompleteSimpleDataSectionPart2(x);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 17:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabID(0);
+                        break;                  
+                    default:
+                        MessageBox.Show("Complete Previous Section");
+                        break;
+                }
+
+
+            }
+            //Statement used to check what user is logged in
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                //The picture box of current instance is set to image of current user 
+                I.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                I.pictureBox1.Tag = "user2";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user2level.txt");
+                int x = Int32.Parse(currentlevel);
+                CompleteSimpleDataSectionPart2(x);
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 17:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabID(0);
+                        break;
+                    default:
+                        MessageBox.Show("Complete Previous Section");
+                        break;
+                }
+
+            }
+            //Statement used to check what user is logged in
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+
+                //The picture box of current instance is set to image of current user 
+                I.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                I.pictureBox1.Tag = "user3";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user3level.txt");
+                int x = Int32.Parse(currentlevel);
+                CompleteSimpleDataSectionPart2(x);
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 17:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabID(0);
+                        break;
+                    default:
+                        MessageBox.Show("Complete Previous Section");
+                        break;
+                }
+            }
+            //Statement used to check what user is logged in
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                //The picture box of current instance is set to image of current user 
+                I.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                I.pictureBox1.Tag = "user4";
+
+                // Data from text file (users level) is parsed into int and stored within variable  
+                currentlevel = File.ReadAllText("user4level.txt");
+                int x = Int32.Parse(currentlevel);
+                CompleteSimpleDataSectionPart2(x);
+
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                switch (x)
+                {
+                    case 17:
+                        this.Hide();
+                        this.Close();
+                        ChangeTabID(0);
+                        break;
+                    default:
+                        MessageBox.Show("Complete Previous Section");
+                        break;
+                }
             }
         }
     }

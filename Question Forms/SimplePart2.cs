@@ -293,19 +293,39 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button25_Click(object sender, EventArgs e)
         {
+          
+        }
+
+        private void Button26_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(10);
+        }
+
+        private void Button27_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(10);
+        }
+
+        private void Button29_Click(object sender, EventArgs e)
+        {
             counter = 0;
             counter++;
             if (counter >= 3)
             {
+                MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
+            }
+            else if (counter >= 5)
+            {
                 MessageBox.Show("HINT HINT HINT HINT");
             }
-            if (Q3_btn2.Checked)
+
+            if (textBox3.Text.Equals("double") && textBox4.Text.Equals("string") && textBox1.Text.Equals("Console.ReadLine();") && textBox2.Text.Equals("Console.WriteLine"))
             {
-                tabControl1.SelectTab(12);
+                tabControl1.SelectTab(13);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
                     User.User1(15, 16);
-                    User.Exp();
+                    User.Exp();                   
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
@@ -329,14 +349,51 @@ namespace Tutoring_Project.Question_Forms
             }
         }
 
-        private void Button26_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectTab(10);
-        }
-
-        private void Button27_Click(object sender, EventArgs e)
+        private void Button25_Click_1(object sender, EventArgs e)
         {
             tabControl1.SelectTab(11);
+        }
+
+        private void Finish_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topics T = new Topics();
+            MessageBox.Show("Achievement Unlocked!");
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                User.User1(16, 17);
+                User.Exp();
+                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                T.pictureBox1.Tag = "user1";
+            }
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                User.User2(16, 17);
+                User.Exp2();
+                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                T.pictureBox1.Tag = "user2";
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                User.User3(16, 17);
+                User.Exp3();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                User.User4(16, 17);
+                User.Exp4();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                T.pictureBox1.Tag = "user4";
+            }
+            this.Close();
+            T.ShowDialog();
+        }
+
+        private void Button28_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(12); 
         }
     }
 }

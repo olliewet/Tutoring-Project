@@ -117,26 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>In this section we are going to take a look at how we can write programs that manipulate data, how values can be stored, retrieved and generally fiddled with. This provides us with the ability to perform the data processing part of programs.
-</value>
-  </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value>In the glazing program in the last section we decided to hold the width and the height of the windows that we are working on in variables that we described as double. Before we can go much further in our programming career we need to consider just what this means, and what other types of data we can store in programs that we write. Programs operate on data. A programming language must give you a way of storing the data you are processing, otherwise it is useless. What the data actually means is something that you as a programmer decide (see the above digression on data). A variable is a named location where you can store something. You can think of it as a box of a particular size with a name painted on the box. You chose the name to reflect what is going to be stored there (we used sensible names like woodLength in the above program). You also need to choose the type of the variable (particular size and shape of box) from the range of storage types which C# provides. The type of the variable is part of the metadata about that variable. Programs also contain literal values. A literal value is just a value in your program which you use for some purpose. For each type of variable the C# language has a way in which literal values of that type are expressed.
-</value>
-  </data>
-  <data name="richTextBox3.Text" xml:space="preserve">
-    <value>When considering numeric values there are two kinds of data: 
-• Nice chunky individual values, for example the number of sheep in a field, teeth on a cog, apples in a basket. These are referred to as integers.
- • Nasty real world type things, for example the current temperature, the length of a piece of string, the speed of a car. These are referred to as reals.
-</value>
-  </data>
-  <data name="richTextBox5.Text" xml:space="preserve">
-    <value>In the second case we can never hold what we are looking at exactly. Even if you measure a piece of string to 100 decimal places it is still not going to give you its exact length - you could always get the value more accurately. These are real. A computer is digital, i.e. it operates entirely on patterns of bits which can be regarded as numbers. Because we know that it works in terms of ons and offs it has problems holding real values. To handle real values the computer actually stores them to a limited accuracy, which we hope is adequate (and usually is). 
+  <data name="richTextBox19.Text" xml:space="preserve">
+    <value>A type of box which can hold a string of text. In C# a string can be very short, for example "Rob", or it can be very long, for example "War and Peace" (that is the book not the three words). A string variable can hold a line of text. However, because there are special characters which mean "take a new line" (see above) it is perfectly possible for a single string to hold a large number of lines of text. 
 
-This means that when we want to store something we have to tell the computer whether it is an integer or a real. We also need to consider the range of possible values that we need to hold so that we can choose the appropriate type to store the data
+An example of a string variable could be something which holds the line that the user has just typed in: 
+string commandLine;
+</value>
+  </data>
+  <data name="richTextBox18.Text" xml:space="preserve">
+    <value>A bool (short for boolean) variable is a type of box which can hold whether or not something is true. Sometimes that is all you want. If you are storing whether or not a subscription has been paid or not there is no need to waste space by using a type which can hold a large number of possible values. Instead you just need to hold the states true or false. These are the only two values which the bool type allows. 
+An example of a bool variable could be one which holds the state of a network connection: 
+bool networkOK;</value>
+  </data>
+  <data name="richTextBox14.Text" xml:space="preserve">
+    <value>You express a character by enclosing it in single quotes:
+'A'
 
-You tell C# about a variable you want to create by declaring it. The declaration also identifies the type of the thing we want to store. Think of this as C# creating a box of a particular size, specifically designed to hold items of the given type. The box is tagged with some metadata (there is that word again) so that the system knows what can be put into it and how that box can be used.
+This means "the character A". It is what your program would get if you asked it to read a character off the keyboard and the user held down shift and pressed A. If you are editing your program using an editor that supports syntax highlighting a character
+literal is shown in red.</value>
+  </data>
+  <data name="richTextBox13.Text" xml:space="preserve">
+    <value>A char is a type of variable which can hold a single character. A character is what you get when you press a key on a keyboard or display a single character on the screen. C# uses a character set called UNICODE which can handle over 65,000 different character designs including a wide range of foreign characters. 
+An example of a character variable could be something which held the command key that the user has just pressed: 
+char commandKey;
+</value>
+  </data>
+  <data name="richTextBox12.Text" xml:space="preserve">
+    <value>Sometimes the information we want to store is text. This can be in the form of a single character; at other times it will be a string. C# provides variables for looking after both of these types of information:
+</value>
+  </data>
+  <data name="richTextBox8.Text" xml:space="preserve">
+    <value>"Real" is a generic term for numbers which are not integers. They have a decimal point and a fractional part. Depending on the value the decimal point floats around in the number, hence the name float. C# provides a type of box which can hold a real number. A standard float value has a range of 1.5E-45 to 3.4E48 with a precision of only 7 digits (i.e. not as good as most pocket calculators). If you want more precision (although of course your programs will use up more computer memory and run more slowly) you can use a double box instead (double is an abbreviation for double precision). This takes up more computer memory but it has a range of 5.0E-324 to 1.7E308 and a precision of 15 digits.
+</value>
+  </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>An example of an integer variable would be something which kept track of the number of sheep in a field
+: int numberOfSheep = 0;
+
+This creates a variable which could keep track of over two thousand million sheep! It also sets the initial value to 0. Using int (which can hold negative values) lets a program manipulate "negative sheep" which is probably not meaningful (unless you run a sheep bank of course and let people borrow them). Remember that the language itself is unaware of any such considerations. If you want to make sure that we never have more than 1,000 sheep and the number of sheep never goes negative you must add this behaviour yourself.
+
 </value>
   </data>
   <data name="richTextBox6.Text" xml:space="preserve">
@@ -149,41 +168,30 @@ int numberOfSheep = 0;
 
 </value>
   </data>
-  <data name="richTextBox4.Text" xml:space="preserve">
-    <value>An example of an integer variable would be something which kept track of the number of sheep in a field
-: int numberOfSheep = 0;
+  <data name="richTextBox5.Text" xml:space="preserve">
+    <value>In the second case we can never hold what we are looking at exactly. Even if you measure a piece of string to 100 decimal places it is still not going to give you its exact length - you could always get the value more accurately. These are real. A computer is digital, i.e. it operates entirely on patterns of bits which can be regarded as numbers. Because we know that it works in terms of ons and offs it has problems holding real values. To handle real values the computer actually stores them to a limited accuracy, which we hope is adequate (and usually is). 
 
-This creates a variable which could keep track of over two thousand million sheep! It also sets the initial value to 0. Using int (which can hold negative values) lets a program manipulate "negative sheep" which is probably not meaningful (unless you run a sheep bank of course and let people borrow them). Remember that the language itself is unaware of any such considerations. If you want to make sure that we never have more than 1,000 sheep and the number of sheep never goes negative you must add this behaviour yourself.
+This means that when we want to store something we have to tell the computer whether it is an integer or a real. We also need to consider the range of possible values that we need to hold so that we can choose the appropriate type to store the data
 
+You tell C# about a variable you want to create by declaring it. The declaration also identifies the type of the thing we want to store. Think of this as C# creating a box of a particular size, specifically designed to hold items of the given type. The box is tagged with some metadata (there is that word again) so that the system knows what can be put into it and how that box can be used.
 </value>
   </data>
-  <data name="richTextBox8.Text" xml:space="preserve">
-    <value>"Real" is a generic term for numbers which are not integers. They have a decimal point and a fractional part. Depending on the value the decimal point floats around in the number, hence the name float. C# provides a type of box which can hold a real number. A standard float value has a range of 1.5E-45 to 3.4E48 with a precision of only 7 digits (i.e. not as good as most pocket calculators). If you want more precision (although of course your programs will use up more computer memory and run more slowly) you can use a double box instead (double is an abbreviation for double precision). This takes up more computer memory but it has a range of 5.0E-324 to 1.7E308 and a precision of 15 digits.
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>When considering numeric values there are two kinds of data: 
+• Nice chunky individual values, for example the number of sheep in a field, teeth on a cog, apples in a basket. These are referred to as integers.
+ • Nasty real world type things, for example the current temperature, the length of a piece of string, the speed of a car. These are referred to as reals.
 </value>
   </data>
-  <data name="richTextBox13.Text" xml:space="preserve">
-    <value>A char is a type of variable which can hold a single character. A character is what you get when you press a key on a keyboard or display a single character on the screen. C# uses a character set called UNICODE which can handle over 65,000 different character designs including a wide range of foreign characters. 
-An example of a character variable could be something which held the command key that the user has just pressed: 
-char commandKey;
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>In the glazing program in the last section we decided to hold the width and the height of the windows that we are working on in variables that we described as double. Before we can go much further in our programming career we need to consider just what this means, and what other types of data we can store in programs that we write. Programs operate on data. A programming language must give you a way of storing the data you are processing, otherwise it is useless. What the data actually means is something that you as a programmer decide (see the above digression on data). A variable is a named location where you can store something. You can think of it as a box of a particular size with a name painted on the box. You chose the name to reflect what is going to be stored there (we used sensible names like woodLength in the above program). You also need to choose the type of the variable (particular size and shape of box) from the range of storage types which C# provides. The type of the variable is part of the metadata about that variable. Programs also contain literal values. A literal value is just a value in your program which you use for some purpose. For each type of variable the C# language has a way in which literal values of that type are expressed.
 </value>
   </data>
-  <data name="richTextBox12.Text" xml:space="preserve">
-    <value>Sometimes the information we want to store is text. This can be in the form of a single character; at other times it will be a string. C# provides variables for looking after both of these types of information:
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>In this section we are going to take a look at how we can write programs that manipulate data, how values can be stored, retrieved and generally fiddled with. This provides us with the ability to perform the data processing part of programs.
 </value>
   </data>
-  <data name="richTextBox14.Text" xml:space="preserve">
-    <value>You express a character by enclosing it in single quotes:
-'A'
-This means "the character A". It is what your program would get if you asked it to read
-a character off the keyboard and the user held down shift and pressed A. If you are
-editing your program using an editor that supports syntax highlighting a character
-literal is shown in red.</value>
-  </data>
-  <data name="richTextBox18.Text" xml:space="preserve">
-    <value>A bool (short for boolean) variable is a type of box which can hold whether or not something is true. Sometimes that is all you want. If you are storing whether or not a subscription has been paid or not there is no need to waste space by using a type which can hold a large number of possible values. Instead you just need to hold the states true or false. These are the only two values which the bool type allows. 
-
-An example of a bool variable could be one which holds the state of a network connection: 
-bool networkOK;
+  <data name="richTextBox35.Text" xml:space="preserve">
+    <value>Well done on completing the second part of the simple data processing, in this section we went through different ways data can be stored and processed such as storing them in different variable types. A new section has been unlocked!
 </value>
   </data>
 </root>

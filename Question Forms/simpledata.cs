@@ -365,6 +365,7 @@ namespace Tutoring_Project.Question_Forms
                 text = tb_4.Text;
             if (text.Contains("int") && text.Contains("Num1") && text.Contains(",") && text.Contains("Num2") && text.Contains(";") && text.Contains("String") && text.Contains("String1") && text.Contains(",") && text.Contains("String2") && text.Contains(";"))         
                 {
+                MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(11);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
@@ -562,6 +563,7 @@ namespace Tutoring_Project.Question_Forms
             }
             if (radioButton9.Checked)
             {
+                MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(22);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
@@ -764,6 +766,7 @@ namespace Tutoring_Project.Question_Forms
         {
             this.Hide();
             Topics T = new Topics();
+            MessageBox.Show("Achievement Unlocked!");
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 User.User1(12, 13);               

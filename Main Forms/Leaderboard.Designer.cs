@@ -78,9 +78,9 @@
             this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
             this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(701, 1);
+            this.exit.Location = new System.Drawing.Point(692, 2);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(132, 40);
+            this.exit.Size = new System.Drawing.Size(106, 40);
             this.exit.TabIndex = 7;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;

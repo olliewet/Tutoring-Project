@@ -63,6 +63,16 @@ namespace Tutoring_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AchiNotUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("AchiNotUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap award {
             get {
                 object obj = ResourceManager.GetObject("award", resourceCulture);
@@ -353,6 +363,26 @@ namespace Tutoring_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Parse {
+            get {
+                object obj = ResourceManager.GetObject("Parse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Part1 {
+            get {
+                object obj = ResourceManager.GetObject("Part1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ProblemSolver {
             get {
                 object obj = ResourceManager.GetObject("ProblemSolver", resourceCulture);
@@ -366,6 +396,36 @@ namespace Tutoring_Project.Properties {
         internal static System.Drawing.Bitmap school_director_filled_50px {
             get {
                 object obj = ResourceManager.GetObject("school_director_filled_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SDP1 {
+            get {
+                object obj = ResourceManager.GetObject("SDP1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SDP11 {
+            get {
+                object obj = ResourceManager.GetObject("SDP11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SDP12 {
+            get {
+                object obj = ResourceManager.GetObject("SDP12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -436,6 +496,16 @@ namespace Tutoring_Project.Properties {
         internal static System.Drawing.Bitmap Using_System {
             get {
                 object obj = ResourceManager.GetObject("Using System", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Var {
+            get {
+                object obj = ResourceManager.GetObject("Var", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

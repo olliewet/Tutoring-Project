@@ -37,10 +37,42 @@ namespace Tutoring_Project
         #region Topic Button 
         private void Topics_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Userpage T = new Userpage();
-            T.ShowDialog();
-            this.Close();
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                this.Hide();
+                Topics T = new Topics();
+                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                T.pictureBox1.Tag = "user1";
+                T.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                this.Hide();
+                Topics T = new Topics();
+                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                T.pictureBox1.Tag = "user2";
+                T.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                this.Hide();
+                Topics T = new Topics();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";
+                T.ShowDialog();
+                this.Close();
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                this.Hide();
+                Topics T = new Topics();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                T.pictureBox1.Tag = "user4";
+                T.ShowDialog();
+                this.Close();
+            }
         }
         #endregion
 
