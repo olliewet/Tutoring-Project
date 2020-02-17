@@ -99,6 +99,33 @@ namespace Tutoring_Project
             }
 
         }
+
+        private void SwitchStatement1(int x)
+        {
+            switch (x)
+            {
+                case 0:
+                    this.Hide();
+                    ChangeTab(0);
+                    break;
+                case 1:
+                    this.Hide();
+                    ChangeTab(2);
+                    break;
+                case 2:
+                    this.Hide();
+                    ChangeTab(4);
+                    break;
+                case 3:
+                    this.Hide();
+                    ChangeTab(6);
+                    break;
+                default:
+                    MessageBox.Show("Completed this section");
+                    break;
+            }
+
+        }
         #endregion
 
         private void Achievements(int x)
@@ -155,6 +182,15 @@ namespace Tutoring_Project
             else if (x <= 13)
             {
                 Ach.pictureBox5.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
+            if (x >= 14)
+            {
+                Ach.pictureBox10.Image = Properties.Resources.num;
+            }
+            else if (x <= 14)
+            {
+                Ach.pictureBox10.Image = Properties.Resources.AchiNotUnlocked;
             }
 
 
@@ -248,9 +284,6 @@ namespace Tutoring_Project
             //Statement used to check what user is logged in
             if ((string)this.pictureBox1.Tag == "user1")
             {
-
-
-
                 //The picture box of current instance is set to image of user 
                 T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 T.pictureBox1.Tag = "user1";
@@ -262,6 +295,8 @@ namespace Tutoring_Project
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
 
+                SwitchStatement1(x);
+                /*
                 switch (x)
                 {
                     case 0:
@@ -285,6 +320,7 @@ namespace Tutoring_Project
                         MessageBox.Show("Completed this section");
                         break;
                 }
+                */
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
@@ -401,7 +437,6 @@ namespace Tutoring_Project
                         MessageBox.Show("Completed this section");
                         break;
                 }
-
             }
         }
 

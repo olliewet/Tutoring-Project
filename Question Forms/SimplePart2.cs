@@ -107,6 +107,7 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button4_Click(object sender, EventArgs e)
         {
+            
             tabControl1.SelectTab(4);
         }
 
@@ -161,6 +162,7 @@ namespace Tutoring_Project.Question_Forms
             text = tb_4.Text;
             if (text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5;"))
             {
+                MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(7);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
