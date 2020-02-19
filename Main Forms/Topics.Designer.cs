@@ -209,7 +209,7 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "Simple Data Processing\r\nPart 2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.button2.Click += new System.EventHandler(this.SimpleDataPart2_btn);
             // 
             // button3
             // 
@@ -223,7 +223,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Identifiers";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.button3.Click += new System.EventHandler(this.ID_button);
             // 
             // pictureBox7
             // 

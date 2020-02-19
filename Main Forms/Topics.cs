@@ -29,9 +29,7 @@ namespace Tutoring_Project
         public Topics()
         {
             InitializeComponent();
-
         }
-
 
         #region Change Tab Methods 
         private void ChangeTab(int tab)
@@ -61,8 +59,9 @@ namespace Tutoring_Project
             I.ShowDialog();
             this.Close();
         }
+        #endregion
 
-
+        #region Complete Checking Methods 
         private void CompleteIntroductionSection(int x)
         {
             if (x < 4)
@@ -97,10 +96,11 @@ namespace Tutoring_Project
             {
                 MessageBox.Show("Complete Simple Data Section");
             }
-
         }
+        #endregion
 
-        private void SwitchStatement1(int x)
+        #region SwitchStatements
+        private void SwitchStatementIntroduction(int x)
         {
             switch (x)
             {
@@ -126,8 +126,102 @@ namespace Tutoring_Project
             }
 
         }
-        #endregion
+        private void SwitchStatementSimple(int x)
+        {
+            switch (x)
+            {
+                case 4:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(0);
+                    break;
+                case 5:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(3);
+                    break;
+                case 6:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(6);
+                    break;
+                case 7:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(7);
+                    break;
+                case 8:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(8);
+                    break;
+                case 9:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(11);
+                    break;
+                case 10:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(17);
+                    break;
+                case 11:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(22);
+                    break;
+                case 12:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimple(27);
+                    break;
+                default:
+                    MessageBox.Show("Completed Section");
+                    break;
+            }
 
+        }
+        private void SwitchStatementSimplePart2(int x)
+        {
+            switch (x)
+            {
+                case 13:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimplePart2(0);
+                    break;
+                case 14:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimplePart2(7);
+                    break;
+                case 15:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabSimplePart2(9);
+                    break;
+                default:
+                    MessageBox.Show("Completed Previous Section");
+                    break;
+            }
+        }
+        private void SwitchStatementID(int x)
+        {
+            switch (x)
+            {
+                case 17:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabID(0);
+                    break;
+                default:
+                    MessageBox.Show("Complete Previous Section");
+                    break;
+            }
+        }
+        #endregion 
+
+        #region Achievements and Badges Methods
         private void Achievements(int x)
         {
             if (x >= 3)
@@ -210,7 +304,7 @@ namespace Tutoring_Project
                 UserProfiles.pictureBox6.Image = Properties.Resources.award;
             }
         }
-
+        #endregion
 
         #region Random UI Unused Methods
         private void Topics_Load(object sender, EventArgs e)
@@ -295,32 +389,8 @@ namespace Tutoring_Project
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
 
-                SwitchStatement1(x);
-                /*
-                switch (x)
-                {
-                    case 0:
-                        this.Hide();
-                        ChangeTab(0);
-                        break;
-                    case 1:
-                        this.Hide();
-                        ChangeTab(2);
-                        break;
-                    case 2:
-                        this.Hide();
-                        ChangeTab(4);
-                        break;
-                    case 3:
-                        this.Hide();
-                        ChangeTab(6);
-
-                        break;
-                    default:
-                        MessageBox.Show("Completed this section");
-                        break;
-                }
-                */
+                SwitchStatementIntroduction(x);
+                
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
@@ -337,28 +407,7 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 0:
-                        this.Hide();
-                        ChangeTab(0);
-                        break;
-                    case 1:
-                        this.Hide();
-                        ChangeTab(2);
-                        break;
-                    case 2:
-                        this.Hide();
-                        ChangeTab(4);
-                        break;
-                    case 3:
-                        this.Hide();
-                        ChangeTab(6);
-                        break;
-                    default:
-                        MessageBox.Show("Completed this section");
-                        break;
-                }
+                SwitchStatementIntroduction(x);
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
@@ -375,28 +424,7 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 0:
-                        this.Hide();
-                        ChangeTab(0);
-                        break;
-                    case 1:
-                        this.Hide();
-                        ChangeTab(2);
-                        break;
-                    case 2:
-                        this.Hide();
-                        ChangeTab(4);
-                        break;
-                    case 3:
-                        this.Hide();
-                        ChangeTab(6);
-                        break;
-                    default:
-                        MessageBox.Show("Completed this section");
-                        break;
-                }
+                SwitchStatementIntroduction(x);
 
             }
             //Statement used to check what user is logged in
@@ -415,28 +443,7 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 0:
-                        this.Hide();
-                        ChangeTab(0);
-                        break;
-                    case 1:
-                        this.Hide();
-                        ChangeTab(2);
-                        break;
-                    case 2:
-                        this.Hide();
-                        ChangeTab(4);
-                        break;
-                    case 3:
-                        this.Hide();
-                        ChangeTab(6);
-                        break;
-                    default:
-                        MessageBox.Show("Completed this section");
-                        break;
-                }
+                SwitchStatementIntroduction(x);
             }
         }
 
@@ -596,62 +603,9 @@ namespace Tutoring_Project
 
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
-                int x = Int32.Parse(currentlevel);
-
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level                
+                int x = Int32.Parse(currentlevel);              
                 CompleteIntroductionSection(x);
-                switch (x)
-                {
-                    case 4:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(0);
-                        break;
-                    case 5:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(3);
-                        break;
-                    case 6:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(6);
-                        break;
-                    case 7:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(7);
-                        break;
-                    case 8:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(8);
-                        break;
-                    case 9:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(11);
-                        break;
-                    case 10:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(17);
-                        break;
-                    case 11:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(22);
-                        break;
-                    case 12:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(27);
-                        break;
-                    default:
-                        MessageBox.Show("Completed Section");
-                        break;
-                }
+                SwitchStatementSimple(x);
 
             }
             //Statement used to check what user is logged in
@@ -664,61 +618,8 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
-
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 CompleteIntroductionSection(x);
-                switch (x)
-                {
-                    case 4:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(0);
-                        break;
-                    case 5:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(3);
-                        break;
-                    case 6:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(6);
-                        break;
-                    case 7:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(7);
-                        break;
-                    case 8:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(8);
-                        break;
-                    case 9:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(11);
-                        break;
-                    case 10:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(17);
-                        break;
-                    case 11:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(22);
-                        break;
-                    case 12:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(27);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
+                SwitchStatementSimple(x);
 
             }
             //Statement used to check what user is logged in
@@ -732,60 +633,8 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteIntroductionSection(x);
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 4:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(0);
-                        break;
-                    case 5:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(3);
-                        break;
-                    case 6:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(6);
-                        break;
-                    case 7:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(7);
-                        break;
-                    case 8:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(8);
-                        break;
-                    case 9:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(11);
-                        break;
-                    case 10:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(17);
-                        break;
-                    case 11:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(22);
-                        break;
-                    case 12:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(27);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
+                CompleteIntroductionSection(x);                
+                SwitchStatementSimple(x);
 
             }
             //Statement used to check what user is logged in
@@ -798,60 +647,8 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteIntroductionSection(x);
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 4:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(0);
-                        break;
-                    case 5:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(3);
-                        break;
-                    case 6:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(6);
-                        break;
-                    case 7:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(7);
-                        break;
-                    case 8:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(8);
-                        break;
-                    case 9:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(11);
-                        break;
-                    case 10:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(17);
-                        break;
-                    case 11:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(22);
-                        break;
-                    case 12:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimple(27);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
+                CompleteIntroductionSection(x);                
+                SwitchStatementSimple(x);
 
             }
         }
@@ -876,8 +673,6 @@ namespace Tutoring_Project
         }
 
         #endregion
-
-
 
         private void Ach_button(object sender, EventArgs e)
         {
@@ -929,7 +724,7 @@ namespace Tutoring_Project
             }
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void SimpleDataPart2_btn(object sender, EventArgs e)
         {
             if ((string)this.pictureBox1.Tag == "user1")
             {
@@ -943,29 +738,7 @@ namespace Tutoring_Project
                 CompleteSimpleDataSection(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 13:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(0);
-                        break;
-                    case 14:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(7);
-                        break;
-                    case 15:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(9);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
-
-
+                SwitchStatementSimplePart2(x);
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
@@ -980,28 +753,7 @@ namespace Tutoring_Project
                 CompleteSimpleDataSection(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 13:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(0);
-                        break;
-                    case 14:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(7);
-                        break;
-                    case 15:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(9);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
-
+                SwitchStatementSimplePart2(x);
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
@@ -1017,28 +769,7 @@ namespace Tutoring_Project
                 CompleteSimpleDataSection(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 13:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(0);
-                        break;
-                    case 14:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(7);
-                        break;
-                    case 15:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(9);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
-                this.Close();
+                SwitchStatementSimplePart2(x);
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
@@ -1054,59 +785,24 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 13:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(0);
-                        break;
-                    case 14:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(7);
-                        break;
-                    case 15:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabSimplePart2(9);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
-
+                SwitchStatementSimplePart2(x);
             }
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void ID_button(object sender, EventArgs e)
         {
             if ((string)this.pictureBox1.Tag == "user1")
             {
                 //The picture box of current instance is set to image of user 
                 I.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 I.pictureBox1.Tag = "user1";
-
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
                 CompleteSimpleDataSectionPart2(x);
-
+                SwitchStatementID(x);
                 //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 17:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabID(0);
-                        break;                  
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
-
-
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level                
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
@@ -1114,25 +810,13 @@ namespace Tutoring_Project
                 //The picture box of current instance is set to image of current user 
                 I.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 I.pictureBox1.Tag = "user2";
-
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
                 CompleteSimpleDataSectionPart2(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 17:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabID(0);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
-
+                SwitchStatementID(x);              
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
@@ -1141,24 +825,13 @@ namespace Tutoring_Project
                 //The picture box of current instance is set to image of current user 
                 I.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
                 I.pictureBox1.Tag = "user3";
-
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
                 CompleteSimpleDataSectionPart2(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 17:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabID(0);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
+                SwitchStatementID(x);
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
@@ -1166,25 +839,13 @@ namespace Tutoring_Project
                 //The picture box of current instance is set to image of current user 
                 I.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 I.pictureBox1.Tag = "user4";
-
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
                 CompleteSimpleDataSectionPart2(x);
-
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-                switch (x)
-                {
-                    case 17:
-                        this.Hide();
-                        this.Close();
-                        ChangeTabID(0);
-                        break;
-                    default:
-                        MessageBox.Show("Complete Previous Section");
-                        break;
-                }
+                SwitchStatementID(x);
             }
         }
     }
