@@ -31,7 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Topics));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.user_btn = new System.Windows.Forms.Button();
+            this.home_btn = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
             this.Intro_btn = new System.Windows.Forms.Button();
             this.sdp_btn = new System.Windows.Forms.Button();
             this.cp_btn = new System.Windows.Forms.Button();
@@ -47,10 +50,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.home_btn = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -58,7 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,6 +92,15 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Ach_button);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 45);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
             // user_btn
             // 
             this.user_btn.BackColor = System.Drawing.Color.White;
@@ -108,6 +117,42 @@
             this.user_btn.Text = "User Profile";
             this.user_btn.UseVisualStyleBackColor = false;
             this.user_btn.Click += new System.EventHandler(this.user_btn_Click);
+            // 
+            // home_btn
+            // 
+            this.home_btn.BackColor = System.Drawing.Color.White;
+            this.home_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.home_btn.FlatAppearance.BorderSize = 0;
+            this.home_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.home_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.home_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.home_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
+            this.home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.home_btn.Location = new System.Drawing.Point(566, 6);
+            this.home_btn.Name = "home_btn";
+            this.home_btn.Size = new System.Drawing.Size(129, 51);
+            this.home_btn.TabIndex = 7;
+            this.home_btn.Text = "Home";
+            this.home_btn.UseVisualStyleBackColor = false;
+            this.home_btn.Click += new System.EventHandler(this.Home_btn_Click);
+            // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.White;
+            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
+            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exit.Location = new System.Drawing.Point(701, 6);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(116, 51);
+            this.exit.TabIndex = 5;
+            this.exit.Text = "Exit";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.Exit_Click_1);
             // 
             // Intro_btn
             // 
@@ -217,9 +262,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button3.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.button3.Location = new System.Drawing.Point(429, 166);
+            this.button3.Location = new System.Drawing.Point(440, 176);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 61);
+            this.button3.Size = new System.Drawing.Size(85, 51);
             this.button3.TabIndex = 12;
             this.button3.Text = "Identifiers";
             this.button3.UseVisualStyleBackColor = true;
@@ -228,7 +273,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Tutoring_Project.Properties.Resources.binary_file_80px;
-            this.pictureBox7.Location = new System.Drawing.Point(443, 108);
+            this.pictureBox7.Location = new System.Drawing.Point(450, 108);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(63, 63);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -287,51 +332,6 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(83, 45);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
-            // home_btn
-            // 
-            this.home_btn.BackColor = System.Drawing.Color.White;
-            this.home_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.home_btn.FlatAppearance.BorderSize = 0;
-            this.home_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.home_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.home_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
-            this.home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.home_btn.Location = new System.Drawing.Point(566, 6);
-            this.home_btn.Name = "home_btn";
-            this.home_btn.Size = new System.Drawing.Size(129, 51);
-            this.home_btn.TabIndex = 7;
-            this.home_btn.Text = "Home";
-            this.home_btn.UseVisualStyleBackColor = false;
-            this.home_btn.Click += new System.EventHandler(this.Home_btn_Click);
-            // 
-            // exit
-            // 
-            this.exit.BackColor = System.Drawing.Color.White;
-            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.FlatAppearance.BorderSize = 0;
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
-            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(701, 6);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(116, 51);
-            this.exit.TabIndex = 5;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = false;
-            this.exit.Click += new System.EventHandler(this.Exit_Click_1);
-            // 
             // Topics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,6 +357,7 @@
             this.Text = "Topics";
             this.Load += new System.EventHandler(this.Topics_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -365,7 +366,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

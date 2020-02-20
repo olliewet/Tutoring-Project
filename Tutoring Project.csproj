@@ -221,6 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\Part2.png" />
     <None Include="Resources\num.png" />
     <None Include="Resources\SDP12.png" />
     <None Include="Resources\SDP11.png" />
@@ -249,6 +250,8 @@
     <None Include="Resources\Console.writeline.png" />
     <None Include="Resources\Integer Values.png" />
     <None Include="Resources\AchiNotUnlocked.png" />
+    <None Include="Resources\MasterSolver.png" />
+    <None Include="Resources\CodeSample2.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />

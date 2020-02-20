@@ -201,7 +201,7 @@ namespace Tutoring_Project
                     ChangeTabSimplePart2(9);
                     break;
                 default:
-                    MessageBox.Show("Completed Previous Section");
+                    MessageBox.Show("Completed Section");
                     break;
             }
         }
@@ -287,6 +287,23 @@ namespace Tutoring_Project
                 Ach.pictureBox10.Image = Properties.Resources.AchiNotUnlocked;
             }
 
+            if (x >= 16)
+            {
+                Ach.pictureBox9.Image = Properties.Resources.MasterSolver;
+            }
+            else if (x <= 16)
+            {
+                Ach.pictureBox9.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
+            if (x >= 17)
+            {
+                Ach.pictureBox8.Image = Properties.Resources.Part2;
+            }
+            else if (x <= 17)
+            {
+                Ach.pictureBox8.Image = Properties.Resources.AchiNotUnlocked;
+            }
 
         }
 
@@ -604,7 +621,7 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);              
-                CompleteIntroductionSection(x);
+                CompleteIntroductionSection(x);               
                 SwitchStatementSimple(x);
 
             }

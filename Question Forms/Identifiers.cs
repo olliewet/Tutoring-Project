@@ -73,5 +73,15 @@ namespace Tutoring_Project
         {
             ChangeUser();
         }
+
+        private void ShowCode_btn(object sender, EventArgs e)
+        {
+            MessageBox.Show("int fred; float jim;  chat 29yesitsme;  Tip look at what the variable starts with! ");
+        }
+
+        private void Con_btn1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+        }
     }
 }
