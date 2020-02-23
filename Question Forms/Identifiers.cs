@@ -83,5 +83,20 @@ namespace Tutoring_Project
         {
             tabControl1.SelectTab(1);
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("An expression is something which can be evaluated to produce a result. We can then use the result as we like in our program. Expressions can be as simple as a single value and as complex as a large calculation. They are made up of two things, operators and operands.");
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Operands are things the operators work on. They are usually literal values or the identifiers of variables. In the program above first, second, third are identifiers and 2 is a literal value. A literal value is something which is literally there in the code. A literal value has a type associated with it by the compiler.");
+        }
     }
 }
