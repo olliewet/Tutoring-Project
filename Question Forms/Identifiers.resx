@@ -132,4 +132,13 @@
   <data name="richTextBox2.Text" xml:space="preserve">
     <value>Once we have got ourselves a variable we now need to know how to put something into it, and get the value out. C# does this by means of an assignment statement. There are two parts to an assignment, the thing you want to assign and the place you want to put it, for example consider the following:</value>
   </data>
+  <data name="richTextBox5.Text" xml:space="preserve">
+    <value>These expressions are worked out (evaluated) by C# moving from left to right, just as you would yourself. Again, just as in traditional maths all the multiplication and division is performed first in an expression, followed by the addition and subtraction. 
+C# does this by giving each operator a priority. When C# works out an expression it looks along it for all the operators with the highest priority and does them first. It then looks for the next ones down and so on until the final result is obtained. Note that this means that the first expression above will therefore return 14 and not 20.
+</value>
+  </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>Operators are the things which do the work: They specify the operation to be performed on the operands. Most operators work on two operands, one each side. In the program on the previous page + is the only operator.
+</value>
+  </data>
 </root>

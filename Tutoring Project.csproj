@@ -252,6 +252,8 @@
     <None Include="Resources\AchiNotUnlocked.png" />
     <None Include="Resources\MasterSolver.png" />
     <None Include="Resources\CodeSample2.png" />
+    <None Include="Resources\LIST.png" />
+    <None Include="Resources\Code.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />

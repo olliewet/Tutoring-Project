@@ -183,6 +183,16 @@ namespace Tutoring_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Code {
+            get {
+                object obj = ResourceManager.GetObject("Code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap code_example {
             get {
                 object obj = ResourceManager.GetObject("code example", resourceCulture);
@@ -326,6 +336,16 @@ namespace Tutoring_Project.Properties {
         internal static System.Drawing.Bitmap leaderboard_80px {
             get {
                 object obj = ResourceManager.GetObject("leaderboard_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LIST {
+            get {
+                object obj = ResourceManager.GetObject("LIST", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

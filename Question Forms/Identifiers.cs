@@ -15,6 +15,7 @@ namespace Tutoring_Project
         public Identifiers()
         {
             InitializeComponent();
+            
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -97,6 +98,42 @@ namespace Tutoring_Project
         private void Button5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Operands are things the operators work on. They are usually literal values or the identifiers of variables. In the program above first, second, third are identifiers and 2 is a literal value. A literal value is something which is literally there in the code. A literal value has a type associated with it by the compiler.");
+        }
+
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Here are a few example expressions: " + System.Environment.NewLine + 
+                "2 + 3 * 4" + System.Environment.NewLine +
+                "-1 + 3" + System.Environment.NewLine + 
+                "(2 + 3) * 4");
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(3);
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(5);
+        }
+
+        
+
+        private void Tb_a1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabPage6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
