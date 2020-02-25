@@ -30,7 +30,7 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
-
+        int counter;
         private void ChangeUser()
         {
             if ((string)this.pictureBox1.Tag == "user1")
@@ -124,16 +124,54 @@ namespace Tutoring_Project
             tabControl1.SelectTab(5);
         }
 
-        
-
-        private void Tb_a1_TextChanged(object sender, EventArgs e)
+        private void TabPage6_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void TabPage6_Click(object sender, EventArgs e)
+        private void Button29_Click(object sender, EventArgs e)
         {
+           
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
+            }
+            else if (counter >= 5)
+            {
+                MessageBox.Show("HINT HINT HINT HINT");
+            }
 
+            if (tb1.Text.Equals("int Num1;") && tb2.Text.Equals("Num1 = 10") && tb3.Text.Equals("Num3 = Num1 * Num2;"))
+            {
+                
+                tabControl1.SelectTab(6);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(17, 18);
+                    User.Exp();
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(17, 18);
+                    User.Exp2();
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(17, 18);
+                    User.Exp3();
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(17, 18);
+                    User.Exp4();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
         }
     }
 }
