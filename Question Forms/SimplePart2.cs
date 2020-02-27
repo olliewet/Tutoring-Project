@@ -398,5 +398,15 @@ namespace Tutoring_Project.Question_Forms
         {
             tabControl1.SelectTab(12); 
         }
+
+        private void RichTextBox35_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

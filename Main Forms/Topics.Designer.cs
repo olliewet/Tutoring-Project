@@ -192,7 +192,7 @@
             this.cp_btn.Name = "cp_btn";
             this.cp_btn.Size = new System.Drawing.Size(87, 38);
             this.cp_btn.TabIndex = 3;
-            this.cp_btn.Text = "Creating Programs";
+            this.cp_btn.Text = "Program Flow";
             this.cp_btn.UseVisualStyleBackColor = true;
             this.cp_btn.Click += new System.EventHandler(this.Cp_btn_Click);
             // 

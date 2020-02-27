@@ -1424,6 +1424,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 12;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.PictureBox6_Click);
             // 
             // richTextBox35
             // 
@@ -1436,6 +1437,7 @@
             this.richTextBox35.Size = new System.Drawing.Size(435, 108);
             this.richTextBox35.TabIndex = 11;
             this.richTextBox35.Text = resources.GetString("richTextBox35.Text");
+            this.richTextBox35.TextChanged += new System.EventHandler(this.RichTextBox35_TextChanged);
             // 
             // finish_btn
             // 

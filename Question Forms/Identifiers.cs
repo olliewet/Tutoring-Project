@@ -143,7 +143,7 @@ namespace Tutoring_Project
                 MessageBox.Show("HINT HINT HINT HINT");
             }
 
-            if (tb1.Text.Equals("int Num1;") && tb2.Text.Equals("Num1 = 10") && tb3.Text.Equals("Num3 = Num1 * Num2;"))
+            if (tb1.Text.Equals("int Num1;") && tb2.Text.Equals("Num1 = 10;") && tb3.Text.Equals("Num3 = Num1 * Num2;"))
             {
                 
                 tabControl1.SelectTab(6);
@@ -172,6 +172,43 @@ namespace Tutoring_Project
             {
                 MessageBox.Show("Answer is incorrect");
             }
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topics T = new Topics();
+            MessageBox.Show("Achievement Unlocked!");
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                User.User1(18, 19);
+                User.Exp();
+                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                T.pictureBox1.Tag = "user1";
+            }
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                User.User2(18, 19);
+                User.Exp2();
+                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                T.pictureBox1.Tag = "user2";
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                User.User3(18, 19);
+                User.Exp3();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                User.User4(18, 19);
+                User.Exp4();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                T.pictureBox1.Tag = "user4";
+            }
+            this.Close();
+            T.ShowDialog();
         }
     }
 }

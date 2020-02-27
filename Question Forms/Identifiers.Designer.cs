@@ -57,11 +57,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.richTextBox9 = new System.Windows.Forms.RichTextBox();
-            this.topics_btn = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button29 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tb2 = new System.Windows.Forms.TextBox();
+            this.tb1 = new System.Windows.Forms.TextBox();
+            this.tb3 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -70,14 +72,16 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tb2 = new System.Windows.Forms.TextBox();
-            this.tb1 = new System.Windows.Forms.TextBox();
-            this.tb3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button29 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.richTextBox9 = new System.Windows.Forms.RichTextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.topics_btn = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.richTextBox35 = new System.Windows.Forms.RichTextBox();
+            this.finish_btn = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -88,7 +92,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -438,73 +444,70 @@
             this.tabPage6.UseVisualStyleBackColor = true;
             this.tabPage6.Click += new System.EventHandler(this.TabPage6_Click);
             // 
-            // pictureBox4
+            // button29
             // 
-            this.pictureBox4.Image = global::Tutoring_Project.Properties.Resources.Code;
-            this.pictureBox4.Location = new System.Drawing.Point(163, 54);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(492, 293);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 30;
-            this.pictureBox4.TabStop = false;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Location = new System.Drawing.Point(740, 340);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(75, 23);
+            this.button29.TabIndex = 78;
+            this.button29.Text = "Continue ";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.Button29_Click);
             // 
-            // richTextBox9
+            // label8
             // 
-            this.richTextBox9.BackColor = System.Drawing.Color.White;
-            this.richTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox9.Location = new System.Drawing.Point(15, 6);
-            this.richTextBox9.Name = "richTextBox9";
-            this.richTextBox9.ReadOnly = true;
-            this.richTextBox9.Size = new System.Drawing.Size(764, 42);
-            this.richTextBox9.TabIndex = 29;
-            this.richTextBox9.Text = "Question - Finish the code that is provided below using the provided words and ph" +
-    "ases, the finished bit of code must be assigning the value of Num1 * Num2 to var" +
-    "iable Num3 ";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 202);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(133, 13);
+            this.label8.TabIndex = 77;
+            this.label8.Text = "- Num10 = String1 * Num2;";
             // 
-            // topics_btn
+            // label7
             // 
-            this.topics_btn.BackColor = System.Drawing.Color.White;
-            this.topics_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.topics_btn.FlatAppearance.BorderSize = 0;
-            this.topics_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.topics_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
-            this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.topics_btn.Location = new System.Drawing.Point(581, 3);
-            this.topics_btn.Name = "topics_btn";
-            this.topics_btn.Size = new System.Drawing.Size(124, 55);
-            this.topics_btn.TabIndex = 20;
-            this.topics_btn.Text = "Home";
-            this.topics_btn.UseVisualStyleBackColor = false;
-            this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 189);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(122, 13);
+            this.label7.TabIndex = 76;
+            this.label7.Text = "- Num3 = Num1 * Num2;";
             // 
-            // exit
+            // tb2
             // 
-            this.exit.BackColor = System.Drawing.Color.White;
-            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.FlatAppearance.BorderSize = 0;
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
-            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(701, 2);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(121, 56);
-            this.exit.TabIndex = 19;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = false;
-            this.exit.Click += new System.EventHandler(this.Exit_Click);
+            this.tb2.BackColor = System.Drawing.Color.White;
+            this.tb2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb2.Location = new System.Drawing.Point(336, 209);
+            this.tb2.Name = "tb2";
+            this.tb2.Size = new System.Drawing.Size(85, 20);
+            this.tb2.TabIndex = 75;
             // 
-            // pictureBox1
+            // tb1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 56);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.tb1.BackColor = System.Drawing.Color.White;
+            this.tb1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb1.Location = new System.Drawing.Point(336, 132);
+            this.tb1.Name = "tb1";
+            this.tb1.Size = new System.Drawing.Size(73, 20);
+            this.tb1.TabIndex = 74;
+            // 
+            // tb3
+            // 
+            this.tb3.BackColor = System.Drawing.Color.White;
+            this.tb3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb3.Location = new System.Drawing.Point(336, 269);
+            this.tb3.Name = "tb3";
+            this.tb3.Size = new System.Drawing.Size(169, 20);
+            this.tb3.TabIndex = 72;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 163);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 13);
+            this.label6.TabIndex = 71;
+            this.label6.Text = "- Num5 = 10; ";
             // 
             // label28
             // 
@@ -567,7 +570,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(58, 13);
             this.label21.TabIndex = 64;
-            this.label21.Text = "- int Num2;";
+            this.label21.Text = "- int Num1;";
             // 
             // label18
             // 
@@ -578,73 +581,36 @@
             this.label18.TabIndex = 63;
             this.label18.Text = "Provided Words";
             // 
-            // label6
+            // pictureBox4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 163);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 13);
-            this.label6.TabIndex = 71;
-            this.label6.Text = "- Num5 = 10; ";
+            this.pictureBox4.Image = global::Tutoring_Project.Properties.Resources.Code;
+            this.pictureBox4.Location = new System.Drawing.Point(163, 54);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(492, 293);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 30;
+            this.pictureBox4.TabStop = false;
             // 
-            // tb2
+            // richTextBox9
             // 
-            this.tb2.BackColor = System.Drawing.Color.White;
-            this.tb2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb2.Location = new System.Drawing.Point(336, 209);
-            this.tb2.Name = "tb2";
-            this.tb2.Size = new System.Drawing.Size(85, 20);
-            this.tb2.TabIndex = 75;
-            // 
-            // tb1
-            // 
-            this.tb1.BackColor = System.Drawing.Color.White;
-            this.tb1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb1.Location = new System.Drawing.Point(336, 134);
-            this.tb1.Name = "tb1";
-            this.tb1.Size = new System.Drawing.Size(73, 20);
-            this.tb1.TabIndex = 74;
-            // 
-            // tb3
-            // 
-            this.tb3.BackColor = System.Drawing.Color.White;
-            this.tb3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb3.Location = new System.Drawing.Point(336, 269);
-            this.tb3.Name = "tb3";
-            this.tb3.Size = new System.Drawing.Size(169, 20);
-            this.tb3.TabIndex = 72;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 189);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 13);
-            this.label7.TabIndex = 76;
-            this.label7.Text = "- Num3 = Num1 * Num2;";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 202);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(133, 13);
-            this.label8.TabIndex = 77;
-            this.label8.Text = "- Num10 = String1 * Num2;";
-            // 
-            // button29
-            // 
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Location = new System.Drawing.Point(740, 340);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 23);
-            this.button29.TabIndex = 78;
-            this.button29.Text = "Continue ";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.Button29_Click);
+            this.richTextBox9.BackColor = System.Drawing.Color.White;
+            this.richTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox9.Location = new System.Drawing.Point(15, 6);
+            this.richTextBox9.Name = "richTextBox9";
+            this.richTextBox9.ReadOnly = true;
+            this.richTextBox9.Size = new System.Drawing.Size(764, 42);
+            this.richTextBox9.TabIndex = 29;
+            this.richTextBox9.Text = "Question - Finish the code that is provided below using the provided words and ph" +
+    "ases, the finished bit of code must be assigning the value of Num1 * Num2 to var" +
+    "iable Num3 ";
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.button9);
+            this.tabPage7.Controls.Add(this.pictureBox6);
+            this.tabPage7.Controls.Add(this.richTextBox35);
+            this.tabPage7.Controls.Add(this.finish_btn);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -652,6 +618,95 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // topics_btn
+            // 
+            this.topics_btn.BackColor = System.Drawing.Color.White;
+            this.topics_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.topics_btn.FlatAppearance.BorderSize = 0;
+            this.topics_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.topics_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
+            this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.topics_btn.Location = new System.Drawing.Point(581, 3);
+            this.topics_btn.Name = "topics_btn";
+            this.topics_btn.Size = new System.Drawing.Size(124, 55);
+            this.topics_btn.TabIndex = 20;
+            this.topics_btn.Text = "Home";
+            this.topics_btn.UseVisualStyleBackColor = false;
+            this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
+            // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.White;
+            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
+            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exit.Location = new System.Drawing.Point(701, 2);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(121, 56);
+            this.exit.TabIndex = 19;
+            this.exit.Text = "Exit";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 56);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Tutoring_Project.Properties.Resources.C_Sharp_01;
+            this.pictureBox6.Location = new System.Drawing.Point(484, 18);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(302, 196);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 15;
+            this.pictureBox6.TabStop = false;
+            // 
+            // richTextBox35
+            // 
+            this.richTextBox35.BackColor = System.Drawing.Color.White;
+            this.richTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox35.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox35.Location = new System.Drawing.Point(15, 39);
+            this.richTextBox35.Name = "richTextBox35";
+            this.richTextBox35.ReadOnly = true;
+            this.richTextBox35.Size = new System.Drawing.Size(435, 108);
+            this.richTextBox35.TabIndex = 14;
+            this.richTextBox35.Text = "Well done on completing the identifiers section, in this section, we covered diff" +
+    "erent types of operators and identifiers, a new more complex section has been un" +
+    "locked!\n";
+            // 
+            // finish_btn
+            // 
+            this.finish_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finish_btn.Location = new System.Drawing.Point(15, 105);
+            this.finish_btn.Name = "finish_btn";
+            this.finish_btn.Size = new System.Drawing.Size(115, 23);
+            this.finish_btn.TabIndex = 13;
+            this.finish_btn.Text = "Finish Section!";
+            this.finish_btn.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(15, 105);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(115, 23);
+            this.button9.TabIndex = 16;
+            this.button9.Text = "Finish Section!";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
             // Identifiers
             // 
@@ -682,7 +737,9 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -737,5 +794,9 @@
         private System.Windows.Forms.TextBox tb3;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.RichTextBox richTextBox35;
+        private System.Windows.Forms.Button finish_btn;
+        private System.Windows.Forms.Button button9;
     }
 }
