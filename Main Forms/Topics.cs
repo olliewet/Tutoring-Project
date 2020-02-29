@@ -24,6 +24,7 @@ namespace Tutoring_Project
         Question_Forms.simpledata S = new Question_Forms.simpledata();
         Question_Forms.SimplePart2 S2 = new Question_Forms.SimplePart2();
         Identifiers I = new Identifiers();
+        Question_Forms.ProgramFlow PF = new Question_Forms.ProgramFlow();
         #endregion
 
         public Topics()
@@ -57,6 +58,13 @@ namespace Tutoring_Project
         {
             I.tabControl1.SelectTab(tab);
             I.ShowDialog();
+            this.Close();
+        }
+
+        private void ChangeTabPF(int tab)
+        {
+            PF.tabControl1.SelectTab(tab);
+            PF.ShowDialog();
             this.Close();
         }
         #endregion
@@ -209,6 +217,11 @@ namespace Tutoring_Project
         {
             switch (x)
             {
+                /*                
+                    default:
+                    MessageBox.Show("Complete Previous Section");
+                    break;
+                */
                 case 17:
                     this.Hide();
                     this.Close();
@@ -219,15 +232,30 @@ namespace Tutoring_Project
                     this.Close();
                     ChangeTabID(6);
                     break;
-                default:
-                    MessageBox.Show("Complete Previous Section");
+                default: //Completed
+                    MessageBox.Show("Completed  Section");
+                    break;                 
+            }
+        }
+        private void SwitchStatementPF(int x)
+        {
+            switch (x)
+            {
+                
+                case 19:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabPF(0);
+                    break;              
+                default: //Completed
+                    MessageBox.Show("Completed  Section");
                     break;
             }
         }
-        #endregion 
+            #endregion
 
-        #region Achievements and Badges Methods
-        private void Achievements(int x)
+            #region Achievements and Badges Methods
+            private void Achievements(int x)
         {
             if (x >= 3)
             {
@@ -310,21 +338,51 @@ namespace Tutoring_Project
                 Ach.pictureBox8.Image = Properties.Resources.AchiNotUnlocked;
             }
 
+            if (x >= 18)
+            {
+                Ach.pictureBox13.Image = Properties.Resources.IDAchieve;
+            }
+            else if (x <= 18)
+            {
+                Ach.pictureBox13.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
+            if (x >= 19)
+            {
+                Ach.pictureBox12.Image = Properties.Resources.CompID;
+            }
+            else if (x <= 19)
+            {
+                Ach.pictureBox12.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
         }
 
         private void Badges(int x)
         {
-            if (x >= 3)
+
+            if (x >= 0 && x <= 500)
             {
                 UserProfiles.pictureBox2.Image = Properties.Resources.medal;
-
+                UserProfiles.label1.Text = "Brozne"; 
             }
-
-            if (x >= 4)
+            else if (x >= 500 && x <= 1000)
             {
-
-                UserProfiles.pictureBox6.Image = Properties.Resources.award;
+               UserProfiles.pictureBox2.Image = Properties.Resources.award;
+               UserProfiles.label1.Text = "Silver";
             }
+            else if (x >= 1000 && x <= 2000)
+            {
+                UserProfiles.pictureBox2.Image = Properties.Resources.award;
+                UserProfiles.label1.Text = "Gold";
+            }
+            else if (x >= 3000 && x <= 5000)
+            {
+                UserProfiles.pictureBox2.Image = Properties.Resources.award;
+                UserProfiles.label1.Text = "Platinum";
+            }
+
+
         }
         #endregion
 
@@ -475,55 +533,62 @@ namespace Tutoring_Project
 
         private void Cp_btn_Click(object sender, EventArgs e)
         {
-
-            //If statement to check if the forms picture box contains a certain image 
             if ((string)this.pictureBox1.Tag == "user1")
             {
-
+                //The picture box of current instance is set to image of user 
+                PF.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                PF.pictureBox1.Tag = "user1";
+                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
+                SwitchStatementPF(x);
+              
 
-                if (x < 16)
-                {
-                    MessageBox.Show("Not Completed the Previous Section");
-                }
-                //Add Code to Open up The form for this button and load the data for this user 
 
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level                
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
-                this.Hide();
+                //The picture box of current instance is set to image of current user 
+                PF.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                PF.pictureBox1.Tag = "user2";
+                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
+                SwitchStatementPF(x);
 
-                if (x > 16)
-                {
-                    MessageBox.Show("Not Completed the Previous Section");
-                }
+
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-                this.Hide();
+
+                //The picture box of current instance is set to image of current user 
+                PF.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                PF.pictureBox1.Tag = "user3";
+                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
+                SwitchStatementPF(x);
 
-                if (x > 16)
-                {
-                    MessageBox.Show("Not Completed the Previous Section");
-                }
             }
+            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
-
-                this.Hide();
+                //The picture box of current instance is set to image of current user 
+                I.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                I.pictureBox1.Tag = "user4";
+                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
+                SwitchStatementPF(x);
+                //Saving and Loading Function 
+                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
 
-                if (x > 16)
-                {
-                    MessageBox.Show("Not Completed the Previous Section");
-                }
             }
+
         }
 
         #endregion 
@@ -548,7 +613,9 @@ namespace Tutoring_Project
                 UserProfiles.level.Text = currentlevel;
                 UserProfiles.exp.Text = File.ReadAllText("exp1.txt");
                 int x = Int32.Parse(currentlevel);
-                Badges(x);
+                string exp = File.ReadAllText("exp1.txt");
+                int y = int.Parse(exp);
+                Badges(y);
                 UserProfiles.ShowDialog();
                 this.Close();
             }

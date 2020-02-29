@@ -75,13 +75,13 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.richTextBox9 = new System.Windows.Forms.RichTextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.topics_btn = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.richTextBox35 = new System.Windows.Forms.RichTextBox();
             this.finish_btn = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.topics_btn = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -93,8 +93,8 @@
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -616,8 +616,53 @@
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage7.Size = new System.Drawing.Size(831, 371);
             this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.Text = "FinishSection";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(15, 105);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(115, 23);
+            this.button9.TabIndex = 16;
+            this.button9.Text = "Finish Section!";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Tutoring_Project.Properties.Resources.C_Sharp_01;
+            this.pictureBox6.Location = new System.Drawing.Point(484, 18);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(302, 196);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 15;
+            this.pictureBox6.TabStop = false;
+            // 
+            // richTextBox35
+            // 
+            this.richTextBox35.BackColor = System.Drawing.Color.White;
+            this.richTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox35.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox35.Location = new System.Drawing.Point(15, 39);
+            this.richTextBox35.Name = "richTextBox35";
+            this.richTextBox35.ReadOnly = true;
+            this.richTextBox35.Size = new System.Drawing.Size(435, 108);
+            this.richTextBox35.TabIndex = 14;
+            this.richTextBox35.Text = "Well done on completing the identifiers section, in this section, we covered diff" +
+    "erent types of operators and identifiers, a new more complex section has been un" +
+    "locked!\n";
+            // 
+            // finish_btn
+            // 
+            this.finish_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finish_btn.Location = new System.Drawing.Point(15, 105);
+            this.finish_btn.Name = "finish_btn";
+            this.finish_btn.Size = new System.Drawing.Size(115, 23);
+            this.finish_btn.TabIndex = 13;
+            this.finish_btn.Text = "Finish Section!";
+            this.finish_btn.UseVisualStyleBackColor = true;
             // 
             // topics_btn
             // 
@@ -663,51 +708,6 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Tutoring_Project.Properties.Resources.C_Sharp_01;
-            this.pictureBox6.Location = new System.Drawing.Point(484, 18);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(302, 196);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 15;
-            this.pictureBox6.TabStop = false;
-            // 
-            // richTextBox35
-            // 
-            this.richTextBox35.BackColor = System.Drawing.Color.White;
-            this.richTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox35.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox35.Location = new System.Drawing.Point(15, 39);
-            this.richTextBox35.Name = "richTextBox35";
-            this.richTextBox35.ReadOnly = true;
-            this.richTextBox35.Size = new System.Drawing.Size(435, 108);
-            this.richTextBox35.TabIndex = 14;
-            this.richTextBox35.Text = "Well done on completing the identifiers section, in this section, we covered diff" +
-    "erent types of operators and identifiers, a new more complex section has been un" +
-    "locked!\n";
-            // 
-            // finish_btn
-            // 
-            this.finish_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.finish_btn.Location = new System.Drawing.Point(15, 105);
-            this.finish_btn.Name = "finish_btn";
-            this.finish_btn.Size = new System.Drawing.Size(115, 23);
-            this.finish_btn.TabIndex = 13;
-            this.finish_btn.Text = "Finish Section!";
-            this.finish_btn.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(15, 105);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(115, 23);
-            this.button9.TabIndex = 16;
-            this.button9.Text = "Finish Section!";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.Button9_Click);
-            // 
             // Identifiers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -738,8 +738,8 @@
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

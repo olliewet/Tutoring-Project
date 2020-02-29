@@ -243,6 +243,16 @@ namespace Tutoring_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CompID {
+            get {
+                object obj = ResourceManager.GetObject("CompID", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Console_writeline {
             get {
                 object obj = ResourceManager.GetObject("Console.writeline", resourceCulture);
@@ -286,6 +296,16 @@ namespace Tutoring_Project.Properties {
         internal static System.Drawing.Bitmap home_26px {
             get {
                 object obj = ResourceManager.GetObject("home_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IDAchieve {
+            get {
+                object obj = ResourceManager.GetObject("IDAchieve", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -90,6 +90,12 @@
     <Compile Include="Main Forms\References.Designer.cs">
       <DependentUpon>References.cs</DependentUpon>
     </Compile>
+    <Compile Include="Question Forms\ProgramFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question Forms\ProgramFlow.Designer.cs">
+      <DependentUpon>ProgramFlow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Question Forms\simpledata.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main Forms\UserProfile.resx">
       <DependentUpon>UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question Forms\ProgramFlow.resx">
+      <DependentUpon>ProgramFlow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Question Forms\simpledata.resx">
       <DependentUpon>simpledata.cs</DependentUpon>
@@ -254,6 +263,8 @@
     <None Include="Resources\CodeSample2.png" />
     <None Include="Resources\LIST.png" />
     <None Include="Resources\Code.png" />
+    <None Include="Resources\CompID.png" />
+    <None Include="Resources\IDAchieve.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />

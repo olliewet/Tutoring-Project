@@ -187,7 +187,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(120, 32);
             this.button4.TabIndex = 33;
-            this.button4.Text = "End Game ";
+            this.button4.Text = "Identifiers";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
@@ -361,7 +361,7 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(644, 285);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "End Game";
+            this.tabPage4.Text = "ID";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // pictureBox11
