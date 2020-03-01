@@ -107,7 +107,7 @@
             this.badge_lb.AutoSize = true;
             this.badge_lb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.badge_lb.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.badge_lb.Location = new System.Drawing.Point(7, 292);
+            this.badge_lb.Location = new System.Drawing.Point(21, 292);
             this.badge_lb.Name = "badge_lb";
             this.badge_lb.Size = new System.Drawing.Size(55, 25);
             this.badge_lb.TabIndex = 7;
@@ -160,7 +160,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 320);
+            this.pictureBox2.Location = new System.Drawing.Point(1, 320);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 88);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -178,7 +178,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 411);
+            this.label1.Location = new System.Drawing.Point(34, 411);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 25;

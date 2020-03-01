@@ -117,4 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="intro_tb.Text" xml:space="preserve">
+    <value>The program above to work out the wood and glass for our glazing man is nice; in fact our customer will probably be quite pleased with it. However, it is not perfect. The problem is not with the program, but with the user. 
+
+If you give the program a window width of -1 it goes ahead and works out a stupid result. Our program does not have any checking for invalid widths and heights. The user might have grounds for complaint if the program fails to recognise that he has given a stupid value, in fact a number of cases are currently being fought in the United States courts where a program has failed to recognise invalid data, produced garbage and caused a lot of damage. 
+</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>This means that we have done all we can; If the program gets 1 rather than 10 for the width then that is the users' problem, the important thing from our point of view is that the above specification stops us from being sued! 
+In order to allow us to do this the program must notice naughty values and reject them. To do this we can use the construction:
+</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>What we want to do is notice the really stupid replies and tell the user that he has done something dubious. In our program specification, which we give the customer, we have said something like (this is our metadata): The program will reject window dimensions outside the following ranges:
+</value>
+  </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>The condition determines what happens in the program. So what do we mean by a condition? C# has a way in which true and false can be explicitly stated in a program. We have already seen that the bool type is used to store this logical state.
+
+We can create conditions which return a logical result. These are called "logical conditions". Which is logical. The simplest condition is simply the value true or false, for example:</value>
+  </data>
+  <data name="richTextBox6.Text" xml:space="preserve">
+    <value>To make conditions work for us we need a set of additional relational operators which we can use in logical expressions. Relational operators work on operands, just like numeric ones. However any expression involving them can only produce one of two values, true or false. Relational operators available are as follows:</value>
+  </data>
 </root>

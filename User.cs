@@ -96,6 +96,7 @@ namespace Tutoring_Project
             catch
             {
                 MessageBox.Show("Error With the File");
+                
             }
         }
 

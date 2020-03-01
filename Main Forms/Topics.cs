@@ -47,7 +47,6 @@ namespace Tutoring_Project
             S.ShowDialog();
             this.Close();
         }
-
         private void ChangeTabSimplePart2(int tab)
         {
             S2.tabControl1.SelectTab(tab);
@@ -68,44 +67,7 @@ namespace Tutoring_Project
             this.Close();
         }
         #endregion
-
-        #region Complete Checking Methods 
-        private void CompleteIntroductionSection(int x)
-        {
-            if (x < 4)
-            {
-                MessageBox.Show("Complete Previous Section");
-            }
-        }
-
-        private void CompleteSimpleDataSection(int x)
-        {
-            if (x < 4)
-            {
-                MessageBox.Show("Complete Introduction");
-            }
-            else if (x < 13)
-            {
-                MessageBox.Show("Complete Simple Data Section");
-            }
-        }
-
-        private void CompleteSimpleDataSectionPart2(int x)
-        {
-            if (x < 4)
-            {
-                MessageBox.Show("Complete Introduction");
-            }
-            else if (x < 13)
-            {
-                MessageBox.Show("Complete Simple Data Section");
-            }
-            else if (x < 17)
-            {
-                MessageBox.Show("Complete Simple Data Section");
-            }
-        }
-        #endregion
+      
 
         #region SwitchStatements
         private void SwitchStatementIntroduction(int x)
@@ -114,23 +76,24 @@ namespace Tutoring_Project
             {
                 case 0:
                     this.Hide();
+                    this.Close();
                     ChangeTab(0);
                     break;
                 case 1:
                     this.Hide();
+                    this.Close();
                     ChangeTab(2);
                     break;
                 case 2:
                     this.Hide();
+                    this.Close();
                     ChangeTab(4);
                     break;
                 case 3:
                     this.Hide();
+                    this.Close();
                     ChangeTab(6);
-                    break;
-                default:
-                    MessageBox.Show("Completed this section");
-                    break;
+                    break;             
             }
 
         }
@@ -182,10 +145,7 @@ namespace Tutoring_Project
                     this.Hide();
                     this.Close();
                     ChangeTabSimple(27);
-                    break;
-                default:
-                    MessageBox.Show("Completed Section");
-                    break;
+                    break;           
             }
 
         }
@@ -207,21 +167,13 @@ namespace Tutoring_Project
                     this.Hide();
                     this.Close();
                     ChangeTabSimplePart2(9);
-                    break;
-                default:
-                    MessageBox.Show("Completed Section");
-                    break;
+                    break;               
             }
         }
         private void SwitchStatementID(int x)
         {
             switch (x)
-            {
-                /*                
-                    default:
-                    MessageBox.Show("Complete Previous Section");
-                    break;
-                */
+            {               
                 case 17:
                     this.Hide();
                     this.Close();
@@ -231,30 +183,23 @@ namespace Tutoring_Project
                     this.Hide();
                     this.Close();
                     ChangeTabID(6);
-                    break;
-                default: //Completed
-                    MessageBox.Show("Completed  Section");
-                    break;                 
+                    break;                               
             }
         }
         private void SwitchStatementPF(int x)
         {
             switch (x)
-            {
-                
+            {             
                 case 19:
                     this.Hide();
                     this.Close();
                     ChangeTabPF(0);
-                    break;              
-                default: //Completed
-                    MessageBox.Show("Completed  Section");
-                    break;
+                    break;                             
             }
         }
             #endregion
 
-            #region Achievements and Badges Methods
+        #region Achievements and Badges Methods
             private void Achievements(int x)
         {
             if (x >= 3)
@@ -361,24 +306,29 @@ namespace Tutoring_Project
         private void Badges(int x)
         {
 
-            if (x >= 0 && x <= 500)
+            if (x >= 0 && x <= 200)
             {
-                UserProfiles.pictureBox2.Image = Properties.Resources.medal;
+                UserProfiles.pictureBox2.Image = Properties.Resources.bronze;
                 UserProfiles.label1.Text = "Brozne"; 
             }
-            else if (x >= 500 && x <= 1000)
+            else if (x >= 200 && x <= 400)
             {
-               UserProfiles.pictureBox2.Image = Properties.Resources.award;
+               UserProfiles.pictureBox2.Image = Properties.Resources.silver;
                UserProfiles.label1.Text = "Silver";
             }
-            else if (x >= 1000 && x <= 2000)
+            else if (x >= 400 && x <= 700)
             {
-                UserProfiles.pictureBox2.Image = Properties.Resources.award;
+                UserProfiles.pictureBox2.Image = Properties.Resources.gold;
                 UserProfiles.label1.Text = "Gold";
             }
-            else if (x >= 3000 && x <= 5000)
+            else if (x >= 700 && x <= 1200)
             {
-                UserProfiles.pictureBox2.Image = Properties.Resources.award;
+                UserProfiles.pictureBox2.Image = Properties.Resources.Plat;
+                UserProfiles.label1.Text = "Platinum";
+            }
+            else if (x >= 1200 && x <= 5000)
+            {
+                UserProfiles.pictureBox2.Image = Properties.Resources.Plat;
                 UserProfiles.label1.Text = "Platinum";
             }
 
@@ -468,7 +418,7 @@ namespace Tutoring_Project
 
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-
+                LevelChecking.CompleteIntroductionSection(x);
                 SwitchStatementIntroduction(x);
                 
             }
@@ -488,6 +438,7 @@ namespace Tutoring_Project
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 SwitchStatementIntroduction(x);
+                LevelChecking.CompleteIntroductionSection(x);
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
@@ -505,6 +456,7 @@ namespace Tutoring_Project
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 SwitchStatementIntroduction(x);
+                LevelChecking.CompleteIntroductionSection(x);
 
             }
             //Statement used to check what user is logged in
@@ -520,18 +472,18 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
 
-
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 SwitchStatementIntroduction(x);
+                LevelChecking.CompleteIntroductionSection(x);
             }
         }
 
         #endregion
 
-        #region Creating Programs 
+        #region Program Flow
 
-        private void Cp_btn_Click(object sender, EventArgs e)
+        private void PF_btn_Click(object sender, EventArgs e)
         {
             if ((string)this.pictureBox1.Tag == "user1")
             {
@@ -542,7 +494,7 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
                 SwitchStatementPF(x);
-              
+                LevelChecking.CompletePF(x);
 
 
                 //Saving and Loading Function 
@@ -558,7 +510,7 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
                 SwitchStatementPF(x);
-
+                LevelChecking.CompletePF(x);
 
             }
             //Statement used to check what user is logged in
@@ -572,7 +524,7 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
                 SwitchStatementPF(x);
-
+                LevelChecking.CompletePF(x);
             }
             //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
@@ -584,9 +536,9 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
                 SwitchStatementPF(x);
+                LevelChecking.CompletePF(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
-
             }
 
         }
@@ -686,59 +638,42 @@ namespace Tutoring_Project
         {
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                //The picture box of current instance is set to image of user 
                 S.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 S.pictureBox1.Tag = "user1";
-
-                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
-                int x = Int32.Parse(currentlevel);              
-                CompleteIntroductionSection(x);               
+                int x = Int32.Parse(currentlevel);
+                LevelChecking.CompleteSimpleDataSection(x);
                 SwitchStatementSimple(x);
 
             }
-            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
-            {
-                //The picture box of current instance is set to image of current user 
+            {               
                 S.pictureBox1.Image = Properties.Resources.user_male_olive_green;
-                S.pictureBox1.Tag = "user2";
-
-                // Data from text file (users level) is parsed into int and stored within variable  
+                S.pictureBox1.Tag = "user2";               
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteIntroductionSection(x);
+                LevelChecking.CompleteSimpleDataSection(x);
                 SwitchStatementSimple(x);
 
             }
-            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
-            {
-
-                //The picture box of current instance is set to image of current user 
+            {            
                 S.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
-                S.pictureBox1.Tag = "user3";
-
-                // Data from text file (users level) is parsed into int and stored within variable  
+                S.pictureBox1.Tag = "user3";            
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteIntroductionSection(x);                
+                LevelChecking.CompleteSimpleDataSection(x);
                 SwitchStatementSimple(x);
 
-            }
-            //Statement used to check what user is logged in
+            }          
             else if ((string)this.pictureBox1.Tag == "user4")
-            {
-                //The picture box of current instance is set to image of current user 
+            {              
                 S.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 S.pictureBox1.Tag = "user4";
-
-                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteIntroductionSection(x);                
+                LevelChecking.CompleteSimpleDataSection(x);
                 SwitchStatementSimple(x);
-
             }
         }
 
@@ -747,7 +682,6 @@ namespace Tutoring_Project
         #region End Game Button 
         private void Button1_Click(object sender, EventArgs e)
         {
-
             string currentlevel;
             currentlevel = File.ReadAllText("levelfile.txt");
             int x = Int32.Parse(currentlevel);
@@ -768,7 +702,6 @@ namespace Tutoring_Project
 
             if ((string)this.pictureBox1.Tag == "user1")
             {
-
                 this.Hide();
                 Ach.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 Ach.pictureBox1.Tag = "user1";
@@ -820,60 +753,39 @@ namespace Tutoring_Project
                 //The picture box of current instance is set to image of user 
                 S2.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
                 S2.pictureBox1.Tag = "user1";
-
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteSimpleDataSection(x);
+                LevelChecking.CompleteSimpleDataSectionPart2(x);                
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
                 SwitchStatementSimplePart2(x);
             }
-            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
-                //The picture box of current instance is set to image of current user 
                 S2.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 S2.pictureBox1.Tag = "user2";
-
-                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteSimpleDataSection(x);
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                LevelChecking.CompleteSimpleDataSectionPart2(x);
                 SwitchStatementSimplePart2(x);
             }
-            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-
-                //The picture box of current instance is set to image of current user 
                 S2.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
                 S2.pictureBox1.Tag = "user3";
-
-                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteSimpleDataSection(x);
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                LevelChecking.CompleteSimpleDataSectionPart2(x);
                 SwitchStatementSimplePart2(x);
             }
-            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
-                //The picture box of current instance is set to image of current user 
                 S2.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 S2.pictureBox1.Tag = "user4";
-
-                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteSimpleDataSection(x);
-
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                LevelChecking.CompleteSimpleDataSectionPart2(x);
                 SwitchStatementSimplePart2(x);
             }
         }
@@ -888,52 +800,36 @@ namespace Tutoring_Project
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteSimpleDataSectionPart2(x);
+                LevelChecking.CompleteID(x);
                 SwitchStatementID(x);
                 //Saving and Loading Function 
                 //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level                
             }
-            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user2")
             {
-                //The picture box of current instance is set to image of current user 
                 I.pictureBox1.Image = Properties.Resources.user_male_olive_green;
                 I.pictureBox1.Tag = "user2";
-                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteSimpleDataSectionPart2(x);
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                LevelChecking.CompleteID(x);
                 SwitchStatementID(x);              
-            }
-            //Statement used to check what user is logged in
+            }          
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-
-                //The picture box of current instance is set to image of current user 
                 I.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
                 I.pictureBox1.Tag = "user3";
-                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteSimpleDataSectionPart2(x);
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                LevelChecking.CompleteID(x);
                 SwitchStatementID(x);
             }
-            //Statement used to check what user is logged in
             else if ((string)this.pictureBox1.Tag == "user4")
             {
-                //The picture box of current instance is set to image of current user 
                 I.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
                 I.pictureBox1.Tag = "user4";
-                // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
-                CompleteSimpleDataSectionPart2(x);
-                //Saving and Loading Function 
-                //When user compeltes questions a level is stored, the if statements are used to change what form is loaded for the user depending on level
+                LevelChecking.CompleteID(x);
                 SwitchStatementID(x);
             }
         }
