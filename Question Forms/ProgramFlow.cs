@@ -220,7 +220,8 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button9_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("less than or equal to.If the operand on the left is less than or equal to the one on the right you get true, otherwise you get false.");
+            MessageBox.Show("less than or equal to.If the operand on the left is less than or equal to the one on the right you get true, otherwise you get false.");
+
         }
 
         private void Button10_Click(object sender, EventArgs e)
@@ -272,6 +273,183 @@ namespace Tutoring_Project.Question_Forms
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
                     User.User4(21, 22);
+                    User.Exp4();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+        }
+
+        private void Button18_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(8);
+        }
+
+        private void Button19_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(9);
+        }
+
+        private void Button20_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(10);
+        }
+
+        private void Button21_Click(object sender, EventArgs e)
+        {
+            string text;
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("HINT HINT HINT HINT HINT"); //Add Hit 
+            }
+            else if (counter >= 6)
+            {
+                MessageBox.Show("HINT HINT HINT HINT HINT");
+            }
+            text = tb_4.Text;
+            if (text.Contains("Test") && text.Contains("Test") && text.Contains("Test")) // Also add that it test to make sure it is in order
+            {
+
+                tabControl1.SelectTab(11);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(22, 23);
+                    User.Exp();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(22, 23);
+                    User.Exp2();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(22, 23);
+                    User.Exp3();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(22, 23);
+                    User.Exp4();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+        }
+
+        private void Button22_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(12);
+        }
+
+        private void Button23_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(13);
+        }
+
+        private void Button24_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(14);
+        }
+
+        private void Button25_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Note that we are using two variables as switches, they do not hold values as such; they are actually used to represent states within the program as it runs.This is a standard programming trick that you will find very useful." + "\n" + "You can break out of any of the three kinds of loop. In every case the program continues running at the statement after the last statement of the loop.");
+
+        }
+
+        private void Button26_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(15);
+        }
+
+        private void Button27_Click(object sender, EventArgs e)
+        {
+            string text;
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("HINT HINT HINT HINT HINT"); //Add Hit 
+            }
+            else if (counter >= 6)
+            {
+                MessageBox.Show("HINT HINT HINT HINT HINT");
+            }
+            text = tb_4.Text;
+            if (text.Contains("Test") && text.Contains("Test") && text.Contains("Test")) // Also add that it test to make sure it is in order
+            {
+
+                tabControl1.SelectTab(11);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(23, 24);
+                    User.Exp();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(23, 24);
+                    User.Exp2();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(23, 24);
+                    User.Exp3();
+
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(23, 24);
+                    User.Exp4();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Answer is incorrect");
+            }
+        }
+
+        private void Button28_Click(object sender, EventArgs e)
+        {
+            counter = 0;
+            counter++;
+            if (counter >= 3)
+            {
+                MessageBox.Show("HINT HINT HINT HINT");
+            }
+            if (radioButton6.Checked)
+            {
+                tabControl1.SelectTab(4);
+                if ((string)this.pictureBox1.Tag == "user1")
+                {
+                    User.User1(24, 25);
+                    User.Exp();
+                }
+                else if ((string)this.pictureBox1.Tag == "user2")
+                {
+                    User.User2(24, 25);
+                    User.Exp2();
+                }
+                else if ((string)this.pictureBox1.Tag == "user3")
+                {
+                    User.User3(24, 25);
+                    User.Exp3();
+                }
+                else if ((string)this.pictureBox1.Tag == "user4")
+                {
+                    User.User4(24, 25);
                     User.Exp4();
                 }
             }

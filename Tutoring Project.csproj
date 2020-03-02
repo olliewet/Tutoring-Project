@@ -271,6 +271,12 @@
     <None Include="Resources\diamond.png" />
     <None Include="Resources\bronze.png" />
     <None Include="Resources\gold.png" />
+    <None Include="Resources\dowhile.png" />
+    <None Include="Resources\DoWhileExample.png" />
+    <None Include="Resources\DoWhile2.png" />
+    <None Include="Resources\ForLoopExample.png" />
+    <None Include="Resources\CodeExample2.png" />
+    <None Include="Resources\Breaking.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />
