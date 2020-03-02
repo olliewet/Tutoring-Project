@@ -32,6 +32,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.con_btn1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.intro_lb = new System.Windows.Forms.Label();
             this.intro_tb = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -89,10 +90,13 @@
             this.richTextBox11 = new System.Windows.Forms.RichTextBox();
             this.richTextBox10 = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.button20 = new System.Windows.Forms.Button();
             this.richTextBox12 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.button21 = new System.Windows.Forms.Button();
             this.richTextBox13 = new System.Windows.Forms.RichTextBox();
@@ -102,48 +106,49 @@
             this.richTextBox15 = new System.Windows.Forms.RichTextBox();
             this.richTextBox14 = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox16 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox17 = new System.Windows.Forms.RichTextBox();
-            this.button23 = new System.Windows.Forms.Button();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.label10 = new System.Windows.Forms.Label();
-            this.richTextBox18 = new System.Windows.Forms.RichTextBox();
-            this.button24 = new System.Windows.Forms.Button();
-            this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.button23 = new System.Windows.Forms.Button();
+            this.richTextBox17 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox16 = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.button24 = new System.Windows.Forms.Button();
+            this.richTextBox18 = new System.Windows.Forms.RichTextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.topics_btn = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
-            this.richTextBox19 = new System.Windows.Forms.RichTextBox();
-            this.button25 = new System.Windows.Forms.Button();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
             this.button26 = new System.Windows.Forms.Button();
-            this.tabPage17 = new System.Windows.Forms.TabPage();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.richTextBox35 = new System.Windows.Forms.RichTextBox();
-            this.finish_btn = new System.Windows.Forms.Button();
-            this.richTextBox20 = new System.Windows.Forms.RichTextBox();
+            this.button25 = new System.Windows.Forms.Button();
+            this.richTextBox19 = new System.Windows.Forms.RichTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.richTextBox20 = new System.Windows.Forms.RichTextBox();
+            this.button27 = new System.Windows.Forms.Button();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
+            this.button28 = new System.Windows.Forms.Button();
+            this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.richTextBox35 = new System.Windows.Forms.RichTextBox();
+            this.finish_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.topics_btn = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -152,25 +157,24 @@
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
-            this.tabPage10.SuspendLayout();
-            this.tabPage11.SuspendLayout();
-            this.tabPage12.SuspendLayout();
-            this.tabPage13.SuspendLayout();
-            this.tabPage14.SuspendLayout();
-            this.tabPage15.SuspendLayout();
-            this.tabPage16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.tabPage11.SuspendLayout();
+            this.tabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.tabPage13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.tabPage15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage16.SuspendLayout();
             this.tabPage17.SuspendLayout();
             this.tabPage18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -223,6 +227,15 @@
             this.con_btn1.Text = "Continue ";
             this.con_btn1.UseVisualStyleBackColor = true;
             this.con_btn1.Click += new System.EventHandler(this.Con_btn1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Tutoring_Project.Properties.Resources.code_example;
+            this.pictureBox2.Location = new System.Drawing.Point(367, 28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(417, 253);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // intro_lb
             // 
@@ -418,6 +431,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.radioButton9);
             this.tabPage4.Controls.Add(this.answer_btn4);
             this.tabPage4.Controls.Add(this.answer_btn3);
             this.tabPage4.Controls.Add(this.answer_btn2);
@@ -437,10 +451,10 @@
             this.answer_btn4.AutoSize = true;
             this.answer_btn4.Location = new System.Drawing.Point(32, 152);
             this.answer_btn4.Name = "answer_btn4";
-            this.answer_btn4.Size = new System.Drawing.Size(72, 17);
+            this.answer_btn4.Size = new System.Drawing.Size(57, 17);
             this.answer_btn4.TabIndex = 43;
             this.answer_btn4.TabStop = true;
-            this.answer_btn4.Text = "Answer 4 ";
+            this.answer_btn4.Text = "Virtual ";
             this.answer_btn4.UseVisualStyleBackColor = true;
             // 
             // answer_btn3
@@ -448,10 +462,10 @@
             this.answer_btn3.AutoSize = true;
             this.answer_btn3.Location = new System.Drawing.Point(32, 129);
             this.answer_btn3.Name = "answer_btn3";
-            this.answer_btn3.Size = new System.Drawing.Size(72, 17);
+            this.answer_btn3.Size = new System.Drawing.Size(40, 17);
             this.answer_btn3.TabIndex = 42;
             this.answer_btn3.TabStop = true;
-            this.answer_btn3.Text = "Answer 3 ";
+            this.answer_btn3.Text = "Try";
             this.answer_btn3.UseVisualStyleBackColor = true;
             // 
             // answer_btn2
@@ -459,10 +473,10 @@
             this.answer_btn2.AutoSize = true;
             this.answer_btn2.Location = new System.Drawing.Point(32, 106);
             this.answer_btn2.Name = "answer_btn2";
-            this.answer_btn2.Size = new System.Drawing.Size(72, 17);
+            this.answer_btn2.Size = new System.Drawing.Size(59, 17);
             this.answer_btn2.TabIndex = 41;
             this.answer_btn2.TabStop = true;
-            this.answer_btn2.Text = "Answer 2 ";
+            this.answer_btn2.Text = "Caught";
             this.answer_btn2.UseVisualStyleBackColor = true;
             // 
             // answer_btn1
@@ -470,10 +484,10 @@
             this.answer_btn1.AutoSize = true;
             this.answer_btn1.Location = new System.Drawing.Point(32, 83);
             this.answer_btn1.Name = "answer_btn1";
-            this.answer_btn1.Size = new System.Drawing.Size(72, 17);
+            this.answer_btn1.Size = new System.Drawing.Size(48, 17);
             this.answer_btn1.TabIndex = 40;
             this.answer_btn1.TabStop = true;
-            this.answer_btn1.Text = "Answer 1 ";
+            this.answer_btn1.Text = "Else ";
             this.answer_btn1.UseVisualStyleBackColor = true;
             // 
             // label24
@@ -481,9 +495,10 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(29, 55);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(92, 13);
+            this.label24.Size = new System.Drawing.Size(483, 13);
             this.label24.TabIndex = 39;
-            this.label24.Text = "Example Question";
+            this.label24.Text = "In C# what keyword can be used following an IF statement to specify a block of co" +
+    "de to be executed";
             // 
             // button14
             // 
@@ -498,6 +513,9 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.label14);
+            this.tabPage5.Controls.Add(this.label13);
+            this.tabPage5.Controls.Add(this.label16);
             this.tabPage5.Controls.Add(this.button15);
             this.tabPage5.Controls.Add(this.richTextBox9);
             this.tabPage5.Controls.Add(this.tb_4);
@@ -525,19 +543,20 @@
             this.richTextBox9.BackColor = System.Drawing.Color.White;
             this.richTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox9.Location = new System.Drawing.Point(6, 19);
+            this.richTextBox9.Location = new System.Drawing.Point(3, 20);
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.ReadOnly = true;
-            this.richTextBox9.Size = new System.Drawing.Size(764, 25);
+            this.richTextBox9.Size = new System.Drawing.Size(764, 45);
             this.richTextBox9.TabIndex = 30;
-            this.richTextBox9.Text = "Question - Create A Function ( IF Statement) using the keywords ";
+            this.richTextBox9.Text = "Question - Select the correct piece of code which Write to the console Hello worl" +
+    "d when x is less than 10  by clicking on the answer! ";
             // 
             // tb_4
             // 
-            this.tb_4.Location = new System.Drawing.Point(6, 50);
+            this.tb_4.Location = new System.Drawing.Point(6, 71);
             this.tb_4.Multiline = true;
             this.tb_4.Name = "tb_4";
-            this.tb_4.Size = new System.Drawing.Size(775, 65);
+            this.tb_4.Size = new System.Drawing.Size(623, 65);
             this.tb_4.TabIndex = 29;
             // 
             // tabPage6
@@ -889,6 +908,25 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Do -- While Loop";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Tutoring_Project.Properties.Resources.DoWhileExample;
+            this.pictureBox4.Location = new System.Drawing.Point(419, 118);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(365, 152);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Tutoring_Project.Properties.Resources.dowhile;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 52);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(176, 60);
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.button20);
@@ -936,6 +974,16 @@
             this.label7.Size = new System.Drawing.Size(253, 25);
             this.label7.TabIndex = 6;
             this.label7.Text = "Do -- While Loop Continued";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Tutoring_Project.Properties.Resources.DoWhileExample;
+            this.pictureBox5.Location = new System.Drawing.Point(478, 30);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(306, 249);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
             // 
             // tabPage11
             // 
@@ -1042,6 +1090,15 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "While Loop";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Tutoring_Project.Properties.Resources.DoWhile2;
+            this.pictureBox6.Location = new System.Drawing.Point(6, 122);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(176, 41);
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
+            // 
             // tabPage13
             // 
             this.tabPage13.Controls.Add(this.button23);
@@ -1057,16 +1114,28 @@
             this.tabPage13.Text = "For Loop";
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // button23
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label9.Location = new System.Drawing.Point(3, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 25);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "For Loop";
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Location = new System.Drawing.Point(709, 312);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.TabIndex = 27;
+            this.button23.Text = "Continue ";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.Button23_Click);
+            // 
+            // richTextBox17
+            // 
+            this.richTextBox17.BackColor = System.Drawing.Color.White;
+            this.richTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox17.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox17.Location = new System.Drawing.Point(406, 84);
+            this.richTextBox17.Name = "richTextBox17";
+            this.richTextBox17.ReadOnly = true;
+            this.richTextBox17.Size = new System.Drawing.Size(380, 126);
+            this.richTextBox17.TabIndex = 11;
+            this.richTextBox17.Text = resources.GetString("richTextBox17.Text");
             // 
             // richTextBox16
             // 
@@ -1081,28 +1150,26 @@
             this.richTextBox16.Text = "Often you will want to repeat something a given number of times. The loop constru" +
     "ctions we have given can be used to do this quite easily:";
             // 
-            // richTextBox17
+            // label9
             // 
-            this.richTextBox17.BackColor = System.Drawing.Color.White;
-            this.richTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox17.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox17.Location = new System.Drawing.Point(406, 84);
-            this.richTextBox17.Name = "richTextBox17";
-            this.richTextBox17.ReadOnly = true;
-            this.richTextBox17.Size = new System.Drawing.Size(380, 126);
-            this.richTextBox17.TabIndex = 11;
-            this.richTextBox17.Text = resources.GetString("richTextBox17.Text");
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 25);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "For Loop";
             // 
-            // button23
+            // pictureBox7
             // 
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Location = new System.Drawing.Point(709, 312);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 23);
-            this.button23.TabIndex = 27;
-            this.button23.Text = "Continue ";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.Button23_Click);
+            this.pictureBox7.Image = global::Tutoring_Project.Properties.Resources.ForLoopExample;
+            this.pictureBox7.Location = new System.Drawing.Point(8, 84);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(392, 235);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
             // 
             // tabPage14
             // 
@@ -1118,16 +1185,16 @@
             this.tabPage14.Text = "ForLoop2";
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // button24
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label10.Location = new System.Drawing.Point(3, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 25);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "For Loop";
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Location = new System.Drawing.Point(709, 314);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 28;
+            this.button24.Text = "Continue ";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.Button24_Click);
             // 
             // richTextBox18
             // 
@@ -1141,16 +1208,26 @@
             this.richTextBox18.TabIndex = 13;
             this.richTextBox18.Text = resources.GetString("richTextBox18.Text");
             // 
-            // button24
+            // label10
             // 
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Location = new System.Drawing.Point(709, 314);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 23);
-            this.button24.TabIndex = 28;
-            this.button24.Text = "Continue ";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.Button24_Click);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label10.Location = new System.Drawing.Point(3, 3);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(87, 25);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "For Loop";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Tutoring_Project.Properties.Resources.CodeExample2;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 31);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(306, 277);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 11;
+            this.pictureBox8.TabStop = false;
             // 
             // tabPage15
             // 
@@ -1167,150 +1244,26 @@
             this.tabPage15.Text = "Breaking Out of Loops";
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
-            // tabPage16
+            // button26
             // 
-            this.tabPage16.Controls.Add(this.textBox2);
-            this.tabPage16.Controls.Add(this.richTextBox20);
-            this.tabPage16.Controls.Add(this.button27);
-            this.tabPage16.Location = new System.Drawing.Point(4, 22);
-            this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(792, 361);
-            this.tabPage16.TabIndex = 15;
-            this.tabPage16.Text = "Q5";
-            this.tabPage16.UseVisualStyleBackColor = true;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Location = new System.Drawing.Point(702, 312);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 23);
+            this.button26.TabIndex = 29;
+            this.button26.Text = "Continue ";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.Button26_Click);
             // 
-            // label11
+            // button25
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label11.Location = new System.Drawing.Point(6, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(205, 25);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Breaking Out Of Loops";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Tutoring_Project.Properties.Resources.code_example;
-            this.pictureBox2.Location = new System.Drawing.Point(367, 28);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(417, 253);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Tutoring_Project.Properties.Resources.DoWhileExample;
-            this.pictureBox4.Location = new System.Drawing.Point(419, 118);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(365, 152);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Tutoring_Project.Properties.Resources.dowhile;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 52);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(176, 60);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Tutoring_Project.Properties.Resources.DoWhileExample;
-            this.pictureBox5.Location = new System.Drawing.Point(478, 30);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(306, 249);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Tutoring_Project.Properties.Resources.DoWhile2;
-            this.pictureBox6.Location = new System.Drawing.Point(6, 122);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(176, 41);
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Tutoring_Project.Properties.Resources.ForLoopExample;
-            this.pictureBox7.Location = new System.Drawing.Point(8, 84);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(392, 235);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Tutoring_Project.Properties.Resources.CodeExample2;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 31);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(306, 277);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 11;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Tutoring_Project.Properties.Resources.Breaking;
-            this.pictureBox9.Location = new System.Drawing.Point(498, 36);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(279, 204);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 11;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(98, 56);
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
-            // 
-            // topics_btn
-            // 
-            this.topics_btn.BackColor = System.Drawing.Color.White;
-            this.topics_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.topics_btn.FlatAppearance.BorderSize = 0;
-            this.topics_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.topics_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
-            this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.topics_btn.Location = new System.Drawing.Point(549, 2);
-            this.topics_btn.Name = "topics_btn";
-            this.topics_btn.Size = new System.Drawing.Size(124, 55);
-            this.topics_btn.TabIndex = 22;
-            this.topics_btn.Text = "Home";
-            this.topics_btn.UseVisualStyleBackColor = false;
-            this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
-            // 
-            // exit
-            // 
-            this.exit.BackColor = System.Drawing.Color.White;
-            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.FlatAppearance.BorderSize = 0;
-            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
-            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exit.Location = new System.Drawing.Point(679, 0);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(121, 56);
-            this.exit.TabIndex = 21;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = false;
-            this.exit.Click += new System.EventHandler(this.Exit_Click);
+            this.button25.Location = new System.Drawing.Point(8, 246);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(75, 23);
+            this.button25.TabIndex = 15;
+            this.button25.Text = "Note!";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.Button25_Click);
             // 
             // richTextBox19
             // 
@@ -1324,26 +1277,70 @@
             this.richTextBox19.TabIndex = 14;
             this.richTextBox19.Text = resources.GetString("richTextBox19.Text");
             // 
-            // button25
+            // label11
             // 
-            this.button25.Location = new System.Drawing.Point(8, 246);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 23);
-            this.button25.TabIndex = 15;
-            this.button25.Text = "Note!";
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.Button25_Click);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label11.Location = new System.Drawing.Point(6, 3);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(205, 25);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Breaking Out Of Loops";
             // 
-            // button26
+            // pictureBox9
             // 
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Location = new System.Drawing.Point(702, 312);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 23);
-            this.button26.TabIndex = 29;
-            this.button26.Text = "Continue ";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.Button26_Click);
+            this.pictureBox9.Image = global::Tutoring_Project.Properties.Resources.Breaking;
+            this.pictureBox9.Location = new System.Drawing.Point(498, 36);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(279, 204);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 11;
+            this.pictureBox9.TabStop = false;
+            // 
+            // tabPage16
+            // 
+            this.tabPage16.Controls.Add(this.textBox2);
+            this.tabPage16.Controls.Add(this.richTextBox20);
+            this.tabPage16.Controls.Add(this.button27);
+            this.tabPage16.Location = new System.Drawing.Point(4, 22);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage16.Size = new System.Drawing.Size(792, 361);
+            this.tabPage16.TabIndex = 15;
+            this.tabPage16.Text = "Q5";
+            this.tabPage16.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(3, 36);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(775, 65);
+            this.textBox2.TabIndex = 34;
+            // 
+            // richTextBox20
+            // 
+            this.richTextBox20.BackColor = System.Drawing.Color.White;
+            this.richTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox20.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox20.Location = new System.Drawing.Point(3, 15);
+            this.richTextBox20.Name = "richTextBox20";
+            this.richTextBox20.ReadOnly = true;
+            this.richTextBox20.Size = new System.Drawing.Size(764, 25);
+            this.richTextBox20.TabIndex = 33;
+            this.richTextBox20.Text = "Question - Example Example Example";
+            // 
+            // button27
+            // 
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Location = new System.Drawing.Point(709, 312);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(75, 23);
+            this.button27.TabIndex = 30;
+            this.button27.Text = "Continue ";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.Button27_Click);
             // 
             // tabPage17
             // 
@@ -1361,16 +1358,58 @@
             this.tabPage17.Text = "Q6";
             this.tabPage17.UseVisualStyleBackColor = true;
             // 
-            // button27
+            // radioButton5
             // 
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Location = new System.Drawing.Point(709, 312);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 23);
-            this.button27.TabIndex = 30;
-            this.button27.Text = "Continue ";
-            this.button27.UseVisualStyleBackColor = true;
-            this.button27.Click += new System.EventHandler(this.Button27_Click);
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(22, 149);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(72, 17);
+            this.radioButton5.TabIndex = 53;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Answer 4 ";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(22, 126);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(72, 17);
+            this.radioButton6.TabIndex = 52;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Answer 3 ";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(22, 103);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(72, 17);
+            this.radioButton7.TabIndex = 51;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Answer 2 ";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(22, 80);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(72, 17);
+            this.radioButton8.TabIndex = 50;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Answer 1 ";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(19, 52);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(92, 13);
+            this.label12.TabIndex = 49;
+            this.label12.Text = "Example Question";
             // 
             // button28
             // 
@@ -1428,78 +1467,89 @@
             this.finish_btn.Text = "Finish Section!";
             this.finish_btn.UseVisualStyleBackColor = true;
             // 
-            // richTextBox20
+            // pictureBox1
             // 
-            this.richTextBox20.BackColor = System.Drawing.Color.White;
-            this.richTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox20.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox20.Location = new System.Drawing.Point(3, 15);
-            this.richTextBox20.Name = "richTextBox20";
-            this.richTextBox20.ReadOnly = true;
-            this.richTextBox20.Size = new System.Drawing.Size(764, 25);
-            this.richTextBox20.TabIndex = 33;
-            this.richTextBox20.Text = "Question - Example Example Example";
+            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(98, 56);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
-            // textBox2
+            // topics_btn
             // 
-            this.textBox2.Location = new System.Drawing.Point(3, 36);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(775, 65);
-            this.textBox2.TabIndex = 34;
+            this.topics_btn.BackColor = System.Drawing.Color.White;
+            this.topics_btn.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.topics_btn.FlatAppearance.BorderSize = 0;
+            this.topics_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.topics_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
+            this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.topics_btn.Location = new System.Drawing.Point(549, 2);
+            this.topics_btn.Name = "topics_btn";
+            this.topics_btn.Size = new System.Drawing.Size(124, 55);
+            this.topics_btn.TabIndex = 22;
+            this.topics_btn.Text = "Home";
+            this.topics_btn.UseVisualStyleBackColor = false;
+            this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
             // 
-            // radioButton5
+            // exit
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(22, 149);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(72, 17);
-            this.radioButton5.TabIndex = 53;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Answer 4 ";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.exit.BackColor = System.Drawing.Color.White;
+            this.exit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exit.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.exit.Image = global::Tutoring_Project.Properties.Resources.exit_26px;
+            this.exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exit.Location = new System.Drawing.Point(679, 0);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(121, 56);
+            this.exit.TabIndex = 21;
+            this.exit.Text = "Exit";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // radioButton6
+            // radioButton9
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(22, 126);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(72, 17);
-            this.radioButton6.TabIndex = 52;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Answer 3 ";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(32, 175);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(65, 17);
+            this.radioButton9.TabIndex = 44;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Override";
+            this.radioButton9.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // label16
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(22, 103);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(72, 17);
-            this.radioButton7.TabIndex = 51;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Answer 2 ";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(8, 139);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(188, 52);
+            this.label16.TabIndex = 88;
+            this.label16.Text = "- if ( x < 10 ) \r\n{\r\n       Console.WriteLine(\"Hello World\");\r\n};";
+            this.label16.Click += new System.EventHandler(this.Label16_Click);
             // 
-            // radioButton8
+            // label13
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(22, 80);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(72, 17);
-            this.radioButton8.TabIndex = 50;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Answer 1 ";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(8, 203);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(106, 52);
+            this.label13.TabIndex = 89;
+            this.label13.Text = "- if ( x < 10 ) \r\n{\r\n   PrintToConsole();   \r\n};";
+            this.label13.Click += new System.EventHandler(this.Label13_Click);
             // 
-            // label12
+            // label14
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(19, 52);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 13);
-            this.label12.TabIndex = 49;
-            this.label12.Text = "Example Question";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(8, 265);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(188, 52);
+            this.label14.TabIndex = 90;
+            this.label14.Text = "- if ( x < 20 ) \r\n{\r\n       Console.WriteLine(\"Hello World\");\r\n};\r\n";
             // 
             // ProgramFlow
             // 
@@ -1516,6 +1566,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1532,33 +1583,32 @@
             this.tabPage8.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
             this.tabPage12.ResumeLayout(false);
             this.tabPage12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.tabPage14.ResumeLayout(false);
             this.tabPage14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.tabPage16.ResumeLayout(false);
             this.tabPage16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage17.ResumeLayout(false);
             this.tabPage17.PerformLayout();
             this.tabPage18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1678,5 +1728,9 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.RichTextBox richTextBox35;
         private System.Windows.Forms.Button finish_btn;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }

@@ -119,7 +119,7 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("HINT HINT HINT HINT");
             }
-            if (answer_btn4.Checked)
+            if (answer_btn1.Checked)
             {
                 tabControl1.SelectTab(4);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -163,7 +163,7 @@ namespace Tutoring_Project.Question_Forms
                 MessageBox.Show("HINT HINT HINT HINT HINT");
             }
             text = tb_4.Text;
-            if (text.Contains("Test") && text.Contains("Test") && text.Contains("Test")) // Also add that it test to make sure it is in order
+            if (text.Contains("if (x < 10){Console.WriteLine(\"Hello World\");")) // Also add that it test to make sure it is in order
             {
                 
                 tabControl1.SelectTab(5);
@@ -457,6 +457,16 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("Answer is incorrect");
             }
+        }
+
+        private void Label16_Click(object sender, EventArgs e)
+        {
+            tb_4.Text = "if (x < 10){Console.WriteLine(\"Hello World\");";
+        }
+
+        private void Label13_Click(object sender, EventArgs e)
+        {
+            tb_4.Text = "if (x < 10){PrintToConsole(); }";
         }
     }
 }
