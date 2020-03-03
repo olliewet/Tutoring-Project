@@ -252,7 +252,7 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("HINT HINT HINT HINT");
             }
-            if (answer_btn4.Checked)
+            if (radioButton4.Checked)
             {
                 tabControl1.SelectTab(4);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -310,32 +310,31 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("HINT HINT HINT HINT HINT");
             }
-            text = tb_4.Text;
-            if (text.Contains("Test") && text.Contains("Test") && text.Contains("Test")) // Also add that it test to make sure it is in order
-            {
-
+            text = textBox3.Text;
+            if (text.Contains("do { Console.WriteLine(\"Value of i: {0}\", i); i++;} while (i < num);")) // Also add that it test to make sure it is in order
+            { 
                 tabControl1.SelectTab(11);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
-                    User.User1(22, 23);
+                    User.User1(20, 21);
                     User.Exp();
 
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
-                    User.User2(22, 23);
+                    User.User2(20, 21);
                     User.Exp2();
 
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
-                    User.User3(22, 23);
+                    User.User3(20, 21);
                     User.Exp3();
 
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
-                    User.User4(22, 23);
+                    User.User4(20, 21);
                     User.Exp4();
 
                 }
@@ -385,11 +384,11 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("HINT HINT HINT HINT HINT");
             }
-            text = tb_4.Text;
-            if (text.Contains("Test") && text.Contains("Test") && text.Contains("Test")) // Also add that it test to make sure it is in order
+            text = textBox1.Text;
+            if (text.Contains("for ( int i = 0; i < 100; i++ { Console.WriteLine(i); }")) // Also add that it test to make sure it is in order
             {
 
-                tabControl1.SelectTab(11);
+                tabControl1.SelectTab(16);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
                     User.User1(23, 24);
@@ -421,43 +420,7 @@ namespace Tutoring_Project.Question_Forms
             }
         }
 
-        private void Button28_Click(object sender, EventArgs e)
-        {
-            counter = 0;
-            counter++;
-            if (counter >= 3)
-            {
-                MessageBox.Show("HINT HINT HINT HINT");
-            }
-            if (radioButton6.Checked)
-            {
-                tabControl1.SelectTab(4);
-                if ((string)this.pictureBox1.Tag == "user1")
-                {
-                    User.User1(24, 25);
-                    User.Exp();
-                }
-                else if ((string)this.pictureBox1.Tag == "user2")
-                {
-                    User.User2(24, 25);
-                    User.Exp2();
-                }
-                else if ((string)this.pictureBox1.Tag == "user3")
-                {
-                    User.User3(24, 25);
-                    User.Exp3();
-                }
-                else if ((string)this.pictureBox1.Tag == "user4")
-                {
-                    User.User4(24, 25);
-                    User.Exp4();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Answer is incorrect");
-            }
-        }
+      
 
         private void Label16_Click(object sender, EventArgs e)
         {
@@ -467,6 +430,41 @@ namespace Tutoring_Project.Question_Forms
         private void Label13_Click(object sender, EventArgs e)
         {
             tb_4.Text = "if (x < 10){PrintToConsole(); }";
+        }
+
+        private void Label18_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = "do { Console.WriteLine(\"Value of i: {0}\", i); i++;} while (i < num.Length);";
+        }
+
+        private void Label15_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = "do { Console.WriteLine(\"Value of i: {0}\", i); i++;} while (i < num);";
+        }
+
+        private void Label17_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = "do { Console.WriteLine(i); i++;} while (i < num.Length);";
+        }
+
+        private void Label19_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = "do { Console.WriteLine(\"Value of i: {0}\", i); i++;} while (i > num);";
+        }
+
+        private void Label23_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "for ( int i = 0; i < 100; i++ { Console.WriteLine(i); }";
+        }
+
+        private void Label20_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "for ( int i = 0; i > 100; i++ { Console.WriteLine(i); }";
+        }
+
+        private void Label21_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "for ( int i = 0; i < 10; i++ { Console.WriteLine(i); }";
         }
     }
 }

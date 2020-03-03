@@ -231,6 +231,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\Question3.png" />
     <None Include="Resources\Plat.png" />
     <None Include="Resources\silver.png" />
     <None Include="Resources\Part2.png" />

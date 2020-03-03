@@ -117,40 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="intro_tb.Text" xml:space="preserve">
-    <value>The program above to work out the wood and glass for our glazing man is nice; in fact our customer will probably be quite pleased with it. However, it is not perfect. The problem is not with the program, but with the user. 
-
-If you give the program a window width of -1 it goes ahead and works out a stupid result. Our program does not have any checking for invalid widths and heights. The user might have grounds for complaint if the program fails to recognise that he has given a stupid value, in fact a number of cases are currently being fought in the United States courts where a program has failed to recognise invalid data, produced garbage and caused a lot of damage. 
+  <data name="richTextBox19.Text" xml:space="preserve">
+    <value>Sometimes you may want to escape from a loop whilst you are in the middle of it, i.e. your program may decide that there is no need or point to go on and wishes to leap out of the loop and continue the program from the statement after it. You can do this with the break statement. This is a command to leave the loop immediately. Your program would usually make some form of decision to quit in this way. I find it most useful so that I can provide a "get the heck out of here" option in the middle of something, for example in the following program snippet the variable aborted, normally false becomes true when the loop has to be abandoned and the variable runningOK, normally true, becomes false when it is time to finish normally.</value>
+  </data>
+  <data name="richTextBox18.Text" xml:space="preserve">
+    <value>The setup puts a value into the control variable which it will start with. The test is a condition which must be true for the for -- loop to continue. The update is the statement which is performed to update the control variable at the end of each loop. Note that the three elements are separated by semicolons. The precise sequence of events is as follows:
+1. Put the setup value into the control variable. 
+2. Test to see if we have finished the loop yet and exit to the statement after the for loop if we have. 
+3. Perform the statements to be repeated. 
+4. Perform the update. 
+5. Repeat from step 2.
+Writing a loop in this way is quicker and simpler than using a form of while because it keeps all the elements of the loop in one place instead of leaving them spread about the program. This means that you are less likely to forget to do something like give the control variable an initial value, or update it. If you are so stupid as to mess around with the value of the control variable in the loop you can expect your program to do stupid things, i.e. if you put i back to 0 within the loop it will run forever. And serve you right.
 </value>
   </data>
-  <data name="richTextBox3.Text" xml:space="preserve">
-    <value>This means that we have done all we can; If the program gets 1 rather than 10 for the width then that is the users' problem, the important thing from our point of view is that the above specification stops us from being sued! 
-In order to allow us to do this the program must notice naughty values and reject them. To do this we can use the construction:
-</value>
+  <data name="richTextBox17.Text" xml:space="preserve">
+    <value>This useless program prints out hello mum 10 times. It does this by using a variable to control the loop. The variable is given an initial value (1) and then tested each time we go around the loop. The control variable is then increased for each pass through the statements. Eventually it will reach 11, at which point the loop terminates and our program stops.</value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>What we want to do is notice the really stupid replies and tell the user that he has done something dubious. In our program specification, which we give the customer, we have said something like (this is our metadata): The program will reject window dimensions outside the following ranges:
-</value>
+  <data name="richTextBox15.Text" xml:space="preserve">
+    <value>Note that C# makes an attempt to reduce the number of keys you need to press to run the program by leaving out the word do. (if you put the do in the compiler will take great delight in giving you an error message - but you had already guessed that of course!).</value>
   </data>
-  <data name="richTextBox4.Text" xml:space="preserve">
-    <value>The condition determines what happens in the program. So what do we mean by a condition? C# has a way in which true and false can be explicitly stated in a program. We have already seen that the bool type is used to store this logical state.
-
-We can create conditions which return a logical result. These are called "logical conditions". Which is logical. The simplest condition is simply the value true or false, for example:</value>
-  </data>
-  <data name="richTextBox6.Text" xml:space="preserve">
-    <value>To make conditions work for us we need a set of additional relational operators which we can use in logical expressions. Relational operators work on operands, just like numeric ones. However any expression involving them can only produce one of two values, true or false. Relational operators available are as follows:</value>
-  </data>
-  <data name="richTextBox7.Text" xml:space="preserve">
-    <value>Conditional statements allow you to do something if a given condition is true. However often you want to repeat something while a particular condition is true, or a given number of times. 
-
-C# has three ways of doing this, depending on precisely what you are trying to do. Note that we get three methods not because we need three but because they make life easier when you write the program (a bit like an attachment to our chainsaw to allow it to perform a particular task more easily). Most of the skill of programming involves picking the right tool or attachment to do the job in hand. (the rest is finding out why the tool didn't do what you expected it to!).
-
-In the case of our program we want to repeatedly get numbers in while we are getting invalid ones, i.e. giving a proper number should cause our loop to stop. This means that if we get the number correctly first time the loop will execute just once. You might think that I have pulled a fast one here; all I have done is change:</value>
-  </data>
-  <data name="richTextBox11.Text" xml:space="preserve">
-    <value>This allows us to repeat a chunk of code until the condition at the end becomes false. Note that the test is performed after the statement or block, i.e. even if the test is bound to fail the statement is performed once. 
-
-A condition in this context is exactly the same as the condition in an if construction, raising the intriguing possibility of programs like:</value>
+  <data name="richTextBox14.Text" xml:space="preserve">
+    <value>Sometimes you want to decide whether or not to repeat the loop before you perform it. If you think about how the loop above works the test is done after the code to be repeated has been performed once. For our program this is exactly what we want, we need to ask for a value before we can decide whether or not it is valid. In order to be as flexible as possible C# gives us another form of the loop construction which allows us to do the test first:</value>
   </data>
   <data name="richTextBox12.Text" xml:space="preserve">
     <value>This is a perfectly legal C# program. How long it will run for is an interesting question, the answer contains elements of human psychology, energy futures and cosmology, i.e. it will run until: 
@@ -164,26 +151,39 @@ This is a chainsaw situation, not a powerful chainsaw situation. Just as it is p
 4. Repeat. 
 I wonder how many people are still washing their hair at the moment?</value>
   </data>
-  <data name="richTextBox15.Text" xml:space="preserve">
-    <value>Note that C# makes an attempt to reduce the number of keys you need to press to run the program by leaving out the word do. (if you put the do in the compiler will take great delight in giving you an error message - but you had already guessed that of course!).</value>
+  <data name="richTextBox11.Text" xml:space="preserve">
+    <value>This allows us to repeat a chunk of code until the condition at the end becomes false. Note that the test is performed after the statement or block, i.e. even if the test is bound to fail the statement is performed once. 
+
+A condition in this context is exactly the same as the condition in an if construction, raising the intriguing possibility of programs like:</value>
   </data>
-  <data name="richTextBox14.Text" xml:space="preserve">
-    <value>Sometimes you want to decide whether or not to repeat the loop before you perform it. If you think about how the loop above works the test is done after the code to be repeated has been performed once. For our program this is exactly what we want, we need to ask for a value before we can decide whether or not it is valid. In order to be as flexible as possible C# gives us another form of the loop construction which allows us to do the test first:</value>
+  <data name="richTextBox7.Text" xml:space="preserve">
+    <value>Conditional statements allow you to do something if a given condition is true. However often you want to repeat something while a particular condition is true, or a given number of times. 
+
+C# has three ways of doing this, depending on precisely what you are trying to do. Note that we get three methods not because we need three but because they make life easier when you write the program (a bit like an attachment to our chainsaw to allow it to perform a particular task more easily). Most of the skill of programming involves picking the right tool or attachment to do the job in hand. (the rest is finding out why the tool didn't do what you expected it to!).
+
+In the case of our program we want to repeatedly get numbers in while we are getting invalid ones, i.e. giving a proper number should cause our loop to stop. This means that if we get the number correctly first time the loop will execute just once. You might think that I have pulled a fast one here; all I have done is change:</value>
   </data>
-  <data name="richTextBox17.Text" xml:space="preserve">
-    <value>This useless program prints out hello mum 10 times. It does this by using a variable to control the loop. The variable is given an initial value (1) and then tested each time we go around the loop. The control variable is then increased for each pass through the statements. Eventually it will reach 11, at which point the loop terminates and our program stops.</value>
+  <data name="richTextBox6.Text" xml:space="preserve">
+    <value>To make conditions work for us we need a set of additional relational operators which we can use in logical expressions. Relational operators work on operands, just like numeric ones. However any expression involving them can only produce one of two values, true or false. Relational operators available are as follows:</value>
   </data>
-  <data name="richTextBox18.Text" xml:space="preserve">
-    <value>The setup puts a value into the control variable which it will start with. The test is a condition which must be true for the for -- loop to continue. The update is the statement which is performed to update the control variable at the end of each loop. Note that the three elements are separated by semicolons. The precise sequence of events is as follows:
-1. Put the setup value into the control variable. 
-2. Test to see if we have finished the loop yet and exit to the statement after the for loop if we have. 
-3. Perform the statements to be repeated. 
-4. Perform the update. 
-5. Repeat from step 2.
-Writing a loop in this way is quicker and simpler than using a form of while because it keeps all the elements of the loop in one place instead of leaving them spread about the program. This means that you are less likely to forget to do something like give the control variable an initial value, or update it. If you are so stupid as to mess around with the value of the control variable in the loop you can expect your program to do stupid things, i.e. if you put i back to 0 within the loop it will run forever. And serve you right.
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>The condition determines what happens in the program. So what do we mean by a condition? C# has a way in which true and false can be explicitly stated in a program. We have already seen that the bool type is used to store this logical state.
+
+We can create conditions which return a logical result. These are called "logical conditions". Which is logical. The simplest condition is simply the value true or false, for example:</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>This means that we have done all we can; If the program gets 1 rather than 10 for the width then that is the users' problem, the important thing from our point of view is that the above specification stops us from being sued! 
+In order to allow us to do this the program must notice naughty values and reject them. To do this we can use the construction:
 </value>
   </data>
-  <data name="richTextBox19.Text" xml:space="preserve">
-    <value>Sometimes you may want to escape from a loop whilst you are in the middle of it, i.e. your program may decide that there is no need or point to go on and wishes to leap out of the loop and continue the program from the statement after it. You can do this with the break statement. This is a command to leave the loop immediately. Your program would usually make some form of decision to quit in this way. I find it most useful so that I can provide a "get the heck out of here" option in the middle of something, for example in the following program snippet the variable aborted, normally false becomes true when the loop has to be abandoned and the variable runningOK, normally true, becomes false when it is time to finish normally.</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>What we want to do is notice the really stupid replies and tell the user that he has done something dubious. In our program specification, which we give the customer, we have said something like (this is our metadata): The program will reject window dimensions outside the following ranges:
+</value>
+  </data>
+  <data name="intro_tb.Text" xml:space="preserve">
+    <value>The program above to work out the wood and glass for our glazing man is nice; in fact our customer will probably be quite pleased with it. However, it is not perfect. The problem is not with the program, but with the user. 
+
+If you give the program a window width of -1 it goes ahead and works out a stupid result. Our program does not have any checking for invalid widths and heights. The user might have grounds for complaint if the program fails to recognise that he has given a stupid value, in fact a number of cases are currently being fought in the United States courts where a program has failed to recognise invalid data, produced garbage and caused a lot of damage. 
+</value>
   </data>
 </root>
