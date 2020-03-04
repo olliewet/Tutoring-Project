@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox20.Text" xml:space="preserve">
+    <value>Well done on completing the final section in the tutor program, in this section we went through different ways data can be stored and processed and manipulated, by using program flow such as IF statements and different types of loops! A new special section has been unlocked!</value>
+  </data>
   <data name="richTextBox19.Text" xml:space="preserve">
     <value>Sometimes you may want to escape from a loop whilst you are in the middle of it, i.e. your program may decide that there is no need or point to go on and wishes to leap out of the loop and continue the program from the statement after it. You can do this with the break statement. This is a command to leave the loop immediately. Your program would usually make some form of decision to quit in this way. I find it most useful so that I can provide a "get the heck out of here" option in the middle of something, for example in the following program snippet the variable aborted, normally false becomes true when the loop has to be abandoned and the variable runningOK, normally true, becomes false when it is time to finish normally.</value>
   </data>

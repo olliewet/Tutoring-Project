@@ -194,7 +194,32 @@ namespace Tutoring_Project
                     this.Hide();
                     this.Close();
                     ChangeTabPF(0);
-                    break;                             
+                    break;
+                case 20:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabPF(4);
+                    break;
+                case 21:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabPF(5);
+                    break;
+                case 22:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabPF(7);
+                    break;
+                case 23:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabPF(11);
+                    break;
+                case 24:
+                    this.Hide();
+                    this.Close();
+                    ChangeTabPF(16);
+                    break;
             }
         }
             #endregion
@@ -299,6 +324,31 @@ namespace Tutoring_Project
             else if (x <= 19)
             {
                 Ach.pictureBox12.Image = Properties.Resources.AchiNotUnlocked;
+            }
+
+            if (x >= 20)
+            {
+                Ach.pictureBox19.Image = Properties.Resources.IFAchieve;
+            }
+            else if (x <= 20)
+            {
+                Ach.pictureBox19.Image = Properties.Resources.AchiNotUnlocked;
+            }
+            if (x >= 22)
+            {
+                Ach.pictureBox18.Image = Properties.Resources.UIF;
+            }
+            else if (x <= 22)
+            {
+                Ach.pictureBox18.Image = Properties.Resources.AchiNotUnlocked;
+            }
+            if (x >= 25)
+            {
+                Ach.pictureBox17.Image = Properties.Resources.ProgAchieve;
+            }
+            else if (x <= 25)
+            {
+                Ach.pictureBox17.Image = Properties.Resources.AchiNotUnlocked;
             }
 
         }

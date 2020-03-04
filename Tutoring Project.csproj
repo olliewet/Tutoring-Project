@@ -231,6 +231,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\ProgAchieve.png" />
+    <None Include="Resources\UIF.png" />
     <None Include="Resources\Question3.png" />
     <None Include="Resources\Plat.png" />
     <None Include="Resources\silver.png" />
@@ -278,6 +280,7 @@
     <None Include="Resources\ForLoopExample.png" />
     <None Include="Resources\CodeExample2.png" />
     <None Include="Resources\Breaking.png" />
+    <None Include="Resources\IFAchieve.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />

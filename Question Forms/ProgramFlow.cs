@@ -254,7 +254,7 @@ namespace Tutoring_Project.Question_Forms
             }
             if (radioButton4.Checked)
             {
-                tabControl1.SelectTab(4);
+                tabControl1.SelectTab(7);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
                     User.User1(21, 22);
@@ -316,25 +316,25 @@ namespace Tutoring_Project.Question_Forms
                 tabControl1.SelectTab(11);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {
-                    User.User1(20, 21);
+                    User.User1(22, 23);
                     User.Exp();
 
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
-                    User.User2(20, 21);
+                    User.User2(22, 23);
                     User.Exp2();
 
                 }
                 else if ((string)this.pictureBox1.Tag == "user3")
                 {
-                    User.User3(20, 21);
+                    User.User3(22, 23);
                     User.Exp3();
 
                 }
                 else if ((string)this.pictureBox1.Tag == "user4")
                 {
-                    User.User4(20, 21);
+                    User.User4(22, 23);
                     User.Exp4();
 
                 }
@@ -465,6 +465,58 @@ namespace Tutoring_Project.Question_Forms
         private void Label21_Click(object sender, EventArgs e)
         {
             textBox1.Text = "for ( int i = 0; i < 10; i++ { Console.WriteLine(i); }";
+        }
+
+        private void Simple_btn1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
+
+        private void Label14_Click(object sender, EventArgs e)
+        {
+            tb_4.Text = "if (x < 20){Console.WriteLine(\"Hello World\");";
+        }
+
+        private void Button16_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(6);
+        }
+
+        private void Finish_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topics T = new Topics();
+            MessageBox.Show("Achievement Unlocked!");
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                User.User1(24, 25);
+                User.Exp();
+                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                T.pictureBox1.Tag = "user1";
+            }
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                User.User2(24, 25);
+                User.Exp2();
+                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                T.pictureBox1.Tag = "user2";
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                User.User3(24, 25);
+                User.Exp3();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                User.User4(24, 25);
+                User.Exp4();
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                T.pictureBox1.Tag = "user4";
+            }
+            this.Close();
+            T.ShowDialog();
         }
     }
 }
