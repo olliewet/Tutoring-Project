@@ -469,7 +469,7 @@ namespace Tutoring_Project.Question_Forms
 
         private void Simple_btn1_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(4);
+            tabControl1.SelectTab(3);
         }
 
         private void Label14_Click(object sender, EventArgs e)

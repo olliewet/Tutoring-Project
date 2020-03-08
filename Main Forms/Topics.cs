@@ -883,5 +883,45 @@ namespace Tutoring_Project
                 SwitchStatementID(x);
             }
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void Introduction_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(3);
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(5);
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(6);
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

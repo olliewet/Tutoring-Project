@@ -200,7 +200,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(120, 32);
             this.button5.TabIndex = 34;
-            this.button5.Text = "MCQ ";
+            this.button5.Text = "End Game";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
@@ -327,7 +327,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(136, 75);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(652, 13);
+            this.panel1.Size = new System.Drawing.Size(652, 41);
             this.panel1.TabIndex = 38;
             // 
             // panel3

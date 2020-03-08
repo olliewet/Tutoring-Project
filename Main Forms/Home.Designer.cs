@@ -43,6 +43,8 @@
             this.exit = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.AboutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -51,6 +53,8 @@
             // 
             // AboutPanel
             // 
+            this.AboutPanel.Controls.Add(this.richTextBox1);
+            this.AboutPanel.Controls.Add(this.label3);
             this.AboutPanel.Controls.Add(this.label1);
             this.AboutPanel.Controls.Add(this.lrg_tb);
             this.AboutPanel.Location = new System.Drawing.Point(52, 124);
@@ -81,7 +85,7 @@
             this.lrg_tb.Name = "lrg_tb";
             this.lrg_tb.ReadOnly = true;
             this.lrg_tb.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.lrg_tb.Size = new System.Drawing.Size(508, 242);
+            this.lrg_tb.Size = new System.Drawing.Size(508, 89);
             this.lrg_tb.TabIndex = 0;
             this.lrg_tb.Text = resources.GetString("lrg_tb.Text");
             this.lrg_tb.TextChanged += new System.EventHandler(this.RichTextBox1_TextChanged);
@@ -228,6 +232,33 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label3.Location = new System.Drawing.Point(3, 133);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Coming Soon!";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.richTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.richTextBox1.Location = new System.Drawing.Point(8, 161);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richTextBox1.Size = new System.Drawing.Size(503, 84);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "- New end game features! \n- Replayability revised!\n- New Images \n- More Achieveme" +
+    "nts ";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,5 +304,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

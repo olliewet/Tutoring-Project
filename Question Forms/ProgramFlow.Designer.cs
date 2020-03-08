@@ -33,6 +33,7 @@
             this.topics_btn = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.richTextBox20 = new System.Windows.Forms.RichTextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.finish_btn = new System.Windows.Forms.Button();
             this.tabPage16 = new System.Windows.Forms.TabPage();
@@ -146,7 +147,7 @@
             this.intro_lb = new System.Windows.Forms.Label();
             this.intro_tb = new System.Windows.Forms.RichTextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.richTextBox20 = new System.Windows.Forms.RichTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -234,6 +235,18 @@
             this.tabPage18.TabIndex = 17;
             this.tabPage18.Text = "Finish";
             this.tabPage18.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox20
+            // 
+            this.richTextBox20.BackColor = System.Drawing.Color.White;
+            this.richTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox20.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox20.Location = new System.Drawing.Point(18, 55);
+            this.richTextBox20.Name = "richTextBox20";
+            this.richTextBox20.ReadOnly = true;
+            this.richTextBox20.Size = new System.Drawing.Size(435, 108);
+            this.richTextBox20.TabIndex = 16;
+            this.richTextBox20.Text = resources.GetString("richTextBox20.Text");
             // 
             // pictureBox10
             // 
@@ -1499,7 +1512,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Tutoring_Project.Properties.Resources.code_example;
-            this.pictureBox2.Location = new System.Drawing.Point(367, 28);
+            this.pictureBox2.Location = new System.Drawing.Point(367, 39);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(417, 253);
             this.pictureBox2.TabIndex = 5;
@@ -1510,7 +1523,7 @@
             this.intro_lb.AutoSize = true;
             this.intro_lb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.intro_lb.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.intro_lb.Location = new System.Drawing.Point(-2, 0);
+            this.intro_lb.Location = new System.Drawing.Point(-2, 11);
             this.intro_lb.Name = "intro_lb";
             this.intro_lb.Size = new System.Drawing.Size(234, 25);
             this.intro_lb.TabIndex = 4;
@@ -1521,7 +1534,7 @@
             this.intro_tb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.intro_tb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.intro_tb.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.intro_tb.Location = new System.Drawing.Point(3, 28);
+            this.intro_tb.Location = new System.Drawing.Point(3, 39);
             this.intro_tb.Name = "intro_tb";
             this.intro_tb.ReadOnly = true;
             this.intro_tb.Size = new System.Drawing.Size(358, 283);
@@ -1553,17 +1566,12 @@
             this.tabControl1.Size = new System.Drawing.Size(800, 387);
             this.tabControl1.TabIndex = 24;
             // 
-            // richTextBox20
+            // panel2
             // 
-            this.richTextBox20.BackColor = System.Drawing.Color.White;
-            this.richTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox20.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox20.Location = new System.Drawing.Point(18, 55);
-            this.richTextBox20.Name = "richTextBox20";
-            this.richTextBox20.ReadOnly = true;
-            this.richTextBox20.Size = new System.Drawing.Size(435, 108);
-            this.richTextBox20.TabIndex = 16;
-            this.richTextBox20.Text = resources.GetString("richTextBox20.Text");
+            this.panel2.Location = new System.Drawing.Point(-17, 66);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(890, 37);
+            this.panel2.TabIndex = 40;
             // 
             // ProgramFlow
             // 
@@ -1571,6 +1579,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.topics_btn);
@@ -1746,5 +1755,6 @@
         private System.Windows.Forms.RichTextBox intro_tb;
         public System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.RichTextBox richTextBox20;
+        private System.Windows.Forms.Panel panel2;
     }
 }

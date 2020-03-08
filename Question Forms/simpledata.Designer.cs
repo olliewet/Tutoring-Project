@@ -402,7 +402,7 @@
             // 
             this.panel4.Location = new System.Drawing.Point(-4, 52);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(907, 10);
+            this.panel4.Size = new System.Drawing.Size(907, 37);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
@@ -1592,7 +1592,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label1.Location = new System.Drawing.Point(5, 3);
+            this.label1.Location = new System.Drawing.Point(5, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(211, 25);
             this.label1.TabIndex = 3;

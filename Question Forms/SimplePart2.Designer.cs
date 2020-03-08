@@ -142,6 +142,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.Button();
             this.topics_btn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage13.SuspendLayout();
@@ -1494,12 +1495,20 @@
             this.topics_btn.UseVisualStyleBackColor = false;
             this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(-45, 53);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(890, 37);
+            this.panel2.TabIndex = 41;
+            // 
             // SimplePart2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.topics_btn);
@@ -1659,5 +1668,6 @@
         private System.Windows.Forms.Button finish_btn;
         private System.Windows.Forms.RichTextBox richTextBox35;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel panel2;
     }
 }
