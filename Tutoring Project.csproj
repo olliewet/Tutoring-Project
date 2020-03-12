@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Question Forms\EndGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question Forms\EndGame.Designer.cs">
+      <DependentUpon>EndGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="LevelChecking.cs" />
     <Compile Include="Question Forms\Identifiers.cs">
       <SubType>Form</SubType>
@@ -124,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="Main Forms\Achievements.resx">
       <DependentUpon>Achievements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question Forms\EndGame.resx">
+      <DependentUpon>EndGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Question Forms\Identifiers.resx">
       <DependentUpon>Identifiers.cs</DependentUpon>

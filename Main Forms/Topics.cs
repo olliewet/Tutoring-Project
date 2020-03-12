@@ -25,6 +25,7 @@ namespace Tutoring_Project
         Question_Forms.SimplePart2 S2 = new Question_Forms.SimplePart2();
         Identifiers I = new Identifiers();
         Question_Forms.ProgramFlow PF = new Question_Forms.ProgramFlow();
+        EndGame E = new EndGame();
         #endregion
 
         public Topics()
@@ -66,8 +67,14 @@ namespace Tutoring_Project
             PF.ShowDialog();
             this.Close();
         }
+
+        private void ChangeTabEnd()
+        {            
+            E.ShowDialog();
+            this.Close();
+        }
         #endregion
-      
+
 
         #region SwitchStatements
         private void SwitchStatementIntroduction(int x)
@@ -95,7 +102,6 @@ namespace Tutoring_Project
                     ChangeTab(6);
                     break;             
             }
-
         }
         private void SwitchStatementSimple(int x)
         {
@@ -222,10 +228,20 @@ namespace Tutoring_Project
                     break;
             }
         }
-            #endregion
+
+        private void SwitchEndGame(int x)
+        {
+            if (x > 24)
+            {
+                this.Hide();
+                this.Close();
+                ChangeTabEnd();
+            }
+        }
+        #endregion
 
         #region Achievements and Badges Methods
-            private void Achievements(int x)
+        private void Achievements(int x)
         {
             if (x >= 3)
             {
@@ -732,16 +748,50 @@ namespace Tutoring_Project
         #region End Game Button 
         private void Button1_Click(object sender, EventArgs e)
         {
-            string currentlevel;
-            currentlevel = File.ReadAllText("levelfile.txt");
-            int x = Int32.Parse(currentlevel);
-            if (x >= 50)
+            if ((string)this.pictureBox1.Tag == "user1")
             {
-                //Open Form  
+                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                T.pictureBox1.Tag = "user1";
+
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+
+                LevelChecking.CompleteEnd(x);
+                SwitchEndGame(x);
             }
-            else
+            else if ((string)this.pictureBox1.Tag == "user2")
             {
-                MessageBox.Show("Please Reach Level 50 warrior");
+                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                T.pictureBox1.Tag = "user2";
+
+                currentlevel = File.ReadAllText("user2level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                SwitchEndGame(x);
+                LevelChecking.CompleteEnd(x);
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                T.pictureBox1.Tag = "user3";
+
+                currentlevel = File.ReadAllText("user3level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                SwitchEndGame(x);
+                LevelChecking.CompleteEnd(x);
+
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                T.pictureBox1.Tag = "user4";
+
+                currentlevel = File.ReadAllText("user4level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                SwitchEndGame(x);
+                LevelChecking.CompleteEnd(x);
             }
         }
 

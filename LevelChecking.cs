@@ -64,5 +64,15 @@ namespace Tutoring_Project
                 MessageBox.Show("Completed Section");
             }
         }
+
+        public static void CompleteEnd(int x)
+        {
+            if (x < 25)
+            {
+                MessageBox.Show("Complete the Previous Section");
+            }
+            
+        }
+
     }
 }

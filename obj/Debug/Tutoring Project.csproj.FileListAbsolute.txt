@@ -35,3 +35,4 @@ C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tuto
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.Question_Forms.SimplePart2.resources
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.Identifiers.resources
 C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.Question_Forms.ProgramFlow.resources
+C:\Users\Ollie\Desktop\Work\Dissertation\Project\Tutoring Project\obj\Debug\Tutoring_Project.EndGame.resources
