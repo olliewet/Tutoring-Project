@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,17 @@ namespace Tutoring_Project
         {
             InitializeComponent();
         }
+
+        #region variables
+        private int id;
+        private int points = 0;
+        private int count = 0;
+        private string category = "Test";
+        int Count2 = 0;
+        List<int> randomNumbers = new List<int>();
+        Random rand = new Random();
+        #endregion
+
 
         private void Topics_btn_Click(object sender, EventArgs e)
         {
@@ -69,28 +81,177 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
-        int count;
-        private void question1()
-        {
-            answer_btn1.Text = "Question 11111";
-            answer_btn2.Text = "Question 22222";
-            answer_btn3.Text = "Question 33333";
-            answer_btn4.Text = "Question 44444";
-            count = 1; 
-        }
-        private void question2()
-        {
-            answer_btn1.Text = "Question 11";
-            answer_btn2.Text = "Question 11";
-            answer_btn3.Text = "Question 11111";
-            answer_btn4.Text = "Question 11111";
-            count = 2;
-        }
+      
+      
         
         private void Button1_Click(object sender, EventArgs e)
         {
-           
+            int num = 1;
             
+            ArrayList list = new ArrayList();
+            Question q = new Question();
+            button1.Enabled = false;
+            id = rand.Next(1, 11);
+            randomNumbers.Add(id);
+            list = q.getQuestion(id, category);
+
+            if (list.Count > 1)
+            {
+                label24.Text = list[0].ToString();
+                foreach (Control control in options.Controls)
+                {
+                    RadioButton radio = control as RadioButton;
+                    radio.Enabled = true;
+                    radio.Text = list[num].ToString();
+                    num++;
+                }
+            }
+            
+        }
+
+        private void EndGame_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+            options.Enabled = false;
+            Submit.Enabled = false;
+            Next.Enabled = true;
+
+
+            string result = "NO SELECTION";
+            result res = new result();
+
+            foreach (Control control in options.Controls)
+            {
+                RadioButton radio = control as RadioButton;
+                if (radio.Checked)
+                {
+                    result = res.getResult(radio.Text, id, category);
+                }
+            }
+
+            if (result == "CORRECT" && ((string)this.pictureBox1.Tag == "user1"))
+            {
+                points = points + 10;
+                pointsvalue.Text = points.ToString();
+                pointsvalue.ForeColor = Color.Green;
+                explain.Visible = true;
+                explain.Text = "Congratulations!! You have selected the correct option.";
+                explain.ForeColor = Color.Green;
+                User.Exp();
+            }
+            else if (result == "CORRECT" && ((string)this.pictureBox1.Tag == "user2"))
+            {
+                points = points + 10;
+                pointsvalue.Text = points.ToString();
+                pointsvalue.ForeColor = Color.Green;
+                explain.Visible = true;
+                explain.Text = "Congratulations!! You have selected the correct option.";
+                explain.ForeColor = Color.Green;
+                User.Exp2();
+            }
+            else if (result == "CORRECT" && ((string)this.pictureBox1.Tag == "user3"))
+            {
+                points = points + 10;
+                pointsvalue.Text = points.ToString();
+                pointsvalue.ForeColor = Color.Green;
+                explain.Visible = true;
+                explain.Text = "Congratulations!! You have selected the correct option.";
+                explain.ForeColor = Color.Green;
+                User.Exp3();
+            }
+            else if (result == "CORRECT" && ((string)this.pictureBox1.Tag == "user4"))
+            {
+                points = points + 10;
+                pointsvalue.Text = points.ToString();
+                pointsvalue.ForeColor = Color.Green;
+                explain.Visible = true;
+                explain.Text = "Congratulations!! You have selected the correct option.";
+                explain.ForeColor = Color.Green;
+                User.Exp4();
+            }
+            else if (result == "WRONG" || result == "NO SELECTION")
+            {
+                Count2++;
+                if (Count2 > 5)
+                {
+                    //Close Form if failed to complete
+                }
+                pointsvalue.Text = points.ToString();
+                pointsvalue.ForeColor = Color.Red;
+                explain.Visible = true;
+                explain.Text = "oops!! You have selected the wrong option.";
+                explain.ForeColor = Color.Red;
+            }
+            else
+            {
+                             
+                Submit.Enabled = false;
+                Next.Enabled = false;
+                
+            }
+
+        }
+
+        private void Next_Click(object sender, EventArgs e)
+        {
+            int num = 1;
+            explain.Visible = false;
+
+            foreach (Control control in options.Controls)
+            {
+                RadioButton radio = control as RadioButton;
+                radio.Checked = false;
+            }
+
+            Next.Enabled = false;
+            Submit.Enabled = true;
+            options.Enabled = true;
+            options.Refresh();
+
+            do id = rand.Next(1, 11);
+            while (randomNumbers.Contains(id));
+            randomNumbers.Add(id);
+
+            Question q = new Question();
+            ArrayList list = new ArrayList();
+            list = q.getQuestion(id, category);
+
+            if (list.Count > 5)
+            {
+                if (count < 5)
+                {
+                    label24.Text = list[0].ToString();
+                    foreach (Control control in options.Controls)
+                    {
+                        RadioButton radio = control as RadioButton;
+                        radio.Enabled = true;
+                        radio.Text = list[num].ToString();
+                        num++;
+                    }
+                    count++;
+                }
+
+                else if (count > 5)
+                {
+                    MessageBox.Show("You have successfully completed the quiz and scored " + points + " points");
+                    Submit.Enabled = false;
+                    foreach (Control control in options.Controls)
+                    {
+                        RadioButton radio = control as RadioButton;
+                        radio.Enabled = false;
+                    }
+
+                }
+            }
+            else
+            {
+                Submit.Enabled = false;
+                Next.Enabled = false;
+            }
         }
     }
 }

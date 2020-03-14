@@ -32,16 +32,20 @@
             this.topics_btn = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.answer_btn4 = new System.Windows.Forms.RadioButton();
-            this.answer_btn3 = new System.Windows.Forms.RadioButton();
-            this.answer_btn2 = new System.Windows.Forms.RadioButton();
-            this.answer_btn1 = new System.Windows.Forms.RadioButton();
-            this.label24 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Submit = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.options = new System.Windows.Forms.GroupBox();
+            this.option4 = new System.Windows.Forms.RadioButton();
+            this.option3 = new System.Windows.Forms.RadioButton();
+            this.option2 = new System.Windows.Forms.RadioButton();
+            this.option1 = new System.Windows.Forms.RadioButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.pointsvalue = new System.Windows.Forms.Label();
+            this.explain = new System.Windows.Forms.Label();
+            this.Next = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.options.SuspendLayout();
             this.SuspendLayout();
             // 
             // topics_btn
@@ -88,87 +92,121 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // answer_btn4
-            // 
-            this.answer_btn4.AutoSize = true;
-            this.answer_btn4.Location = new System.Drawing.Point(79, 240);
-            this.answer_btn4.Name = "answer_btn4";
-            this.answer_btn4.Size = new System.Drawing.Size(66, 17);
-            this.answer_btn4.TabIndex = 43;
-            this.answer_btn4.TabStop = true;
-            this.answer_btn4.Text = "Answer4";
-            this.answer_btn4.UseVisualStyleBackColor = true;
-            // 
-            // answer_btn3
-            // 
-            this.answer_btn3.AutoSize = true;
-            this.answer_btn3.Location = new System.Drawing.Point(79, 217);
-            this.answer_btn3.Name = "answer_btn3";
-            this.answer_btn3.Size = new System.Drawing.Size(66, 17);
-            this.answer_btn3.TabIndex = 42;
-            this.answer_btn3.TabStop = true;
-            this.answer_btn3.Text = "Answer3";
-            this.answer_btn3.UseVisualStyleBackColor = true;
-            // 
-            // answer_btn2
-            // 
-            this.answer_btn2.AutoSize = true;
-            this.answer_btn2.Location = new System.Drawing.Point(79, 194);
-            this.answer_btn2.Name = "answer_btn2";
-            this.answer_btn2.Size = new System.Drawing.Size(66, 17);
-            this.answer_btn2.TabIndex = 41;
-            this.answer_btn2.TabStop = true;
-            this.answer_btn2.Text = "Answer2";
-            this.answer_btn2.UseVisualStyleBackColor = true;
-            // 
-            // answer_btn1
-            // 
-            this.answer_btn1.AutoSize = true;
-            this.answer_btn1.Location = new System.Drawing.Point(79, 171);
-            this.answer_btn1.Name = "answer_btn1";
-            this.answer_btn1.Size = new System.Drawing.Size(66, 17);
-            this.answer_btn1.TabIndex = 40;
-            this.answer_btn1.TabStop = true;
-            this.answer_btn1.Text = "Answer1";
-            this.answer_btn1.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(76, 143);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(49, 13);
-            this.label24.TabIndex = 39;
-            this.label24.Text = "Question";
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(160, 327);
+            this.button1.Location = new System.Drawing.Point(67, 293);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(457, 23);
+            this.button1.Size = new System.Drawing.Size(76, 23);
             this.button1.TabIndex = 44;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
+            // Submit
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(160, 356);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(457, 23);
-            this.button2.TabIndex = 45;
-            this.button2.Text = "Done";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Submit.Location = new System.Drawing.Point(67, 351);
+            this.Submit.Name = "Submit";
+            this.Submit.Size = new System.Drawing.Size(76, 23);
+            this.Submit.TabIndex = 45;
+            this.Submit.Text = "Submit";
+            this.Submit.UseVisualStyleBackColor = true;
+            this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
-            // label1
+            // options
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(731, 100);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "label1";
+            this.options.Controls.Add(this.option4);
+            this.options.Controls.Add(this.option3);
+            this.options.Controls.Add(this.option2);
+            this.options.Controls.Add(this.option1);
+            this.options.Location = new System.Drawing.Point(67, 157);
+            this.options.Name = "options";
+            this.options.Size = new System.Drawing.Size(550, 130);
+            this.options.TabIndex = 47;
+            this.options.TabStop = false;
+            this.options.Text = "Options:";
+            // 
+            // option4
+            // 
+            this.option4.AutoSize = true;
+            this.option4.Enabled = false;
+            this.option4.Location = new System.Drawing.Point(35, 98);
+            this.option4.Name = "option4";
+            this.option4.Size = new System.Drawing.Size(62, 17);
+            this.option4.TabIndex = 3;
+            this.option4.TabStop = true;
+            this.option4.Text = "Option4";
+            this.option4.UseVisualStyleBackColor = true;
+            // 
+            // option3
+            // 
+            this.option3.AutoSize = true;
+            this.option3.Enabled = false;
+            this.option3.Location = new System.Drawing.Point(35, 75);
+            this.option3.Name = "option3";
+            this.option3.Size = new System.Drawing.Size(62, 17);
+            this.option3.TabIndex = 2;
+            this.option3.TabStop = true;
+            this.option3.Text = "Option3";
+            this.option3.UseVisualStyleBackColor = true;
+            // 
+            // option2
+            // 
+            this.option2.AutoSize = true;
+            this.option2.Enabled = false;
+            this.option2.Location = new System.Drawing.Point(35, 52);
+            this.option2.Name = "option2";
+            this.option2.Size = new System.Drawing.Size(62, 17);
+            this.option2.TabIndex = 1;
+            this.option2.TabStop = true;
+            this.option2.Text = "Option2";
+            this.option2.UseVisualStyleBackColor = true;
+            // 
+            // option1
+            // 
+            this.option1.AutoSize = true;
+            this.option1.Enabled = false;
+            this.option1.Location = new System.Drawing.Point(35, 29);
+            this.option1.Name = "option1";
+            this.option1.Size = new System.Drawing.Size(62, 17);
+            this.option1.TabIndex = 0;
+            this.option1.TabStop = true;
+            this.option1.Text = "Option1";
+            this.option1.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(64, 141);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(49, 13);
+            this.label24.TabIndex = 39;
+            this.label24.Text = "Question";
+            // 
+            // pointsvalue
+            // 
+            this.pointsvalue.AutoSize = true;
+            this.pointsvalue.Location = new System.Drawing.Point(657, 186);
+            this.pointsvalue.Name = "pointsvalue";
+            this.pointsvalue.Size = new System.Drawing.Size(0, 13);
+            this.pointsvalue.TabIndex = 48;
+            // 
+            // explain
+            // 
+            this.explain.AutoSize = true;
+            this.explain.Location = new System.Drawing.Point(657, 199);
+            this.explain.Name = "explain";
+            this.explain.Size = new System.Drawing.Size(0, 13);
+            this.explain.TabIndex = 49;
+            // 
+            // Next
+            // 
+            this.Next.Location = new System.Drawing.Point(67, 322);
+            this.Next.Name = "Next";
+            this.Next.Size = new System.Drawing.Size(76, 23);
+            this.Next.TabIndex = 50;
+            this.Next.Text = "Next";
+            this.Next.UseVisualStyleBackColor = true;
+            this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
             // EndGame
             // 
@@ -176,20 +214,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Next);
+            this.Controls.Add(this.explain);
+            this.Controls.Add(this.pointsvalue);
+            this.Controls.Add(this.options);
+            this.Controls.Add(this.Submit);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.answer_btn4);
-            this.Controls.Add(this.answer_btn3);
-            this.Controls.Add(this.answer_btn2);
-            this.Controls.Add(this.answer_btn1);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.topics_btn);
             this.Controls.Add(this.exit);
             this.Name = "EndGame";
             this.Text = "EndGame";
+            this.Load += new System.EventHandler(this.EndGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.options.ResumeLayout(false);
+            this.options.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,14 +240,17 @@
         private System.Windows.Forms.Button topics_btn;
         private System.Windows.Forms.Button exit;
         public System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RadioButton answer_btn4;
-        private System.Windows.Forms.RadioButton answer_btn3;
-        private System.Windows.Forms.RadioButton answer_btn2;
-        private System.Windows.Forms.RadioButton answer_btn1;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox options;
+        private System.Windows.Forms.RadioButton option4;
+        private System.Windows.Forms.RadioButton option3;
+        private System.Windows.Forms.RadioButton option2;
+        private System.Windows.Forms.RadioButton option1;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label pointsvalue;
+        private System.Windows.Forms.Label explain;
+        private System.Windows.Forms.Button Next;
     }
 }

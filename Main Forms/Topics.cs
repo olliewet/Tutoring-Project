@@ -750,8 +750,8 @@ namespace Tutoring_Project
         {
             if ((string)this.pictureBox1.Tag == "user1")
             {
-                T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
-                T.pictureBox1.Tag = "user1";
+                E.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                E.pictureBox1.Tag = "user1";
 
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
@@ -761,8 +761,8 @@ namespace Tutoring_Project
             }
             else if ((string)this.pictureBox1.Tag == "user2")
             {
-                T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
-                T.pictureBox1.Tag = "user2";
+                E.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                E.pictureBox1.Tag = "user2";
 
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
@@ -772,8 +772,8 @@ namespace Tutoring_Project
             }
             else if ((string)this.pictureBox1.Tag == "user3")
             {
-                T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
-                T.pictureBox1.Tag = "user3";
+                E.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                E.pictureBox1.Tag = "user3";
 
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
@@ -784,8 +784,8 @@ namespace Tutoring_Project
             }
             else if ((string)this.pictureBox1.Tag == "user4")
             {
-                T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
-                T.pictureBox1.Tag = "user4";
+                E.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                E.pictureBox1.Tag = "user4";
 
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);

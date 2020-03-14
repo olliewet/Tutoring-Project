@@ -1,0 +1,58 @@
+<movies>
+<question id="1">
+<ques>What Language did this course cover?</ques>
+<wrong>C++</wrong>
+<correct>C#</correct>
+<wrong>C</wrong>
+<wrong>JAVA</wrong>
+</question>
+<question id="2">
+<ques>How Does Object Oriented Programming Benefit Projects?</ques>
+<wrong>Allows for larger scale programs to be divided into smaller programs to make it easier</wrong>
+<wrong>The use of functions make code easier to write</wrong>
+<correct>Breaks Code down into sensible size chunks, which allows for much easier design and testing</correct>
+<wrong>Objects are used to make the code longer and more precise</wrong>
+</question>
+<question id="3">
+<ques>What is the reason for a compiler in programming?</ques>
+<correct>Converts Code into low level instructions which can be read and understood by the hardware</correct>
+<wrong>To Run Code</wrong>
+<wrong>To compress the code into a smaller file size</wrong>
+<wrong>Checks for errors and attempts to fix them to get the code running</wrong>
+</question>
+<question id="4">
+<ques>In C# what keyword can be used following an IF statement to specify a block of code to be executed?</ques>
+<wrong>Try</wrong>
+<wrong>Override</wrong>
+<correct>Else</correct>
+<wrong>Virtual</wrong>
+</question>
+<question id="5">
+<ques>What is the importance of the system namespace?</ques>
+<wrong>To make sure the code provides no errors</wrong>
+<wrong>To allow the user to access certain members from the generic’s namespace</wrong>
+<wrong>To allow the user to write code in the main method</wrong>
+<correct>Instruction used to tell compiler that the user wants to use certain things from the system namespace</correct>
+</question>
+<question id="6">
+<ques>What is the purpose of a brace after the Main?</ques>
+<wrong>Prevents the compiler throwing errors</wrong>
+<wrong>Prevent any memory leaks</wrong>
+<wrong>Allows for users to declare variables and write code</wrong>
+<correct>To define a block, also indicates to the compiler when it has reached the end when the closing brace is reached</correct>
+</question>
+<question id="7">
+<ques>What is the purpose of double.Parse within C#?</ques>
+<wrong>Used for converting a string into an integer</wrong>
+<wrong>Used for passing variables through functions</wrong>
+<wrong>For Declaring a variable as a double precsion floating point number</wrong>
+<correct>Used for converting a string into a double precision floating point number</correct>
+</question>
+<question id="8">
+<ques>Which value type has the precision of up to 15 digits?</ques>
+<wrong>Real</wrong>
+<wrong>int</wrong>
+<wrong>Float</wrong>
+<correct>Double</correct>
+</question>
+</movies>

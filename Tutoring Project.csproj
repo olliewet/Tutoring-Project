@@ -115,6 +115,8 @@
     <Compile Include="Question Forms\SimplePart2.Designer.cs">
       <DependentUpon>SimplePart2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Question.cs" />
+    <Compile Include="result.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Main Forms\Userpage.cs">
       <SubType>Form</SubType>

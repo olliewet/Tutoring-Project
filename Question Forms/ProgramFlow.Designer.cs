@@ -1570,7 +1570,7 @@
             // 
             this.panel2.Location = new System.Drawing.Point(-17, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(890, 37);
+            this.panel2.Size = new System.Drawing.Size(890, 10);
             this.panel2.TabIndex = 40;
             // 
             // ProgramFlow
