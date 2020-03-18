@@ -32,7 +32,7 @@
             this.topics_btn = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Go = new System.Windows.Forms.Button();
             this.Submit = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.options = new System.Windows.Forms.GroupBox();
@@ -40,10 +40,12 @@
             this.option3 = new System.Windows.Forms.RadioButton();
             this.option2 = new System.Windows.Forms.RadioButton();
             this.option1 = new System.Windows.Forms.RadioButton();
-            this.label24 = new System.Windows.Forms.Label();
+            this.qs_lb = new System.Windows.Forms.Label();
             this.pointsvalue = new System.Windows.Forms.Label();
             this.explain = new System.Windows.Forms.Label();
             this.Next = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.error = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.options.SuspendLayout();
             this.SuspendLayout();
@@ -92,18 +94,19 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // Go
             // 
-            this.button1.Location = new System.Drawing.Point(67, 293);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 23);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.Go.Location = new System.Drawing.Point(67, 293);
+            this.Go.Name = "Go";
+            this.Go.Size = new System.Drawing.Size(76, 23);
+            this.Go.TabIndex = 44;
+            this.Go.Text = "Start";
+            this.Go.UseVisualStyleBackColor = true;
+            this.Go.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Submit
             // 
+            this.Submit.Enabled = false;
             this.Submit.Location = new System.Drawing.Point(67, 351);
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(76, 23);
@@ -120,7 +123,7 @@
             this.options.Controls.Add(this.option1);
             this.options.Location = new System.Drawing.Point(67, 157);
             this.options.Name = "options";
-            this.options.Size = new System.Drawing.Size(550, 130);
+            this.options.Size = new System.Drawing.Size(721, 130);
             this.options.TabIndex = 47;
             this.options.TabStop = false;
             this.options.Text = "Options:";
@@ -173,19 +176,19 @@
             this.option1.Text = "Option1";
             this.option1.UseVisualStyleBackColor = true;
             // 
-            // label24
+            // qs_lb
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(64, 141);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(49, 13);
-            this.label24.TabIndex = 39;
-            this.label24.Text = "Question";
+            this.qs_lb.AutoSize = true;
+            this.qs_lb.Location = new System.Drawing.Point(64, 141);
+            this.qs_lb.Name = "qs_lb";
+            this.qs_lb.Size = new System.Drawing.Size(32, 13);
+            this.qs_lb.TabIndex = 39;
+            this.qs_lb.Text = "qs_lb";
             // 
             // pointsvalue
             // 
             this.pointsvalue.AutoSize = true;
-            this.pointsvalue.Location = new System.Drawing.Point(657, 186);
+            this.pointsvalue.Location = new System.Drawing.Point(164, 309);
             this.pointsvalue.Name = "pointsvalue";
             this.pointsvalue.Size = new System.Drawing.Size(0, 13);
             this.pointsvalue.TabIndex = 48;
@@ -193,13 +196,14 @@
             // explain
             // 
             this.explain.AutoSize = true;
-            this.explain.Location = new System.Drawing.Point(657, 199);
+            this.explain.Location = new System.Drawing.Point(164, 322);
             this.explain.Name = "explain";
             this.explain.Size = new System.Drawing.Size(0, 13);
             this.explain.TabIndex = 49;
             // 
             // Next
             // 
+            this.Next.Enabled = false;
             this.Next.Location = new System.Drawing.Point(67, 322);
             this.Next.Name = "Next";
             this.Next.Size = new System.Drawing.Size(76, 23);
@@ -208,19 +212,41 @@
             this.Next.UseVisualStyleBackColor = true;
             this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
+            // label1
+            // 
+            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(409, 293);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 86);
+            this.label1.TabIndex = 51;
+            // 
+            // error
+            // 
+            this.error.AutoSize = true;
+            this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.error.ForeColor = System.Drawing.Color.Red;
+            this.error.Location = new System.Drawing.Point(64, 411);
+            this.error.Name = "error";
+            this.error.Size = new System.Drawing.Size(0, 17);
+            this.error.TabIndex = 52;
+            this.error.Visible = false;
+            // 
             // EndGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.error);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.explain);
             this.Controls.Add(this.pointsvalue);
             this.Controls.Add(this.options);
             this.Controls.Add(this.Submit);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.Go);
+            this.Controls.Add(this.qs_lb);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.topics_btn);
             this.Controls.Add(this.exit);
@@ -240,7 +266,7 @@
         private System.Windows.Forms.Button topics_btn;
         private System.Windows.Forms.Button exit;
         public System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Go;
         private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.GroupBox options;
@@ -248,9 +274,11 @@
         private System.Windows.Forms.RadioButton option3;
         private System.Windows.Forms.RadioButton option2;
         private System.Windows.Forms.RadioButton option1;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label qs_lb;
         private System.Windows.Forms.Label pointsvalue;
         private System.Windows.Forms.Label explain;
         private System.Windows.Forms.Button Next;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label error;
     }
 }

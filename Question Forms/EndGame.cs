@@ -22,8 +22,7 @@ namespace Tutoring_Project
         private int id;
         private int points = 0;
         private int count = 0;
-        private string category = "Test";
-        int Count2 = 0;
+        private string category = "Test";        
         List<int> randomNumbers = new List<int>();
         Random rand = new Random();
         #endregion
@@ -86,18 +85,20 @@ namespace Tutoring_Project
         
         private void Button1_Click(object sender, EventArgs e)
         {
-            int num = 1;
-            
+            int num = 1;            
             ArrayList list = new ArrayList();
             Question q = new Question();
-            button1.Enabled = false;
+
+            
+            Go.Enabled = false;
+            Submit.Enabled = true;
             id = rand.Next(1, 11);
             randomNumbers.Add(id);
             list = q.getQuestion(id, category);
 
             if (list.Count > 1)
             {
-                label24.Text = list[0].ToString();
+                qs_lb.Text = list[0].ToString();
                 foreach (Control control in options.Controls)
                 {
                     RadioButton radio = control as RadioButton;
@@ -106,7 +107,14 @@ namespace Tutoring_Project
                     num++;
                 }
             }
-            
+            else
+            {
+                error.Visible = true;
+                error.Text = list[0].ToString();
+                Submit.Enabled = false;
+                Next.Enabled = false;
+            }
+
         }
 
         private void EndGame_Load(object sender, EventArgs e)
@@ -116,10 +124,10 @@ namespace Tutoring_Project
 
         private void Submit_Click(object sender, EventArgs e)
         {
+
             options.Enabled = false;
             Submit.Enabled = false;
             Next.Enabled = true;
-
 
             string result = "NO SELECTION";
             result res = new result();
@@ -132,7 +140,6 @@ namespace Tutoring_Project
                     result = res.getResult(radio.Text, id, category);
                 }
             }
-
             if (result == "CORRECT" && ((string)this.pictureBox1.Tag == "user1"))
             {
                 points = points + 10;
@@ -175,11 +182,6 @@ namespace Tutoring_Project
             }
             else if (result == "WRONG" || result == "NO SELECTION")
             {
-                Count2++;
-                if (Count2 > 5)
-                {
-                    //Close Form if failed to complete
-                }
                 pointsvalue.Text = points.ToString();
                 pointsvalue.ForeColor = Color.Red;
                 explain.Visible = true;
@@ -188,10 +190,10 @@ namespace Tutoring_Project
             }
             else
             {
-                             
+                error.Visible = true;
+                error.Text = result;
                 Submit.Enabled = false;
                 Next.Enabled = false;
-                
             }
 
         }
@@ -212,7 +214,7 @@ namespace Tutoring_Project
             options.Enabled = true;
             options.Refresh();
 
-            do id = rand.Next(1, 11);
+            do id = rand.Next(1, 9);
             while (randomNumbers.Contains(id));
             randomNumbers.Add(id);
 
@@ -220,11 +222,11 @@ namespace Tutoring_Project
             ArrayList list = new ArrayList();
             list = q.getQuestion(id, category);
 
-            if (list.Count > 5)
+            if (list.Count > 1)
             {
-                if (count < 5)
+                if (count < 4)
                 {
-                    label24.Text = list[0].ToString();
+                    qs_lb.Text = list[0].ToString();
                     foreach (Control control in options.Controls)
                     {
                         RadioButton radio = control as RadioButton;
@@ -234,8 +236,8 @@ namespace Tutoring_Project
                     }
                     count++;
                 }
-
-                else if (count > 5)
+                
+                else 
                 {
                     MessageBox.Show("You have successfully completed the quiz and scored " + points + " points");
                     Submit.Enabled = false;
@@ -249,6 +251,8 @@ namespace Tutoring_Project
             }
             else
             {
+                error.Visible = true;
+                error.Text = list[0].ToString();
                 Submit.Enabled = false;
                 Next.Enabled = false;
             }
