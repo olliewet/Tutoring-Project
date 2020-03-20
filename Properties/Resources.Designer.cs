@@ -263,6 +263,26 @@ namespace Tutoring_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Code5 {
+            get {
+                object obj = ResourceManager.GetObject("Code5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Code51 {
+            get {
+                object obj = ResourceManager.GetObject("Code51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CodeExample2 {
             get {
                 object obj = ResourceManager.GetObject("CodeExample2", resourceCulture);
@@ -686,6 +706,16 @@ namespace Tutoring_Project.Properties {
         internal static System.Drawing.Bitmap UIF {
             get {
                 object obj = ResourceManager.GetObject("UIF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpdatedCodeBlock {
+            get {
+                object obj = ResourceManager.GetObject("UpdatedCodeBlock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

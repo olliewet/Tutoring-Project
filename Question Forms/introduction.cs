@@ -17,7 +17,7 @@ namespace Tutoring_Project
         {
             InitializeComponent();
         }
-
+        int counter;
         private void Topics_btn_Click(object sender, EventArgs e)
         {
             if ((string)this.pictureBox1.Tag == "user1")
@@ -85,7 +85,20 @@ namespace Tutoring_Project
 
         private void Question1_btn(object sender, EventArgs e)
         {
+           
             
+            int counter = 0;
+            counter++;
+            if (counter >= 2)
+            {
+                MessageBox.Show("The language covered is C# and was founded in 2000! ");
+            }
+            else if (counter >= 6)
+            {
+                MessageBox.Show("It seems like this question is causing trouble, refer back to previous pages for extra help!");
+            }
+           
+
             if (btn_3.Checked)
             {
                 tabControl1.SelectTab(2);
@@ -116,13 +129,29 @@ namespace Tutoring_Project
             }
         }
 
+
+
         private void Button3_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab(3);
         }
 
+       
+       
+
         private void Question2_btn(object sender, EventArgs e)
         {
+            counter = 0;
+            counter++;
+            if (counter == 2)
+            {
+                MessageBox.Show("OOP has lots of benefits, one of the key benefits is that it allows users to break sections of code into sensible chunks, due to this it makes it easier to read and allows it for easier testing") ;
+            }
+            else if (counter == 6)
+            {
+                MessageBox.Show("It seems like this question is causing trouble, please refer back to previous pages for extra help!");
+            }
+            
 
             if (radioButton7.Checked)
             {
@@ -224,7 +253,16 @@ namespace Tutoring_Project
 
         private void Question3_btn(object sender, EventArgs e)
         {
-            
+            counter = 0;
+            counter++;
+            if (counter == 3)
+            {
+                MessageBox.Show("Purpose of a compiler is convert the users code into low level instructions, this is because in its current form the hardware cannot understand the code unless it is turned into low level instructions");
+            }
+            else if (counter == 6)
+            {
+                MessageBox.Show("It seems like this question is causing trouble, please refer back to previous pages for extra help!");
+            }
             if (radioButton1.Checked)
             {
                 tabControl1.SelectTab(6);

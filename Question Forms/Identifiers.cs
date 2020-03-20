@@ -131,17 +131,18 @@ namespace Tutoring_Project
 
         private void Button29_Click(object sender, EventArgs e)
         {
-           
+
             counter = 0;
             counter++;
-            if (counter >= 3)
+            if (counter == 3)
             {
-                MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
+                MessageBox.Show("This question requires the user to place in the correct words and phases in the correct textboxes to make the code work!"); //Add Hit 
             }
-            else if (counter >= 5)
+            else if (counter == 5)
             {
-                MessageBox.Show("HINT HINT HINT HINT");
+                MessageBox.Show("It seems like your struggling, alot of the provided words and phases dont match the code already provided, you should be able to limit it down to couple of answers!");
             }
+
 
             if (tb1.Text.Equals("int Num1;") && tb2.Text.Equals("Num1 = 10;") && tb3.Text.Equals("Num3 = Num1 * Num2;"))
             {

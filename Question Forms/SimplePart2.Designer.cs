@@ -143,6 +143,7 @@
             this.exit = new System.Windows.Forms.Button();
             this.topics_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage13.SuspendLayout();
@@ -164,6 +165,7 @@
             this.tabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage14
@@ -909,6 +911,7 @@
             this.tabPage7.Controls.Add(this.button11);
             this.tabPage7.Controls.Add(this.richTextBox9);
             this.tabPage7.Controls.Add(this.tb_4);
+            this.tabPage7.Controls.Add(this.pictureBox29);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -954,10 +957,11 @@
             // 
             // tb_4
             // 
-            this.tb_4.Location = new System.Drawing.Point(6, 59);
+            this.tb_4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_4.Location = new System.Drawing.Point(67, 177);
             this.tb_4.Multiline = true;
             this.tb_4.Name = "tb_4";
-            this.tb_4.Size = new System.Drawing.Size(775, 65);
+            this.tb_4.Size = new System.Drawing.Size(525, 65);
             this.tb_4.TabIndex = 27;
             // 
             // tabPage6
@@ -1502,6 +1506,15 @@
             this.panel2.Size = new System.Drawing.Size(890, 10);
             this.panel2.TabIndex = 41;
             // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::Tutoring_Project.Properties.Resources.UpdatedCodeBlock;
+            this.pictureBox29.Location = new System.Drawing.Point(9, 56);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(597, 272);
+            this.pictureBox29.TabIndex = 72;
+            this.pictureBox29.TabStop = false;
+            // 
             // SimplePart2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1550,6 +1563,7 @@
             this.tabPage12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1669,5 +1683,6 @@
         private System.Windows.Forms.RichTextBox richTextBox35;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox29;
     }
 }

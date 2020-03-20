@@ -300,10 +300,16 @@ namespace Tutoring_Project.Question_Forms
         {
             counter = 0;
             counter++;
-            if (counter >= 3)
+            if (counter == 3)
             {
                 MessageBox.Show("Braces are used within coding to define a block and without them errors are thrown by the compiler!"); 
+            }           
+            else if (counter == 5)
+            {
+                    MessageBox.Show("It seems like this question is causing trouble, please refer back to previous pages for extra help!");
             }
+            
+
 
             if (rb_2.Checked)
             {
@@ -357,13 +363,14 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("Look at how the variables are declared in the programming example"); //Add Hit 
-            } else if (counter >= 6)
+                MessageBox.Show("Look at how the variables are declared in the programming example"); 
+            }
+            else if (counter >= 6)
             {
                 MessageBox.Show("It seems like this question is causing trouble, remember if the keyword you are using is supposed to have the first letter in captial, also make sure the variable names are spelt correctly");//Add more text
             }
                 text = tb_4.Text;
-            if (text.Contains("int") && text.Contains("Num1") && text.Contains(",") && text.Contains("Num2") && text.Contains(";") && text.Contains("String") && text.Contains("String1") && text.Contains(",") && text.Contains("String2") && text.Contains(";"))         
+            if (text.StartsWith("int") && text.Contains("Num1") && text.Contains(",") && text.Contains("Num2") && text.Contains(";") && text.Contains("String") && text.Contains("String1") && text.Contains(",") && text.Contains("String2") && text.EndsWith(";"))         
                 {
                 MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(11);
@@ -457,13 +464,17 @@ namespace Tutoring_Project.Question_Forms
             string text;
             counter = 0;
             counter++;
-            if (counter >= 3)
+            if (counter == 3)
             {
                 MessageBox.Show("Look at how the variables are declared in the programming example, make sure the variables are spelt correctly!"); 
             }
-            
+            else if (counter == 6)
+            {
+                MessageBox.Show("Make sure all the variables and keywords are spelt correctly, if you are still struggling make sure to read over the information provided!");
+            }
+
             text = textBox4.Text;
-            if (text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console") && text.Contains(".") && text.Contains("readLine") && text.Contains("()") && text.Contains(";") | text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console.readLine();"))
+            if (text.StartsWith("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console") && text.Contains(".") && text.Contains("readLine") && text.Contains("()") && text.EndsWith(";") | text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.EndsWith("Console.readLine();"))
             {
                 tabControl1.SelectTab(17);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -474,6 +485,7 @@ namespace Tutoring_Project.Question_Forms
                 }
                 else if ((string)this.pictureBox1.Tag == "user2")
                 {
+                    User.User2(9, 10);
                     User.User2(9, 10);
                     User.Exp2();
 
@@ -557,10 +569,15 @@ namespace Tutoring_Project.Question_Forms
             
             counter = 0;
             counter++;
-            if (counter >= 3)
+            if (counter == 3)
             {
                 MessageBox.Show("The Question is asking about double.Parse, .Parse can be used to parse into different types depending what is infornt of the .Parse!");
             }
+            else if (counter == 6)
+            {
+                MessageBox.Show("It seems like you could be struggling with this question, please read the information that has been provided and try the question again");
+            }
+
             if (radioButton9.Checked)
             {
                 MessageBox.Show("Achievement Unlocked!");
@@ -652,7 +669,7 @@ namespace Tutoring_Project.Question_Forms
                 MessageBox.Show("It seems like this question is causing trouble, refer back to previous pages for extra help!");//Add more text
             }
             text = textBox5.Text;            
-            if (text.Contains("Console.WriteLine") && text.Contains("(num1 + num2)") | (text.Contains("Console.WriteLine") && text.Contains(" ( num1 + num2 ) ")))
+            if (text.StartsWith("Console.WriteLine") && text.EndsWith("(num1 + num2);") | (text.StartsWith("Console.WriteLine") && text.EndsWith(" ( num1 + num2 ) ; ")))
             {
                 tabControl1.SelectTab(27);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -797,6 +814,11 @@ namespace Tutoring_Project.Question_Forms
             }
             this.Close();
             T.ShowDialog();
+        }
+
+        private void TabPage3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
