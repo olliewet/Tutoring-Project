@@ -91,6 +91,21 @@ namespace Tutoring_Project
         {
 
         }
-        #endregion 
+        #endregion
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+        }
+
+        private void RichTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

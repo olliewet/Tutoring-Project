@@ -242,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\RANKSS.png" />
     <None Include="Resources\play_32px.png" />
     <None Include="Resources\ProgAchieve.png" />
     <None Include="Resources\UIF.png" />
