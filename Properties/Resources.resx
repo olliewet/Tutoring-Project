@@ -166,17 +166,14 @@
   <data name="Part2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Part2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SDP12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SDP12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Part1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Part1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SDP11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SDP11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Question3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Question3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Part1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Part1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="variables and readlines" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\variables and readlines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +184,8 @@
   <data name="Plat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Plat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Code5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Code5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DoWhileExample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoWhileExample.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="num" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\num.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -204,6 +201,9 @@
   </data>
   <data name="SDP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SDP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDAchieve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IDAchieve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="school_director_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\school_director_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,9 +223,6 @@
   <data name="ForLoopExample" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ForLoopExample.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Code51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Code51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bronze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bronze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -238,20 +235,11 @@
   <data name="home_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Varaibles examples" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Varaibles examples.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="exit_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="glass area" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\glass area.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MasterSolver" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MasterSolver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="play_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="idea_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idea_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -267,6 +255,9 @@
   </data>
   <data name="C-Sharp-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\C-Sharp-01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SDP12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SDP12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,8 +292,11 @@
   <data name="OllieBasics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OllieBasics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IDAchieve" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IDAchieve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="manager_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\manager_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Varaibles examples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Varaibles examples.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="award" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\award.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,8 +328,8 @@
   <data name="Basics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Basics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="manager_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\manager_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="glass area" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glass area.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Breaking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Breaking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,10 +337,7 @@
   <data name="Yellow Book Example" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Yellow Book Example.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DoWhileExample" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoWhileExample.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UpdatedCodeBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UpdatedCodeBlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="play_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

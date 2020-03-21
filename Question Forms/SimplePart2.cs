@@ -153,14 +153,14 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("Remember the structure of an assigenment statement, remember the difference = and ==, the single = should be used in this instance");  
+                MessageBox.Show("Remember the structure of an assigenment statement, remember the difference = and ==, the single = should be used in this instance"); //Add Hit 
             }
             else if (counter >= 6)
             {
                 MessageBox.Show("Example of an assigenment statement Double PreciseNumberOfDrinks = 5.1 ; ");
             }
             text = tb_4.Text;
-            if (text.StartsWith("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.EndsWith("5;") )
+            if (text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5;"))
             {
                 MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(7);
@@ -219,13 +219,9 @@ namespace Tutoring_Project.Question_Forms
         {
             counter = 0;
             counter++;
-            if (counter == 3)
+            if (counter >= 3)
             {
-                MessageBox.Show("Please refer back to the information on the previous slide as help!");
-            }
-            else if (counter == 6)
-            {
-                MessageBox.Show("It seems like you many be struggling, double is able to hold a value of up to 15 digits");
+                MessageBox.Show("The Question is asking about double.Parse, .Parse can be used to parse into different types depending what is infornt of the .Parse!");
             }
             if (answer_btn4.Checked)
             {
@@ -316,13 +312,13 @@ namespace Tutoring_Project.Question_Forms
         {
             counter = 0;
             counter++;
-            if (counter == 3)
+            if (counter >= 3)
             {
-                MessageBox.Show("This question requires the user to place in the correct words and phases in the correct textboxes to make the code work!"); //Add Hit 
+                MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
             }
-            else if (counter == 5)
+            else if (counter >= 5)
             {
-                MessageBox.Show("Remember that the variables require a type before the variable name! ");
+                MessageBox.Show("HINT HINT HINT HINT");
             }
 
             if (textBox3.Text.Equals("double") && textBox4.Text.Equals("string") && textBox1.Text.Equals("Console.ReadLine();") && textBox2.Text.Equals("Console.WriteLine"))

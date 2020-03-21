@@ -117,7 +117,7 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("IF statements can be followed by an else statement to specify a certain block of code to be executed!");
+                MessageBox.Show("HINT HINT HINT HINT");
             }
             if (answer_btn1.Checked)
             {
@@ -154,11 +154,14 @@ namespace Tutoring_Project.Question_Forms
             string text;
             counter = 0;
             counter++;
-            if (counter == 3)
+            if (counter >= 3)
             {
-                MessageBox.Show("Read the question carefully, the question is asking the user to print a certain phase to the console when x is less than 10"); //Add Hit 
+                MessageBox.Show("HINT HINT HINT HINT HINT"); //Add Hit 
             }
-           
+            else if (counter >= 6)
+            {
+                MessageBox.Show("HINT HINT HINT HINT HINT");
+            }
             text = tb_4.Text;
             if (text.Contains("if (x < 10){Console.WriteLine(\"Hello World\");")) // Also add that it test to make sure it is in order
             {
@@ -247,9 +250,9 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("Look at the provided code, the value of the int will lead you to the answer of the question ");
+                MessageBox.Show("HINT HINT HINT HINT");
             }
-            if (radioButton1.Checked)
+            if (radioButton4.Checked)
             {
                 tabControl1.SelectTab(7);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -299,13 +302,13 @@ namespace Tutoring_Project.Question_Forms
             string text;
             counter = 0;
             counter++;
-            if (counter == 3)
+            if (counter >= 3)
             {
-                MessageBox.Show("Please refer to the information on the previous page"); //Add Hit 
+                MessageBox.Show("HINT HINT HINT HINT HINT"); //Add Hit 
             }
-            else if (counter == 6)
+            else if (counter >= 6)
             {
-                MessageBox.Show("It seems like you might be struggling with this question, remember num is an integer and not an array!");
+                MessageBox.Show("HINT HINT HINT HINT HINT");
             }
             text = textBox3.Text;
             if (text.Contains("do { Console.WriteLine(\"Value of i: {0}\", i); i++;} while (i < num);")) // Also add that it test to make sure it is in order
@@ -375,9 +378,12 @@ namespace Tutoring_Project.Question_Forms
             counter++;
             if (counter >= 3)
             {
-                MessageBox.Show("Remember to look at the operator of the answer, and compare the operator to the question being asked, this should make the question easier to answer"); //Add Hit 
+                MessageBox.Show("HINT HINT HINT HINT HINT"); //Add Hit 
             }
-            
+            else if (counter >= 6)
+            {
+                MessageBox.Show("HINT HINT HINT HINT HINT");
+            }
             text = textBox1.Text;
             if (text.Contains("for ( int i = 0; i < 100; i++ { Console.WriteLine(i); }")) // Also add that it test to make sure it is in order
             {

@@ -242,7 +242,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
-    <None Include="Resources\UpdatedCodeBlock.png" />
     <None Include="Resources\play_32px.png" />
     <None Include="Resources\ProgAchieve.png" />
     <None Include="Resources\UIF.png" />
@@ -295,8 +294,6 @@
     <None Include="Resources\Breaking.png" />
     <None Include="Resources\IFAchieve.png" />
     <None Include="Resources\Background.png" />
-    <None Include="Resources\Code5.png" />
-    <None Include="Resources\Code51.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />
