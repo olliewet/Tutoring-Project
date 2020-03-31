@@ -39,10 +39,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button29 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -143,6 +139,10 @@
             this.exit = new System.Windows.Forms.Button();
             this.topics_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.answer1 = new System.Windows.Forms.ComboBox();
+            this.answer2 = new System.Windows.Forms.ComboBox();
+            this.answer3 = new System.Windows.Forms.ComboBox();
+            this.answer4 = new System.Windows.Forms.ComboBox();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage13.SuspendLayout();
@@ -168,6 +168,10 @@
             // 
             // tabPage14
             // 
+            this.tabPage14.Controls.Add(this.answer4);
+            this.tabPage14.Controls.Add(this.answer3);
+            this.tabPage14.Controls.Add(this.answer2);
+            this.tabPage14.Controls.Add(this.answer1);
             this.tabPage14.Controls.Add(this.button25);
             this.tabPage14.Controls.Add(this.label28);
             this.tabPage14.Controls.Add(this.label27);
@@ -177,10 +181,6 @@
             this.tabPage14.Controls.Add(this.label22);
             this.tabPage14.Controls.Add(this.label21);
             this.tabPage14.Controls.Add(this.label18);
-            this.tabPage14.Controls.Add(this.textBox4);
-            this.tabPage14.Controls.Add(this.textBox3);
-            this.tabPage14.Controls.Add(this.textBox2);
-            this.tabPage14.Controls.Add(this.textBox1);
             this.tabPage14.Controls.Add(this.button29);
             this.tabPage14.Controls.Add(this.label20);
             this.tabPage14.Controls.Add(this.pictureBox5);
@@ -275,42 +275,6 @@
             this.label18.TabIndex = 55;
             this.label18.Text = "Provided Words";
             // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(208, 132);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(73, 20);
-            this.textBox4.TabIndex = 54;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(208, 116);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(73, 20);
-            this.textBox3.TabIndex = 53;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(231, 269);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 20);
-            this.textBox2.TabIndex = 52;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(333, 189);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 20);
-            this.textBox1.TabIndex = 51;
-            // 
             // button29
             // 
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -337,7 +301,7 @@
             this.pictureBox5.Image = global::Tutoring_Project.Properties.Resources.code_example_no_text;
             this.pictureBox5.Location = new System.Drawing.Point(144, 57);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(499, 287);
+            this.pictureBox5.Size = new System.Drawing.Size(560, 287);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 50;
             this.pictureBox5.TabStop = false;
@@ -1502,6 +1466,70 @@
             this.panel2.Size = new System.Drawing.Size(890, 10);
             this.panel2.TabIndex = 41;
             // 
+            // answer1
+            // 
+            this.answer1.FormattingEnabled = true;
+            this.answer1.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "double",
+            "integer",
+            "Console.ReadLine();",
+            "string",
+            "if",
+            "else"});
+            this.answer1.Location = new System.Drawing.Point(214, 113);
+            this.answer1.Name = "answer1";
+            this.answer1.Size = new System.Drawing.Size(81, 21);
+            this.answer1.TabIndex = 64;
+            // 
+            // answer2
+            // 
+            this.answer2.FormattingEnabled = true;
+            this.answer2.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "double",
+            "integer",
+            "Console.ReadLine();",
+            "string",
+            "if",
+            "else"});
+            this.answer2.Location = new System.Drawing.Point(214, 134);
+            this.answer2.Name = "answer2";
+            this.answer2.Size = new System.Drawing.Size(81, 21);
+            this.answer2.TabIndex = 65;
+            // 
+            // answer3
+            // 
+            this.answer3.FormattingEnabled = true;
+            this.answer3.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "double",
+            "integer",
+            "Console.ReadLine();",
+            "string",
+            "if",
+            "else"});
+            this.answer3.Location = new System.Drawing.Point(352, 188);
+            this.answer3.Name = "answer3";
+            this.answer3.Size = new System.Drawing.Size(157, 21);
+            this.answer3.TabIndex = 66;
+            // 
+            // answer4
+            // 
+            this.answer4.FormattingEnabled = true;
+            this.answer4.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "double",
+            "integer",
+            "Console.ReadLine();",
+            "string",
+            "if",
+            "else"});
+            this.answer4.Location = new System.Drawing.Point(224, 269);
+            this.answer4.Name = "answer4";
+            this.answer4.Size = new System.Drawing.Size(157, 21);
+            this.answer4.TabIndex = 67;
+            // 
             // SimplePart2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1659,15 +1687,15 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button finish_btn;
         private System.Windows.Forms.RichTextBox richTextBox35;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox answer1;
+        private System.Windows.Forms.ComboBox answer4;
+        private System.Windows.Forms.ComboBox answer3;
+        private System.Windows.Forms.ComboBox answer2;
     }
 }

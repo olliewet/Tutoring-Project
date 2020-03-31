@@ -141,6 +141,10 @@ namespace Tutoring_Project
             {
                 led.exp1.Text = "9";
             }
+            else if (x > 1000)
+            {
+                led.exp1.Text = "10";
+            }
 
 
 
@@ -166,25 +170,29 @@ namespace Tutoring_Project
             {
                 led.exp2.Text = "4";
             }
-            else if (x >= 500 && x <= 600)
+            else if (i >= 500 && i <= 600)
             {
                 led.exp2.Text = "5";
             }
-            else if (x >= 600 && x <= 700)
+            else if (i >= 600 && i <= 700)
             {
                 led.exp2.Text = "6";
             }
-            else if (x >= 700 && x <= 800)
+            else if (i >= 700 && i <= 800)
             {
                 led.exp2.Text = "7";
             }
-            else if (x >= 800 && x <= 900)
+            else if (i >= 800 && i <= 900)
             {
                 led.exp2.Text = "8";
             }
-            else if (x >= 900 && x <= 1000)
+            else if (i >= 900 && i <= 1000)
             {
                 led.exp2.Text = "9";
+            }
+            else if (i > 1000)
+            {
+                led.exp2.Text = "10";
             }
 
             string exp3 = File.ReadAllText("exp3.txt");
@@ -209,25 +217,30 @@ namespace Tutoring_Project
             {
                 led.exp3.Text = "4";
             }
-            else if (x >= 500 && x <= 600)
+            else if (ii >= 500 && ii <= 600)
             {
                 led.exp3.Text = "5";
             }
-            else if (x >= 600 && x <= 700)
+            else if (ii >= 600 && ii <= 700)
             {
                 led.exp3.Text = "6";
             }
-            else if (x >= 700 && x <= 800)
+            else if (ii >= 700 && ii <= 800)
             {
                 led.exp3.Text = "7";
             }
-            else if (x >= 800 && x <= 900)
+            else if (ii >= 800 && ii <= 900)
             {
                 led.exp3.Text = "8";
             }
-            else if (x >= 900 && x <= 1000)
+
+            else if (ii >= 900 && ii <= 1000)
             {
                 led.exp3.Text = "9";
+            }
+            else if (ii > 1000)
+            {
+                led.exp3.Text = "10";
             }
 
             string exp4 = File.ReadAllText("exp4.txt");
@@ -252,26 +265,31 @@ namespace Tutoring_Project
             {
                 led.exp4.Text = "4";
             }
-            else if (x >= 500 && x <= 600)
+            else if (h >= 500 && h <= 600)
             {
                 led.exp4.Text = "5";
             }
-            else if (x >= 600 && x <= 700)
+            else if (h >= 600 && h <= 700)
             {
                 led.exp4.Text = "6";
             }
-            else if (x >= 700 && x <= 800)
+            else if (h >= 700 && h <= 800)
             {
                 led.exp4.Text = "7";
             }
-            else if (x >= 800 && x <= 900)
+            else if (h >= 800 && h <= 900)
             {
                 led.exp4.Text = "8";
             }
-            else if (x >= 900 && x <= 1000)
+            else if (h >= 900 && h <= 1000)
             {
                 led.exp4.Text = "9";
             }
+            else if (h > 1000)
+            {
+                led.exp3.Text = "10";
+            }
+
 
             led.ShowDialog();
             this.Close();

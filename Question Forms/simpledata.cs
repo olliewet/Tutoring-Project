@@ -18,12 +18,19 @@ namespace Tutoring_Project.Question_Forms
             InitializeComponent();
         }
 
-        int counter;
 
-       
-        
+        #region counters
+        int counter1 = 0;
+        int counter2 = 0;
+        int counter3 = 0;
+        int counter4 = 0;
+        int counter5 = 0;
+        int counter6 = 0;
+        int counter7 = 0;
+        int counter8 = 0;
+        #endregion
 
-             
+
 
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -95,13 +102,13 @@ namespace Tutoring_Project.Question_Forms
 
         private void SimpleQ1(object sender, EventArgs e)
         {
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter1++;
+            if (counter1 >= 3)
             {
                 MessageBox.Show("Namespaces are used within C#, to allow the user to use certain things from the namespace such as variables and methods, used for organisation");
             }
-            else if (counter >= 6)
+            else if (counter1 >= 6)
             {
                 MessageBox.Show("The Tutor has understands you might be struggling with this question, namespaces are used to tell the compiler the user wants to use certains thing from the namespace, there can be lots of different namespaces, each will have different functions");
             }
@@ -137,13 +144,13 @@ namespace Tutoring_Project.Question_Forms
 
         private void SimpleQ2_btn(object sender, EventArgs e)
         {
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter2++;
+            if (counter2 >= 3)
             {
                 MessageBox.Show("Classes are the main part of OO Programming, Classes act like a container to hold code.");  
             }
-            else if (counter >= 6)
+            else if (counter2 >= 6)
             {
                 MessageBox.Show("This Question has been attempted more than 6 times, it seems like you might be having trouble, classes are used with OO programming and main purpose is to hold code, it helps with the organisation of things.");
             }
@@ -183,16 +190,17 @@ namespace Tutoring_Project.Question_Forms
         private void SimpleQ3_btn(object sender, EventArgs e)
         {
             
-            counter = 0; 
-            counter++;
-            if (counter >= 3 )
+            
+            counter3++;
+            if (counter3 >= 3 )
             {
                 MessageBox.Show("Remember What we previously Covered, these three keywords are required otherwise the program will not compile and erros will be thrown, go back to the previous page if help is needed."); //Add Hit 
             } 
-            else if ( counter >= 5)
+            else if ( counter3 >= 5)
             {
                 MessageBox.Show("Remember that some of the keywords are lower cased such as static and void, however main is used with a captial!");
             }
+
 
             if (textBox1.Text.Equals("static") && textBox2.Text.Equals("void") && textBox3.Text.Equals("Main()")) 
             {
@@ -298,9 +306,9 @@ namespace Tutoring_Project.Question_Forms
 
         private void SimpleQ4_btn(object sender, EventArgs e)
         {
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter4++;
+            if (counter4 >= 3)
             {
                 MessageBox.Show("Braces are used within coding to define a block and without them errors are thrown by the compiler!"); 
             }
@@ -353,12 +361,12 @@ namespace Tutoring_Project.Question_Forms
         private void Button11_Click(object sender, EventArgs e)
         {
             string text;
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter5++;
+            if (counter5 >= 3)
             {
                 MessageBox.Show("Look at how the variables are declared in the programming example"); //Add Hit 
-            } else if (counter >= 6)
+            } else if (counter5 >= 6)
             {
                 MessageBox.Show("It seems like this question is causing trouble, remember if the keyword you are using is supposed to have the first letter in captial, also make sure the variable names are spelt correctly");//Add more text
             }
@@ -455,9 +463,9 @@ namespace Tutoring_Project.Question_Forms
         private void Button23_Click(object sender, EventArgs e)
         {
             string text;
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+           
+            counter6++;
+            if (counter6 >= 3)
             {
                 MessageBox.Show("Look at how the variables are declared in the programming example, make sure the variables are spelt correctly!"); 
             }
@@ -554,10 +562,9 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button33_Click(object sender, EventArgs e)
         {
-            
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+                        
+            counter7++;
+            if (counter7 >= 3)
             {
                 MessageBox.Show("The Question is asking about double.Parse, .Parse can be used to parse into different types depending what is infornt of the .Parse!");
             }
@@ -641,13 +648,13 @@ namespace Tutoring_Project.Question_Forms
         private void Button43_Click(object sender, EventArgs e)
         {
             string text;
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter8++;
+            if (counter8 >= 3)
             {
                 MessageBox.Show("Look at how the variables are declared in the programming example, make sure the variables are spelt correctly!"); 
             }
-            else if (counter >= 6)
+            else if (counter8 >= 6)
             {
                 MessageBox.Show("It seems like this question is causing trouble, refer back to previous pages for extra help!");//Add more text
             }

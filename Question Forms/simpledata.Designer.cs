@@ -402,7 +402,7 @@
             // 
             this.panel4.Location = new System.Drawing.Point(-4, 52);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(907, 12);
+            this.panel4.Size = new System.Drawing.Size(907, 15);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
@@ -1661,6 +1661,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(804, 396);
             this.tabControl1.TabIndex = 4;
+            this.tabControl1.TabStop = false;
             // 
             // tabPage17
             // 

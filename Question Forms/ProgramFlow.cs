@@ -17,7 +17,16 @@ namespace Tutoring_Project.Question_Forms
             InitializeComponent();
         }
 
-        int counter;
+        #region counters
+        int counter1 = 0;
+        int counter2 = 0;
+        int counter3 = 0;
+        int counter4 = 0;
+        int counter5 = 0;
+        int counter6 = 0;
+        int counter7 = 0;
+        int counter8 = 0;
+        #endregion
 
         private void MessageBoxIf ()
         {
@@ -113,9 +122,9 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button14_Click(object sender, EventArgs e)
         {
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter1++;
+            if (counter1 >= 3)
             {
                 MessageBox.Show("HINT HINT HINT HINT");
             }
@@ -152,13 +161,13 @@ namespace Tutoring_Project.Question_Forms
         private void Button15_Click(object sender, EventArgs e)
         {
             string text;
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter2++;
+            if (counter2 >= 3)
             {
                 MessageBox.Show("HINT HINT HINT HINT HINT"); //Add Hit 
             }
-            else if (counter >= 6)
+            else if (counter2 >= 6)
             {
                 MessageBox.Show("HINT HINT HINT HINT HINT");
             }
@@ -246,9 +255,9 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button17_Click(object sender, EventArgs e)
         {
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter3++;
+            if (counter3 >= 3)
             {
                 MessageBox.Show("HINT HINT HINT HINT");
             }
@@ -300,13 +309,13 @@ namespace Tutoring_Project.Question_Forms
         private void Button21_Click(object sender, EventArgs e)
         {
             string text;
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter4++;
+            if (counter4 >= 3)
             {
                 MessageBox.Show("HINT HINT HINT HINT HINT"); //Add Hit 
             }
-            else if (counter >= 6)
+            else if (counter4  >= 6)
             {
                 MessageBox.Show("HINT HINT HINT HINT HINT");
             }
@@ -374,13 +383,13 @@ namespace Tutoring_Project.Question_Forms
         private void Button27_Click(object sender, EventArgs e)
         {
             string text;
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter5++;
+            if (counter5 >= 3)
             {
                 MessageBox.Show("HINT HINT HINT HINT HINT"); //Add Hit 
             }
-            else if (counter >= 6)
+            else if (counter5 >= 6)
             {
                 MessageBox.Show("HINT HINT HINT HINT HINT");
             }
@@ -517,6 +526,11 @@ namespace Tutoring_Project.Question_Forms
             }
             this.Close();
             T.ShowDialog();
+        }
+
+        private void ProgramFlow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

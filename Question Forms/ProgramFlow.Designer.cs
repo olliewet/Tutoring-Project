@@ -695,6 +695,7 @@
             this.textBox3.Location = new System.Drawing.Point(3, 54);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(623, 65);
             this.textBox3.TabIndex = 91;
             // 
@@ -1218,6 +1219,7 @@
             this.tb_4.Location = new System.Drawing.Point(6, 71);
             this.tb_4.Multiline = true;
             this.tb_4.Name = "tb_4";
+            this.tb_4.ReadOnly = true;
             this.tb_4.Size = new System.Drawing.Size(623, 65);
             this.tb_4.TabIndex = 29;
             // 
@@ -1560,11 +1562,12 @@
             this.tabControl1.Controls.Add(this.tabPage15);
             this.tabControl1.Controls.Add(this.tabPage16);
             this.tabControl1.Controls.Add(this.tabPage18);
-            this.tabControl1.Location = new System.Drawing.Point(0, 81);
+            this.tabControl1.Location = new System.Drawing.Point(0, 82);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(800, 387);
             this.tabControl1.TabIndex = 24;
+            this.tabControl1.TabStop = false;
             // 
             // panel2
             // 
@@ -1586,6 +1589,7 @@
             this.Controls.Add(this.exit);
             this.Name = "ProgramFlow";
             this.Text = "ProgramFlow";
+            this.Load += new System.EventHandler(this.ProgramFlow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();

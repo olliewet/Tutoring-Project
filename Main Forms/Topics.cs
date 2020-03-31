@@ -596,8 +596,8 @@ namespace Tutoring_Project
             else if ((string)this.pictureBox1.Tag == "user4")
             {
                 //The picture box of current instance is set to image of current user 
-                I.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
-                I.pictureBox1.Tag = "user4";
+                PF.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                PF.pictureBox1.Tag = "user4";
                 // Data from text file (users level) is parsed into int and stored within variable  
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);

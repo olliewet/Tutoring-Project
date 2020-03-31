@@ -17,6 +17,16 @@ namespace Tutoring_Project
             InitializeComponent();
             
         }
+        #region counters
+        int counter1 = 0;
+        int counter2 = 0;
+        int counter3 = 0;
+        int counter4 = 0;
+        int counter5 = 0;
+        int counter6 = 0;
+        int counter7 = 0;
+        int counter8 = 0;
+        #endregion
 
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -30,7 +40,6 @@ namespace Tutoring_Project
                 Application.Exit();
             }
         }
-        int counter;
         private void ChangeUser()
         {
             if ((string)this.pictureBox1.Tag == "user1")
@@ -132,13 +141,13 @@ namespace Tutoring_Project
         private void Button29_Click(object sender, EventArgs e)
         {
            
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter1++;
+            if (counter1 >= 3)
             {
                 MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
             }
-            else if (counter >= 5)
+            else if (counter1 >= 5)
             {
                 MessageBox.Show("HINT HINT HINT HINT");
             }

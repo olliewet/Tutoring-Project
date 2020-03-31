@@ -17,8 +17,15 @@ namespace Tutoring_Project.Question_Forms
             InitializeComponent();
         }
 
-        #region Variables 
-        int counter;
+        #region counters
+        int counter1 = 0;
+        int counter2 = 0;
+        int counter3 = 0;
+        int counter4 = 0;
+        int counter5 = 0;
+        int counter6 = 0;
+        int counter7 = 0;
+        int counter8 = 0;
         #endregion
 
         private void Topics_btn_Click(object sender, EventArgs e)
@@ -148,14 +155,13 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button11_Click(object sender, EventArgs e)
         {           
-            string text;
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            string text;       
+            counter1++;
+            if (counter1 >= 3)
             {
                 MessageBox.Show("Remember the structure of an assigenment statement, remember the difference = and ==, the single = should be used in this instance"); //Add Hit 
             }
-            else if (counter >= 6)
+            else if (counter1 >= 6)
             {
                 MessageBox.Show("Example of an assigenment statement Double PreciseNumberOfDrinks = 5.1 ; ");
             }
@@ -217,9 +223,9 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button17_Click(object sender, EventArgs e)
         {
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+            
+            counter2++;
+            if (counter2 >= 3)
             {
                 MessageBox.Show("The Question is asking about double.Parse, .Parse can be used to parse into different types depending what is infornt of the .Parse!");
             }
@@ -310,19 +316,26 @@ namespace Tutoring_Project.Question_Forms
 
         private void Button29_Click(object sender, EventArgs e)
         {
-            counter = 0;
-            counter++;
-            if (counter >= 3)
+           
+            counter3++;
+            if (counter3 >= 3)
             {
                 MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
             }
-            else if (counter >= 5)
+            else if (counter3 >= 5)
             {
                 MessageBox.Show("HINT HINT HINT HINT");
             }
 
-            if (textBox3.Text.Equals("double") && textBox4.Text.Equals("string") && textBox1.Text.Equals("Console.ReadLine();") && textBox2.Text.Equals("Console.WriteLine"))
-            {
+            string A1 = answer1.SelectedItem.ToString();
+            string A2 = answer2.SelectedItem.ToString();
+            string A3 = answer3.SelectedItem.ToString();
+            string A4 = answer4.SelectedItem.ToString();
+
+           
+
+            if (A1.Equals("double") && A2.Equals("string") && A3.Equals("Console.ReadLine();") && A4.Equals("Console.WriteLine"))
+            {                
                 MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(13);
                 if ((string)this.pictureBox1.Tag == "user1")
