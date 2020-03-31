@@ -931,7 +931,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(22, 161);
+            this.radioButton4.Location = new System.Drawing.Point(9, 128);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(114, 17);
             this.radioButton4.TabIndex = 51;
@@ -961,7 +961,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(22, 92);
+            this.radioButton1.Location = new System.Drawing.Point(9, 59);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(82, 17);
             this.radioButton1.TabIndex = 48;
@@ -971,7 +971,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(22, 138);
+            this.radioButton2.Location = new System.Drawing.Point(9, 105);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(59, 17);
             this.radioButton2.TabIndex = 47;
@@ -981,7 +981,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(22, 115);
+            this.radioButton3.Location = new System.Drawing.Point(9, 82);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(108, 17);
             this.radioButton3.TabIndex = 46;
@@ -991,12 +991,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 63);
+            this.label4.Location = new System.Drawing.Point(6, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(288, 26);
+            this.label4.Size = new System.Drawing.Size(234, 26);
             this.label4.TabIndex = 44;
-            this.label4.Text = "What will be printed to the console in the code to the right? \r\nPlease select the" +
-    " correct answer";
+            this.label4.Text = "What will be the outcome of the following code?\r\nPlease select the correct answer" +
+    "";
             // 
             // tabPage6
             // 
@@ -1573,7 +1573,7 @@
             // 
             this.panel2.Location = new System.Drawing.Point(-17, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(890, 10);
+            this.panel2.Size = new System.Drawing.Size(890, 48);
             this.panel2.TabIndex = 40;
             // 
             // ProgramFlow

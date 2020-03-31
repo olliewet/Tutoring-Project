@@ -166,7 +166,8 @@ namespace Tutoring_Project.Question_Forms
                 MessageBox.Show("Example of an assigenment statement Double PreciseNumberOfDrinks = 5.1 ; ");
             }
             text = tb_4.Text;
-            if (text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("int") && text.Contains("numberOfDrinks") && text.Contains("=") && text.Contains("5;"))
+            text = text.ToLower();
+            if (text.Contains("int") && text.Contains("numberofdrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("int") && text.Contains("numberofdrinks") && text.Contains("=") && text.Contains("5;"))
             {
                 MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(7);

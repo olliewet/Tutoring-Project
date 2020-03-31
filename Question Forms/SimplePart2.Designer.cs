@@ -30,15 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimplePart2));
             this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.answer4 = new System.Windows.Forms.ComboBox();
+            this.answer3 = new System.Windows.Forms.ComboBox();
+            this.answer2 = new System.Windows.Forms.ComboBox();
+            this.answer1 = new System.Windows.Forms.ComboBox();
             this.button25 = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.button29 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -139,10 +135,6 @@
             this.exit = new System.Windows.Forms.Button();
             this.topics_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.answer1 = new System.Windows.Forms.ComboBox();
-            this.answer2 = new System.Windows.Forms.ComboBox();
-            this.answer3 = new System.Windows.Forms.ComboBox();
-            this.answer4 = new System.Windows.Forms.ComboBox();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage13.SuspendLayout();
@@ -173,14 +165,6 @@
             this.tabPage14.Controls.Add(this.answer2);
             this.tabPage14.Controls.Add(this.answer1);
             this.tabPage14.Controls.Add(this.button25);
-            this.tabPage14.Controls.Add(this.label28);
-            this.tabPage14.Controls.Add(this.label27);
-            this.tabPage14.Controls.Add(this.label26);
-            this.tabPage14.Controls.Add(this.label25);
-            this.tabPage14.Controls.Add(this.label23);
-            this.tabPage14.Controls.Add(this.label22);
-            this.tabPage14.Controls.Add(this.label21);
-            this.tabPage14.Controls.Add(this.label18);
             this.tabPage14.Controls.Add(this.button29);
             this.tabPage14.Controls.Add(this.label20);
             this.tabPage14.Controls.Add(this.pictureBox5);
@@ -192,6 +176,70 @@
             this.tabPage14.Text = "Q4";
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
+            // answer4
+            // 
+            this.answer4.FormattingEnabled = true;
+            this.answer4.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "double",
+            "integer",
+            "Console.ReadLine();",
+            "string",
+            "if",
+            "else"});
+            this.answer4.Location = new System.Drawing.Point(83, 255);
+            this.answer4.Name = "answer4";
+            this.answer4.Size = new System.Drawing.Size(157, 21);
+            this.answer4.TabIndex = 67;
+            // 
+            // answer3
+            // 
+            this.answer3.FormattingEnabled = true;
+            this.answer3.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "double",
+            "integer",
+            "Console.ReadLine();",
+            "string",
+            "if",
+            "else"});
+            this.answer3.Location = new System.Drawing.Point(224, 173);
+            this.answer3.Name = "answer3";
+            this.answer3.Size = new System.Drawing.Size(174, 21);
+            this.answer3.TabIndex = 66;
+            // 
+            // answer2
+            // 
+            this.answer2.FormattingEnabled = true;
+            this.answer2.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "double",
+            "integer",
+            "Console.ReadLine();",
+            "string",
+            "if",
+            "else"});
+            this.answer2.Location = new System.Drawing.Point(83, 123);
+            this.answer2.Name = "answer2";
+            this.answer2.Size = new System.Drawing.Size(81, 21);
+            this.answer2.TabIndex = 65;
+            // 
+            // answer1
+            // 
+            this.answer1.FormattingEnabled = true;
+            this.answer1.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "double",
+            "integer",
+            "Console.ReadLine();",
+            "string",
+            "if",
+            "else"});
+            this.answer1.Location = new System.Drawing.Point(83, 105);
+            this.answer1.Name = "answer1";
+            this.answer1.Size = new System.Drawing.Size(81, 21);
+            this.answer1.TabIndex = 64;
+            // 
             // button25
             // 
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -202,78 +250,6 @@
             this.button25.Text = "Previous";
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.Button25_Click_1);
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(11, 168);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(32, 13);
-            this.label28.TabIndex = 62;
-            this.label28.Text = "- else";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(11, 155);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(18, 13);
-            this.label27.TabIndex = 61;
-            this.label27.Text = "- if";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(11, 142);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 13);
-            this.label26.TabIndex = 60;
-            this.label26.Text = "- string";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(11, 129);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(109, 13);
-            this.label25.TabIndex = 59;
-            this.label25.Text = "- Console.ReadLine();";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(11, 116);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(45, 13);
-            this.label23.TabIndex = 58;
-            this.label23.Text = "- integer";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(11, 90);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(99, 13);
-            this.label22.TabIndex = 57;
-            this.label22.Text = "- Console.WriteLine";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(11, 103);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(45, 13);
-            this.label21.TabIndex = 56;
-            this.label21.Text = "- double";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(11, 77);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 13);
-            this.label18.TabIndex = 55;
-            this.label18.Text = "Provided Words";
             // 
             // button29
             // 
@@ -299,7 +275,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Tutoring_Project.Properties.Resources.code_example_no_text;
-            this.pictureBox5.Location = new System.Drawing.Point(144, 57);
+            this.pictureBox5.Location = new System.Drawing.Point(9, 45);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(560, 287);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1466,70 +1442,6 @@
             this.panel2.Size = new System.Drawing.Size(890, 10);
             this.panel2.TabIndex = 41;
             // 
-            // answer1
-            // 
-            this.answer1.FormattingEnabled = true;
-            this.answer1.Items.AddRange(new object[] {
-            "Console.WriteLine",
-            "double",
-            "integer",
-            "Console.ReadLine();",
-            "string",
-            "if",
-            "else"});
-            this.answer1.Location = new System.Drawing.Point(214, 113);
-            this.answer1.Name = "answer1";
-            this.answer1.Size = new System.Drawing.Size(81, 21);
-            this.answer1.TabIndex = 64;
-            // 
-            // answer2
-            // 
-            this.answer2.FormattingEnabled = true;
-            this.answer2.Items.AddRange(new object[] {
-            "Console.WriteLine",
-            "double",
-            "integer",
-            "Console.ReadLine();",
-            "string",
-            "if",
-            "else"});
-            this.answer2.Location = new System.Drawing.Point(214, 134);
-            this.answer2.Name = "answer2";
-            this.answer2.Size = new System.Drawing.Size(81, 21);
-            this.answer2.TabIndex = 65;
-            // 
-            // answer3
-            // 
-            this.answer3.FormattingEnabled = true;
-            this.answer3.Items.AddRange(new object[] {
-            "Console.WriteLine",
-            "double",
-            "integer",
-            "Console.ReadLine();",
-            "string",
-            "if",
-            "else"});
-            this.answer3.Location = new System.Drawing.Point(352, 188);
-            this.answer3.Name = "answer3";
-            this.answer3.Size = new System.Drawing.Size(157, 21);
-            this.answer3.TabIndex = 66;
-            // 
-            // answer4
-            // 
-            this.answer4.FormattingEnabled = true;
-            this.answer4.Items.AddRange(new object[] {
-            "Console.WriteLine",
-            "double",
-            "integer",
-            "Console.ReadLine();",
-            "string",
-            "if",
-            "else"});
-            this.answer4.Location = new System.Drawing.Point(224, 269);
-            this.answer4.Name = "answer4";
-            this.answer4.Size = new System.Drawing.Size(157, 21);
-            this.answer4.TabIndex = 67;
-            // 
             // SimplePart2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1679,14 +1591,6 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button finish_btn;

@@ -201,8 +201,21 @@ namespace Tutoring_Project.Question_Forms
                 MessageBox.Show("Remember that some of the keywords are lower cased such as static and void, however main is used with a captial!");
             }
 
+            string answer1;
+            string answer2;
+            string answer3;
 
-            if (textBox1.Text.Equals("static") && textBox2.Text.Equals("void") && textBox3.Text.Equals("Main()")) 
+            
+            answer1 = textBox1.Text;
+            answer1 = answer1.ToLower();
+
+            answer2 = textBox2.Text;
+            answer2 = answer2.ToLower();
+
+            answer3 = textBox3.Text;
+            answer3 = answer3.ToLower();
+
+            if (answer1.Equals("static") && answer2.Equals("void") && answer3.Equals("main()")) 
             {
                 tabControl1.SelectTab(6);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -370,8 +383,10 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("It seems like this question is causing trouble, remember if the keyword you are using is supposed to have the first letter in captial, also make sure the variable names are spelt correctly");//Add more text
             }
-                text = tb_4.Text;
-            if (text.Contains("int") && text.Contains("Num1") && text.Contains(",") && text.Contains("Num2") && text.Contains(";") && text.Contains("String") && text.Contains("String1") && text.Contains(",") && text.Contains("String2") && text.Contains(";"))         
+
+            text = tb_4.Text;
+            text = text.ToLower();
+            if (text.Contains("int") && text.Contains("num1") && text.Contains(",") && text.Contains("num2") && text.Contains(";") && text.Contains("string") && text.Contains("string1") && text.Contains(",") && text.Contains("string2") && text.Contains(";"))         
                 {
                 MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(11);
@@ -471,7 +486,8 @@ namespace Tutoring_Project.Question_Forms
             }
             
             text = textBox4.Text;
-            if (text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console") && text.Contains(".") && text.Contains("readLine") && text.Contains("()") && text.Contains(";") | text.Contains("string") && text.Contains("ExampleString") && text.Contains(";") && text.Contains("ExampleString") && text.Contains("=") && text.Contains("Console.readLine();"))
+            text = text.ToLower();
+            if (text.Contains("string") && text.Contains("examplestring") && text.Contains(";") && text.Contains("examplestring") && text.Contains("=") && text.Contains("console") && text.Contains(".") && text.Contains("readline") && text.Contains("()") && text.Contains(";") | text.Contains("string") && text.Contains("examplestring") && text.Contains(";") && text.Contains("examplestring") && text.Contains("=") && text.Contains("console.readline();"))
             {
                 tabControl1.SelectTab(17);
                 if ((string)this.pictureBox1.Tag == "user1")
@@ -658,8 +674,9 @@ namespace Tutoring_Project.Question_Forms
             {
                 MessageBox.Show("It seems like this question is causing trouble, refer back to previous pages for extra help!");//Add more text
             }
-            text = textBox5.Text;            
-            if (text.Contains("Console.WriteLine") && text.Contains("(num1 + num2)") | (text.Contains("Console.WriteLine") && text.Contains(" ( num1 + num2 ) ")))
+            text = textBox5.Text;
+            text = text.ToLower();
+            if (text.Contains("console.writeline") && text.Contains("(num1 + num2)") | (text.Contains("console.writeline") && text.Contains(" ( num1 + num2 ) ")))
             {
                 tabControl1.SelectTab(27);
                 if ((string)this.pictureBox1.Tag == "user1")

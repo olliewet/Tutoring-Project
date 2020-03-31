@@ -17,17 +17,10 @@ namespace Tutoring_Project
             InitializeComponent();
             
         }
-        #region counters
+       
         int counter1 = 0;
-        int counter2 = 0;
-        int counter3 = 0;
-        int counter4 = 0;
-        int counter5 = 0;
-        int counter6 = 0;
-        int counter7 = 0;
-        int counter8 = 0;
-        #endregion
-
+     
+     
         private void Exit_Click(object sender, EventArgs e)
         {
             const string message = "Are you sure you want to exit?";
@@ -86,7 +79,7 @@ namespace Tutoring_Project
 
         private void ShowCode_btn(object sender, EventArgs e)
         {
-            MessageBox.Show("int fred; float jim;  chat 29yesitsme;  Tip look at what the variable starts with! ");
+            MessageBox.Show("int fred;" + "\n" + "float jim;" + "\n" + "chat 29yesitsme;" + "\n" + "Tip look at what the variable starts with!");
         }
 
         private void Con_btn1_Click(object sender, EventArgs e)
@@ -101,7 +94,7 @@ namespace Tutoring_Project
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("An expression is something which can be evaluated to produce a result. We can then use the result as we like in our program. Expressions can be as simple as a single value and as complex as a large calculation. They are made up of two things, operators and operands.");
+            MessageBox.Show("An expression is something which can be evaluated to produce a result. We can then use the result as we like in our program. " + "\n"+ "Expressions can be as simple as a single value and as complex as a large calculation. They are made up of two things, operators and operands.");
         }
 
         private void Button5_Click(object sender, EventArgs e)
@@ -140,8 +133,7 @@ namespace Tutoring_Project
 
         private void Button29_Click(object sender, EventArgs e)
         {
-           
-            
+                     
             counter1++;
             if (counter1 >= 3)
             {
@@ -152,9 +144,13 @@ namespace Tutoring_Project
                 MessageBox.Show("HINT HINT HINT HINT");
             }
 
-            if (tb1.Text.Equals("int Num1;") && tb2.Text.Equals("Num1 = 10;") && tb3.Text.Equals("Num3 = Num1 * Num2;"))
-            {
-                
+
+            string AA1 = A1.SelectedItem.ToString();
+            string AA2 = A2.SelectedItem.ToString();
+            string AA3 = A3.SelectedItem.ToString();
+   
+            if (AA1.Equals("int Num1;") && AA2.Equals("Num1 = 10;") && AA3.Equals("Num3 = Num1 * Num2;"))
+               {               
                 tabControl1.SelectTab(6);
                 if ((string)this.pictureBox1.Tag == "user1")
                 {

@@ -255,6 +255,7 @@
             this.finish_btn = new System.Windows.Forms.Button();
             this.richTextBox35 = new System.Windows.Forms.RichTextBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage16.SuspendLayout();
@@ -1139,6 +1140,7 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.label41);
             this.tabPage6.Controls.Add(this.textBox3);
             this.tabPage6.Controls.Add(this.textBox2);
             this.tabPage6.Controls.Add(this.textBox1);
@@ -1157,7 +1159,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(205, 54);
+            this.textBox3.Location = new System.Drawing.Point(243, 75);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(72, 20);
             this.textBox3.TabIndex = 22;
@@ -1166,7 +1168,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(135, 54);
+            this.textBox2.Location = new System.Drawing.Point(173, 75);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(64, 20);
             this.textBox2.TabIndex = 21;
@@ -1175,7 +1177,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(70, 54);
+            this.textBox1.Location = new System.Drawing.Point(108, 75);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(59, 20);
             this.textBox1.TabIndex = 20;
@@ -1204,9 +1206,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Tutoring_Project.Properties.Resources.code_example_no_text;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 15);
+            this.pictureBox4.Location = new System.Drawing.Point(9, 34);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(650, 314);
+            this.pictureBox4.Size = new System.Drawing.Size(533, 295);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
@@ -2940,6 +2942,15 @@
             this.label32.TabIndex = 7;
             this.label32.Text = "Part 1  of Simple Date Processing For The C# Tutoring System";
             // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(6, 14);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(346, 13);
+            this.label41.TabIndex = 23;
+            this.label41.Text = "Please fill in the missing blanks below to complete the following program!";
+            // 
             // simpledata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3280,5 +3291,6 @@
         private System.Windows.Forms.Button finish_btn;
         private System.Windows.Forms.RichTextBox richTextBox35;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label41;
     }
 }

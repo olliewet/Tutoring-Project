@@ -42,7 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -57,21 +56,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.A3 = new System.Windows.Forms.ComboBox();
+            this.A2 = new System.Windows.Forms.ComboBox();
+            this.A1 = new System.Windows.Forms.ComboBox();
             this.button29 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tb2 = new System.Windows.Forms.TextBox();
-            this.tb1 = new System.Windows.Forms.TextBox();
-            this.tb3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.richTextBox9 = new System.Windows.Forms.RichTextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -122,7 +110,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(831, 371);
+            this.tabPage1.Size = new System.Drawing.Size(831, 365);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ID";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -184,7 +172,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(831, 371);
+            this.tabPage2.Size = new System.Drawing.Size(831, 365);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Val";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -247,7 +235,6 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.button5);
             this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Controls.Add(this.button3);
@@ -258,15 +245,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Exp/Op";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(317, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 13);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "//Changes these buttons into images";
             // 
             // button5
             // 
@@ -311,7 +289,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(831, 371);
+            this.tabPage4.Size = new System.Drawing.Size(831, 365);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Operators";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -381,7 +359,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(831, 371);
+            this.tabPage5.Size = new System.Drawing.Size(831, 365);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "list of operators";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -419,31 +397,77 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.A3);
+            this.tabPage6.Controls.Add(this.A2);
+            this.tabPage6.Controls.Add(this.A1);
             this.tabPage6.Controls.Add(this.button29);
-            this.tabPage6.Controls.Add(this.label8);
-            this.tabPage6.Controls.Add(this.label7);
-            this.tabPage6.Controls.Add(this.tb2);
-            this.tabPage6.Controls.Add(this.tb1);
-            this.tabPage6.Controls.Add(this.tb3);
-            this.tabPage6.Controls.Add(this.label6);
-            this.tabPage6.Controls.Add(this.label28);
-            this.tabPage6.Controls.Add(this.label27);
-            this.tabPage6.Controls.Add(this.label26);
-            this.tabPage6.Controls.Add(this.label25);
-            this.tabPage6.Controls.Add(this.label23);
-            this.tabPage6.Controls.Add(this.label22);
-            this.tabPage6.Controls.Add(this.label21);
-            this.tabPage6.Controls.Add(this.label18);
             this.tabPage6.Controls.Add(this.pictureBox4);
             this.tabPage6.Controls.Add(this.richTextBox9);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(831, 371);
+            this.tabPage6.Size = new System.Drawing.Size(831, 365);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Q1";
             this.tabPage6.UseVisualStyleBackColor = true;
             this.tabPage6.Click += new System.EventHandler(this.TabPage6_Click);
+            // 
+            // A3
+            // 
+            this.A3.FormattingEnabled = true;
+            this.A3.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "int Num1;",
+            "integer",
+            "Num1 = 10;",
+            "if",
+            "else",
+            "Num5 = 10;",
+            "string",
+            "Num3 = Num1 * Num2;",
+            "Num10 = String1 * Num2;"});
+            this.A3.Location = new System.Drawing.Point(336, 268);
+            this.A3.Name = "A3";
+            this.A3.Size = new System.Drawing.Size(174, 21);
+            this.A3.TabIndex = 82;
+            // 
+            // A2
+            // 
+            this.A2.FormattingEnabled = true;
+            this.A2.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "int Num1;",
+            "integer",
+            "Num1 = 10;",
+            "if",
+            "else",
+            "Num5 = 10;",
+            "string",
+            "Num3 = Num1 * Num2;",
+            "Num10 = String1 * Num2;"});
+            this.A2.Location = new System.Drawing.Point(336, 211);
+            this.A2.Name = "A2";
+            this.A2.Size = new System.Drawing.Size(121, 21);
+            this.A2.TabIndex = 81;
+            // 
+            // A1
+            // 
+            this.A1.FormattingEnabled = true;
+            this.A1.Items.AddRange(new object[] {
+            "Console.WriteLine",
+            "int Num1;",
+            "integer",
+            "Num1 = 10;",
+            "if",
+            "else",
+            "Num5 = 10;",
+            "string",
+            "Num3 = Num1 * Num2;",
+            "Num10 = String1 * Num2;"});
+            this.A1.Location = new System.Drawing.Point(336, 131);
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(121, 21);
+            this.A1.TabIndex = 80;
             // 
             // button29
             // 
@@ -455,132 +479,6 @@
             this.button29.Text = "Continue ";
             this.button29.UseVisualStyleBackColor = true;
             this.button29.Click += new System.EventHandler(this.Button29_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 202);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(133, 13);
-            this.label8.TabIndex = 77;
-            this.label8.Text = "- Num10 = String1 * Num2;";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 189);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 13);
-            this.label7.TabIndex = 76;
-            this.label7.Text = "- Num3 = Num1 * Num2;";
-            // 
-            // tb2
-            // 
-            this.tb2.BackColor = System.Drawing.Color.White;
-            this.tb2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb2.Location = new System.Drawing.Point(336, 209);
-            this.tb2.Name = "tb2";
-            this.tb2.Size = new System.Drawing.Size(85, 20);
-            this.tb2.TabIndex = 75;
-            // 
-            // tb1
-            // 
-            this.tb1.BackColor = System.Drawing.Color.White;
-            this.tb1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb1.Location = new System.Drawing.Point(336, 132);
-            this.tb1.Name = "tb1";
-            this.tb1.Size = new System.Drawing.Size(73, 20);
-            this.tb1.TabIndex = 74;
-            // 
-            // tb3
-            // 
-            this.tb3.BackColor = System.Drawing.Color.White;
-            this.tb3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb3.Location = new System.Drawing.Point(336, 269);
-            this.tb3.Name = "tb3";
-            this.tb3.Size = new System.Drawing.Size(169, 20);
-            this.tb3.TabIndex = 72;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 163);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 13);
-            this.label6.TabIndex = 71;
-            this.label6.Text = "- Num5 = 10; ";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(15, 150);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(32, 13);
-            this.label28.TabIndex = 70;
-            this.label28.Text = "- else";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(15, 139);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(18, 13);
-            this.label27.TabIndex = 69;
-            this.label27.Text = "- if";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(15, 176);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 13);
-            this.label26.TabIndex = 68;
-            this.label26.Text = "- string";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(15, 126);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(71, 13);
-            this.label25.TabIndex = 67;
-            this.label25.Text = "- Num1 = 10; ";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(15, 113);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(45, 13);
-            this.label23.TabIndex = 66;
-            this.label23.Text = "- integer";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(15, 87);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(99, 13);
-            this.label22.TabIndex = 65;
-            this.label22.Text = "- Console.WriteLine";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(15, 100);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(58, 13);
-            this.label21.TabIndex = 64;
-            this.label21.Text = "- int Num1;";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(15, 74);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 13);
-            this.label18.TabIndex = 63;
-            this.label18.Text = "Provided Words";
             // 
             // pictureBox4
             // 
@@ -602,9 +500,9 @@
             this.richTextBox9.ReadOnly = true;
             this.richTextBox9.Size = new System.Drawing.Size(764, 42);
             this.richTextBox9.TabIndex = 29;
-            this.richTextBox9.Text = "Question - Finish the code that is provided below using the provided words and ph" +
-    "ases, the finished bit of code must be assigning the value of Num1 * Num2 to var" +
-    "iable Num3 ";
+            this.richTextBox9.Text = "Question - Finish the code that is provided below using the drop down menu of eac" +
+    "h box, the finished bit of code must be assigning the value of Num1 * Num2 to va" +
+    "riable Num3 ";
             // 
             // tabPage7
             // 
@@ -615,7 +513,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(831, 371);
+            this.tabPage7.Size = new System.Drawing.Size(831, 365);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "FinishSection";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -713,7 +611,7 @@
             // 
             this.panel2.Location = new System.Drawing.Point(-33, 64);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(890, 45);
+            this.panel2.Size = new System.Drawing.Size(890, 17);
             this.panel2.TabIndex = 41;
             // 
             // Identifiers
@@ -737,14 +635,12 @@
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -773,7 +669,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label4;
@@ -787,20 +682,6 @@
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.RichTextBox richTextBox9;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tb2;
-        private System.Windows.Forms.TextBox tb1;
-        private System.Windows.Forms.TextBox tb3;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -808,5 +689,8 @@
         private System.Windows.Forms.Button finish_btn;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox A3;
+        private System.Windows.Forms.ComboBox A2;
+        private System.Windows.Forms.ComboBox A1;
     }
 }
