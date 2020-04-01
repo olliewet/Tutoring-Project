@@ -26,6 +26,7 @@ namespace Tutoring_Project
         Identifiers I = new Identifiers();
         Question_Forms.ProgramFlow PF = new Question_Forms.ProgramFlow();
         EndGame E = new EndGame();
+        Question_Forms.Interactive_Code In = new Question_Forms.Interactive_Code();
         #endregion
 
         public Topics()
@@ -71,6 +72,12 @@ namespace Tutoring_Project
         private void ChangeTabEnd()
         {            
             E.ShowDialog();
+            this.Close();
+        }
+
+        private void inte()
+        {
+            In.ShowDialog();
             this.Close();
         }
         #endregion
@@ -972,6 +979,11 @@ namespace Tutoring_Project
         private void Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+            inte();
         }
     }
 }

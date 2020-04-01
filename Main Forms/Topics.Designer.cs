@@ -76,6 +76,7 @@
             this.Introduction = new System.Windows.Forms.Button();
             this.user_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -490,6 +491,7 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.button10);
             this.tabPage7.Controls.Add(this.richTextBox7);
             this.tabPage7.Controls.Add(this.label7);
             this.tabPage7.Controls.Add(this.endgame_btn);
@@ -706,6 +708,20 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
+            // button10
+            // 
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button10.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.button10.Image = global::Tutoring_Project.Properties.Resources.play_32px;
+            this.button10.Location = new System.Drawing.Point(458, 235);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(119, 48);
+            this.button10.TabIndex = 18;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
+            // 
             // Topics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -795,5 +811,6 @@
         private System.Windows.Forms.RichTextBox richTextBox7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button button10;
     }
 }

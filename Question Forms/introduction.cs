@@ -18,6 +18,11 @@ namespace Tutoring_Project
             InitializeComponent();
         }
 
+        int counter1;
+        int counter2;
+        int counter3;
+
+
         private void Topics_btn_Click(object sender, EventArgs e)
         {
             if ((string)this.pictureBox1.Tag == "user1")
@@ -85,7 +90,11 @@ namespace Tutoring_Project
 
         private void Question1_btn(object sender, EventArgs e)
         {
-            
+            counter1++;
+            if (counter1 >= 3)
+            {
+                MessageBox.Show("This course covers the language C# and the underlying principles of the programming");
+            }
             if (btn_3.Checked)
             {
                 tabControl1.SelectTab(2);
@@ -123,7 +132,12 @@ namespace Tutoring_Project
 
         private void Question2_btn(object sender, EventArgs e)
         {
-
+            counter1++;
+            if (counter1 >= 3)
+            {
+                MessageBox.Show("The purpose of OO programming is to be able to break code down into sizeable chunks, which allow for easier and more orangissed coding");
+            }
+           
             if (radioButton7.Checked)
             {
                 tabControl1.SelectTab(4);
