@@ -76,6 +76,8 @@
             this.Introduction = new System.Windows.Forms.Button();
             this.user_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -91,6 +93,7 @@
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -260,6 +263,7 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Location = new System.Drawing.Point(212, 59);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -491,7 +495,6 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.button10);
             this.tabPage7.Controls.Add(this.richTextBox7);
             this.tabPage7.Controls.Add(this.label7);
             this.tabPage7.Controls.Add(this.endgame_btn);
@@ -531,7 +534,7 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(212, 56);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(652, 10);
+            this.panel2.Size = new System.Drawing.Size(652, 31);
             this.panel2.TabIndex = 39;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
@@ -562,6 +565,7 @@
             this.panel3.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel3.BackgroundImage = global::Tutoring_Project.Properties.Resources.Background;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.button9);
             this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.button7);
@@ -583,9 +587,9 @@
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(3, 375);
+            this.button9.Location = new System.Drawing.Point(3, 362);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(209, 48);
+            this.button9.Size = new System.Drawing.Size(209, 45);
             this.button9.TabIndex = 37;
             this.button9.Text = "End Game";
             this.button9.UseVisualStyleBackColor = false;
@@ -600,7 +604,7 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(3, 317);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(209, 48);
+            this.button8.Size = new System.Drawing.Size(209, 39);
             this.button8.TabIndex = 36;
             this.button8.Text = "Program Flow";
             this.button8.UseVisualStyleBackColor = false;
@@ -615,7 +619,7 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(0, 272);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(209, 48);
+            this.button7.Size = new System.Drawing.Size(209, 39);
             this.button7.TabIndex = 35;
             this.button7.Text = "Identifiers";
             this.button7.UseVisualStyleBackColor = false;
@@ -630,7 +634,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(0, 230);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(209, 48);
+            this.button6.Size = new System.Drawing.Size(209, 36);
             this.button6.TabIndex = 34;
             this.button6.Text = "Simple Data Processing Part 2";
             this.button6.UseVisualStyleBackColor = false;
@@ -645,7 +649,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(-3, 68);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(209, 48);
+            this.button5.Size = new System.Drawing.Size(209, 38);
             this.button5.TabIndex = 33;
             this.button5.Text = "Tutor Information";
             this.button5.UseVisualStyleBackColor = false;
@@ -660,7 +664,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(1, 176);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(209, 48);
+            this.button4.Size = new System.Drawing.Size(209, 38);
             this.button4.TabIndex = 32;
             this.button4.Text = "Simple Data Processing Part 1";
             this.button4.UseVisualStyleBackColor = false;
@@ -675,7 +679,7 @@
             this.Introduction.ForeColor = System.Drawing.Color.White;
             this.Introduction.Location = new System.Drawing.Point(0, 122);
             this.Introduction.Name = "Introduction";
-            this.Introduction.Size = new System.Drawing.Size(209, 48);
+            this.Introduction.Size = new System.Drawing.Size(209, 38);
             this.Introduction.TabIndex = 31;
             this.Introduction.Text = "Introduction";
             this.Introduction.UseVisualStyleBackColor = false;
@@ -708,19 +712,45 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.button11);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(598, 382);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button11.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.button11.Image = global::Tutoring_Project.Properties.Resources.play_32px;
+            this.button11.Location = new System.Drawing.Point(453, 309);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(119, 48);
+            this.button11.TabIndex = 19;
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.Button11_Click);
+            // 
             // button10
             // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button10.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.button10.Image = global::Tutoring_Project.Properties.Resources.play_32px;
-            this.button10.Location = new System.Drawing.Point(458, 235);
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Location = new System.Drawing.Point(1, 405);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(119, 48);
-            this.button10.TabIndex = 18;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.Button10_Click);
+            this.button10.Size = new System.Drawing.Size(209, 44);
+            this.button10.TabIndex = 38;
+            this.button10.Text = "Interactive";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.Button10_Click_1);
             // 
             // Topics
             // 
@@ -758,6 +788,7 @@
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -811,6 +842,8 @@
         private System.Windows.Forms.RichTextBox richTextBox7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.Button button11;
+        public System.Windows.Forms.Button button10;
     }
 }

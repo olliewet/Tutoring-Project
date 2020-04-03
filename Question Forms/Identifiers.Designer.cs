@@ -95,10 +95,10 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Location = new System.Drawing.Point(-7, 80);
+            this.tabControl1.Location = new System.Drawing.Point(-7, 87);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(839, 391);
+            this.tabControl1.Size = new System.Drawing.Size(839, 384);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -110,7 +110,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(831, 365);
+            this.tabPage1.Size = new System.Drawing.Size(831, 358);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ID";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -611,7 +611,7 @@
             // 
             this.panel2.Location = new System.Drawing.Point(-33, 64);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(890, 17);
+            this.panel2.Size = new System.Drawing.Size(890, 45);
             this.panel2.TabIndex = 41;
             // 
             // Identifiers

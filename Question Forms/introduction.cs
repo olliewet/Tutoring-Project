@@ -132,8 +132,8 @@ namespace Tutoring_Project
 
         private void Question2_btn(object sender, EventArgs e)
         {
-            counter1++;
-            if (counter1 >= 3)
+            counter2++;
+            if (counter2 >= 3)
             {
                 MessageBox.Show("The purpose of OO programming is to be able to break code down into sizeable chunks, which allow for easier and more orangissed coding");
             }
@@ -238,7 +238,11 @@ namespace Tutoring_Project
 
         private void Question3_btn(object sender, EventArgs e)
         {
-            
+            counter3++;
+            if (counter3 >= 3)
+            {
+                MessageBox.Show("Compilers are used with converting code into low level instructions");
+            }
             if (radioButton1.Checked)
             {
                 tabControl1.SelectTab(6);

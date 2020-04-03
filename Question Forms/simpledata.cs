@@ -198,7 +198,7 @@ namespace Tutoring_Project.Question_Forms
             } 
             else if ( counter3 >= 5)
             {
-                MessageBox.Show("Remember that some of the keywords are lower cased such as static and void, however main is used with a captial!");
+                MessageBox.Show("It seems you might be struggling with this questions, please refer back to the previsouly covered content!");
             }
 
             string answer1;
@@ -378,10 +378,10 @@ namespace Tutoring_Project.Question_Forms
             counter5++;
             if (counter5 >= 3)
             {
-                MessageBox.Show("Look at how the variables are declared in the programming example"); //Add Hit 
+                MessageBox.Show("Look at how the variables are declared in the previous programming example, it doesnt not matter if the words are using caps lock or not!"); 
             } else if (counter5 >= 6)
             {
-                MessageBox.Show("It seems like this question is causing trouble, remember if the keyword you are using is supposed to have the first letter in captial, also make sure the variable names are spelt correctly");//Add more text
+                MessageBox.Show("It seems like this question is causing trouble, remember if the keyword you are using is supposed to have the first letter in captial, also make sure the variable names are spelt correctly");
             }
 
             text = tb_4.Text;

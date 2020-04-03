@@ -1439,7 +1439,7 @@
             // 
             this.panel2.Location = new System.Drawing.Point(-45, 53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(890, 10);
+            this.panel2.Size = new System.Drawing.Size(890, 28);
             this.panel2.TabIndex = 41;
             // 
             // SimplePart2

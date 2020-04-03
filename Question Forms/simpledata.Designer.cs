@@ -102,6 +102,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label41 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -255,7 +256,6 @@
             this.finish_btn = new System.Windows.Forms.Button();
             this.richTextBox35 = new System.Windows.Forms.RichTextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage16.SuspendLayout();
@@ -337,7 +337,7 @@
             // 
             this.panel3.Location = new System.Drawing.Point(129, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(817, 18);
+            this.panel3.Size = new System.Drawing.Size(817, 39);
             this.panel3.TabIndex = 4;
             // 
             // pictureBox1
@@ -403,7 +403,7 @@
             // 
             this.panel4.Location = new System.Drawing.Point(-4, 52);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(907, 15);
+            this.panel4.Size = new System.Drawing.Size(907, 36);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
@@ -1154,6 +1154,15 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(6, 14);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(346, 13);
+            this.label41.TabIndex = 23;
+            this.label41.Text = "Please fill in the missing blanks below to complete the following program!";
             // 
             // textBox3
             // 
@@ -2941,15 +2950,6 @@
             this.label32.Size = new System.Drawing.Size(534, 25);
             this.label32.TabIndex = 7;
             this.label32.Text = "Part 1  of Simple Date Processing For The C# Tutoring System";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(6, 14);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(346, 13);
-            this.label41.TabIndex = 23;
-            this.label41.Text = "Please fill in the missing blanks below to complete the following program!";
             // 
             // simpledata
             // 

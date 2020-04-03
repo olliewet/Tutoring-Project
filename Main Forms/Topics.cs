@@ -245,6 +245,16 @@ namespace Tutoring_Project
                 ChangeTabEnd();
             }
         }
+
+        private void SwitchInt(int x)
+        {
+            if (x >= 0)
+            {
+                this.Hide();
+                this.Close();
+                inte();
+            }
+        }
         #endregion
 
         #region Achievements and Badges Methods
@@ -983,7 +993,58 @@ namespace Tutoring_Project
 
         private void Button10_Click(object sender, EventArgs e)
         {
-            inte();
+            
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+            if ((string)this.pictureBox1.Tag == "user1")
+            {
+                In.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
+                In.pictureBox1.Tag = "user1";
+
+                currentlevel = File.ReadAllText("levelfile.txt");
+                int x = Int32.Parse(currentlevel);
+
+
+                SwitchInt(x);
+            }
+            else if ((string)this.pictureBox1.Tag == "user2")
+            {
+                In.pictureBox1.Image = Properties.Resources.user_male_olive_green;
+                In.pictureBox1.Tag = "user2";
+
+                currentlevel = File.ReadAllText("user2level.txt");
+                int x = Int32.Parse(currentlevel);
+                SwitchInt(x);
+
+            }
+            else if ((string)this.pictureBox1.Tag == "user3")
+            {
+                In.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
+                In.pictureBox1.Tag = "user3";
+
+                currentlevel = File.ReadAllText("user3level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                SwitchInt(x);
+
+            }
+            else if ((string)this.pictureBox1.Tag == "user4")
+            {
+                In.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
+                In.pictureBox1.Tag = "user4";
+
+                currentlevel = File.ReadAllText("user4level.txt");
+                int x = Int32.Parse(currentlevel);
+
+                SwitchInt(x);
+            }
+        }
+
+        private void Button10_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(7);
         }
     }
 }

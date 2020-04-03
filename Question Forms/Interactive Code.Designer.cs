@@ -76,7 +76,9 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "int value1 = 5;"});
+            "int value1 = 5;",
+            "string Foo = \"A\";",
+            "string Foo = \"B\";"});
             this.comboBox1.Location = new System.Drawing.Point(108, 208);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(262, 21);
@@ -208,7 +210,9 @@
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "int value2 = 10;"});
+            "int value2 = 10;",
+            "string Foo = \"B\";",
+            "string Foo = \"A\";"});
             this.comboBox2.Location = new System.Drawing.Point(108, 235);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(262, 21);
@@ -220,7 +224,9 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "int Answer = Value1 + Value2;",
-            "int Answer = Value1 * Value2;"});
+            "int Answer = Value1 * Value2;",
+            "if (Foo == Bar) ",
+            "if(Foo = Bar)"});
             this.comboBox3.Location = new System.Drawing.Point(108, 262);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(262, 21);
@@ -231,7 +237,8 @@
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "Console.WriteLine(Answer);"});
+            "Console.WriteLine(Answer);",
+            "{ Console.WriteLine(Foo); }"});
             this.comboBox4.Location = new System.Drawing.Point(108, 289);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(262, 21);
@@ -254,6 +261,7 @@
             this.exit.TabIndex = 19;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // topics_btn
             // 
@@ -271,6 +279,7 @@
             this.topics_btn.TabIndex = 18;
             this.topics_btn.Text = "Home";
             this.topics_btn.UseVisualStyleBackColor = false;
+            this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
             // 
             // pictureBox1
             // 
