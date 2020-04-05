@@ -403,7 +403,7 @@
             // 
             this.panel4.Location = new System.Drawing.Point(-4, 52);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(907, 36);
+            this.panel4.Size = new System.Drawing.Size(907, 17);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
@@ -816,9 +816,7 @@
             this.richTextBox9.ReadOnly = true;
             this.richTextBox9.Size = new System.Drawing.Size(764, 86);
             this.richTextBox9.TabIndex = 10;
-            this.richTextBox9.Text = "Question - Declare 4 Variables in order using the correct name given for each var" +
-    "iable.\nDeclare two integers called Num1 and Num2 \nDeclare two strings called Str" +
-    "ing1 and String2 \n";
+            this.richTextBox9.Text = resources.GetString("richTextBox9.Text");
             // 
             // button11
             // 

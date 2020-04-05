@@ -62,11 +62,14 @@
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.richTextBox7 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -76,9 +79,6 @@
             this.Introduction = new System.Windows.Forms.Button();
             this.user_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -89,11 +89,11 @@
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -529,12 +529,37 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "End Game";
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.button11);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(598, 382);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button11.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.button11.Image = global::Tutoring_Project.Properties.Resources.play_32px;
+            this.button11.Location = new System.Drawing.Point(453, 309);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(119, 48);
+            this.button11.TabIndex = 19;
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.Button11_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(212, 56);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(652, 31);
+            this.panel2.Size = new System.Drawing.Size(652, 34);
             this.panel2.TabIndex = 39;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
@@ -579,6 +604,21 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(209, 596);
             this.panel3.TabIndex = 14;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Location = new System.Drawing.Point(1, 405);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(209, 44);
+            this.button10.TabIndex = 38;
+            this.button10.Text = "Interactive";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.Button10_Click_1);
             // 
             // button9
             // 
@@ -712,46 +752,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.button11);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(598, 382);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "tabPage8";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button11.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.button11.Image = global::Tutoring_Project.Properties.Resources.play_32px;
-            this.button11.Location = new System.Drawing.Point(453, 309);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(119, 48);
-            this.button11.TabIndex = 19;
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.Button11_Click);
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.Transparent;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(1, 405);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(209, 44);
-            this.button10.TabIndex = 38;
-            this.button10.Text = "Interactive";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.Button10_Click_1);
-            // 
             // Topics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -784,11 +784,11 @@
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

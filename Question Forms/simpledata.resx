@@ -137,6 +137,12 @@
     <value>We have made some variables which can hold numbers. Now we are going to make some which can contain strings. This is because when we read the numbers from our user we first read them in as strings of text. We then convert the text into a number. The variables widthString and heightString (note the sensible names) will contain text versions of the numbers.
 </value>
   </data>
+  <data name="richTextBox9.Text" xml:space="preserve">
+    <value>Question - Declare 4 Variables in order using the correct name given for each variable.
+Declare two integers called Num1 and Num2 on the same line!
+Declare two strings called String1 and String2  on the same line!
+</value>
+  </data>
   <data name="richTextBox7.Text" xml:space="preserve">
     <value>This is a list. A list of items in C# is separated by , (comma) characters. In this case it is a list of variable names. Once the compiler has seen the word double (see above) it is expecting to find the name of at least one variable to be created. The compiler works its way through the list, creating boxes which can hold values of type double and giving them the appropriate names. From this point on we can refer to the above names, and the compiler will know that we are using that particular variable.</value>
   </data>

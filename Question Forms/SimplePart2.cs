@@ -163,7 +163,7 @@ namespace Tutoring_Project.Question_Forms
             }
             text = tb_4.Text;
             text = text.ToLower();
-            if (text.Contains("int") && text.Contains("numberofdrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("int") && text.Contains("numberofdrinks") && text.Contains("=") && text.Contains("5;"))
+            if (text.StartsWith("int") && text.Contains("numberofdrinks") && text.Contains("=") && text.Contains("5") && text.Contains(";") | text.Contains("int") && text.Contains("numberofdrinks") && text.Contains("=") && text.EndsWith("5;"))
             {
                 MessageBox.Show("Achievement Unlocked!");
                 tabControl1.SelectTab(7);
@@ -222,9 +222,13 @@ namespace Tutoring_Project.Question_Forms
         {
             
             counter2++;
-            if (counter2 >= 3)
+            if (counter2 == 3)
             {
-                MessageBox.Show("The Question is asking about double.Parse, .Parse can be used to parse into different types depending what is infornt of the .Parse!");
+                MessageBox.Show("Please refer back to the information on the previous slide as help!");
+            }
+            else if (counter2 == 6)
+            {
+                MessageBox.Show("It seems like you many be struggling, double is able to hold a value of up to 15 digits");
             }
             if (answer_btn4.Checked)
             {
@@ -315,13 +319,13 @@ namespace Tutoring_Project.Question_Forms
         {
            
             counter3++;
-            if (counter3 >= 3)
+            if (counter3 == 3)
             {
-                MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
+                MessageBox.Show("This question requires the user to place in the correct words and phases in the correct textboxes to make the code work!"); //Add Hit 
             }
-            else if (counter3 >= 5)
+            else if (counter3 == 5)
             {
-                MessageBox.Show("HINT HINT HINT HINT");
+                MessageBox.Show("Remember that the variables require a type before the variable name!");
             }
 
             string A1 = answer1.SelectedItem.ToString();

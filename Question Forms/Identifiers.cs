@@ -135,15 +135,14 @@ namespace Tutoring_Project
         {
                      
             counter1++;
-            if (counter1 >= 3)
+            if (counter1 == 3)
             {
                 MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
             }
-            else if (counter1 >= 5)
+            else if (counter1 == 5)
             {
                 MessageBox.Show("HINT HINT HINT HINT");
             }
-
 
             string AA1 = A1.SelectedItem.ToString();
             string AA2 = A2.SelectedItem.ToString();
