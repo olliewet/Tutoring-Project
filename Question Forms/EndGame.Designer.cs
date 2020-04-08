@@ -250,6 +250,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.topics_btn);
             this.Controls.Add(this.exit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "EndGame";
             this.Text = "EndGame";
             this.Load += new System.EventHandler(this.EndGame_Load);

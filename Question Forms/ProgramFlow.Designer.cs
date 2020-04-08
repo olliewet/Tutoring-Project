@@ -1587,6 +1587,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.topics_btn);
             this.Controls.Add(this.exit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ProgramFlow";
             this.Text = "ProgramFlow";
             this.Load += new System.EventHandler(this.ProgramFlow_Load);

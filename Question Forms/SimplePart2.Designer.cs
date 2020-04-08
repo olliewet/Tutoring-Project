@@ -1454,6 +1454,7 @@
             this.Controls.Add(this.topics_btn);
             this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SimplePart2";
             this.Text = "SimplePart2";
             this.tabPage14.ResumeLayout(false);
