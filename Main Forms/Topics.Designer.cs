@@ -79,6 +79,8 @@
             this.Introduction = new System.Windows.Forms.Button();
             this.user_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -516,7 +518,8 @@
             this.richTextBox7.ReadOnly = true;
             this.richTextBox7.Size = new System.Drawing.Size(569, 167);
             this.richTextBox7.TabIndex = 17;
-            this.richTextBox7.Text = "Section Under Construction\nComing Soon!";
+            this.richTextBox7.Text = "Earn experience for every question in End Game! \n- Great for climbing up the rank" +
+    "s!";
             // 
             // label7
             // 
@@ -531,6 +534,8 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.richTextBox8);
+            this.tabPage8.Controls.Add(this.label8);
             this.tabPage8.Controls.Add(this.button11);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
@@ -752,6 +757,29 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
+            // richTextBox8
+            // 
+            this.richTextBox8.BackColor = System.Drawing.Color.White;
+            this.richTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox8.Location = new System.Drawing.Point(12, 40);
+            this.richTextBox8.Name = "richTextBox8";
+            this.richTextBox8.ReadOnly = true;
+            this.richTextBox8.Size = new System.Drawing.Size(569, 167);
+            this.richTextBox8.TabIndex = 21;
+            this.richTextBox8.Text = resources.GetString("richTextBox8.Text");
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label8.Location = new System.Drawing.Point(7, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(172, 25);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Interactive Section";
+            // 
             // Topics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -785,6 +813,7 @@
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -845,5 +874,7 @@
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Button button11;
         public System.Windows.Forms.Button button10;
+        private System.Windows.Forms.RichTextBox richTextBox8;
+        private System.Windows.Forms.Label label8;
     }
 }

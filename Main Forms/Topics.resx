@@ -120,4 +120,7 @@
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>This application contains five main topics, however the topics are split into different sections. Completing questions will potentiality reward the user with achievements and experience which will contribute towards the users overall level. The Aim of the tutor is to learn the language C#, however if you complete the five main topics, the end game questions will be active only the best of the best can complete these questions!</value>
   </data>
+  <data name="richTextBox8.Text" xml:space="preserve">
+    <value>Try and test your coding knowledge by creating different programs with this interactive coding excerise , put pieces of code together to form a program, dicover what works and what does not in this feature now!</value>
+  </data>
 </root>

@@ -403,7 +403,7 @@
             // 
             this.panel4.Location = new System.Drawing.Point(-4, 52);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(907, 17);
+            this.panel4.Size = new System.Drawing.Size(907, 36);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 

@@ -1529,7 +1529,7 @@
             // 
             this.panel2.Location = new System.Drawing.Point(-17, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(890, 20);
+            this.panel2.Size = new System.Drawing.Size(890, 46);
             this.panel2.TabIndex = 40;
             // 
             // pictureBox1
