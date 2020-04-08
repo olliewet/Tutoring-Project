@@ -91,9 +91,13 @@ namespace Tutoring_Project
         private void Question1_btn(object sender, EventArgs e)
         {
             counter1++;
-            if (counter1 == 3)
+            if (counter1 == 2)
             {
-                MessageBox.Show("This course covers the language C# and the underlying principles of the programming");
+                MessageBox.Show("The language covered is C# and was founded in 2000! ");
+            }
+            else if (counter1 == 6)
+            {
+                MessageBox.Show("It seems like this question is causing trouble, refer back to previous pages for extra help!");
             }
             if (btn_3.Checked)
             {
@@ -135,7 +139,7 @@ namespace Tutoring_Project
             counter2++;
             if (counter2 == 3)
             {
-                MessageBox.Show("The purpose of OO programming is to be able to break code down into sizeable chunks, which allow for easier and more orangissed coding");
+                MessageBox.Show("OOP has lots of benefits, one of the key benefits is that it allows users to break sections of code into sensible chunks, due to this it makes it easier to read and allows it for easier testing");
             }
            
             if (radioButton7.Checked)
@@ -241,7 +245,7 @@ namespace Tutoring_Project
             counter3++;
             if (counter3 == 3)
             {
-                MessageBox.Show("Compilers are used with converting code into low level instructions");
+                MessageBox.Show("Purpose of a compiler is convert the users code into low level instructions, this is because in its current form the hardware cannot understand the code unless it is turned into low level instructions");
             }
             if (radioButton1.Checked)
             {

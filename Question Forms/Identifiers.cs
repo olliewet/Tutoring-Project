@@ -137,11 +137,11 @@ namespace Tutoring_Project
             counter1++;
             if (counter1 == 3)
             {
-                MessageBox.Show("HINT HINT HINT HINT"); //Add Hit 
+                MessageBox.Show("This question requires the user to place in the correct words and phases in the correct textboxes to make the code work!");
             }
             else if (counter1 == 5)
             {
-                MessageBox.Show("HINT HINT HINT HINT");
+                MessageBox.Show("It seems like your struggling, alot of the provided words and phases dont match the code already provided, you should be able to limit it down to couple of answers!");
             }
 
             string AA1 = A1.SelectedItem.ToString();

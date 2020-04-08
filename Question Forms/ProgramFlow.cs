@@ -120,9 +120,9 @@ namespace Tutoring_Project.Question_Forms
         private void Button14_Click(object sender, EventArgs e)
         {            
             counter1++;
-            if (counter1 >= 3)
+            if (counter1 == 3)
             {
-                MessageBox.Show("IF statements can be followed by an else statement to specify a certain block of code to be executed!");
+                MessageBox.Show("IF statements can be followed by an else statement to specify a certain block of code to be executed!"); 
             }
             if (answer_btn1.Checked)
             {
@@ -304,16 +304,16 @@ namespace Tutoring_Project.Question_Forms
             string text;
             
             counter4++;
-            if (counter4 >= 3)
+            if (counter4 == 3)
             {
-                MessageBox.Show("Please refer to the information on the previous page"); //Add Hit 
+                MessageBox.Show("Please refer to the information on the previous page"); 
             }
-            else if (counter4  >= 6)
+            else if (counter4  == 6)
             {
                 MessageBox.Show("It seems like you might be struggling with this question, remember num is an integer and not an array!");
             }
             text = textBox3.Text;
-            if (text.Contains("do { Console.WriteLine(\"Value of i: {0}\", i); i++;} while (i < num);")) // Also add that it test to make sure it is in order
+            if (text.Contains("do { Console.WriteLine(\"Value of i: {0}\", i); i++;} while (i < num);")) 
             { 
                 tabControl1.SelectTab(11);
                 if ((string)this.pictureBox1.Tag == "user1")

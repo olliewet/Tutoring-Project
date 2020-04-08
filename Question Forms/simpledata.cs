@@ -675,13 +675,13 @@ namespace Tutoring_Project.Question_Forms
             string text;
             
             counter8++;
-            if (counter8 >= 3)
+            if (counter8 == 3)
             {
                 MessageBox.Show("Look at how the variables are declared in the programming example, make sure the variables are spelt correctly!"); 
             }
-            else if (counter8 >= 6)
+            else if (counter8 == 6)
             {
-                MessageBox.Show("It seems like this question is causing trouble, refer back to previous pages for extra help!");//Add more text
+                MessageBox.Show("It seems like this question is causing trouble, refer back to previous pages for extra help!");
             }
             text = textBox5.Text;
             text = text.ToLower();

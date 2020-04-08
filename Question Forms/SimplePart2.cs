@@ -153,11 +153,11 @@ namespace Tutoring_Project.Question_Forms
         {           
             string text;       
             counter1++;
-            if (counter1 >= 3)
+            if (counter1 == 3)
             {
                 MessageBox.Show("Remember the structure of an assigenment statement, remember the difference = and ==, the single = should be used in this instance"); //Add Hit 
             }
-            else if (counter1 >= 6)
+            else if (counter1 == 6)
             {
                 MessageBox.Show("Example of an assigenment statement Double PreciseNumberOfDrinks = 5.1 ; ");
             }
