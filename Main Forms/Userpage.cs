@@ -22,6 +22,7 @@ namespace Tutoring_Project
         private void User1_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            
             Topics T = new Topics();            
             T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
             T.pictureBox1.Tag = "user1";

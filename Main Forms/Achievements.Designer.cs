@@ -36,7 +36,6 @@
             this.Introduction = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -190,19 +189,6 @@
             this.button4.Text = "Identifiers";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(10, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 32);
-            this.button5.TabIndex = 34;
-            this.button5.Text = "End Game";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button6
             // 
@@ -586,7 +572,6 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lb2);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.lb4);
             this.Controls.Add(this.Introduction);
             this.Controls.Add(this.button2);
@@ -651,7 +636,6 @@
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Button button5;
         public System.Windows.Forms.Button button6;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;

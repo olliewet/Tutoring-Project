@@ -251,6 +251,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="levelfile.txt" />
+    <None Include="Resources\pipee.png" />
+    <None Include="Resources\not.png" />
+    <None Include="Resources\NotEqual1.png" />
+    <None Include="Resources\NotEqual.png" />
     <None Include="Resources\RANKSS.png" />
     <None Include="Resources\play_32px.png" />
     <None Include="Resources\ProgAchieve.png" />
@@ -304,6 +308,14 @@
     <None Include="Resources\Breaking.png" />
     <None Include="Resources\IFAchieve.png" />
     <None Include="Resources\Background.png" />
+    <None Include="Resources\Equal.png" />
+    <None Include="Resources\EqualTo.png" />
+    <None Include="Resources\Equal1.png" />
+    <None Include="Resources\Great.png" />
+    <None Include="Resources\less.png" />
+    <None Include="Resources\greatequal.png" />
+    <None Include="Resources\lessequal.png" />
+    <None Include="Resources\and.png" />
     <Content Include="Resources\medal.png" />
     <None Include="Resources\leaderboard_50px.png" />
     <None Include="Resources\leaderboard_80px.png" />
