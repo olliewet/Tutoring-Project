@@ -38,8 +38,8 @@ namespace Tutoring_Project
         private void Topics_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Userpage UP = new Userpage();
-            UP.ShowDialog();
+            Home home = new Home();
+            home.ShowDialog();
             this.Close();
         }
 

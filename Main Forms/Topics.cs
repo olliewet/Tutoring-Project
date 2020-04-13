@@ -479,6 +479,7 @@ namespace Tutoring_Project
             this.Hide();
             Home home = new Home();
             home.ShowDialog();
+            
             this.Close();
         }
 
@@ -825,6 +826,7 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("levelfile.txt");
                 int x = Int32.Parse(currentlevel);
                 Achievements(x);
+                
                 Ach.ShowDialog();
                 this.Close();
             }
@@ -836,6 +838,7 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("user2level.txt");
                 int x = Int32.Parse(currentlevel);
                 Achievements(x);
+                
                 Ach.ShowDialog();
                 this.Close();
             }
@@ -847,6 +850,7 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("user3level.txt");
                 int x = Int32.Parse(currentlevel);
                 Achievements(x);
+                
                 Ach.ShowDialog();
                 this.Close();
             }
@@ -858,6 +862,7 @@ namespace Tutoring_Project
                 currentlevel = File.ReadAllText("user4level.txt");
                 int x = Int32.Parse(currentlevel);
                 Achievements(x);
+                
                 Ach.ShowDialog();
                 this.Close();
             }

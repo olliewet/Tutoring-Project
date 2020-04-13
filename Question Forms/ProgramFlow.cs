@@ -522,5 +522,80 @@ namespace Tutoring_Project.Question_Forms
         {
 
         }
+
+        private void Button28_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void Button29_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+        }
+
+        private void Button30_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
+
+        private void Button31_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(3);
+        }
+
+        private void Button32_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
+
+        private void Button33_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(5);
+        }
+
+        private void Button34_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(6);
+        }
+
+        private void Button35_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(7);
+        }
+
+        private void Button36_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(8);
+        }
+
+        private void Button37_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(9);
+        }
+
+        private void Button38_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(10);
+        }
+
+        private void Button39_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(11);
+        }
+
+        private void Button40_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(12);
+        }
+
+        private void Button41_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(13);
+        }
+
+        private void Button42_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(14);
+        }
     }
 }

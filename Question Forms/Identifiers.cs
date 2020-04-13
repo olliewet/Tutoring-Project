@@ -214,5 +214,30 @@ namespace Tutoring_Project
             this.Close();
             T.ShowDialog();
         }
+
+        private void Button28_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(0);
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(1);
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(3);
+        }
+
+        private void Button13_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
     }
 }

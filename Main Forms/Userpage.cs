@@ -26,6 +26,7 @@ namespace Tutoring_Project
             Topics T = new Topics();            
             T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
             T.pictureBox1.Tag = "user1";
+            
             T.ShowDialog();
             this.Close();
         }
@@ -38,7 +39,7 @@ namespace Tutoring_Project
             Topics T = new Topics();
             T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
             T.pictureBox1.Tag = "user2";
-            
+           
             T.ShowDialog();
             this.Close();
         }
@@ -51,6 +52,7 @@ namespace Tutoring_Project
             Topics T = new Topics();
             T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
             T.pictureBox1.Tag = "user3";
+            
             T.ShowDialog();
             this.Close();
         }
@@ -63,6 +65,7 @@ namespace Tutoring_Project
             Topics T = new Topics();
             T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
             T.pictureBox1.Tag = "user4";
+            
             T.ShowDialog();
             this.Close();
         }

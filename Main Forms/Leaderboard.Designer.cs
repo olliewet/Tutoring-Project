@@ -96,11 +96,11 @@
             this.topics_btn.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.topics_btn.Image = global::Tutoring_Project.Properties.Resources.home_26px;
             this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.topics_btn.Location = new System.Drawing.Point(3, 3);
+            this.topics_btn.Location = new System.Drawing.Point(12, 4);
             this.topics_btn.Name = "topics_btn";
             this.topics_btn.Size = new System.Drawing.Size(154, 38);
             this.topics_btn.TabIndex = 17;
-            this.topics_btn.Text = "User Page";
+            this.topics_btn.Text = "Home";
             this.topics_btn.UseVisualStyleBackColor = false;
             this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
             // 

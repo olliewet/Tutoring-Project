@@ -71,9 +71,9 @@
             this.topics_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.topics_btn.Location = new System.Drawing.Point(560, -15);
             this.topics_btn.Name = "topics_btn";
-            this.topics_btn.Size = new System.Drawing.Size(143, 91);
+            this.topics_btn.Size = new System.Drawing.Size(143, 92);
             this.topics_btn.TabIndex = 16;
-            this.topics_btn.Text = "User Page";
+            this.topics_btn.Text = "Home";
             this.topics_btn.UseVisualStyleBackColor = false;
             this.topics_btn.Click += new System.EventHandler(this.Topics_btn_Click);
             // 

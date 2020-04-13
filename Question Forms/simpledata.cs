@@ -831,6 +831,26 @@ namespace Tutoring_Project.Question_Forms
             this.Close();
             T.ShowDialog();
         }
+
+        private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button55_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(6);
+        }
+
+        private void Button56_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(7);
+        }
+
+        private void Button57_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(8);
+        }
     }
 }
 

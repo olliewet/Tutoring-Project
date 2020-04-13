@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main Forms\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
     <Compile Include="Question Forms\EndGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     <Compile Include="Main Forms\UserProfile.Designer.cs">
       <DependentUpon>UserProfile.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Main Forms\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Forms\Achievements.resx">
       <DependentUpon>Achievements.cs</DependentUpon>
     </EmbeddedResource>

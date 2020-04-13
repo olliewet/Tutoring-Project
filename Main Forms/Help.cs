@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tutoring_Project
 {
-    public partial class Leaderboard : Form
+    public partial class Help : Form
     {
-        public Leaderboard()
+        public Help()
         {
             InitializeComponent();
         }
@@ -38,14 +38,9 @@ namespace Tutoring_Project
             }
         }
 
-        private void Leaderboard_Load(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Label9_Click(object sender, EventArgs e)
-        {
-
+            System.Diagnostics.Process.Start("https://docs.microsoft.com/en-us/dotnet/csharp/");
         }
     }
 }

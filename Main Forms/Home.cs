@@ -76,7 +76,7 @@ namespace Tutoring_Project
         private void Button1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            References Ref = new References();
+            References Ref = new References();           
             Ref.ShowDialog();
             this.Close();
         }
@@ -295,6 +295,14 @@ namespace Tutoring_Project
             this.Close();
         }
 
-        #endregion 
+        #endregion
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Help help = new Help();
+            help.ShowDialog();
+            this.Close();
+        }
     }
 }

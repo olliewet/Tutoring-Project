@@ -117,27 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>In C# an identifier is a name that the programmer chooses for something in the program. The name of a variable is more properly called an identifier. We will see other places where we create identifiers. C# has some rules about what constitutes a valid identifier: 
-• All identifiers names must start with a letter. 
-• After the letter you can have either letters or numbers or the underscore "_" character. Upper and lower case letters are different, i.e. Fred and fred are different identifiers. Here are a few example declarations, one of which are not valid (see if you can guess which one and why):
-</value>
-  </data>
-  <data name="richTextBox3.Text" xml:space="preserve">
-    <value>The last three statements are the ones which actually do the work. These are assignment statements. An assignment gives a value to a specified variable, which must be of a sensible type (note that you must be sensible about this because the compiler, as we already know, does not know or care what you are doing). The value which is assigned is an expression. The equals in the middle is there mainly to confuse us, it does not mean equals in the numeric sense; I like to think of it as a gozzinta (see above). Gozzintas take the result on the right hand side of the assignment and drop it into the box on the left, which means that: 
-2 = second + 1; 
-- is a piece of programming naughtiness which would cause all manner of nasty errors to appear.</value>
-  </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value>Once we have got ourselves a variable we now need to know how to put something into it, and get the value out. C# does this by means of an assignment statement. There are two parts to an assignment, the thing you want to assign and the place you want to put it, for example consider the following:</value>
-  </data>
-  <data name="richTextBox5.Text" xml:space="preserve">
-    <value>These expressions are worked out (evaluated) by C# moving from left to right, just as you would yourself. Again, just as in traditional maths all the multiplication and division is performed first in an expression, followed by the addition and subtraction. 
-C# does this by giving each operator a priority. When C# works out an expression it looks along it for all the operators with the highest priority and does them first. It then looks for the next ones down and so on until the final result is obtained. Note that this means that the first expression above will therefore return 14 and not 20.
-</value>
-  </data>
-  <data name="richTextBox4.Text" xml:space="preserve">
-    <value>Operators are the things which do the work: They specify the operation to be performed on the operands. Most operators work on two operands, one each side. In the program on the previous page + is the only operator.
-</value>
+  <data name="lrg_tb.Text" xml:space="preserve">
+    <value>This tutoring system contains five topics, the topics are presented in a ordered row on the topics page, the user will unlock another topic once they have completed their current topic. The user will progress through achievements when they make their way through the tutor, while earning achievements the user will gain experience points which will count to their overall experience level. </value>
   </data>
 </root>
