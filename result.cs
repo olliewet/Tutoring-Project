@@ -11,6 +11,10 @@ namespace Tutoring_Project
 {
     class result
     {
+        /// <summary>
+        /// https://github.com/kartheek619/Desktop-Quiz-Application
+        /// This bit of code has been influnced and used from the github user kartheek619, however the code has been modified
+        /// </summary>
         private string file;
         private string Result = "";
         private string quesid;

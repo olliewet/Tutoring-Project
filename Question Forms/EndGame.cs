@@ -11,6 +11,12 @@ using System.Windows.Forms;
 
 namespace Tutoring_Project
 {
+   
+    /// /// <summary>
+    /// https://github.com/kartheek619/Desktop-Quiz-Application
+    /// Some of the methods in this class has been used from the github user kartheek619, this is because of the algoirthm used in there code was very efficent, and seemed benefical to include a modified verison in this project
+    /// </summary>
+   
     public partial class EndGame : Form
     {
         public EndGame()

@@ -11,8 +11,12 @@ using System.Xml.Linq;
 namespace Tutoring_Project
 {
     class Question
-    {       
-            private string file;
+    {
+        /// <summary>
+        /// https://github.com/kartheek619/Desktop-Quiz-Application
+        /// This bit of code has been influnced and used from the github user kartheek619, however the code has been modified
+        /// </summary>
+        private string file;
             private string quesid;
             ArrayList list = new ArrayList();
 

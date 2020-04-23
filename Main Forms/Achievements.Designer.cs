@@ -509,9 +509,9 @@
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(755, 59);
+            this.panel6.Location = new System.Drawing.Point(755, 75);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(33, 379);
+            this.panel6.Size = new System.Drawing.Size(33, 350);
             this.panel6.TabIndex = 40;
             // 
             // pictureBox1
