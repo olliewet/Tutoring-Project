@@ -22,8 +22,8 @@ namespace Tutoring_Project
         private void User1_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
-            Topics T = new Topics();            
+            string name = "user1";
+            Topics T = new Topics(name);            
             T.pictureBox1.Image = Properties.Resources.user_male_white_red_brown;
             T.pictureBox1.Tag = "user1";
             
@@ -36,7 +36,8 @@ namespace Tutoring_Project
         private void User2_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Topics T = new Topics();
+            string name = "user2";
+            Topics T = new Topics(name);
             T.pictureBox1.Image = Properties.Resources.user_male_olive_green;
             T.pictureBox1.Tag = "user2";
            
@@ -49,7 +50,8 @@ namespace Tutoring_Project
         private void User3_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Topics T = new Topics();
+            string name = "user3";
+            Topics T = new Topics(name);
             T.pictureBox1.Image = Properties.Resources.user_female_olive_rbla;
             T.pictureBox1.Tag = "user3";
             
@@ -62,7 +64,8 @@ namespace Tutoring_Project
         private void User4_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Topics T = new Topics();
+            string name = "user4";
+            Topics T = new Topics(name);
             T.pictureBox1.Image = Properties.Resources.user_female_olive_orange;
             T.pictureBox1.Tag = "user4";
             

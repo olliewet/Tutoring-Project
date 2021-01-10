@@ -121,7 +121,6 @@
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Simple_btn1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -1257,7 +1256,6 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.Simple_btn1);
             this.tabPage1.Controls.Add(this.richTextBox1);
@@ -1269,15 +1267,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Man Data";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(430, 289);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Add COOL looking image";
             // 
             // pictureBox2
             // 
@@ -1439,7 +1428,7 @@
             // 
             this.panel2.Location = new System.Drawing.Point(-45, 53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(890, 38);
+            this.panel2.Size = new System.Drawing.Size(890, 32);
             this.panel2.TabIndex = 41;
             // 
             // SimplePart2
@@ -1585,7 +1574,6 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button Simple_btn1;
         private System.Windows.Forms.RichTextBox richTextBox1;

@@ -59,7 +59,7 @@ namespace Tutoring_Project
             {
                 MessageBox.Show("Complete the Previous Section");
             }
-            else if (x >= 25) // Update Number at some point
+            else if (x >= 25) 
             {
                 MessageBox.Show("Completed Section");
             }
